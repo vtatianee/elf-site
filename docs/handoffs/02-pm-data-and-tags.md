@@ -3,7 +3,7 @@
 - **Data:** 10/11/2026
 - **Autor:** Gerente de Projeto (PM)
 - **Arquivo entregue:** `src/data/ideas.json` — fonte única da verdade para Designer e Desenvolvedor.
-- **Status:** tradução pronta. **Etiquetas de Tipo e Material: PENDENTES de aprovação do André (Portão 2).** Ninguém constrói filtro, `/funny/` ou Tonight Mode em cima delas antes disso.
+- **Status:** tradução pronta. **Etiquetas de Tipo e Material APROVADAS pelo André no Portão 2 (11/11/2026)**, como propostas na seção 5. Ficha 49 renomeada para "Elf Story Fill-in-the-Blanks Card" (slug `elf-story-fill-in-the-blanks-card`), também aprovada no Portão 2.
 
 ---
 
@@ -42,7 +42,7 @@
 | `printable` | Imprimível do site de que a ideia depende (10 fichas) | Sim |
 | `amazonItems` | Termos de busca na Amazon. Vazio = sem item e sem botão de kit | Sim, como link |
 | `hubs` | Hubs em que a ideia entra, calculados pelas regras do PDF | Sim |
-| `typeTags`, `materialTags` | **Propostos pelo PM — pendentes** | Só depois de aprovados |
+| `typeTags`, `materialTags` | Propostos pelo PM, **aprovados no Portão 2** | Sim |
 | `illustrationBrief` | Brief de ilustração da ficha, traduzido | Não. Interno |
 | `editorNotes` | Observações internas do PDF e do PM | Não. Interno |
 

@@ -336,9 +336,9 @@ window.PIN_DATA = {
   "time": "10 min",
   "mess": "zero"
  },
- "elf-story-mad-libs-card": {
+ "elf-story-fill-in-the-blanks-card": {
   "id": 49,
-  "title": "Elf Story Mad Libs Card",
+  "title": "Elf Story Fill-in-the-Blanks Card",
   "room": "table",
   "time": "5 min",
   "mess": "zero"

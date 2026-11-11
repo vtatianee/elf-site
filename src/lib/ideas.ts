@@ -61,11 +61,11 @@ export type TypeTag = (typeof TYPE_TAGS)[number]
 export type MaterialTag = (typeof MATERIAL_TAGS)[number]
 
 /**
- * PENDING OWNER APPROVAL (Gate 2). The `funny` hub is the only hub whose
- * membership comes from a proposed (not yet approved) classification.
- * Do not ship /funny/ until the PM confirms the approval.
+ * Hubs whose membership is still waiting for the owner's approval. Empty since
+ * Gate 2 (2026-11-11), when the `funny` classification was approved. A hub
+ * listed here is never linked from idea pages.
  */
-export const HUBS_PENDING_APPROVAL: readonly Hub[] = ['funny']
+export const HUBS_PENDING_APPROVAL: readonly Hub[] = []
 
 export type IdeaTime = {
   /** Filter value. */
@@ -110,12 +110,15 @@ type RawIdea = {
   /** Amazon search terms. Empty = no Amazon item at all for this idea. */
   amazonItems: string[]
   /**
-   * PENDING OWNER APPROVAL (Gate 2) — proposed by the PM, not in the source.
-   * Typed so the data loads; do NOT build filters, hubs or Tonight Mode on it
-   * until the PM confirms the approval.
+   * Type of idea. Approved by the owner at Gate 2 (2026-11-11): arrival,
+   * goodbye, project and interactive come from the PDF; funny and cute were
+   * classified by the PM.
    */
   typeTags: TypeTag[]
-  /** PENDING OWNER APPROVAL (Gate 2) — same rule as `typeTags`. */
+  /**
+   * What the materials need. Approved at Gate 2 (2026-11-11). `home` = only
+   * stuff most homes already have — the "Only stuff I have" criterion.
+   */
   materialTags: MaterialTag[]
   hubs: Hub[]
   /** INTERNAL — never rendered. */
@@ -130,13 +133,10 @@ export type Idea = Omit<RawIdea, 'illustrationBrief' | 'editorNotes'>
 /**
  * The small subset needed to draw a card or run a filter in the browser.
  * Pass arrays of this (not full ideas) to Client Components.
- *
- * `typeTags` / `materialTags` are deliberately left out while they are
- * pending approval; add them here once approved.
  */
 export type IdeaSummary = Pick<
   Idea,
-  'id' | 'slug' | 'title' | 'time' | 'mess' | 'age' | 'room' | 'hubs'
+  'id' | 'slug' | 'title' | 'time' | 'mess' | 'age' | 'room' | 'hubs' | 'typeTags' | 'materialTags'
 >
 
 export type IdeaLabels = {
@@ -262,8 +262,8 @@ export const ideaLabels: IdeaLabels = file.meta.labels
 
 /** Reduces an idea to the fields a card or a browser-side filter needs. */
 export function toIdeaSummary(idea: Idea): IdeaSummary {
-  const { id, slug, title, time, mess, age, room, hubs } = idea
-  return { id, slug, title, time, mess, age, room, hubs }
+  const { id, slug, title, time, mess, age, room, hubs, typeTags, materialTags } = idea
+  return { id, slug, title, time, mess, age, room, hubs, typeTags, materialTags }
 }
 
 // ---------------------------------------------------------------------------
@@ -281,7 +281,7 @@ export type HubLink = {
   isMember: boolean
 }
 
-/** Most specific hub first. `funny` joins once it is approved. */
+/** Most specific hub first. */
 const HUB_LINK_PRIORITY: readonly Hub[] = [
   'arrival',
   'goodbye',

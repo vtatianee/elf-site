@@ -499,7 +499,7 @@ export const SCENES = {
       at(P.tentCard(), -410, 90, 0.85),
     ],
   },
-  'elf-story-mad-libs-card': {
+  'elf-story-fill-in-the-blanks-card': {
     alt: 'Illustration of a large card on a table with five blank lines to fill in, a pencil resting on the first line, a small elf holding the pencil and an envelope beside it',
     draw: () => [
       at(P.flat({ w: 600, d: 170, inset: 70 }) + [0, 1, 2, 3, 4].map((i) => line(`M${-220 + i * 12},${-140 + i * 28} L${220 - i * 12 + (i === 4 ? -120 : 0)},${-140 + i * 28}`, n3, 4)).join(''), -110, 184),

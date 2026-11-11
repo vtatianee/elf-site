@@ -6,9 +6,9 @@
     "rule": "Do not invent ideas, titles, times or materials. This file is the single source of truth for Designer and Developer.",
     "approval": {
       "timeMessAgeRoom": "from the PDF cards, machine-verified against the PDF's own totals",
-      "typeTags": "PENDING OWNER APPROVAL (Gate 2) - arrival, goodbye, project and interactive are fixed by the PDF; funny and cute are proposed by the PM",
-      "materialTags": "PENDING OWNER APPROVAL (Gate 2) - proposed by the PM, not in the PDF",
-      "note": "Do not build filters, /funny/ or Tonight Mode on typeTags/materialTags until they are approved."
+      "typeTags": "APPROVED by the owner at Gate 2 (2026-11-11) - arrival, goodbye, project and interactive are fixed by the PDF; funny and cute were proposed by the PM",
+      "materialTags": "APPROVED by the owner at Gate 2 (2026-11-11) - proposed by the PM, not in the PDF",
+      "note": "Type and material tags are approved: filters, /funny/ and Tonight Mode may use them."
     },
     "labels": {
       "time": {
@@ -2595,8 +2595,8 @@
     },
     {
       "id": 49,
-      "slug": "elf-story-mad-libs-card",
-      "title": "Elf Story Mad Libs Card",
+      "slug": "elf-story-fill-in-the-blanks-card",
+      "title": "Elf Story Fill-in-the-Blanks Card",
       "lot": 2,
       "time": {
         "tag": "5",
@@ -2643,7 +2643,7 @@
       "illustrationBrief": "Large card on the table in three-quarter view, 5 clearly visible blank lines (no generated text in the image), pencil on the first line and the elf holding its tip.",
       "editorNotes": [
         "PDF: printable story cards are the site's own digital product; card stock is the Amazon search.",
-        "TRADEMARK FLAG: the title contains “Mad Libs”, a registered trademark of a third party. Title kept as in the PDF pending the owner's decision."
+        "TITLE CHANGED at Gate 2 (2026-11-11): the PDF title \"Elf Story Mad Libs Card\" used a third-party registered trademark; the owner approved \"Elf Story Fill-in-the-Blanks Card\". Content unchanged."
       ]
     },
     {

@@ -9,8 +9,8 @@
  * COLOUR RULE (locked): only the 6 base colours below, plus tints/shades of
  * them. A derived tone is ONE base colour mixed toward cream/white (tint) or
  * toward night blue/black (shade). No new hue. Every derived tone lists its
- * recipe (plain sRGB mix, per channel). Derived tones are PENDING owner
- * approval at Gate 2.
+ * recipe (plain sRGB mix, per channel). Derived tones approved by the owner
+ * at Gate 2 (2026-11-11).
  *
  * scripts/generate-placeholders.mjs reads the --color-* values from this file,
  * and scripts/check-placeholders.mjs rejects any SVG colour that is not here.
@@ -29,7 +29,7 @@
   --color-wood: #8A5A3B;  /* wood brown: hair, counters, tables */
 
   /* ---------------------------------------------------------------
-   * 2. DERIVED TONES — tints and shades of the 6 (pending approval)
+   * 2. DERIVED TONES — tints and shades of the 6 (approved at Gate 2)
    * ------------------------------------------------------------- */
   /* red */
   --color-red-700: #902625;  /* 75% red + 25% night blue  — pressed/hover red, hat fold, boot soles */
