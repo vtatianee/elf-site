@@ -1,0 +1,94 @@
+/*
+ * Global reset — the minimum every page needs. No colors and no design
+ * decisions here: those belong to the Designer's tokens (src/styles/tokens.css),
+ * imported in src/app/layout.tsx BEFORE this file.
+ *
+ * Styling rules for the project:
+ * - Plain CSS only: this file + CSS Modules (`Component.module.css`).
+ * - Values come from CSS custom properties defined in tokens.css.
+ * - No UI framework, no runtime CSS-in-JS.
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100dvh;
+  line-height: 1.5;
+  /* Font files are self-hosted by next/font (see src/app/fonts.ts). */
+  font-family: var(--font-face-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-face-display), var(--font-face-body), system-ui, sans-serif;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* Images never overflow and never cause layout shift when width/height are set. */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,27 @@
+# --- Private source material: this repository is PUBLIC ----------------------
+# These files contain private personal information. Never commit them.
+PROMPT-CLAUDE-CODE-SITE-ELF.*
+elf-site-estrutura-30-ideias/
+docs/source/
+
+# --- Local tooling ------------------------------------------------------------
+.claude/
+.DS_Store
+
+# --- Dependencies and build output --------------------------------------------
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# Generated on every build by scripts/prebuild.ts (JPEG copies for link previews)
+public/social/
+
+# --- Local environment files (never commit secrets) ---------------------------
+.env
+.env.*
+!.env.example
+
+# --- Logs ---------------------------------------------------------------------
+npm-debug.log*
