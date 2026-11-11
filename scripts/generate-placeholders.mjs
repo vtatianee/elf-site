@@ -129,7 +129,11 @@ function main() {
   // character sheet + UI mascots
   write(join('design', 'elf-master.svg'), elfMasterSvg())
   const mascots = mascotSvgs()
-  for (const [name, svg] of Object.entries(mascots)) write(join('design', 'mascot', name), svg)
+  for (const [name, svg] of Object.entries(mascots)) {
+    write(join('design', 'mascot', name), svg)
+    // Public copy the site serves (header mark, Tonight Mode, elf note, empty states).
+    write(join('public', 'mascot', name), svg)
+  }
 
   // alt text for the Developer (placeholder scenes; re-check when final art lands)
   write(join('design', 'illustration-alt.json'), `${JSON.stringify({ _note: 'Alt text for the PLACEHOLDER scenes. Always starts with "Illustration of". Re-check each line when the final illustration replaces the placeholder.', _site: SITE_SCENE.alt, ...alt }, null, 2)}\n`)

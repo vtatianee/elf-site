@@ -1,26 +1,33 @@
 /*
- * STUB — BARE IDEA PAGE.
- * DEVELOPER: replace the page body in Phase 3 with the fixed template
- * (handoff 01, section 2.4). Keep `generateStaticParams`, `dynamicParams`
- * and the `buildMetadata()` call — they are the contract.
+ * IDEA PAGE — the fixed template, one static page per idea (60).
  *
- * It exists to prove that the 60 idea pages export as static HTML, and to
- * show how the helpers are meant to be used (illustration resolver, Amazon
- * links, disclosures). It deliberately renders NO `typeTags` / `materialTags`
- * (pending approval) and can never render `editorNotes` /
- * `illustrationBrief` (they are not part of the `Idea` type).
+ * Template (main prompt + handoff 01 §2.4 + C6, approved at Gates 1 and 2):
+ *   title + fact bar (first on phones), vertical illustration + Pin button +
+ *   illustration disclosure, materials checklist, Amazon links + kit button +
+ *   disclosure, 3-5 steps, safety (always shown when the card has it),
+ *   elf note (only when the card has text), quick variation (ideas 6 and 26),
+ *   3 related ideas, 2 hub links (+ a room link), email capture, HowTo schema.
+ *
+ * Never rendered: editorNotes / illustrationBrief (not part of `Idea`).
  */
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import { Icon } from '@/components/Icon'
+import { IdeaCard } from '@/components/IdeaCard'
 import { IllustrationImage } from '@/components/IllustrationImage'
+import { SignupComingSoon } from '@/components/SignupComingSoon'
 import { AMAZON_DISCLOSURE, ILLUSTRATION_DISCLOSURE } from '@/config/site'
 import { AMAZON_LINK_REL, amazonKitUrl, amazonSearchUrl } from '@/lib/amazon'
-import { getAllSlugs, getIdeaBySlug, ideaLabels } from '@/lib/ideas'
-import { getIllustration, getSocialImage } from '@/lib/illustrations'
+import { ideaIllustration, sceneAlt, toCardData } from '@/lib/cards'
+import { ideaDescription } from '@/lib/descriptions'
+import { HUB_INFO } from '@/lib/hubs'
+import { getAllSlugs, getHubLinks, getIdeaBySlug, ideaLabels, type Room } from '@/lib/ideas'
+import { getSocialImage } from '@/lib/illustrations'
+import { getRelatedIdeas } from '@/lib/related'
 import { routes } from '@/lib/routes'
-import { buildMetadata } from '@/lib/seo'
-import styles from '../../stub.module.css'
+import { howToJsonLd, jsonLdString } from '@/lib/schema'
+import { buildMetadata, pinterestPinUrl } from '@/lib/seo'
 
 type PageProps = { params: Promise<{ slug: string }> }
 
@@ -38,102 +45,260 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!idea) return {}
   return buildMetadata({
     title: idea.title,
-    // STUB description built from the facts — Marketing writes the real one.
-    description: `${idea.title}: an elf idea that takes ${idea.time.label}. ${ideaLabels.mess[idea.mess]}, ${ideaLabels.age[idea.age].toLowerCase()}.`,
+    description: ideaDescription(idea),
     path: routes.idea(idea.slug),
-    image: getSocialImage(idea, 'horizontal'),
+    image: getSocialImage(idea, 'horizontal', sceneAlt(idea.slug)),
     type: 'article',
   })
 }
+
+/** "More ___ ideas" wording for the room link. */
+const ROOM_PHRASE: Record<Room, string> = {
+  kitchen: 'kitchen',
+  bathroom: 'bathroom',
+  'living-room-tree': 'living room and tree',
+  bedroom: 'bedroom',
+  fridge: 'fridge',
+  entryway: 'entryway',
+  table: 'table',
+  'whole-house': 'whole-house',
+}
+
+/** Elf-note kinds that are a small paper item the parent writes by hand. */
+const PAPER_KINDS = new Set(['card', 'sign', 'tag', 'coupon', 'mission card', 'question card'])
 
 export default async function IdeaPage({ params }: PageProps) {
   const { slug } = await params
   const idea = getIdeaBySlug(slug)
   if (!idea) notFound()
 
-  const illustration = getIllustration(idea, 'vertical')
+  const illustration = ideaIllustration(idea, 'vertical')
+  const pinImage = getSocialImage(idea, 'vertical', sceneAlt(idea.slug))
+  const shareImage = getSocialImage(idea, 'horizontal', sceneAlt(idea.slug))
   const kitUrl = amazonKitUrl(idea.slug)
   const hasAmazonLinks = kitUrl !== null || idea.amazonItems.length > 0
+  const related = getRelatedIdeas(idea).map(toCardData)
+  const hubLinks = getHubLinks(idea)
+  const description = ideaDescription(idea)
 
   return (
-    <main className={styles.page}>
-      <p className={styles.banner}>
-        Skeleton placeholder — this is not the real idea page. The site is under construction.
-      </p>
+    <main id="main" className="wrap">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdString(howToJsonLd(idea, description, shareImage)) }} />
 
-      {illustration && (
-        <figure>
-          <IllustrationImage illustration={illustration} priority className={styles.illustration} />
-          <figcaption className={styles.small}>{ILLUSTRATION_DISCLOSURE}</figcaption>
-        </figure>
-      )}
+      <nav className="crumbs" aria-label="Breadcrumb">
+        <Link href={routes.ideas}>
+          <Icon name="back" />
+          All ideas
+        </Link>
+      </nav>
 
-      <h1>{idea.title}</h1>
+      <article className="idea">
+        {/* TITLE + FACT BAR — first on phones (Gate 2): time and mess before the tall picture */}
+        <header className="idea__head">
+          {idea.occasion && <p className="eyebrow">{idea.occasion}</p>}
+          <h1>{idea.title}</h1>
+          <dl className="facts">
+            <div className="fact">
+              <Icon name="clock" />
+              <div>
+                <dt>Time</dt>
+                <dd>{idea.time.label}</dd>
+              </div>
+            </div>
+            <div className="fact">
+              <Icon name="sparkle" />
+              <div>
+                <dt>Mess</dt>
+                <dd>{ideaLabels.mess[idea.mess]}</dd>
+              </div>
+            </div>
+            <div className="fact">
+              <Icon name="child" />
+              <div>
+                <dt>Age</dt>
+                <dd>{ideaLabels.age[idea.age]}</dd>
+              </div>
+            </div>
+            <div className="fact">
+              <Icon name="door" />
+              <div>
+                <dt>Room</dt>
+                <dd>{idea.roomLabel}</dd>
+              </div>
+            </div>
+          </dl>
+        </header>
 
-      <ul className={styles.facts}>
-        <li>{idea.time.label}</li>
-        <li>{ideaLabels.mess[idea.mess]}</li>
-        <li>{ideaLabels.age[idea.age]}</li>
-        <li>{idea.roomLabel}</li>
-      </ul>
-
-      <section>
-        <h2>Materials</h2>
-        <ul>
-          {idea.materials.map((material) => (
-            <li key={material}>{material}</li>
-          ))}
-        </ul>
-      </section>
-
-      <section>
-        <h2>Steps</h2>
-        <ol>
-          {idea.steps.map((step) => (
-            <li key={step}>{step}</li>
-          ))}
-        </ol>
-      </section>
-
-      {idea.safety.length > 0 && (
-        <section>
-          <h2>Safety</h2>
-          <ul>
-            {idea.safety.map((warning) => (
-              <li key={warning}>{warning}</li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {hasAmazonLinks && (
-        <section>
-          <h2>Find it on Amazon</h2>
-          {/* Kit button: rendered only when the idea has an Idea List in the config. */}
-          {kitUrl && (
-            <p>
-              <a href={kitUrl} rel={AMAZON_LINK_REL} target="_blank">
-                Buy the kit
-              </a>
-            </p>
-          )}
-          <ul>
-            {idea.amazonItems.map((item) => (
-              <li key={item}>
-                <a href={amazonSearchUrl(item)} rel={AMAZON_LINK_REL} target="_blank">
-                  {item}
+        {/* MAIN ILLUSTRATION (vertical) + PIN BUTTON + ILLUSTRATION DISCLOSURE */}
+        {illustration && (
+          <figure className="art idea__art">
+            <div className="art__frame">
+              <IllustrationImage illustration={illustration} priority />
+              {pinImage && (
+                <a
+                  className="pin-btn"
+                  href={pinterestPinUrl(routes.idea(idea.slug), pinImage, idea.title)}
+                  target="_blank"
+                  rel="noopener"
+                  aria-label={`Pin “${idea.title}” on Pinterest (opens in a new tab)`}
+                >
+                  <Icon name="pin" />
+                  Pin
                 </a>
-              </li>
-            ))}
-          </ul>
-          {/* The disclosure sits next to the links, on every page that has one. */}
-          <p className={styles.small}>{AMAZON_DISCLOSURE}</p>
-        </section>
-      )}
+              )}
+            </div>
+            <figcaption className="art__note">{ILLUSTRATION_DISCLOSURE}</figcaption>
+          </figure>
+        )}
 
-      <p>
-        <Link href={routes.home}>Back to all ideas</Link>
-      </p>
+        <div className="idea__main">
+          {/* MATERIALS CHECKLIST + AMAZON LINKS + DISCLOSURE NEAR THE LINKS */}
+          <section aria-labelledby="need-title" className="stack-4">
+            <h2 id="need-title">What you need</h2>
+            <ul className="checklist" role="list">
+              {idea.materials.map((material, index) => (
+                <li className="check" key={material}>
+                  <label className="check__label">
+                    <input type="checkbox" name={`material-${index + 1}`} />
+                    <span>{material}</span>
+                  </label>
+                </li>
+              ))}
+            </ul>
+            {idea.printable && (
+              <div className="callout callout--info">
+                <Icon name="print" />
+                <div>
+                  <h3 className="callout__label">Printable</h3>
+                  <p>
+                    This idea uses a {idea.printable}.{' '}
+                    <Link href={`${routes.printables}#${idea.slug}`}>Print it free from the Printables page</Link>.
+                  </p>
+                </div>
+              </div>
+            )}
+            {hasAmazonLinks && (
+              <div className="kit">
+                <h3>Find it on Amazon</h3>
+                {kitUrl && (
+                  <a className="btn btn--secondary" href={kitUrl} rel={AMAZON_LINK_REL} target="_blank">
+                    <Icon name="bag" />
+                    Get everything for this idea
+                  </a>
+                )}
+                {idea.amazonItems.length > 0 && (
+                  <ul className="buy-links" role="list">
+                    {idea.amazonItems.map((item) => (
+                      <li key={item}>
+                        <a href={amazonSearchUrl(item)} rel={AMAZON_LINK_REL} target="_blank">
+                          Search Amazon for {item}
+                          <Icon name="out" />
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                <p className="disclosure">{AMAZON_DISCLOSURE}</p>
+              </div>
+            )}
+          </section>
+
+          {/* STEPS */}
+          <section aria-labelledby="steps-title" className="stack-4">
+            <h2 id="steps-title">How to set it up</h2>
+            <ol className="steps" role="list">
+              {idea.steps.map((step, index) => (
+                <li key={step} id={`step-${index + 1}`}>
+                  <p>{step}</p>
+                </li>
+              ))}
+            </ol>
+          </section>
+
+          {/* SAFETY — exact text from the card, always visible */}
+          {idea.safety.length > 0 && (
+            <section aria-labelledby="safety-title">
+              <div className="callout callout--safety" role="note">
+                <Icon name="alert" />
+                <div>
+                  <h2 className="callout__label" id="safety-title">
+                    Safety
+                  </h2>
+                  {idea.safety.map((warning) => (
+                    <p key={warning}>{warning}</p>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
+
+          {/* ELF NOTE — only when the card has text */}
+          {idea.elfNote && (
+            <section aria-labelledby="note-title">
+              <div className="note">
+                <img className="note__elf" src="/mascot/elf-peek.svg" alt="" width={300} height={250} />
+                <h2 className="note__label" id="note-title">
+                  {idea.elfNote.kind === 'card' ? 'Elf note' : `Elf note — on the ${idea.elfNote.kind}`}
+                </h2>
+                <blockquote>{idea.elfNote.text}</blockquote>
+                {PAPER_KINDS.has(idea.elfNote.kind) && (
+                  <p className="note__hint">Copy it onto a small {idea.elfNote.kind} and leave it next to the scene.</p>
+                )}
+              </div>
+            </section>
+          )}
+
+          {/* QUICK VARIATION — ideas 6 and 26 only */}
+          {idea.variation && (
+            <section aria-labelledby="var-title">
+              <div className="callout callout--variation">
+                <Icon name="swap" />
+                <div>
+                  <h2 className="callout__label" id="var-title">
+                    Quick variation
+                  </h2>
+                  <p>{idea.variation}</p>
+                </div>
+              </div>
+            </section>
+          )}
+
+          {/* 3 RELATED IDEAS */}
+          <section aria-labelledby="related-title" className="stack-4">
+            <h2 id="related-title">Try one of these next</h2>
+            <ul className="cards cards--rows" role="list">
+              {related.map((card) => (
+                <li key={card.slug}>
+                  <IdeaCard card={card} row showAge={false} />
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* 2 HUB LINKS + the room link */}
+          <nav aria-labelledby="more-title" className="stack-3">
+            <h2 id="more-title">Keep looking</h2>
+            <ul className="hub-links" role="list">
+              {hubLinks.map(({ hub, isMember }) => (
+                <li key={hub}>
+                  <Link className="hub" href={routes.hub(hub)}>
+                    {isMember ? HUB_INFO[hub].memberLink : HUB_INFO[hub].invitationLink}
+                    <Icon name="arrow" />
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link className="hub" href={routes.ideasWith({ room: idea.room })}>
+                  More {ROOM_PHRASE[idea.room]} ideas
+                  <Icon name="arrow" />
+                </Link>
+              </li>
+            </ul>
+          </nav>
+
+          <SignupComingSoon />
+        </div>
+      </article>
     </main>
   )
 }

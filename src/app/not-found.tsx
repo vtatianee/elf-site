@@ -1,12 +1,10 @@
 /*
  * 404 page. Exported as out/404.html, which Cloudflare Pages serves for any
  * address that does not exist.
- * DEVELOPER: restyle in Phase 3; keep it light and keep the link home.
  */
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { routes } from '@/lib/routes'
-import styles from './stub.module.css'
 
 export const metadata: Metadata = {
   title: 'Page not found',
@@ -14,12 +12,20 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <main className={styles.page}>
-      <h1>Page not found</h1>
-      <p>This page has gone back to the North Pole.</p>
-      <p>
-        <Link href={routes.home}>Go to the home page</Link>
-      </p>
+    <main id="main" className="wrap">
+      <div className="empty section">
+        <img src="/mascot/elf-sleep.svg" alt="" width={420} height={180} />
+        <h1>Page not found</h1>
+        <p>This page has gone back to the North Pole.</p>
+        <div className="actions">
+          <Link className="btn" href={routes.home}>
+            Go to the home page
+          </Link>
+          <Link className="btn btn--ghost" href={routes.ideas}>
+            See all ideas
+          </Link>
+        </div>
+      </div>
     </main>
   )
 }

@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from 'next'
 import type { ReactNode } from 'react'
 import { Analytics } from '@/components/Analytics'
+import { SiteFooter } from '@/components/SiteFooter'
+import { SiteHeader } from '@/components/SiteHeader'
 import { siteConfig } from '@/config/site'
 import { fontBody, fontDisplay } from './fonts'
 
@@ -8,6 +10,7 @@ import { fontBody, fontDisplay } from './fonts'
 // The Designer owns src/styles/tokens.css.
 import '@/styles/tokens.css'
 import '@/styles/globals.css'
+import '@/styles/components.css'
 
 /**
  * Defaults for every page. Each page adds its own title, description and
@@ -35,14 +38,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang={siteConfig.locale} className={`${fontDisplay.variable} ${fontBody.variable}`}>
       <body>
-        {/* DEVELOPER: site header goes here. */}
+        <a className="skip-link" href="#main">
+          Skip to content
+        </a>
+        <SiteHeader />
         {children}
-        {/*
-          DEVELOPER: site footer goes here. It must carry, on every page:
-          the operator name (siteConfig.operator.name), the Amazon disclosure
-          where the page has Amazon links, and the non-affiliation notice
-          (handoff 01, item C7).
-        */}
+        <SiteFooter />
         <Analytics />
       </body>
     </html>

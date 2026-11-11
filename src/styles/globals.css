@@ -1,10 +1,10 @@
 /*
- * Global reset — the minimum every page needs. No colors and no design
- * decisions here: those belong to the Designer's tokens (src/styles/tokens.css),
- * imported in src/app/layout.tsx BEFORE this file.
+ * Global base — reset + element defaults. Every value comes from the
+ * Designer's tokens (src/styles/tokens.css), imported in src/app/layout.tsx
+ * BEFORE this file. Component classes live in src/styles/components.css.
  *
  * Styling rules for the project:
- * - Plain CSS only: this file + CSS Modules (`Component.module.css`).
+ * - Plain CSS only: tokens.css + this file + components.css.
  * - Values come from CSS custom properties defined in tokens.css.
  * - No UI framework, no runtime CSS-in-JS.
  */
@@ -15,30 +15,63 @@
   box-sizing: border-box;
 }
 
-* {
-  margin: 0;
-}
-
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
 
 body {
+  margin: 0;
   min-height: 100dvh;
-  line-height: 1.5;
-  /* Font files are self-hosted by next/font (see src/app/fonts.ts). */
-  font-family: var(--font-face-body), system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-page);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
   -webkit-font-smoothing: antialiased;
+}
+
+body > main {
+  flex: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+dl,
+dd,
+figure,
+blockquote {
+  margin: 0;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-face-display), var(--font-face-body), system-ui, sans-serif;
-  line-height: 1.2;
+  font-family: var(--font-display);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-display);
   text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--text-2xl);
+}
+
+h2 {
+  font-size: var(--text-xl);
+}
+
+h3 {
+  font-size: var(--text-lg);
 }
 
 p {
@@ -74,12 +107,32 @@ ol[role='list'] {
 }
 
 a {
-  color: inherit;
+  color: var(--link);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 0.09em;
+}
+
+a:hover {
+  color: var(--link-hover);
 }
 
 :focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
+  outline: var(--focus-width) solid var(--focus-ring);
+  outline-offset: var(--focus-offset);
+  border-radius: var(--radius-sm);
+}
+
+.on-night {
+  --focus-ring: var(--focus-ring-on-night);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 @media (prefers-reduced-motion: reduce) {
