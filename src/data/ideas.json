@@ -1,0 +1,3238 @@
+{
+  "meta": {
+    "source": "elf-site-estrutura-30-ideias/elf-site-estrutura-30-ideias.pdf (28 pages)",
+    "extracted": "2026-11-10",
+    "language": "en-US - faithful translation of the Portuguese source; card texts already in English are verbatim",
+    "rule": "Do not invent ideas, titles, times or materials. This file is the single source of truth for Designer and Developer.",
+    "approval": {
+      "timeMessAgeRoom": "from the PDF cards, machine-verified against the PDF's own totals",
+      "typeTags": "PENDING OWNER APPROVAL (Gate 2) - arrival, goodbye, project and interactive are fixed by the PDF; funny and cute are proposed by the PM",
+      "materialTags": "PENDING OWNER APPROVAL (Gate 2) - proposed by the PM, not in the PDF",
+      "note": "Do not build filters, /funny/ or Tonight Mode on typeTags/materialTags until they are approved."
+    },
+    "labels": {
+      "time": {
+        "2": "2 min",
+        "5": "5 min",
+        "10": "10 min",
+        "15+": "15+ min"
+      },
+      "mess": {
+        "zero": "Zero mess",
+        "low": "Low mess (2-minute cleanup)",
+        "medium": "Medium mess",
+        "high": "High mess (for the brave only)"
+      },
+      "age": {
+        "toddler": "Toddler (2-4)",
+        "kids": "Kids (5-9)",
+        "all": "All ages"
+      },
+      "room": {
+        "kitchen": "Kitchen",
+        "bathroom": "Bathroom",
+        "living-room-tree": "Living room / tree",
+        "bedroom": "Bedroom",
+        "fridge": "Fridge",
+        "entryway": "Entryway",
+        "table": "Table",
+        "whole-house": "Whole house"
+      },
+      "material": {
+        "home": "Only stuff you have",
+        "food": "Food",
+        "stationery": "Stationery",
+        "buy": "Need to buy"
+      },
+      "type": {
+        "funny": "Funny",
+        "cute": "Cute",
+        "interactive": "Interactive (the child responds)",
+        "arrival": "Arrival",
+        "goodbye": "Goodbye",
+        "project": "Project"
+      }
+    },
+    "fields": {
+      "editorNotes": "Internal. Never rendered on the site.",
+      "illustrationBrief": "Internal. Brief for the illustrator; never rendered on the site.",
+      "elfNote": "null = the PDF has no ready text; do not render the block.",
+      "amazonItems": "Search terms for Amazon links. Empty list = no Amazon item and no kit button.",
+      "safety": "Exact warnings from the card. Always rendered. Never soften or paraphrase."
+    },
+    "counts": {
+      "ideas": 60,
+      "hubs": {
+        "5-minute": 31,
+        "easy": 42,
+        "no-mess": 35,
+        "toddlers": 40,
+        "kids": 50,
+        "funny": 16,
+        "goodbye": 3,
+        "arrival": 5
+      },
+      "typeTags": {
+        "cute": 19,
+        "funny": 16,
+        "interactive": 14,
+        "goodbye": 3,
+        "arrival": 5,
+        "project": 6
+      },
+      "materialTags": {
+        "home": 25,
+        "food": 22,
+        "buy": 20,
+        "stationery": 22
+      },
+      "noElfNote": [
+        6,
+        7,
+        16,
+        17,
+        20,
+        23,
+        28,
+        30
+      ],
+      "tonightMode": {
+        "fiveMinutes": 31,
+        "fiveMinutesNoMess": 24,
+        "allThree": 12,
+        "allThreeIds": [
+          1,
+          2,
+          3,
+          6,
+          8,
+          10,
+          15,
+          25,
+          36,
+          38,
+          41,
+          56
+        ]
+      }
+    }
+  },
+  "ideas": [
+    {
+      "id": 1,
+      "slug": "movie-night-popcorn-patrol",
+      "title": "Movie Night Popcorn Patrol",
+      "lot": 1,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "zero",
+      "age": "all",
+      "room": "living-room-tree",
+      "roomLabel": "Living room",
+      "occasion": null,
+      "materials": [
+        "TV remote control",
+        "small bowl of popcorn",
+        "1 small card"
+      ],
+      "steps": [
+        "Sit the elf on the sofa or on the coffee table, holding the remote.",
+        "Put the bowl of popcorn next to it, with a few pieces “spilled” on purpose.",
+        "Card: “I picked the movie tonight. You bring the blankets!”"
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "I picked the movie tonight. You bring the blankets!"
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "microwave popcorn"
+      ],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "home",
+        "food"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers",
+        "kids"
+      ],
+      "illustrationBrief": "Sofa seen from the front, elf in the center holding a remote bigger than the elf, bowl of popcorn beside it with 3 pieces fallen and a folded blanket; simple night-blue background and a clean band at the top for the pin title.",
+      "editorNotes": []
+    },
+    {
+      "id": 2,
+      "slug": "storytime-reading-corner",
+      "title": "Storytime Reading Corner",
+      "lot": 1,
+      "time": {
+        "tag": "2",
+        "minutes": 2,
+        "label": "2 min"
+      },
+      "mess": "zero",
+      "age": "toddler",
+      "room": "bedroom",
+      "roomLabel": "Bedroom",
+      "occasion": null,
+      "materials": [
+        "a children's Christmas book",
+        "2 stuffed animals",
+        "pillow"
+      ],
+      "steps": [
+        "Set up a little corner with the pillow.",
+        "Elf sitting with the book open on its lap, stuffed animals in a half circle, listening.",
+        "Card: “Storytime at the North Pole starts with this one.”"
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "Storytime at the North Pole starts with this one."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "mini Christmas books"
+      ],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "home"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers"
+      ],
+      "illustrationBrief": "Reading corner seen from the front: elf sitting on the pillow with the book open on its lap and 2 stuffed animals in a half circle, backs to the viewer; cream bedroom background, no extra furniture.",
+      "editorNotes": []
+    },
+    {
+      "id": 3,
+      "slug": "shoe-shoe-train",
+      "title": "Shoe-Shoe Train",
+      "lot": 1,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "zero",
+      "age": "all",
+      "room": "entryway",
+      "roomLabel": "Entryway",
+      "occasion": null,
+      "materials": [
+        "3 to 4 family shoes in a row",
+        "small stuffed animals",
+        "jingle bells (optional)"
+      ],
+      "steps": [
+        "Line up the shoes like train cars in the hallway.",
+        "Elf in the first shoe as the engineer, one stuffed animal in each “car”.",
+        "Card: “All aboard the North Pole Express! Next stop: breakfast.”"
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "All aboard the North Pole Express! Next stop: breakfast."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "jingle bells"
+      ],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "home"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers",
+        "kids"
+      ],
+      "illustrationBrief": "Low side view of the row of 3-4 shoes as train cars, elf engineer in the first shoe and one stuffed animal per car; simple hallway, gold jingle bells on 2 cars.",
+      "editorNotes": []
+    },
+    {
+      "id": 4,
+      "slug": "toothbrush-delivery-elf",
+      "title": "Toothbrush Delivery Elf",
+      "lot": 1,
+      "time": {
+        "tag": "2",
+        "minutes": 2,
+        "label": "2 min"
+      },
+      "mess": "zero",
+      "age": "all",
+      "room": "bathroom",
+      "roomLabel": "Bathroom",
+      "occasion": null,
+      "materials": [
+        "new kids' toothbrush (ideally a themed one)",
+        "small ribbon bow"
+      ],
+      "steps": [
+        "Tie the bow on the new toothbrush.",
+        "Elf sitting on the sink holding the toothbrush like a trophy.",
+        "Card: “Santa checks smiles too. New brush, day one!”"
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "Santa checks smiles too. New brush, day one!"
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "themed kids' toothbrush"
+      ],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "buy"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers",
+        "kids"
+      ],
+      "illustrationBrief": "Bathroom sink from the front, elf sitting and holding the new toothbrush upright like a trophy, with a red bow; mirror behind with only the blurred reflection of the hat - no text on the mirror.",
+      "editorNotes": []
+    },
+    {
+      "id": 5,
+      "slug": "tangled-in-christmas-lights",
+      "title": "Tangled in Christmas Lights",
+      "lot": 1,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "zero",
+      "age": "all",
+      "room": "living-room-tree",
+      "roomLabel": "Living room",
+      "occasion": null,
+      "materials": [
+        "short string of battery-powered LED lights (never plugged into a wall outlet with the child nearby)",
+        "card"
+      ],
+      "steps": [
+        "Wrap the string loosely around the elf, as if it had fallen while decorating.",
+        "Leave the end with the battery box visible, as “proof” of the mischief.",
+        "Card: “Decorating is harder than it looks. Help?”"
+      ],
+      "safety": [
+        "Battery-powered LED lights only - never plugged into a wall outlet with the child nearby."
+      ],
+      "elfNote": {
+        "kind": "card",
+        "text": "Decorating is harder than it looks. Help?"
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "battery-powered LED string lights"
+      ],
+      "typeTags": [
+        "funny"
+      ],
+      "materialTags": [
+        "buy"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers",
+        "kids",
+        "funny"
+      ],
+      "illustrationBrief": "Elf sitting on the floor, wrapped in loose loops of the light string with lit gold bulbs, battery box visible beside it; darkened living-room background in navy blue.",
+      "editorNotes": []
+    },
+    {
+      "id": 6,
+      "slug": "hiding-in-the-christmas-tree",
+      "title": "Hiding in the Christmas Tree",
+      "lot": 1,
+      "time": {
+        "tag": "2",
+        "minutes": 2,
+        "label": "2 min"
+      },
+      "mess": "zero",
+      "age": "all",
+      "room": "living-room-tree",
+      "roomLabel": "Christmas tree",
+      "occasion": null,
+      "materials": [
+        "just the elf and a sturdy tree branch"
+      ],
+      "steps": [
+        "Hide the elf among the branches, at the child's eye level, with only the head and one arm sticking out.",
+        "No card: the fun is that the child takes a while to find it.",
+        "Variation: move to a different branch the next night and turn it into a 2-day hunt."
+      ],
+      "safety": [],
+      "elfNote": null,
+      "variation": "Move the elf to a different branch the next night and turn it into a 2-day hunt.",
+      "printable": null,
+      "amazonItems": [
+        "extra miniature hat"
+      ],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "home"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers",
+        "kids"
+      ],
+      "illustrationBrief": "Whole tree in a vertical frame, elf hidden among the branches at mid-height, only head and one little arm out; second version as a close-up of the same branch for the page carousel.",
+      "editorNotes": [
+        "The card says “no card” for this idea: no elf note block.",
+        "The second close-up illustration for a carousel is out of the MVP (one illustration per idea)."
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "letter-to-santa-station",
+      "title": "Letter to Santa Station",
+      "lot": 1,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "low",
+      "age": "kids",
+      "room": "table",
+      "roomLabel": "Table",
+      "occasion": null,
+      "materials": [
+        "paper",
+        "envelope",
+        "colored pencils",
+        "stickers",
+        "a small box as the “mailbox”"
+      ],
+      "steps": [
+        "Set up the station on the table with everything organized.",
+        "Elf holding a mini envelope addressed “To: Santa, North Pole”.",
+        "A card inviting the child to write their own letter that day - you collect it and “mail” it at night."
+      ],
+      "safety": [],
+      "elfNote": null,
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "letters to Santa kit"
+      ],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "home",
+        "stationery"
+      ],
+      "hubs": [
+        "kids"
+      ],
+      "illustrationBrief": "Top view (illustrated flat lay) of the table: paper, envelope, colored pencils and mailbox in an organized grid, elf holding the mini envelope in the bottom corner.",
+      "editorNotes": [
+        "The PDF describes a card but gives no wording: no elf note block until Marketing drafts one (Phase 4)."
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "trapped-in-a-jar",
+      "title": "Trapped in a Jar",
+      "lot": 1,
+      "time": {
+        "tag": "2",
+        "minutes": 2,
+        "label": "2 min"
+      },
+      "mess": "zero",
+      "age": "all",
+      "room": "kitchen",
+      "roomLabel": "Kitchen",
+      "occasion": null,
+      "materials": [
+        "large clear glass or plastic jar, with the lid left open"
+      ],
+      "steps": [
+        "Sit the elf inside the open jar, on the counter.",
+        "Rest its little hands against the glass.",
+        "Card on the outside: “I climbed in for a cookie. I regret nothing. Please let me out.”"
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "I climbed in for a cookie. I regret nothing. Please let me out."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "large clear jars"
+      ],
+      "typeTags": [
+        "funny"
+      ],
+      "materialTags": [
+        "home"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers",
+        "kids",
+        "funny"
+      ],
+      "illustrationBrief": "Front close-up of the open clear jar on the counter, elf sitting inside with its little hands against the glass and the little card propped outside, facing the viewer.",
+      "editorNotes": []
+    },
+    {
+      "id": 9,
+      "slug": "christmas-countdown-chain",
+      "title": "Christmas Countdown Chain",
+      "lot": 1,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "low",
+      "age": "kids",
+      "room": "living-room-tree",
+      "roomLabel": "Living room",
+      "occasion": null,
+      "materials": [
+        "strips of red and green paper",
+        "glue or stapler (adult use only)",
+        "marker"
+      ],
+      "steps": [
+        "Make a chain with as many links as there are days left until Christmas.",
+        "Elf holding the first link and the scissors (closed, decorative).",
+        "Card: “Tear off one link every morning. When the chain is gone... he is coming!”"
+      ],
+      "safety": [
+        "Glue or stapler: adult use only."
+      ],
+      "elfNote": {
+        "kind": "card",
+        "text": "Tear off one link every morning. When the chain is gone... he is coming!"
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "colored paper"
+      ],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "stationery"
+      ],
+      "hubs": [
+        "kids"
+      ],
+      "illustrationBrief": "Red and green paper chain coming down diagonally across the door, elf at the top holding the first link; count the links in the illustration so they match the days left.",
+      "editorNotes": [
+        "Step 2 mentions closed, decorative scissors that are not in the materials list. Never draw scissors in use."
+      ]
+    },
+    {
+      "id": 10,
+      "slug": "sleeping-in-a-stocking",
+      "title": "Sleeping in a Stocking",
+      "lot": 1,
+      "time": {
+        "tag": "2",
+        "minutes": 2,
+        "label": "2 min"
+      },
+      "mess": "zero",
+      "age": "toddler",
+      "room": "living-room-tree",
+      "roomLabel": "Fireplace / wall",
+      "occasion": null,
+      "materials": [
+        "hanging Christmas stocking",
+        "cotton or a small handkerchief as a blanket"
+      ],
+      "steps": [
+        "Tuck the elf inside the stocking, with only the head out.",
+        "Cotton on the edge as a pillow.",
+        "Minimal card: “Zzz... five more minutes.” - the perfect idea for the night you almost forgot."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "Zzz... five more minutes."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "extra Christmas stocking"
+      ],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "home"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers"
+      ],
+      "illustrationBrief": "Close-up of the hanging Christmas stocking, elf inside with only the head out and cotton on the edge as a pillow; tree in the background only as out-of-focus spots of light.",
+      "editorNotes": []
+    },
+    {
+      "id": 11,
+      "slug": "flour-snow-angel",
+      "title": "Flour Snow Angel",
+      "lot": 1,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "medium",
+      "age": "all",
+      "room": "kitchen",
+      "roomLabel": "Kitchen",
+      "occasion": null,
+      "materials": [
+        "1 cup of flour (or powdered sugar)",
+        "large shallow tray"
+      ],
+      "steps": [
+        "Spread the flour on the tray - the tray contains the mess and makes cleanup easier.",
+        "Lay the elf down and move its arms and legs to draw the angel, then sit it next to its work.",
+        "Card: “It snowed in your kitchen last night. I checked.”"
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "It snowed in your kitchen last night. I checked."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "shallow tray"
+      ],
+      "typeTags": [
+        "funny"
+      ],
+      "materialTags": [
+        "home",
+        "food"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "toddlers",
+        "kids",
+        "funny"
+      ],
+      "illustrationBrief": "Top view of the shallow tray: angel drawn in the flour in the center and elf sitting on the edge, proud, with flour on its hands; it is the sister scene of the cover - keep the same tray and the same light.",
+      "editorNotes": []
+    },
+    {
+      "id": 12,
+      "slug": "toilet-paper-tree-makeover",
+      "title": "Toilet Paper Tree Makeover",
+      "lot": 1,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "medium",
+      "age": "kids",
+      "room": "living-room-tree",
+      "roomLabel": "Christmas tree",
+      "occasion": null,
+      "materials": [
+        "1 roll of toilet paper",
+        "small bows (optional)"
+      ],
+      "steps": [
+        "Wrap the paper around the tree like a disastrous garland, leaving loose ends hanging.",
+        "Elf at the top holding the roll, as if caught in the act.",
+        "Card: “I helped decorate. You are welcome.”"
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "I helped decorate. You are welcome."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [],
+      "typeTags": [
+        "funny"
+      ],
+      "materialTags": [
+        "home"
+      ],
+      "hubs": [
+        "kids",
+        "funny"
+      ],
+      "illustrationBrief": "Whole tree wrapped in a messy spiral band of toilet paper, elf at the top holding the roll; leave the top third clean for the pin title.",
+      "editorNotes": [
+        "PDF: no Amazon item - “100% stuff you have” badge. PDF: this one goes to /funny/, not /no-mess/."
+      ]
+    },
+    {
+      "id": 13,
+      "slug": "marshmallow-bubble-bath",
+      "title": "Marshmallow Bubble Bath",
+      "lot": 1,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "low",
+      "age": "all",
+      "room": "bathroom",
+      "roomLabel": "Bathroom",
+      "occasion": null,
+      "materials": [
+        "1 bag of mini marshmallows",
+        "a bowl or the clean sink",
+        "rubber duck (optional)"
+      ],
+      "steps": [
+        "Fill the bowl/sink with marshmallows as if they were foam.",
+        "Elf reclining in the middle, only head and feet out.",
+        "Card: “North Pole spa day. Do not disturb.”"
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "North Pole spa day. Do not disturb."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "mini marshmallows"
+      ],
+      "typeTags": [
+        "funny"
+      ],
+      "materialTags": [
+        "food",
+        "buy"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "toddlers",
+        "kids",
+        "funny"
+      ],
+      "illustrationBrief": "Top view of the bowl-sink full of marshmallows as foam, elf reclining in the middle with only head and feet out and the yellow duck beside it.",
+      "editorNotes": [
+        "PDF: mini marshmallows are the central item of the kit."
+      ]
+    },
+    {
+      "id": 14,
+      "slug": "toothpaste-mirror-message",
+      "title": "Toothpaste Mirror Message",
+      "lot": 1,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "low",
+      "age": "kids",
+      "room": "bathroom",
+      "roomLabel": "Bathroom",
+      "occasion": null,
+      "materials": [
+        "toothpaste",
+        "bathroom mirror"
+      ],
+      "steps": [
+        "With a finger or a cotton swab, write a short message in a thin layer of toothpaste in the corner of the mirror: “BRUSH! - your elf”.",
+        "Elf sitting on the sink holding the open toothpaste.",
+        "Cleanup the next day: warm water and paper."
+      ],
+      "safety": [
+        "Cleanup the next day: warm water and paper."
+      ],
+      "elfNote": {
+        "kind": "mirror message",
+        "text": "BRUSH! - your elf"
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [],
+      "typeTags": [
+        "funny"
+      ],
+      "materialTags": [
+        "home"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "kids",
+        "funny"
+      ],
+      "illustrationBrief": "Bathroom mirror with the word BRUSH! handwritten in the corner (text drawn on the text layer, never AI-generated), elf sitting on the sink holding the open toothpaste tube.",
+      "editorNotes": [
+        "PDF aside removed from step 3: “say this on the page, parents will thank you”. PDF: no Amazon item - household materials."
+      ]
+    },
+    {
+      "id": 15,
+      "slug": "silly-banana-bunch",
+      "title": "Silly Banana Bunch",
+      "lot": 1,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "zero",
+      "age": "toddler",
+      "room": "kitchen",
+      "roomLabel": "Kitchen",
+      "occasion": null,
+      "materials": [
+        "bunch of bananas",
+        "regular pen or food-safe pen"
+      ],
+      "steps": [
+        "Draw a different face on each banana: sleepy, startled, laughing.",
+        "Elf sitting in the fruit bowl holding the pen.",
+        "Card: “The bananas were boring. I fixed them.” - the bananas become the snack of the day."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "The bananas were boring. I fixed them."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "food-safe pen"
+      ],
+      "typeTags": [
+        "funny"
+      ],
+      "materialTags": [
+        "home",
+        "food"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers",
+        "funny"
+      ],
+      "illustrationBrief": "Close-up of the bunch with 4-5 bananas, each with a different face, elf sitting in the fruit bowl holding the pen; kitchen background in 2 flat colors.",
+      "editorNotes": []
+    },
+    {
+      "id": 16,
+      "slug": "sink-fishing-trip",
+      "title": "Sink Fishing Trip",
+      "lot": 1,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "low",
+      "age": "all",
+      "room": "kitchen",
+      "roomLabel": "Kitchen",
+      "occasion": null,
+      "materials": [
+        "small stick or pencil (the rod)",
+        "string",
+        "paper clip (the hook)",
+        "fish-shaped crackers",
+        "bowl with a little water or blue paper"
+      ],
+      "steps": [
+        "Make the rod with the string and the paper clip.",
+        "Elf sitting on the edge of the sink/bowl, “fishing”.",
+        "Scatter the little fish in the “water” and put 2 or 3 already “caught” beside the elf."
+      ],
+      "safety": [],
+      "elfNote": null,
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "fish-shaped crackers"
+      ],
+      "typeTags": [
+        "funny"
+      ],
+      "materialTags": [
+        "food",
+        "buy"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "toddlers",
+        "kids",
+        "funny"
+      ],
+      "illustrationBrief": "Side view of the sink: elf on the edge holding the little rod diagonally over the blue bowl, 3 golden fish in the water and 2 already caught on a small plate beside it.",
+      "editorNotes": [
+        "No card in the PDF: no elf note block until Marketing drafts one (Phase 4)."
+      ]
+    },
+    {
+      "id": 17,
+      "slug": "sticky-note-surprise-wall",
+      "title": "Sticky Note Surprise Wall",
+      "lot": 1,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "zero",
+      "age": "kids",
+      "room": "bedroom",
+      "roomLabel": "Bedroom door",
+      "occasion": null,
+      "materials": [
+        "pad of colored sticky notes",
+        "marker"
+      ],
+      "steps": [
+        "Stick the notes on the door in the shape of a Christmas tree or a big star.",
+        "On 3 or 4 notes, write short compliments for the child.",
+        "Elf sitting under the “artwork” with the marker in hand."
+      ],
+      "safety": [],
+      "elfNote": null,
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "colored sticky notes"
+      ],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "stationery"
+      ],
+      "hubs": [
+        "easy",
+        "no-mess",
+        "kids"
+      ],
+      "illustrationBrief": "Door from the front, whole in the vertical frame: colored sticky notes forming a tree, elf sitting underneath with the marker; leave 3-4 notes blank to receive the compliments on the text layer.",
+      "editorNotes": [
+        "No card in the PDF: no elf note block until Marketing drafts one (Phase 4)."
+      ]
+    },
+    {
+      "id": 18,
+      "slug": "elf-zipline-adventure",
+      "title": "Elf Zipline Adventure",
+      "lot": 1,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "zero",
+      "age": "kids",
+      "room": "living-room-tree",
+      "roomLabel": "Living room",
+      "occasion": null,
+      "materials": [
+        "long string or dental floss",
+        "2 anchor points (doorknob and bookshelf)",
+        "a candy cane as the hook"
+      ],
+      "steps": [
+        "Stretch the line diagonally, nice and tight, out of the way of where people walk.",
+        "Hang the elf by the candy cane passed under its arms, in the middle of the run.",
+        "Card: “Fastest way to the cookies. Science.”"
+      ],
+      "safety": [
+        "Stretch the line nice and tight, out of the way of where people walk."
+      ],
+      "elfNote": {
+        "kind": "card",
+        "text": "Fastest way to the cookies. Science."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "candy canes"
+      ],
+      "typeTags": [
+        "funny"
+      ],
+      "materialTags": [
+        "food",
+        "buy"
+      ],
+      "hubs": [
+        "easy",
+        "no-mess",
+        "kids",
+        "funny"
+      ],
+      "illustrationBrief": "Strong diagonal from corner to corner: zipline string crossing the living room, elf hanging by the candy cane in the middle of the run, simplified sofa and bookshelf at the ends.",
+      "editorNotes": [
+        "The PDF overview table lists “mini zipline kit / clips”; the card lists candy canes. The card wins."
+      ]
+    },
+    {
+      "id": 19,
+      "slug": "sweet-spaghetti-breakfast",
+      "title": "Sweet Spaghetti Breakfast",
+      "lot": 1,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "medium",
+      "age": "kids",
+      "room": "kitchen",
+      "roomLabel": "Kitchen",
+      "occasion": null,
+      "materials": [
+        "a small plate of cooked spaghetti (leftovers are fine)",
+        "syrup",
+        "colored sprinkles",
+        "marshmallows"
+      ],
+      "steps": [
+        "Put together a little plate of “elf breakfast” spaghetti, with syrup and sprinkles on top.",
+        "Elf sitting behind the plate with a fork bigger than the elf.",
+        "Card: “Breakfast at the North Pole is different. Try it?” - the child decides whether to taste it."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "Breakfast at the North Pole is different. Try it?"
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "Christmas sprinkles"
+      ],
+      "typeTags": [
+        "funny"
+      ],
+      "materialTags": [
+        "food",
+        "buy"
+      ],
+      "hubs": [
+        "kids",
+        "funny"
+      ],
+      "illustrationBrief": "Close-up of the little plate of spaghetti with syrup and sprinkles, fork bigger than the elf behind the plate; out-of-focus kitchen background in warm tones.",
+      "editorNotes": []
+    },
+    {
+      "id": 20,
+      "slug": "candy-cane-sled",
+      "title": "Candy Cane Sled",
+      "lot": 1,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "low",
+      "age": "all",
+      "room": "living-room-tree",
+      "roomLabel": "Living room",
+      "occasion": null,
+      "materials": [
+        "4 candy canes",
+        "popsicle sticks or cardboard (base)",
+        "hot glue (adult only) or tape",
+        "mini paper presents"
+      ],
+      "steps": [
+        "Two candy canes become the runners; the base goes on top.",
+        "Another two form the backrest.",
+        "Elf sitting on the sled with the mini presents behind, on cotton “snow”."
+      ],
+      "safety": [
+        "Hot glue: adult only."
+      ],
+      "elfNote": null,
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "candy canes"
+      ],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "food",
+        "buy"
+      ],
+      "hubs": [
+        "toddlers",
+        "kids"
+      ],
+      "illustrationBrief": "Profile of the sled on the cotton snow: 2 candy canes as runners, base of sticks, elf sitting with 2 mini presents behind; flat light-blue background.",
+      "editorNotes": [
+        "No card in the PDF: no elf note block until Marketing drafts one (Phase 4).",
+        "PDF: most clickable kit on the list. Step 3 uses cotton, which is not in the materials list."
+      ]
+    },
+    {
+      "id": 21,
+      "slug": "hot-cocoa-stand-helper",
+      "title": "Hot Cocoa Stand Helper",
+      "lot": 1,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "low",
+      "age": "all",
+      "room": "kitchen",
+      "roomLabel": "Kitchen",
+      "occasion": null,
+      "materials": [
+        "small mug",
+        "hot chocolate mix",
+        "mini marshmallows",
+        "small paper sign"
+      ],
+      "steps": [
+        "Set up a mini stand: small sign reading “ELF COCOA - 1 HUG”.",
+        "Elf behind the mug as the server, marshmallows in a little pot beside it.",
+        "In the morning, the family makes the hot chocolate together - the idea becomes an activity, not just a scene."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "sign",
+        "text": "ELF COCOA - 1 HUG"
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "mini mugs"
+      ],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "food",
+        "buy"
+      ],
+      "hubs": [
+        "toddlers",
+        "kids"
+      ],
+      "illustrationBrief": "Mini stand from the front: blank sign at the top (the text ELF COCOA - 1 HUG goes on the text layer), elf behind the mug as the server and a little pot of marshmallows beside it.",
+      "editorNotes": []
+    },
+    {
+      "id": 22,
+      "slug": "cookie-baking-disaster",
+      "title": "Cookie Baking Disaster",
+      "lot": 1,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "medium",
+      "age": "all",
+      "room": "kitchen",
+      "roomLabel": "Kitchen",
+      "occasion": null,
+      "materials": [
+        "a pinch of flour on the counter",
+        "rolling pin (a mini one or your own)",
+        "cookie cutters",
+        "2 ready-made cookies"
+      ],
+      "steps": [
+        "Flour spread on just one corner of the counter, and little footprints leading to the elf.",
+        "Elf sitting holding the cutter, a bitten cookie beside it.",
+        "Card: “Quality control. The cookies passed.”"
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "Quality control. The cookies passed."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "miniature kitchen utensils"
+      ],
+      "typeTags": [
+        "funny"
+      ],
+      "materialTags": [
+        "home",
+        "food"
+      ],
+      "hubs": [
+        "toddlers",
+        "kids",
+        "funny"
+      ],
+      "illustrationBrief": "Counter seen diagonally: trail of little flour footprints up to the elf, who holds the cutter with a bitten cookie beside it; keep the flour in just one corner of the frame.",
+      "editorNotes": []
+    },
+    {
+      "id": 23,
+      "slug": "milk-and-cookies-taste-test",
+      "title": "Milk and Cookies Taste Test",
+      "lot": 1,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "low",
+      "age": "kids",
+      "room": "kitchen",
+      "roomLabel": "Kitchen",
+      "occasion": null,
+      "materials": [
+        "3 kinds of cookie",
+        "small cups of milk",
+        "paper score sheet with stars to color in"
+      ],
+      "steps": [
+        "A row of cookies numbered 1 to 3.",
+        "Elf with a pencil over the sheet, “rating” them to practice for the night of the 24th.",
+        "The child does the real test at snack time and compares their scores with the elf's."
+      ],
+      "safety": [],
+      "elfNote": null,
+      "variation": null,
+      "printable": "rating sheet",
+      "amazonItems": [],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "food",
+        "stationery"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "kids"
+      ],
+      "illustrationBrief": "Top view of the row of 3 numbered cookies, little cups of milk beside them and the rating sheet with blank stars under the elf's pencil.",
+      "editorNotes": [
+        "No card in the PDF: no elf note block until Marketing drafts one (Phase 4).",
+        "PDF: the affiliate slot is the site's own printable rating sheet, not an Amazon item."
+      ]
+    },
+    {
+      "id": 24,
+      "slug": "gingerbread-house-inspector",
+      "title": "Gingerbread House Inspector",
+      "lot": 1,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "zero",
+      "age": "all",
+      "room": "table",
+      "roomLabel": "Table",
+      "occasion": null,
+      "materials": [
+        "the family's gingerbread house (or a large cookie)",
+        "paper clipboard",
+        "mini pencil",
+        "toy magnifying glass"
+      ],
+      "steps": [
+        "Elf next to the house with the “official inspection” clipboard.",
+        "Checklist on the paper: “Walls: strong. Roof: delicious. Approved!”",
+        "If there is no house, the elf inspects any cookie - the joke still works."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "checklist",
+        "text": "Walls: strong. Roof: delicious. Approved!"
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "gingerbread house kit"
+      ],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "food"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers",
+        "kids"
+      ],
+      "illustrationBrief": "Scale contrast: large gingerbread house filling half the frame, small elf beside it with clipboard and magnifying glass; clipboard checklist left blank for the text layer.",
+      "editorNotes": [
+        "PDF: highest-ticket kit on the list."
+      ]
+    },
+    {
+      "id": 25,
+      "slug": "kindness-mission-card",
+      "title": "Kindness Mission Card",
+      "lot": 1,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "zero",
+      "age": "all",
+      "room": "whole-house",
+      "roomLabel": "Any room",
+      "occasion": null,
+      "materials": [
+        "a card (printable from the site or handmade)",
+        "envelope"
+      ],
+      "steps": [
+        "Elf holding the “TOP SECRET MISSION” envelope.",
+        "Inside, the mission of the day: “Today: draw a picture for someone you love.”",
+        "Rotation of simple missions: help set the table, donate a toy, say thank you to someone."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "mission card",
+        "text": "Today: draw a picture for someone you love."
+      },
+      "variation": null,
+      "printable": "kindness mission card",
+      "amazonItems": [],
+      "typeTags": [
+        "interactive"
+      ],
+      "materialTags": [
+        "home",
+        "stationery"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers",
+        "kids"
+      ],
+      "illustrationBrief": "Large envelope in the foreground with the TOP SECRET stamp (text on the text layer), elf peeking from behind it; simple bedroom background, no distractions.",
+      "editorNotes": [
+        "PDF: no Amazon item - this idea is the entry point to the site's own printables pack. Envelope label: TOP SECRET MISSION."
+      ]
+    },
+    {
+      "id": 26,
+      "slug": "candy-cane-scavenger-hunt",
+      "title": "Candy Cane Scavenger Hunt",
+      "lot": 1,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "zero",
+      "age": "kids",
+      "room": "whole-house",
+      "roomLabel": "Whole house",
+      "occasion": null,
+      "materials": [
+        "5 candy canes",
+        "card with the count"
+      ],
+      "steps": [
+        "Hide 5 candy canes in places that are visible for the child's age (nothing up high or inside furniture).",
+        "Elf at the entrance with the card: “I hid 5 candy canes. Can you find them all before breakfast?”",
+        "Toddler variation: 3 candy canes, all in the same room."
+      ],
+      "safety": [
+        "Hide them in places visible for the child's age - nothing up high or inside furniture."
+      ],
+      "elfNote": {
+        "kind": "card",
+        "text": "I hid 5 candy canes. Can you find them all before breakfast?"
+      },
+      "variation": "Toddler version: 3 candy canes, all in the same room.",
+      "printable": null,
+      "amazonItems": [
+        "candy canes (large pack)"
+      ],
+      "typeTags": [
+        "interactive"
+      ],
+      "materialTags": [
+        "food",
+        "buy"
+      ],
+      "hubs": [
+        "easy",
+        "no-mess",
+        "kids"
+      ],
+      "illustrationBrief": "Wide living room with 1 candy cane visible behind the cushion in the foreground and the elf at the entrance with the count card; the other 4 stay out of frame.",
+      "editorNotes": []
+    },
+    {
+      "id": 27,
+      "slug": "build-a-snowman-challenge",
+      "title": "Build-a-Snowman Challenge",
+      "lot": 1,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "low",
+      "age": "all",
+      "room": "table",
+      "roomLabel": "Table",
+      "occasion": null,
+      "materials": [
+        "3 large marshmallows",
+        "toothpicks",
+        "tiny sprinkles",
+        "a finished mini snowman as the “example”"
+      ],
+      "steps": [
+        "Build a marshmallow snowman and sit the elf beside it, proud.",
+        "Leave a second kit unassembled with the card: “My record is 2 minutes. Beat it!”",
+        "The child builds their own at breakfast - and eats the result."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "My record is 2 minutes. Beat it!"
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "large marshmallows"
+      ],
+      "typeTags": [
+        "interactive"
+      ],
+      "materialTags": [
+        "food",
+        "buy"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "toddlers",
+        "kids"
+      ],
+      "illustrationBrief": "Two snowmen side by side on the table: the finished marshmallow one and the unassembled kit (3 marshmallows, toothpicks, sprinkles), elf sitting between the two pointing at the kit.",
+      "editorNotes": [
+        "The PDF overview table lists “marshmallow / toothpick kit”; the card lists large marshmallows. The card wins."
+      ]
+    },
+    {
+      "id": 28,
+      "slug": "nice-list-certificate",
+      "title": "Nice List Certificate",
+      "lot": 1,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "zero",
+      "age": "all",
+      "room": "bedroom",
+      "roomLabel": "Bedroom",
+      "occasion": null,
+      "materials": [
+        "printable certificate (download from the site)",
+        "gold ribbon",
+        "pen"
+      ],
+      "steps": [
+        "Fill in the certificate with the child's name and one specific quality of theirs this year.",
+        "Roll it up like a diploma with the ribbon.",
+        "Elf sleeping on the diploma on the bed or at the bedroom door, so it is the first thing seen on waking up."
+      ],
+      "safety": [],
+      "elfNote": null,
+      "variation": null,
+      "printable": "Nice List certificate",
+      "amazonItems": [
+        "certificate paper"
+      ],
+      "typeTags": [
+        "interactive"
+      ],
+      "materialTags": [
+        "stationery"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers",
+        "kids"
+      ],
+      "illustrationBrief": "Diploma unrolled diagonally on the bed, gold ribbon beside it and elf sleeping on its corner; name area left blank - never generate a name in the image.",
+      "editorNotes": [
+        "No card in the PDF - the certificate is the message. No elf note block. PDF: the file is the site's own product."
+      ]
+    },
+    {
+      "id": 29,
+      "slug": "would-you-rather-card",
+      "title": "Would You Rather Card",
+      "lot": 1,
+      "time": {
+        "tag": "2",
+        "minutes": 2,
+        "label": "2 min"
+      },
+      "mess": "zero",
+      "age": "kids",
+      "room": "table",
+      "roomLabel": "Breakfast table",
+      "occasion": null,
+      "materials": [
+        "a card with a “would you rather?” question (printable from the site)"
+      ],
+      "steps": [
+        "Elf in the child's seat at the table, holding the card: “Would you rather ride a reindeer or drive the sleigh?”",
+        "The family answers at breakfast; the answer becomes the next day's card, in a cycle that lasts the whole season.",
+        "A series of 24 questions makes one printable set."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "question card",
+        "text": "Would you rather ride a reindeer or drive the sleigh?"
+      },
+      "variation": null,
+      "printable": "would-you-rather cards",
+      "amazonItems": [],
+      "typeTags": [
+        "interactive"
+      ],
+      "materialTags": [
+        "stationery"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "kids"
+      ],
+      "illustrationBrief": "Breakfast table from the front: elf in the child's seat holding a large blank card (the question goes on the text layer), simplified cup and plate beside it.",
+      "editorNotes": [
+        "PDF aside removed from step 3: the 24-question printable “feeds the daily email”. PDF: no Amazon item - own printable.",
+        "The PDF gives 1 question; the other 23 are drafted by Marketing in Phase 4 for approval."
+      ]
+    },
+    {
+      "id": 30,
+      "slug": "farewell-letter-and-photo",
+      "title": "Farewell Letter and Photo",
+      "lot": 1,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "zero",
+      "age": "all",
+      "room": "living-room-tree",
+      "roomLabel": "Christmas tree",
+      "occasion": "Night of December 24",
+      "materials": [
+        "farewell letter (template from the site)",
+        "small picture frame",
+        "the favorite photo of the season"
+      ],
+      "steps": [
+        "On the morning of the 24th, elf sitting by the tree with the letter: it says thank you, mentions 2 real moments of the child's year and promises to come back.",
+        "The frame with the photo becomes the keepsake that stays all year.",
+        "At night, the elf “leaves” - the letter explains that only Santa can touch the elf at the farewell, settling the no-touching rule with affection."
+      ],
+      "safety": [],
+      "elfNote": null,
+      "variation": null,
+      "printable": "farewell letter template",
+      "amazonItems": [
+        "small picture frame"
+      ],
+      "typeTags": [
+        "goodbye"
+      ],
+      "materialTags": [
+        "stationery",
+        "buy"
+      ],
+      "hubs": [
+        "easy",
+        "no-mess",
+        "toddlers",
+        "kids",
+        "goodbye"
+      ],
+      "illustrationBrief": "Under the tree at night: open letter and frame with the silhouette of the favorite photo (no real child's face), elf sitting between the two with the tree lights as gold dots in the background.",
+      "editorNotes": [
+        "The PDF gives no letter wording: no elf note block; Marketing drafts the farewell letter in Phase 4 for approval."
+      ]
+    },
+    {
+      "id": 31,
+      "slug": "im-back-arrival-banner",
+      "title": "I'm Back! Arrival Banner",
+      "lot": 2,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "zero",
+      "age": "all",
+      "room": "living-room-tree",
+      "roomLabel": "Living room",
+      "occasion": null,
+      "materials": [
+        "blank paper banner",
+        "markers",
+        "string",
+        "tape",
+        "1 card"
+      ],
+      "steps": [
+        "Put up the banner on the wall or on the living-room door the night before the arrival, with the name space left blank.",
+        "Elf sitting under the banner holding the marker, as if it had just finished writing.",
+        "Card: “I'm back! I missed you all year. Let the December fun begin!”"
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "I'm back! I missed you all year. Let the December fun begin!"
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "printable welcome banner",
+        "paper banner kit"
+      ],
+      "typeTags": [
+        "arrival"
+      ],
+      "materialTags": [
+        "home",
+        "stationery"
+      ],
+      "hubs": [
+        "easy",
+        "no-mess",
+        "toddlers",
+        "kids",
+        "arrival"
+      ],
+      "illustrationBrief": "Living-room wall from the front: blank banner in an arc at the top (the text goes on the text layer), elf underneath holding the marker, little bells at the ends of the string.",
+      "editorNotes": [
+        "PDF aside removed from step 1: the blank name space is “for the site's text layer”."
+      ]
+    },
+    {
+      "id": 32,
+      "slug": "north-pole-arrival-breakfast",
+      "title": "North Pole Arrival Breakfast",
+      "lot": 2,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "low",
+      "age": "all",
+      "room": "kitchen",
+      "roomLabel": "Kitchen",
+      "occasion": null,
+      "materials": [
+        "mini pancakes (ready-made or from a mix)",
+        "strawberries",
+        "whipped cream",
+        "small plate",
+        "small paper sign"
+      ],
+      "steps": [
+        "On the morning of the arrival, put together a little plate of mini pancakes with strawberry and whipped cream - an elf-sized portion.",
+        "Elf behind the plate with the welcome sign.",
+        "Card: “Breakfast is on me today. North Pole recipe - extra tiny!” The family makes the big version together."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "Breakfast is on me today. North Pole recipe - extra tiny!"
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "mini pancake mix",
+        "mini pancake pan"
+      ],
+      "typeTags": [
+        "arrival"
+      ],
+      "materialTags": [
+        "food",
+        "buy"
+      ],
+      "hubs": [
+        "toddlers",
+        "kids",
+        "arrival"
+      ],
+      "illustrationBrief": "Kitchen table from the front: stack of mini pancakes with strawberry on the little plate, elf behind it holding the blank sign, small cup beside it; bright morning light.",
+      "editorNotes": []
+    },
+    {
+      "id": 33,
+      "slug": "special-delivery-arrival-box",
+      "title": "Special Delivery Arrival Box",
+      "lot": 2,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "zero",
+      "age": "all",
+      "room": "entryway",
+      "roomLabel": "Entryway",
+      "occasion": null,
+      "materials": [
+        "small paper box",
+        "kraft paper",
+        "string",
+        "blank paper tag",
+        "cotton"
+      ],
+      "steps": [
+        "Line the box with cotton like a nest and sit the elf inside, with only the head out.",
+        "Close the flaps halfway and tie with string, without pulling tight.",
+        "Tag: “Special Delivery - From: North Pole. Handle with giggles.” Leave the box at the front door."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "tag",
+        "text": "Special Delivery - From: North Pole. Handle with giggles."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "kraft paper boxes",
+        "Christmas shipping labels"
+      ],
+      "typeTags": [
+        "arrival"
+      ],
+      "materialTags": [
+        "stationery"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers",
+        "kids",
+        "arrival"
+      ],
+      "illustrationBrief": "Open kraft paper box at the front door, elf inside on the cotton with only the head out, string in a bow beside it and a blank tag facing the viewer.",
+      "editorNotes": [
+        "PDF aside removed from step 3: the tag text goes “on the site's text layer”."
+      ]
+    },
+    {
+      "id": 34,
+      "slug": "arrival-hide-and-seek-clue-trail",
+      "title": "Arrival Hide-and-Seek Clue Trail",
+      "lot": 2,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "zero",
+      "age": "kids",
+      "room": "whole-house",
+      "roomLabel": "Whole house",
+      "occasion": null,
+      "materials": [
+        "4 handwritten clue cards",
+        "tape",
+        "1 jingle bell at the final hiding spot"
+      ],
+      "steps": [
+        "Hide the elf somewhere visible for the child's age (bookshelf, tree, low shelf) with the jingle bell beside it.",
+        "Leave 4 clues in sequence from the bed to the hiding spot, each one pointing to the next room.",
+        "Starting card: “I'm back... but where? Follow the clues and find me before breakfast!”"
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "I'm back... but where? Follow the clues and find me before breakfast!"
+      },
+      "variation": null,
+      "printable": "clue cards",
+      "amazonItems": [
+        "card stock"
+      ],
+      "typeTags": [
+        "arrival",
+        "interactive"
+      ],
+      "materialTags": [
+        "stationery"
+      ],
+      "hubs": [
+        "easy",
+        "no-mess",
+        "kids",
+        "arrival"
+      ],
+      "illustrationBrief": "Hallway in perspective: 3 blank cards on the floor in a curved trail and, in the background, the elf peeking from behind the tree with a little bell beside it.",
+      "editorNotes": [
+        "PDF: printable clue cards are the site's own digital product; card stock is the Amazon search."
+      ]
+    },
+    {
+      "id": 35,
+      "slug": "snowy-footprints-arrival",
+      "title": "Snowy Footprints Arrival",
+      "lot": 2,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "low",
+      "age": "all",
+      "room": "entryway",
+      "roomLabel": "Entryway",
+      "occasion": null,
+      "materials": [
+        "1 spoonful of flour or powdered sugar",
+        "a paper footprint stencil (or the sole of the elf's own foot)",
+        "doormat"
+      ],
+      "steps": [
+        "Hold the stencil against the mat and sift a thin layer of flour only inside it, making 4-5 footprints from the door into the house.",
+        "Sit the elf at the end of the trail, with flour on its little feet.",
+        "Card: “Snow on my boots! Sorry about the footprints - I was too excited to wait.” Cleanup: vacuum the mat, 2 minutes."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "Snow on my boots! Sorry about the footprints - I was too excited to wait."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "Christmas doormat"
+      ],
+      "typeTags": [
+        "arrival"
+      ],
+      "materialTags": [
+        "home",
+        "food"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "toddlers",
+        "kids",
+        "arrival"
+      ],
+      "illustrationBrief": "Top view of the doormat: trail of 5 little white footprints curving from the door to the elf sitting at the end, with floured little feet; door ajar in the background.",
+      "editorNotes": []
+    },
+    {
+      "id": 36,
+      "slug": "toddler-peekaboo-blanket-fort",
+      "title": "Toddler Peekaboo Blanket Fort",
+      "lot": 2,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "zero",
+      "age": "toddler",
+      "room": "living-room-tree",
+      "roomLabel": "Living room",
+      "occasion": null,
+      "materials": [
+        "1 light blanket",
+        "2 low chairs or the sofa",
+        "2 large stuffed animals"
+      ],
+      "steps": [
+        "A simple, safe little fort with the blanket over the sofa - nothing heavy in the structure.",
+        "Elf inside, peeking through the opening with one little hand.",
+        "Minimal card, to read aloud: “Peekaboo! I see you!” The game of the day is finding and re-hiding the elf together."
+      ],
+      "safety": [
+        "Simple, safe fort - nothing heavy in the structure."
+      ],
+      "elfNote": {
+        "kind": "card",
+        "text": "Peekaboo! I see you!"
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "light kids' blanket",
+        "play tent"
+      ],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "home"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers"
+      ],
+      "illustrationBrief": "Blanket fort over the sofa seen from the front, elf peeking through the opening in the center and 2 large stuffed animals sitting as the audience; big shapes and few objects, toddler standard.",
+      "editorNotes": []
+    },
+    {
+      "id": 37,
+      "slug": "pom-pom-color-sorting-game",
+      "title": "Pom-Pom Color Sorting Game",
+      "lot": 2,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "zero",
+      "age": "toddler",
+      "room": "table",
+      "roomLabel": "Table",
+      "occasion": null,
+      "materials": [
+        "large pom-poms (a size that is safe for the child's age, always with supervision)",
+        "3 small colored cups",
+        "tray"
+      ],
+      "steps": [
+        "On the tray, leave half of the pom-poms already sorted by color in the 3 cups, as an example.",
+        "Elf holding a pom-pom over the right cup, mid-game.",
+        "Card: “I sorted mine by color. Can you finish the rest?” No small parts for children under 3."
+      ],
+      "safety": [
+        "Large pom-poms only, a size that is safe for the child's age, always with supervision.",
+        "No small parts for children under 3."
+      ],
+      "elfNote": {
+        "kind": "card",
+        "text": "I sorted mine by color. Can you finish the rest?"
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "large felt pom-poms",
+        "sorting cups"
+      ],
+      "typeTags": [
+        "interactive"
+      ],
+      "materialTags": [
+        "buy"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers"
+      ],
+      "illustrationBrief": "Top view of the tray: 3 colored cups in a row, large pom-poms already sorted into 2 cups and the elf holding a pom-pom over the third; very distinct primary colors.",
+      "editorNotes": []
+    },
+    {
+      "id": 38,
+      "slug": "breakfast-cereal-garland",
+      "title": "Breakfast Cereal Garland",
+      "lot": 2,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "zero",
+      "age": "toddler",
+      "room": "kitchen",
+      "roomLabel": "Kitchen",
+      "occasion": null,
+      "materials": [
+        "large ring-shaped cereal",
+        "cotton thread or short string",
+        "small bowl"
+      ],
+      "steps": [
+        "A short garland already started by the adult (6-8 rings on the thread), wrapped around the elf like a necklace.",
+        "Bowl of cereal beside it, for the child to continue at breakfast - and eat the result.",
+        "Card: “I made you a necklace for breakfast. You can eat it!” Always with supervision."
+      ],
+      "safety": [
+        "Always with supervision."
+      ],
+      "elfNote": {
+        "kind": "card",
+        "text": "I made you a necklace for breakfast. You can eat it!"
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "large ring-shaped cereal",
+        "cotton thread"
+      ],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "home",
+        "food"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers"
+      ],
+      "illustrationBrief": "Elf on the kitchen table wearing the ring garland as a necklace that is too big, small bowl beside it; simple scene, 3 objects at most.",
+      "editorNotes": []
+    },
+    {
+      "id": 39,
+      "slug": "my-first-sticker-scene",
+      "title": "My First Sticker Scene",
+      "lot": 2,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "zero",
+      "age": "toddler",
+      "room": "bedroom",
+      "roomLabel": "Bedroom",
+      "occasion": null,
+      "materials": [
+        "large sheet of paper or poster board",
+        "large Christmas stickers (tree, star, present)",
+        "thick marker"
+      ],
+      "steps": [
+        "Draw just the outline of a big tree on the poster board and stick on 2-3 stickers as an example.",
+        "Elf sitting beside it holding a star sticker, at the top of the tree that it cannot reach.",
+        "Card: “I started our picture. The star is too high - can you help me?” The child completes the scene that day."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "I started our picture. The star is too high - can you help me?"
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "large reusable Christmas stickers"
+      ],
+      "typeTags": [
+        "interactive"
+      ],
+      "materialTags": [
+        "stationery",
+        "buy"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers"
+      ],
+      "illustrationBrief": "Large poster board seen from the front: simple tree outline, 3 stickers already on and the elf standing on a little chair holding the star, not reaching the top.",
+      "editorNotes": []
+    },
+    {
+      "id": 40,
+      "slug": "toy-car-wash-station",
+      "title": "Toy Car Wash Station",
+      "lot": 2,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "low",
+      "age": "toddler",
+      "room": "bathroom",
+      "roomLabel": "Bathroom",
+      "occasion": null,
+      "materials": [
+        "basin with a little water",
+        "towel under everything",
+        "soft little brush",
+        "2 large toy cars",
+        "dry cloth"
+      ],
+      "steps": [
+        "On the towel: basin with two fingers of water, one car inside and another waiting in line.",
+        "Elf on the edge of the basin holding the little brush, as the attendant.",
+        "Card: “Car wash open! Dirty toy cars welcome.” Water only with an adult present, the whole time."
+      ],
+      "safety": [
+        "Water only with an adult present, the whole time."
+      ],
+      "elfNote": {
+        "kind": "card",
+        "text": "Car wash open! Dirty toy cars welcome."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "large toy cars",
+        "soft little brush"
+      ],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "home"
+      ],
+      "hubs": [
+        "toddlers"
+      ],
+      "illustrationBrief": "Basin on the towel, from the front: a large toy car in the water with simple bubbles, another in line and the elf on the edge with the little brush.",
+      "editorNotes": []
+    },
+    {
+      "id": 41,
+      "slug": "plush-friends-campout",
+      "title": "Plush Friends Campout",
+      "lot": 2,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "zero",
+      "age": "toddler",
+      "room": "bedroom",
+      "roomLabel": "Bedroom",
+      "occasion": null,
+      "materials": [
+        "a small cloth or mini blanket for each stuffed animal",
+        "2-3 stuffed animals",
+        "a small flashlight, switched off, or a toy one"
+      ],
+      "steps": [
+        "Wrap each stuffed animal in its cloth like a sleeping bag, in a row on the bedroom floor.",
+        "Elf in the middle of the row, wrapped up too, with only the head out.",
+        "Minimal card: “Sleepover! We camped in your room.” - a calm scene, designed not to stir things up before bedtime."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "Sleepover! We camped in your room."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "kids' sleeping bag",
+        "small flashlight"
+      ],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "home"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers"
+      ],
+      "illustrationBrief": "Row of 3 improvised sleeping bags on the floor: stuffed animal, elf in the middle with only the head out, and stuffed animal; switched-off flashlight beside them.",
+      "editorNotes": []
+    },
+    {
+      "id": 42,
+      "slug": "fruit-face-breakfast-plate",
+      "title": "Fruit Face Breakfast Plate",
+      "lot": 2,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "zero",
+      "age": "toddler",
+      "room": "kitchen",
+      "roomLabel": "Kitchen",
+      "occasion": null,
+      "materials": [
+        "large plate",
+        "banana slices",
+        "strawberries",
+        "large blueberries cut in half (toddler safety)",
+        "one small pancake"
+      ],
+      "steps": [
+        "Make a face on the plate: pancake for the face, banana for the hair, strawberries for the cheeks.",
+        "Elf beside it holding a strawberry, as co-author.",
+        "Card: “Breakfast was boring. I gave it a face!” Round fruit always cut in half."
+      ],
+      "safety": [
+        "Round fruit always cut in half. Large blueberries cut in half (toddler safety)."
+      ],
+      "elfNote": {
+        "kind": "card",
+        "text": "Breakfast was boring. I gave it a face!"
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "divided kids' plates",
+        "fruit cutters"
+      ],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "food"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers"
+      ],
+      "illustrationBrief": "Top view of the plate: pancake face with banana hair and strawberry cheeks, elf sitting on the rim of the plate holding a strawberry; light, clean table background.",
+      "editorNotes": [
+        "PDF aside removed from step 3: cutting round fruit in half is “a rule of the page”."
+      ]
+    },
+    {
+      "id": 43,
+      "slug": "elf-workshop-build-station",
+      "title": "Elf Workshop Build Station",
+      "lot": 2,
+      "time": {
+        "tag": "15+",
+        "minutes": 20,
+        "label": "20 min"
+      },
+      "mess": "low",
+      "age": "kids",
+      "room": "table",
+      "roomLabel": "Table",
+      "occasion": null,
+      "materials": [
+        "wooden blocks or large building pieces",
+        "little toy tools",
+        "small paper sign",
+        "a half-built toy"
+      ],
+      "steps": [
+        "Set up the workbench: blocks as a shelf, tools in a row and the half-built toy in the center - a 15-20 minute project, no rush.",
+        "Elf in a paper hard hat on the toy, holding the little wrench.",
+        "Card: “Workshop shift started. This toy will be ready by Christmas - probably.”"
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "Workshop shift started. This toy will be ready by Christmas - probably."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "toy tool kit",
+        "wooden blocks"
+      ],
+      "typeTags": [
+        "project"
+      ],
+      "materialTags": [
+        "buy"
+      ],
+      "hubs": [
+        "kids"
+      ],
+      "illustrationBrief": "Miniature workbench, from the front: shelf of blocks, tools in a row, half-built toy in the center and the elf in a paper hard hat on top of it.",
+      "editorNotes": []
+    },
+    {
+      "id": 44,
+      "slug": "paper-snowflake-window-invasion",
+      "title": "Paper Snowflake Window Invasion",
+      "lot": 2,
+      "time": {
+        "tag": "15+",
+        "minutes": 20,
+        "label": "20 min"
+      },
+      "mess": "low",
+      "age": "kids",
+      "room": "living-room-tree",
+      "roomLabel": "Living room",
+      "occasion": null,
+      "materials": [
+        "white sheets of paper",
+        "scissors (adult step)",
+        "tape or string for hanging",
+        "8-12 finished snowflakes"
+      ],
+      "steps": [
+        "Fold and cut out 8-12 snowflakes of different sizes - scissors for the adult only, about 20 minutes in total.",
+        "Hang them on the window or on a string across the living room, from largest to smallest.",
+        "Elf on the windowsill holding a snowflake bigger than the elf. Card: “I ordered snow. This was the delivery.”"
+      ],
+      "safety": [
+        "Scissors are for the adult only."
+      ],
+      "elfNote": {
+        "kind": "card",
+        "text": "I ordered snow. This was the delivery."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "white paper",
+        "blunt-tip kids' scissors"
+      ],
+      "typeTags": [
+        "project"
+      ],
+      "materialTags": [
+        "home",
+        "stationery"
+      ],
+      "hubs": [
+        "kids"
+      ],
+      "illustrationBrief": "Window taken over by 10 paper snowflakes of different sizes on strings, elf on the windowsill holding a huge snowflake.",
+      "editorNotes": [
+        "KNOWN CORRECTION: the scissors stay as an Amazon search only. Cutting is an ADULT-ONLY step. Never suggest scissors for a child anywhere on the page."
+      ]
+    },
+    {
+      "id": 45,
+      "slug": "mini-elf-door-and-welcome-mat",
+      "title": "Mini Elf Door and Welcome Mat",
+      "lot": 2,
+      "time": {
+        "tag": "15+",
+        "minutes": 25,
+        "label": "25 min"
+      },
+      "mess": "low",
+      "age": "kids",
+      "room": "entryway",
+      "roomLabel": "Entryway",
+      "occasion": null,
+      "materials": [
+        "cardboard or thin wood for the little door",
+        "paint or colored paper",
+        "glue",
+        "a little paper doormat",
+        "jingle bell"
+      ],
+      "steps": [
+        "Cut out and assemble the little door (about 15 cm / 6 in) with a jingle-bell doorknob - the longest project on the list, about 25 minutes including drying time.",
+        "Attach it to the baseboard at the entrance or in the bedroom, with the little mat in front.",
+        "Elf on the mat, as if it had arrived through its own door. Card: “I finally got my own door. Please knock.”"
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "I finally got my own door. Please knock."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "decorative little door kit",
+        "poster paint"
+      ],
+      "typeTags": [
+        "project"
+      ],
+      "materialTags": [
+        "stationery",
+        "buy"
+      ],
+      "hubs": [
+        "kids"
+      ],
+      "illustrationBrief": "Close-up of the wall baseboard: little red arched door with a jingle-bell knob, patterned little mat in front and the elf sitting on it; keep the door closed - the mystery is the fun.",
+      "editorNotes": [
+        "The inch conversion (6 in) was added for the US audience; the PDF gives 15 cm."
+      ]
+    },
+    {
+      "id": 46,
+      "slug": "cardboard-sleigh-build",
+      "title": "Cardboard Sleigh Build",
+      "lot": 2,
+      "time": {
+        "tag": "15+",
+        "minutes": 20,
+        "label": "20 min"
+      },
+      "mess": "low",
+      "age": "all",
+      "room": "living-room-tree",
+      "roomLabel": "Living room",
+      "occasion": null,
+      "materials": [
+        "medium cardboard box",
+        "red paper",
+        "tape or glue",
+        "2 large decorative candy canes",
+        "cotton"
+      ],
+      "steps": [
+        "Cover the box in red and build the curved front of the sleigh with another piece of cardboard - about 20 minutes; the child decorates it the next day.",
+        "Candy canes as runners and cotton as the seat.",
+        "Elf in the sleigh holding the string reins. Card: “Test-driving the backup sleigh. It passed. Mostly.”"
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "Test-driving the backup sleigh. It passed. Mostly."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "cardboard craft kit",
+        "decorative tape"
+      ],
+      "typeTags": [
+        "project"
+      ],
+      "materialTags": [
+        "stationery",
+        "buy"
+      ],
+      "hubs": [
+        "toddlers",
+        "kids"
+      ],
+      "illustrationBrief": "Cardboard sleigh covered in red in three-quarter profile, candy cane runners, cotton on the seat and the elf holding the string reins; simple living-room background.",
+      "editorNotes": []
+    },
+    {
+      "id": 47,
+      "slug": "gingerbread-village-street",
+      "title": "Gingerbread Village Street",
+      "lot": 2,
+      "time": {
+        "tag": "15+",
+        "minutes": 20,
+        "label": "20 min"
+      },
+      "mess": "medium",
+      "age": "kids",
+      "room": "table",
+      "roomLabel": "Table",
+      "occasion": null,
+      "materials": [
+        "3-4 mini gingerbread houses (kit or large cookies)",
+        "icing",
+        "sprinkles",
+        "a cardboard base covered in white"
+      ],
+      "steps": [
+        "Build the street on the base: houses on both sides, a sprinkle path down the middle - 20 minutes, the icing needs to set.",
+        "Elf in the middle of the street with the little clipboard, now mayor of the village.",
+        "Card: “Welcome to Gingerbread Lane. I am the mayor now.” The village decorates the table until the 24th."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "Welcome to Gingerbread Lane. I am the mayor now."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "mini gingerbread house kits (multi-pack)"
+      ],
+      "typeTags": [
+        "project"
+      ],
+      "materialTags": [
+        "food",
+        "buy"
+      ],
+      "hubs": [
+        "kids"
+      ],
+      "illustrationBrief": "Little street in three-quarter view: 4 houses in 2 rows, sprinkle path in the center and the elf with a clipboard in the middle; sugar snow at the edges.",
+      "editorNotes": []
+    },
+    {
+      "id": 48,
+      "slug": "elf-photo-booth-props",
+      "title": "Elf Photo Booth Props",
+      "lot": 2,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "zero",
+      "age": "all",
+      "room": "living-room-tree",
+      "roomLabel": "Living room",
+      "occasion": null,
+      "materials": [
+        "sticks with a paper mustache, hat and antlers",
+        "cardboard frame",
+        "card"
+      ],
+      "steps": [
+        "Set up the corner in the living room: frame leaning against the wall and the props in a little pot.",
+        "Elf inside the frame wearing the paper mustache, posing.",
+        "Card: “Photo booth is open! Your turn - you're the model today.” The family uses the same setup in the morning."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "Photo booth is open! Your turn - you're the model today."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "photo booth props kit"
+      ],
+      "typeTags": [
+        "interactive"
+      ],
+      "materialTags": [
+        "stationery"
+      ],
+      "hubs": [
+        "easy",
+        "no-mess",
+        "toddlers",
+        "kids"
+      ],
+      "illustrationBrief": "Gold cardboard frame leaning against the wall, elf inside it wearing a paper mustache that is too big, little pot with paper hat and antlers beside it; flat background for cutout.",
+      "editorNotes": []
+    },
+    {
+      "id": 49,
+      "slug": "elf-story-mad-libs-card",
+      "title": "Elf Story Mad Libs Card",
+      "lot": 2,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "zero",
+      "age": "kids",
+      "room": "table",
+      "roomLabel": "Table",
+      "occasion": null,
+      "materials": [
+        "card with a mini story with 5 blanks",
+        "pencil",
+        "envelope"
+      ],
+      "steps": [
+        "Card on the breakfast table, elf holding the pencil over the first blank.",
+        "The story starts ready-made: “Last night, the elf rode a ___ to the ___ ...” - the blanks ask for a noun, a place, a food, an animal and a verb.",
+        "Card: “I wrote my story but forgot the best words. Fill the blanks at breakfast!”"
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "I wrote my story but forgot the best words. Fill the blanks at breakfast!"
+      },
+      "variation": null,
+      "printable": "fill-in-the-blank story card",
+      "amazonItems": [
+        "card stock"
+      ],
+      "typeTags": [
+        "interactive"
+      ],
+      "materialTags": [
+        "stationery"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "kids"
+      ],
+      "illustrationBrief": "Large card on the table in three-quarter view, 5 clearly visible blank lines (no generated text in the image), pencil on the first line and the elf holding its tip.",
+      "editorNotes": [
+        "PDF: printable story cards are the site's own digital product; card stock is the Amazon search.",
+        "TRADEMARK FLAG: the title contains “Mad Libs”, a registered trademark of a third party. Title kept as in the PDF pending the owner's decision."
+      ]
+    },
+    {
+      "id": 50,
+      "slug": "elf-workout-challenge-cards",
+      "title": "Elf Workout Challenge Cards",
+      "lot": 2,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "zero",
+      "age": "all",
+      "room": "living-room-tree",
+      "roomLabel": "Living room",
+      "occasion": null,
+      "materials": [
+        "3 challenge cards (jump 10 times, spin 3 times, balance on one foot)",
+        "small mat or cushion"
+      ],
+      "steps": [
+        "Elf on the little mat in an impossible yoga pose, 3 cards fanned out in front.",
+        "Each card: a 30-second challenge for the family to do together at breakfast.",
+        "Card: “North Pole training! Can you do all 3 before breakfast? I did the first one. Sort of.”"
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "North Pole training! Can you do all 3 before breakfast? I did the first one. Sort of."
+      },
+      "variation": null,
+      "printable": "workout challenge cards",
+      "amazonItems": [
+        "kids' exercise mat"
+      ],
+      "typeTags": [
+        "interactive"
+      ],
+      "materialTags": [
+        "stationery"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers",
+        "kids"
+      ],
+      "illustrationBrief": "Elf toppled over in an exaggerated yoga pose on the little mat, 3 blank cards fanned out in front of it and a cushion beside it; living room with lots of empty space around.",
+      "editorNotes": [
+        "PDF: printable challenge cards are the site's own digital product; the exercise mat is the Amazon search."
+      ]
+    },
+    {
+      "id": 51,
+      "slug": "guess-how-many-jar",
+      "title": "Guess How Many Jar",
+      "lot": 2,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "zero",
+      "age": "all",
+      "room": "kitchen",
+      "roomLabel": "Kitchen",
+      "occasion": null,
+      "materials": [
+        "clear jar with a tightly closed lid",
+        "candies or marshmallows, counted (write down the number)",
+        "guess slips",
+        "pencil"
+      ],
+      "steps": [
+        "Count the contents, write the number on a folded piece of paper and close the jar - sealed all day.",
+        "Elf on the lid holding its own slip, with an absurd guess.",
+        "Card: “Guess how many! Winner picks tonight's Christmas song.” The result comes at dinner, with the folded paper as proof."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "Guess how many! Winner picks tonight's Christmas song."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "clear jars with lids",
+        "gummy candies"
+      ],
+      "typeTags": [
+        "interactive"
+      ],
+      "materialTags": [
+        "food"
+      ],
+      "hubs": [
+        "easy",
+        "no-mess",
+        "toddlers",
+        "kids"
+      ],
+      "illustrationBrief": "Clear jar full of marshmallows on the counter, lid closed, elf on top of it with a blank slip and 3 slips beside it.",
+      "editorNotes": []
+    },
+    {
+      "id": 52,
+      "slug": "draw-my-outfit-contest",
+      "title": "Draw My Outfit Contest",
+      "lot": 2,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "zero",
+      "age": "kids",
+      "room": "table",
+      "roomLabel": "Table",
+      "occasion": null,
+      "materials": [
+        "sheet with the elf outline to color (printable from the site)",
+        "colored pencils",
+        "a half-finished example drawing"
+      ],
+      "steps": [
+        "Leave the elf outline on the table with one part already colored by the elf: one foot of each color, on purpose.",
+        "Elf sitting on the sheet holding the red pencil.",
+        "Card: “Design my new outfit! Best drawing goes on the fridge tonight.” The winner gets the fridge that same night."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "Design my new outfit! Best drawing goes on the fridge tonight."
+      },
+      "variation": null,
+      "printable": "elf outline coloring sheet",
+      "amazonItems": [
+        "colored pencil set",
+        "drawing paper"
+      ],
+      "typeTags": [
+        "interactive"
+      ],
+      "materialTags": [
+        "stationery"
+      ],
+      "hubs": [
+        "easy",
+        "no-mess",
+        "kids"
+      ],
+      "illustrationBrief": "Top view of the sheet with the elf outline: one foot red, the other green, colored pencils in an arc and the elf in the corner holding a pencil.",
+      "editorNotes": []
+    },
+    {
+      "id": 53,
+      "slug": "flour-snowball-fight",
+      "title": "Flour Snowball Fight",
+      "lot": 2,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "high",
+      "age": "kids",
+      "room": "kitchen",
+      "roomLabel": "Kitchen",
+      "occasion": null,
+      "materials": [
+        "large high-rimmed tray",
+        "flour",
+        "cotton balls",
+        "2 stuffed animals",
+        "a little spoon catapult"
+      ],
+      "steps": [
+        "WARNING: high mess, only inside the tray. Battlefield on the tray: a flour trench, stuffed animals on one side, elf on the other behind the cotton fort.",
+        "Snowballs in the air of the scene and flour on the elf's little arms, caught in the act.",
+        "Card: “Snowball fight! The teddies started it.” Tray goes straight to the sink - a 5-minute cleanup."
+      ],
+      "safety": [
+        "WARNING: high mess, only inside the tray.",
+        "Tray goes straight to the sink - a 5-minute cleanup."
+      ],
+      "elfNote": {
+        "kind": "card",
+        "text": "Snowball fight! The teddies started it."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "large high-rimmed tray",
+        "cotton balls"
+      ],
+      "typeTags": [
+        "funny"
+      ],
+      "materialTags": [
+        "home",
+        "food"
+      ],
+      "hubs": [
+        "kids",
+        "funny"
+      ],
+      "illustrationBrief": "High-rimmed tray in three-quarter view: cotton fort with the elf behind it, 2 stuffed animals on the other side, little balls in the air in an arc and flour only inside the tray.",
+      "editorNotes": [
+        "PDF aside removed from step 3: the 5-minute cleanup is “stated on the page”."
+      ]
+    },
+    {
+      "id": 54,
+      "slug": "bubble-bath-foam-mountain",
+      "title": "Bubble Bath Foam Mountain",
+      "lot": 2,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "high",
+      "age": "all",
+      "room": "bathroom",
+      "roomLabel": "Bathroom",
+      "occasion": null,
+      "materials": [
+        "sink or baby tub",
+        "bubble bath",
+        "towel on the floor",
+        "rubber duck",
+        "paper shower cap"
+      ],
+      "steps": [
+        "WARNING: high and wet mess - towel on the floor before anything else. Sink full of real foam until it forms a mountain.",
+        "Elf at the top, in a paper shower cap, duck sliding down beside it.",
+        "Card: “I asked for a little foam. A LITTLE.” Drain and rinse the same morning."
+      ],
+      "safety": [
+        "WARNING: high and wet mess - towel on the floor before anything else.",
+        "Drain and rinse the same morning."
+      ],
+      "elfNote": {
+        "kind": "card",
+        "text": "I asked for a little foam. A LITTLE."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "kids' bubble bath",
+        "rubber ducks"
+      ],
+      "typeTags": [
+        "funny"
+      ],
+      "materialTags": [
+        "buy"
+      ],
+      "hubs": [
+        "toddlers",
+        "kids",
+        "funny"
+      ],
+      "illustrationBrief": "Sink overflowing with a round mountain of white foam, elf in a paper shower cap sitting at the top and the yellow duck sliding down the side; towel visible on the floor.",
+      "editorNotes": []
+    },
+    {
+      "id": 55,
+      "slug": "wrapping-paper-mayhem",
+      "title": "Wrapping Paper Mayhem",
+      "lot": 2,
+      "time": {
+        "tag": "15+",
+        "minutes": null,
+        "label": "15+ min"
+      },
+      "mess": "high",
+      "age": "kids",
+      "room": "living-room-tree",
+      "roomLabel": "Living room",
+      "occasion": null,
+      "materials": [
+        "1 roll of wrapping paper",
+        "tape",
+        "bows",
+        "3-4 living-room objects (cushion, remote, empty vase, book)"
+      ],
+      "steps": [
+        "WARNING: the most time-consuming idea on the list (15+ minutes). Wrap 3-4 living-room objects as perfect presents, bow and all.",
+        "Elf on the wrapped remote, holding the end of the paper and the tape.",
+        "Card: “I wrapped everything for Santa. You're welcome. Unwrap carefully.” The scene is meant to be the first thing seen on entering the living room - it lasts minutes, until someone unwraps the first object."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "I wrapped everything for Santa. You're welcome. Unwrap carefully."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "wrapping paper roll",
+        "tape"
+      ],
+      "typeTags": [
+        "project",
+        "funny"
+      ],
+      "materialTags": [
+        "home",
+        "stationery"
+      ],
+      "hubs": [
+        "kids",
+        "funny"
+      ],
+      "illustrationBrief": "Living room with cushion, book and remote wrapped with bows, elf on the remote holding the end of an open roll that crosses the frame.",
+      "editorNotes": [
+        "PDF aside removed from step 1: this is also “the idea with the highest viral potential”."
+      ]
+    },
+    {
+      "id": 56,
+      "slug": "elf-in-the-fridge-surprise",
+      "title": "Elf in the Fridge Surprise",
+      "lot": 2,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "zero",
+      "age": "all",
+      "room": "fridge",
+      "roomLabel": "Fridge",
+      "occasion": null,
+      "materials": [
+        "clean, dry little plate or container",
+        "a little paper or ribbon scarf",
+        "card"
+      ],
+      "steps": [
+        "Hygiene first: elf on a clean, dry little plate, never directly on food, away from open food.",
+        "Plate on the shelf at the child's eye level, elf wrapped in the scarf, shivering.",
+        "Card outside the door: “It's SO cold in the North Pole. I came to compare.” Remove it the same morning."
+      ],
+      "safety": [
+        "Hygiene first: elf on a clean, dry little plate, never directly on food, away from open food.",
+        "Remove it the same morning."
+      ],
+      "elfNote": {
+        "kind": "card",
+        "text": "It's SO cold in the North Pole. I came to compare."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "small airtight containers",
+        "dessert plate"
+      ],
+      "typeTags": [
+        "funny"
+      ],
+      "materialTags": [
+        "home"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "toddlers",
+        "kids",
+        "funny"
+      ],
+      "illustrationBrief": "Fridge interior from the front, door open: elf on a clean little plate in a big scarf, between closed containers and simple bottles; no open food.",
+      "editorNotes": []
+    },
+    {
+      "id": 57,
+      "slug": "fridge-magnet-message",
+      "title": "Fridge Magnet Message",
+      "lot": 2,
+      "time": {
+        "tag": "5",
+        "minutes": 5,
+        "label": "5 min"
+      },
+      "mess": "zero",
+      "age": "kids",
+      "room": "fridge",
+      "roomLabel": "Fridge",
+      "occasion": null,
+      "materials": [
+        "colored letter magnets",
+        "clean fridge door",
+        "small card"
+      ],
+      "steps": [
+        "A short phrase with the magnets at the child's height: 3-5 words, a compliment or the countdown of days.",
+        "Elf at the bottom edge of the door holding the last letter, out of place.",
+        "Card: “One letter is missing on purpose. Can you finish my message?” For Kids - magnets are not for toddlers."
+      ],
+      "safety": [
+        "For Kids - magnets are not for toddlers."
+      ],
+      "elfNote": {
+        "kind": "card",
+        "text": "One letter is missing on purpose. Can you finish my message?"
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "letter magnets",
+        "small magnetic board"
+      ],
+      "typeTags": [
+        "cute"
+      ],
+      "materialTags": [
+        "buy"
+      ],
+      "hubs": [
+        "5-minute",
+        "easy",
+        "no-mess",
+        "kids"
+      ],
+      "illustrationBrief": "Fridge door from the front: row of letter magnets with an empty space at the end (letters on the text layer), elf below holding the missing letter.",
+      "editorNotes": []
+    },
+    {
+      "id": 58,
+      "slug": "closet-fashion-show-elf",
+      "title": "Closet Fashion Show Elf",
+      "lot": 2,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "zero",
+      "age": "all",
+      "room": "bedroom",
+      "roomLabel": "Bedroom",
+      "occasion": null,
+      "materials": [
+        "3-4 doll clothes or stuffed-animal outfits",
+        "a paper runway or an open book",
+        "mini hangers or clothespins"
+      ],
+      "steps": [
+        "Runway in the bedroom: open book or strip of paper on the floor, little clothes on a string clothesline in the background.",
+        "Elf in the middle wearing the most over-the-top piece (big hat, scarf down to the floor).",
+        "Card: “Fashion week, North Pole edition. This is the look.” Change the piece the next night: a 2-day series."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "Fashion week, North Pole edition. This is the look."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "doll clothes",
+        "mini hangers"
+      ],
+      "typeTags": [
+        "funny"
+      ],
+      "materialTags": [
+        "home"
+      ],
+      "hubs": [
+        "easy",
+        "no-mess",
+        "toddlers",
+        "kids",
+        "funny"
+      ],
+      "illustrationBrief": "Paper runway on the floor in perspective, little clothesline in the background with 3 outfits and the elf in the center in a huge hat and a dragging scarf.",
+      "editorNotes": []
+    },
+    {
+      "id": 59,
+      "slug": "memory-jar-last-week-goodbye",
+      "title": "Memory Jar - Last Week Goodbye",
+      "lot": 2,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "zero",
+      "age": "all",
+      "room": "living-room-tree",
+      "roomLabel": "Living room",
+      "occasion": null,
+      "materials": [
+        "empty clear jar",
+        "7 small blank cards",
+        "markers",
+        "instruction card"
+      ],
+      "steps": [
+        "In the last week (from the 18th on), jar in the living room with the cards beside it and the elf holding the first one, already with a memory of its own.",
+        "Each day the family writes a memory and puts it in the jar; the elf brings a new card each night.",
+        "Card: “Before I go, let's save our favorite moments. I started - your turn tonight.” The jar comes back with the elf the following year."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "card",
+        "text": "Before I go, let's save our favorite moments. I started - your turn tonight."
+      },
+      "variation": null,
+      "printable": null,
+      "amazonItems": [
+        "glass jar with lid",
+        "colored cards"
+      ],
+      "typeTags": [
+        "goodbye",
+        "interactive"
+      ],
+      "materialTags": [
+        "home",
+        "stationery"
+      ],
+      "hubs": [
+        "easy",
+        "no-mess",
+        "toddlers",
+        "kids",
+        "goodbye"
+      ],
+      "illustrationBrief": "Nearly empty clear jar on the living-room table, 2 cards inside, fan of blank cards beside it and the elf with a card of wavy lines (no generated text).",
+      "editorNotes": []
+    },
+    {
+      "id": 60,
+      "slug": "goodbye-breakfast-and-hug-coupon",
+      "title": "Goodbye Breakfast and Hug Coupon",
+      "lot": 2,
+      "time": {
+        "tag": "10",
+        "minutes": 10,
+        "label": "10 min"
+      },
+      "mess": "low",
+      "age": "all",
+      "room": "kitchen",
+      "roomLabel": "Kitchen",
+      "occasion": null,
+      "materials": [
+        "set breakfast table",
+        "a paper hug coupon (printable coupon from the site)",
+        "short see-you-soon letter",
+        "a heart-shaped cookie"
+      ],
+      "steps": [
+        "On the morning of the 24th or 25th, set the table with the elf's place: little plate, heart cookie and the hug coupon in the mug.",
+        "Elf in its place with the short see-you-soon letter - different from the long letter in idea 30, this one is for the table, for breakfast.",
+        "Coupon text: “One goodbye hug - good for today only. Love, your elf. See you next Christmas!” The goodbye hug is the exception to the no-touching rule, explained in the letter."
+      ],
+      "safety": [],
+      "elfNote": {
+        "kind": "coupon",
+        "text": "One goodbye hug - good for today only. Love, your elf. See you next Christmas!"
+      },
+      "variation": null,
+      "printable": "hug coupon",
+      "amazonItems": [
+        "Christmas breakfast set",
+        "commemorative mug"
+      ],
+      "typeTags": [
+        "goodbye"
+      ],
+      "materialTags": [
+        "food",
+        "stationery"
+      ],
+      "hubs": [
+        "toddlers",
+        "kids",
+        "goodbye"
+      ],
+      "illustrationBrief": "Breakfast table in three-quarter view: place set for the elf with a little plate, heart-shaped cookie and a blank coupon propped on the mug (the text goes on the text layer), elf holding a little letter.",
+      "editorNotes": []
+    }
+  ]
+}
