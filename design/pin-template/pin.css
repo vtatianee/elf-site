@@ -1,0 +1,73 @@
+/*
+ * PINTEREST PIN TEMPLATE — 1000 x 1500 px artboard.
+ * The illustration is an <img>; the title, kicker and site mark are HTML text
+ * layers on top. Nothing is ever baked into the image.
+ * All values come from ../../src/styles/tokens.css.
+ */
+html, body { margin: 0; background: var(--color-night-800); }
+.pin {
+  position: relative; width: 1000px; height: 1500px; overflow: hidden;
+  font-family: var(--font-display); color: var(--text);
+}
+.pin__art { position: absolute; inset: 0; width: 1000px; height: 1500px; display: block; }
+
+/* SAFE AREAS
+ *   outer margin ................ 60px on every side (nothing important outside it)
+ *   title band .................. y 60 -> 480 (the clean top third of the illustration)
+ *   illustration focal area ..... y 560 -> 1440 (never covered by text)
+ */
+.pin__band {
+  position: absolute; left: 60px; right: 60px; top: 60px; height: 420px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; text-align: center;
+}
+.pin__mark {
+  display: inline-flex; align-items: center; gap: 12px; margin: 0;
+  font-family: var(--font-body); font-weight: var(--weight-bold); font-size: 30px; letter-spacing: 0.02em;
+}
+.pin__mark img { width: 52px; height: 45px; }
+.pin__kicker {
+  margin: 0; padding: 8px 28px; border-radius: var(--radius-pill);
+  font-family: var(--font-body); font-weight: var(--weight-bold); font-size: 34px; letter-spacing: var(--tracking-label); text-transform: uppercase;
+  background: var(--color-red); color: var(--color-snow); /* 6.41:1 */
+}
+.pin__title {
+  margin: 0; max-width: 880px; font-weight: var(--weight-bold); line-height: 1.02; letter-spacing: -0.015em; text-wrap: balance;
+  font-size: 128px;
+}
+/* title size steps (set from the title length; see the rules in index.html) */
+.pin[data-len='s'] .pin__title { font-size: 150px; }  /* up to 16 characters, 2 lines */
+.pin[data-len='m'] .pin__title { font-size: 124px; }  /* 17-24 characters, 2-3 lines */
+.pin[data-len='l'] .pin__title { font-size: 102px; }  /* 25-32 characters, 3 lines */
+.pin[data-len='xl'] .pin__title { font-size: 88px; }  /* 33-40 characters, 3 lines — the maximum */
+
+/* ---- VARIANT A — "Clean band": text straight on the wall colour ---- */
+.pin[data-variant='a'] { color: var(--color-night); }
+.pin[data-variant='a'][data-wall='dark'] { color: var(--color-cream); }
+.pin[data-variant='a'][data-wall='dark'] .pin__kicker { background: var(--color-gold); color: var(--color-night); } /* 5.87:1 */
+
+/* ---- VARIANT B — "Ribbon": red header with a scalloped edge ---- */
+.pin[data-variant='b'] .pin__band {
+  left: 0; right: 0; top: 0; height: 500px; padding: 50px 60px 40px; box-sizing: border-box;
+  background: var(--color-red); color: var(--color-snow); /* 6.41:1 */
+}
+.pin[data-variant='b'] .pin__band::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: -24px; height: 48px;
+  background: radial-gradient(circle at 25px 0, var(--color-red) 24px, transparent 25px) 0 24px / 50px 48px repeat-x;
+}
+.pin[data-variant='b'] .pin__kicker { background: var(--color-gold); color: var(--color-night); } /* 5.87:1 */
+
+/* ---- VARIANT C — "Note card": a paper card taped over the top ---- */
+.pin[data-variant='c'] .pin__band {
+  left: 70px; right: 70px; top: 80px; height: 400px; padding: 30px 40px; box-sizing: border-box;
+  background: var(--color-snow); color: var(--color-night); /* 12.88:1 */
+  border-radius: 18px; box-shadow: 0 10px 0 var(--color-wood-400), inset 0 0 0 4px var(--color-wood-100); transform: rotate(-1.5deg);
+}
+.pin[data-variant='c'] .pin__band::before {
+  content: ''; position: absolute; top: -26px; left: 50%; width: 220px; height: 52px; margin-left: -110px;
+  background: var(--color-gold-300); transform: rotate(2deg);
+}
+.pin[data-variant='c'] .pin__kicker { background: transparent; color: var(--color-red); padding: 0; } /* 6.41:1 on snow */
+.pin[data-variant='c'][data-len='s'] .pin__title { font-size: 132px; }
+.pin[data-variant='c'][data-len='m'] .pin__title { font-size: 108px; }
+.pin[data-variant='c'][data-len='l'] .pin__title { font-size: 90px; }
+.pin[data-variant='c'][data-len='xl'] .pin__title { font-size: 78px; }

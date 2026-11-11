@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Idea page (Marshmallow Bubble Bath) — Gate 2 design preview</title>
+<link rel="stylesheet" href="../../src/styles/tokens.css">
+<link rel="stylesheet" href="preview.css">
+</head>
+<body>
+
+<!-- Inline icon set (original, drawn for this project). Stroke icons, 24x24, currentColor. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M11 3l1.8 5.2L18 10l-5.2 1.8L11 17l-1.8-5.2L4 10l5.2-1.8zM18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></symbol>
+  <symbol id="i-child" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3.5"/><path d="M5 21c0-4.5 3-7 7-7s7 2.5 7 7"/></symbol>
+  <symbol id="i-door" viewBox="0 0 24 24"><path d="M6 21V4h12v17M3 21h18"/><circle cx="14.5" cy="12.5" r="0.8"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M9 3h6l-1 6 3 3H7l3-3zM12 12v9"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5l9.5 16.500h-19zM12 10v4.500M12 17.200v.010"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.500v.010"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"/><path d="M7.500 13h9M12 16v.010M12 6V3"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 016 0v2"/></symbol>
+</svg>
+
+<p class="preview-note"><strong>Gate 2 design preview — not the live site.</strong> Illustrations are placeholders. “Daily Elf Magic” is a placeholder name. Blocks marked “Pattern example” show how a component looks using a real line from another idea; they are not part of this idea. Links do not go anywhere in this mockup.</p>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="home.html" aria-label="Daily Elf Magic — home">
+      <img class="brand__mark" src="../mascot/elf-head.svg" alt="" width="300" height="260">
+      <span>Daily Elf Magic</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul role="list">
+        <li><a href="#ideas" aria-current="page">All ideas</a></li>
+        <li><a href="#planner">Planner</a></li>
+        <li><a href="#printables">Printables</a></li>
+        <li><a href="#shop">Shop</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="#ideas"><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg>All ideas</a></nav>
+
+  <article class="idea">
+
+    <!-- TITLE + FACT BAR (first on phones: the parent sees time and mess before the tall picture) -->
+    <header class="idea__head">
+      <h1>Marshmallow Bubble Bath</h1>
+      <dl class="facts">
+        <div class="fact"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><div><dt>Time</dt><dd>5 min</dd></div></div>
+        <div class="fact"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg><div><dt>Mess</dt><dd>Low mess (2-minute cleanup)</dd></div></div>
+        <div class="fact"><svg class="icon" aria-hidden="true"><use href="#i-child"/></svg><div><dt>Age</dt><dd>All ages</dd></div></div>
+        <div class="fact"><svg class="icon" aria-hidden="true"><use href="#i-door"/></svg><div><dt>Room</dt><dd>Bathroom</dd></div></div>
+      </dl>
+    </header>
+
+    <!-- MAIN ILLUSTRATION (vertical) + PIN BUTTON + ILLUSTRATION DISCLOSURE -->
+    <figure class="art idea__art">
+      <div class="art__frame">
+        <img src="../../public/illustrations/marshmallow-bubble-bath/vertical.svg" width="1000" height="1500" alt="Illustration of a small elf relaxing in a bowl filled with mini marshmallows like bath foam, only its head and boots showing, with a gold rubber duck and a blank card beside the bowl">
+        <a class="pin-btn" href="#pin" aria-label="Pin this idea"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Pin</a>
+      </div>
+      <figcaption class="art__note">Illustrated guide — scenes are original illustrations, not photos.</figcaption>
+    </figure>
+
+    <div class="idea__main">
+
+      <!-- MATERIALS CHECKLIST + AMAZON SEARCH LINKS + DISCLOSURE NEAR THE LINKS -->
+      <section aria-labelledby="need-title">
+        <h2 id="need-title">What you need</h2>
+        <ul class="checklist" role="list" style="margin-top:var(--space-3)">
+          <li class="check">
+            <label class="check__label"><input type="checkbox"><span>1 bag of mini marshmallows</span></label>
+            <p class="check__buy"><a href="#amazon-search" rel="sponsored nofollow noopener">Find mini marshmallows on Amazon<svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a></p>
+          </li>
+          <li class="check"><label class="check__label"><input type="checkbox"><span>a bowl or the clean sink</span></label></li>
+          <li class="check"><label class="check__label"><input type="checkbox"><span>rubber duck (optional)</span></label></li>
+        </ul>
+        <div class="kit" style="margin-top:var(--space-4)">
+          <a class="btn btn--secondary" href="#amazon-kit" rel="sponsored nofollow noopener"><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg>Get everything for this idea</a>
+          <p class="disclosure">As an Amazon Associate I earn from qualifying purchases.</p>
+        </div>
+      </section>
+
+      <!-- STEPS -->
+      <section aria-labelledby="steps-title">
+        <h2 id="steps-title">How to set it up</h2>
+        <ol class="steps" role="list" style="margin-top:var(--space-4)">
+          <li><p>Fill the bowl/sink with marshmallows as if they were foam.</p></li>
+          <li><p>Elf reclining in the middle, only head and feet out.</p></li>
+          <li><p>Card: “North Pole spa day. Do not disturb.”</p></li>
+        </ol>
+      </section>
+
+      <!-- SAFETY CALLOUT — pattern example -->
+      <section aria-labelledby="safety-title">
+        <span class="pattern-tag">Pattern example — warning from “Tangled in Christmas Lights”. This idea has no safety note.</span>
+        <div class="callout callout--safety" role="note">
+          <svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>
+          <div>
+            <h2 class="callout__label" id="safety-title">Safety</h2>
+            <p>Battery-powered LED lights only - never plugged into a wall outlet with the child nearby.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ELF NOTE CARD -->
+      <section aria-labelledby="note-title">
+        <div class="note">
+          <img class="note__elf" src="../mascot/elf-peek.svg" alt="" width="300" height="250">
+          <h2 class="note__label" id="note-title">Elf note</h2>
+          <blockquote>North Pole spa day. Do not disturb.</blockquote>
+          <p class="note__hint">Copy it onto a small card and leave it next to the scene.</p>
+        </div>
+      </section>
+
+      <!-- QUICK VARIATION — pattern example (only ideas 6 and 26 have one) -->
+      <section aria-labelledby="var-title">
+        <span class="pattern-tag">Pattern example — variation from “Hiding in the Christmas Tree”. This idea has none.</span>
+        <div class="callout callout--variation">
+          <svg class="icon" aria-hidden="true"><use href="#i-swap"/></svg>
+          <div>
+            <h2 class="callout__label" id="var-title">Quick variation</h2>
+            <p>Move the elf to a different branch the next night and turn it into a 2-day hunt.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 RELATED IDEAS -->
+      <section aria-labelledby="related-title">
+        <h2 id="related-title">Try one of these next</h2>
+        <ul class="cards cards--rows" role="list" style="margin-top:var(--space-4)">
+          <li><article class="card card--row">
+            <img class="card__img" src="../../public/illustrations/toothbrush-delivery-elf/square.svg" width="1080" height="1080" alt="Illustration of a small elf sitting on a bathroom counter, holding up a new toothbrush tied with a red bow like a trophy">
+            <div class="card__body"><h3 class="card__title"><a href="#ideas/toothbrush-delivery-elf">Toothbrush Delivery Elf</a></h3><ul class="meta" role="list"><li>2 min</li><li>Zero mess</li></ul></div>
+          </article></li>
+          <li><article class="card card--row">
+            <img class="card__img" src="../../public/illustrations/toothpaste-mirror-message/square.svg" width="1080" height="1080" alt="Illustration of a small elf sitting on a bathroom counter holding an open tube of toothpaste, in front of a blank mirror with a dab of toothpaste in the corner">
+            <div class="card__body"><h3 class="card__title"><a href="#ideas/toothpaste-mirror-message">Toothpaste Mirror Message</a></h3><ul class="meta" role="list"><li>5 min</li><li>Low mess</li></ul></div>
+          </article></li>
+          <li><article class="card card--row">
+            <img class="card__img" src="../../public/illustrations/bubble-bath-foam-mountain/square.svg" width="1080" height="1080" alt="Illustration of a small tub overflowing with a round mountain of white foam, a small elf sitting on top, a gold rubber duck resting on the side and a towel on the floor">
+            <div class="card__body"><h3 class="card__title"><a href="#ideas/bubble-bath-foam-mountain">Bubble Bath Foam Mountain</a></h3><ul class="meta" role="list"><li>10 min</li><li>High mess</li></ul></div>
+          </article></li>
+        </ul>
+      </section>
+
+      <!-- 2 HUB LINKS (+ the optional room link) -->
+      <nav aria-labelledby="more-title">
+        <h2 id="more-title">Keep looking</h2>
+        <ul class="hub-links" role="list" style="margin-top:var(--space-3)">
+          <li><a class="hub" href="#5-minute">More 5-minute ideas<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a class="hub" href="#easy">More easy ideas<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a class="hub" href="#ideas?room=bathroom">More bathroom ideas<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        </ul>
+      </nav>
+
+      <!-- EMAIL CAPTURE — "coming soon" -->
+      <section aria-labelledby="signup-title" style="margin-top:var(--space-6)">
+        <div class="signup">
+          <img class="signup__elf" src="../mascot/elf-peek.svg" alt="" width="300" height="250">
+          <span class="badge"><svg class="icon" aria-hidden="true"><use href="#i-bell"/></svg>Coming soon</span>
+          <h2 id="signup-title">1 idea a day in December</h2>
+          <p class="signup__lead">One elf idea in your inbox every morning, December 1 to 24.</p>
+          <form class="signup__form" aria-describedby="signup-status" novalidate onsubmit="return false">
+            <label for="email">Email address</label>
+            <input class="field" id="email" type="email" placeholder="you@example.com" disabled>
+            <button class="btn" type="submit" disabled>Not open yet</button>
+          </form>
+          <p class="signup__status" id="signup-status"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span>Sign-ups aren’t open yet. This form is switched off: nothing you type is saved or sent.</span></p>
+        </div>
+      </section>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer on-night">
+  <div class="wrap">
+    <nav class="footer-nav" aria-label="Footer">
+      <div><h2>Find ideas</h2><ul role="list">
+        <li><a href="#ideas">All 60 ideas</a></li><li><a href="#5-minute">5-minute ideas</a></li><li><a href="#no-mess">No-mess ideas</a></li><li><a href="#toddlers">Toddler ideas</a></li>
+      </ul></div>
+      <div><h2>Plan</h2><ul role="list">
+        <li><a href="#planner">December planner</a></li><li><a href="#printables">Printables</a></li><li><a href="#shop">Shop staples</a></li>
+      </ul></div>
+      <div><h2>About</h2><ul role="list">
+        <li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li><li><a href="#privacy">Privacy</a></li>
+      </ul></div>
+    </nav>
+    <div class="footer-legal">
+      <p><strong>As an Amazon Associate I earn from qualifying purchases.</strong></p>
+      <p>Illustrated guide — scenes are original illustrations, not photos.</p>
+      <p>This site is independent. It is not affiliated with, endorsed by or sponsored by any elf brand or trademark owner.</p>
+      <p>Site operator: Vanessa Tatiane Evangelista Assink.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

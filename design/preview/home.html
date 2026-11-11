@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home — Gate 2 design preview</title>
+<link rel="stylesheet" href="../../src/styles/tokens.css">
+<link rel="stylesheet" href="preview.css">
+</head>
+<body>
+
+<!-- Inline icon set (original, drawn for this project). Stroke icons, 24x24, currentColor. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M11 3l1.8 5.2L18 10l-5.2 1.8L11 17l-1.8-5.2L4 10l5.2-1.8zM18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11.5L12 4l9 7.5M5.5 10v10h13V10M10 20v-6h4v6"/></symbol>
+  <symbol id="i-child" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3.5"/><path d="M5 21c0-4.5 3-7 7-7s7 2.500 7 7"/></symbol>
+  <symbol id="i-door" viewBox="0 0 24 24"><path d="M6 21V4h12v17M3 21h18"/><circle cx="14.500" cy="12.500" r="0.800"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.500" cy="10.500" r="6.500"/><path d="M15.500 15.500L21 21"/></symbol>
+  <symbol id="i-shuffle" viewBox="0 0 24 24"><path d="M3 7h3.500c5 0 6 10 11 10H21M3 17h3.500c1.800 0 3-1.200 4-2.800M21 7h-3.500c-1.800 0-3 1.200-4 2.800M18 4l3 3-3 3M18 14l3 3-3 3"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.500l4.500 4.500L19 7.500"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.500v.010"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"/><path d="M7.500 13h9M12 16v.010M12 6V3"/></symbol>
+</svg>
+
+<p class="preview-note"><strong>Gate 2 design preview — not the live site.</strong> Illustrations are placeholders. “Daily Elf Magic” is a placeholder name. Material and type filters (including “Only stuff I have” and Funny) use tags that are still pending owner approval. Links do not go anywhere in this mockup.</p>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="#home" aria-label="Daily Elf Magic — home">
+      <img class="brand__mark" src="../mascot/elf-head.svg" alt="" width="300" height="260">
+      <span>Daily Elf Magic</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul role="list">
+        <li><a href="#ideas">All ideas</a></li>
+        <li><a href="#planner">Planner</a></li>
+        <li><a href="#printables">Printables</a></li>
+        <li><a href="#shop">Shop</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+
+  <!-- 1. SEARCH + FILTER ENTRY -->
+  <section class="finder" aria-label="Find an idea">
+    <form class="search" role="search" action="#ideas">
+      <label class="visually-hidden" for="q">Search the 60 ideas</label>
+      <input class="field" id="q" name="q" type="search" placeholder="Search 60 ideas: “marshmallow”, “toddler”…" autocomplete="off">
+      <button class="btn" type="submit"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><span class="visually-hidden">Search</span></button>
+    </form>
+    <div class="finder__filters">
+      <span class="finder__label" id="quick-filters">Quick filters</span>
+      <ul class="chips chips--scroll" role="list" aria-labelledby="quick-filters">
+        <li><a class="chip" href="#ideas?time=2">2 min</a></li>
+        <li><a class="chip" href="#ideas?mess=zero">Zero mess</a></li>
+        <li><a class="chip" href="#ideas?age=toddler">Toddler (2-4)</a></li>
+        <li><a class="chip" href="#ideas?room=kitchen">Kitchen</a></li>
+        <li><a class="chip" href="#ideas?material=home">Only stuff you have</a></li>
+        <li><a class="chip" href="#ideas?type=funny">Funny</a></li>
+        <li><a class="chip" href="#ideas"><svg class="icon" aria-hidden="true"><use href="#i-sliders"/></svg>All filters</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 2. TONIGHT MODE -->
+  <section class="tonight on-night" aria-labelledby="tonight-title" id="tonight">
+    <div class="tonight__stars" aria-hidden="true">
+      <i style="right:6%;top:26px"></i><i style="right:22%;top:14px"></i><i style="right:38%;top:30px"></i><i style="right:12%;top:58px"></i>
+      <i style="right:3%;top:104px"></i><i style="right:30%;top:66px"></i><i style="left:2%;bottom:10px"></i><i style="right:4%;bottom:14px"></i><i style="right:46%;bottom:8px"></i>
+    </div>
+    <img class="tonight__elf" src="../mascot/elf-peek.svg" alt="" width="300" height="250">
+
+    <p class="eyebrow">Tonight Mode</p>
+    <h1 id="tonight-title">What’s the elf doing tonight?</h1>
+    <p class="tonight__lead">A new elf idea every night — in under 5 minutes, with stuff you already have. Tap what’s true right now.</p>
+
+    <div class="criteria" role="group" aria-label="What’s true tonight">
+      <button class="crit" type="button" aria-pressed="true" data-crit="five">
+        <svg class="icon crit__tick" aria-hidden="true"><use href="#i-check"/></svg>
+        <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span>5 minutes</span>
+      </button>
+      <button class="crit" type="button" aria-pressed="true" data-crit="nomess">
+        <svg class="icon crit__tick" aria-hidden="true"><use href="#i-check"/></svg>
+        <svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg><span>No mess</span>
+      </button>
+      <button class="crit" type="button" aria-pressed="true" data-crit="home">
+        <svg class="icon crit__tick" aria-hidden="true"><use href="#i-check"/></svg>
+        <svg class="icon" aria-hidden="true"><use href="#i-home"/></svg><span>Only stuff I have</span>
+      </button>
+    </div>
+
+    <p class="tonight__status" id="tonight-status" role="status" aria-live="polite"><strong>12 ideas</strong> match all three. Here are 3 for tonight.</p>
+
+    <ol class="tonight__results" id="tonight-results" role="list">
+      <li><article class="card card--row">
+        <img class="card__img" src="../../public/illustrations/trapped-in-a-jar/square.svg" width="1080" height="1080" alt="Illustration of a small elf sitting inside a large open glass jar with its hands up against the glass, the lid lying beside it and a blank card in front">
+        <div class="card__body">
+          <h2 class="card__title"><a href="#ideas/trapped-in-a-jar">Trapped in a Jar</a></h2>
+          <ul class="meta" role="list"><li>2 min</li><li>Zero mess</li><li>All ages</li></ul>
+        </div>
+      </article></li>
+      <li><article class="card card--row">
+        <img class="card__img" src="../../public/illustrations/sleeping-in-a-stocking/square.svg" width="1080" height="1080" alt="Illustration of a red Christmas stocking hanging from a wall peg with a small elf tucked inside, eyes closed, only its head out and cotton for a pillow">
+        <div class="card__body">
+          <h2 class="card__title"><a href="#ideas/sleeping-in-a-stocking">Sleeping in a Stocking</a></h2>
+          <ul class="meta" role="list"><li>2 min</li><li>Zero mess</li><li>Toddler (2-4)</li></ul>
+        </div>
+      </article></li>
+      <li><article class="card card--row">
+        <img class="card__img" src="../../public/illustrations/silly-banana-bunch/square.svg" width="1080" height="1080" alt="Illustration of a bunch of bananas in a fruit bowl, each banana with a different face drawn on it, and a small elf sitting beside the bowl holding a pen">
+        <div class="card__body">
+          <h2 class="card__title"><a href="#ideas/silly-banana-bunch">Silly Banana Bunch</a></h2>
+          <ul class="meta" role="list"><li>5 min</li><li>Zero mess</li><li>Toddler (2-4)</li></ul>
+        </div>
+      </article></li>
+    </ol>
+
+    <div class="tonight__actions">
+      <button class="btn btn--gold" type="button" id="tonight-again"><svg class="icon" aria-hidden="true"><use href="#i-shuffle"/></svg>Show 3 different ideas</button>
+      <a href="#ideas" id="tonight-all">See all 12 matches</a>
+    </div>
+  </section>
+
+  <!-- 3. IDEA OF THE DAY -->
+  <section class="section" aria-labelledby="today-title">
+    <article class="feature">
+      <img class="feature__img" src="../../public/illustrations/hot-cocoa-stand-helper/horizontal.svg" width="1200" height="628" alt="Illustration of a small elf standing behind a big mug like a cocoa stand, with a blank sign on a post and a little pot of mini marshmallows">
+      <div class="feature__body">
+        <p class="eyebrow">Idea of the day</p>
+        <h2 id="today-title"><a href="#ideas/hot-cocoa-stand-helper">Hot Cocoa Stand Helper</a></h2>
+        <ul class="meta" role="list">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>10 min</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg>Low mess</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-child"/></svg>All ages</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-door"/></svg>Kitchen</li>
+        </ul>
+        <p class="quote"><small>On the sign</small>ELF COCOA - 1 HUG</p>
+        <a class="btn" href="#ideas/hot-cocoa-stand-helper">See the idea<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </article>
+  </section>
+
+  <!-- 4. PARENT FAVORITES (editorial — no counts, no rankings) -->
+  <section class="section" aria-labelledby="fav-title">
+    <div class="section__head">
+      <h2 id="fav-title">Parent favorites</h2>
+      <p class="section__sub">Hand-picked by the editor. No counters, no rankings.</p>
+    </div>
+    <ul class="cards cards--4" role="list">
+      <li><article class="card">
+        <img class="card__img" src="../../public/illustrations/marshmallow-bubble-bath/square.svg" width="1080" height="1080" alt="Illustration of a small elf relaxing in a bowl filled with mini marshmallows like bath foam, only its head and boots showing, with a gold rubber duck and a blank card beside the bowl">
+        <div class="card__body">
+          <h3 class="card__title"><a href="idea.html">Marshmallow Bubble Bath</a></h3>
+          <ul class="meta" role="list"><li>5 min</li><li>Low mess</li><li>All ages</li></ul>
+        </div>
+      </article></li>
+      <li><article class="card">
+        <img class="card__img" src="../../public/illustrations/hiding-in-the-christmas-tree/square.svg" width="1080" height="1080" alt="Illustration of a Christmas tree with a small elf hiding among the branches halfway up, only its head and one hand showing">
+        <div class="card__body">
+          <h3 class="card__title"><a href="#ideas/hiding-in-the-christmas-tree">Hiding in the Christmas Tree</a></h3>
+          <ul class="meta" role="list"><li>2 min</li><li>Zero mess</li><li>All ages</li></ul>
+        </div>
+      </article></li>
+      <li><article class="card">
+        <img class="card__img" src="../../public/illustrations/flour-snow-angel/square.svg" width="1080" height="1080" alt="Illustration of a shallow tray of flour with a snow-angel shape pressed into it, and a small elf sitting proudly beside the tray">
+        <div class="card__body">
+          <h3 class="card__title"><a href="#ideas/flour-snow-angel">Flour Snow Angel</a></h3>
+          <ul class="meta" role="list"><li>5 min</li><li>Medium mess</li><li>All ages</li></ul>
+        </div>
+      </article></li>
+      <li><article class="card">
+        <img class="card__img" src="../../public/illustrations/candy-cane-scavenger-hunt/square.svg" width="1080" height="1080" alt="Illustration of a candy cane half hidden behind a cushion, and a small elf standing nearby holding up a blank card">
+        <div class="card__body">
+          <h3 class="card__title"><a href="#ideas/candy-cane-scavenger-hunt">Candy Cane Scavenger Hunt</a></h3>
+          <ul class="meta" role="list"><li>10 min</li><li>Zero mess</li><li>Kids (5-9)</li></ul>
+        </div>
+      </article></li>
+    </ul>
+  </section>
+
+  <!-- 5. BROWSE BY HUB -->
+  <section class="section" aria-labelledby="hubs-title">
+    <div class="section__head">
+      <h2 id="hubs-title">Browse by what you need</h2>
+      <a href="#ideas">See all 60 ideas</a>
+    </div>
+    <ul class="hubs" role="list">
+      <li><a class="hub" href="#5-minute">5-minute<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li><a class="hub" href="#no-mess">No mess<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li><a class="hub" href="#easy">Easy<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li><a class="hub" href="#toddlers">Toddlers<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li><a class="hub" href="#kids">Kids<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li><a class="hub" href="#funny">Funny<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li><a class="hub" href="#arrival">Arrival<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li><a class="hub" href="#goodbye">Goodbye<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+    </ul>
+  </section>
+
+  <!-- 6. EMAIL CAPTURE — honest "coming soon" state: nothing is collected, nothing is sent -->
+  <section class="section" aria-labelledby="signup-title">
+    <div class="signup">
+      <img class="signup__elf" src="../mascot/elf-peek.svg" alt="" width="300" height="250">
+      <span class="badge"><svg class="icon" aria-hidden="true"><use href="#i-bell"/></svg>Coming soon</span>
+      <h2 id="signup-title">1 idea a day in December</h2>
+      <p class="signup__lead">One elf idea in your inbox every morning, December 1 to 24.</p>
+      <form class="signup__form" aria-describedby="signup-status" novalidate onsubmit="return false">
+        <label for="email">Email address</label>
+        <input class="field" id="email" type="email" placeholder="you@example.com" disabled>
+        <button class="btn" type="submit" disabled>Not open yet</button>
+      </form>
+      <p class="signup__status" id="signup-status"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span>Sign-ups aren’t open yet. This form is switched off: nothing you type is saved or sent.</span></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer on-night">
+  <div class="wrap">
+    <nav class="footer-nav" aria-label="Footer">
+      <div><h2>Find ideas</h2><ul role="list">
+        <li><a href="#ideas">All 60 ideas</a></li><li><a href="#5-minute">5-minute ideas</a></li><li><a href="#no-mess">No-mess ideas</a></li><li><a href="#toddlers">Toddler ideas</a></li>
+      </ul></div>
+      <div><h2>Plan</h2><ul role="list">
+        <li><a href="#planner">December planner</a></li><li><a href="#printables">Printables</a></li><li><a href="#shop">Shop staples</a></li>
+      </ul></div>
+      <div><h2>About</h2><ul role="list">
+        <li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li><li><a href="#privacy">Privacy</a></li>
+      </ul></div>
+    </nav>
+    <div class="footer-legal">
+      <p><strong>As an Amazon Associate I earn from qualifying purchases.</strong></p>
+      <p>Illustrated guide — scenes are original illustrations, not photos.</p>
+      <p>This site is independent. It is not affiliated with, endorsed by or sponsored by any elf brand or trademark owner.</p>
+      <p>Site operator: Vanessa Tatiane Evangelista Assink.</p>
+    </div>
+  </div>
+</footer>
+
+<!--
+  Tonight Mode — working prototype of the UX spec (docs/handoffs/02b-design-system.md, section 6).
+  Plain JavaScript, no framework, no network. Without JavaScript the page shows the state above.
+  Data: id, slug, title, time tag, mess, age, "home" material tag — from src/data/ideas.json.
+  "home" (Only stuff I have) uses materialTags, which are PENDING owner approval.
+-->
+<script>
+const IDEAS = /*IDEAS_DATA*/[{"i":1,"s":"movie-night-popcorn-patrol","t":"Movie Night Popcorn Patrol","q":"5","l":"5 min","m":"zero","a":"all","h":true},{"i":2,"s":"storytime-reading-corner","t":"Storytime Reading Corner","q":"2","l":"2 min","m":"zero","a":"toddler","h":true},{"i":3,"s":"shoe-shoe-train","t":"Shoe-Shoe Train","q":"5","l":"5 min","m":"zero","a":"all","h":true},{"i":4,"s":"toothbrush-delivery-elf","t":"Toothbrush Delivery Elf","q":"2","l":"2 min","m":"zero","a":"all","h":false},{"i":5,"s":"tangled-in-christmas-lights","t":"Tangled in Christmas Lights","q":"5","l":"5 min","m":"zero","a":"all","h":false},{"i":6,"s":"hiding-in-the-christmas-tree","t":"Hiding in the Christmas Tree","q":"2","l":"2 min","m":"zero","a":"all","h":true},{"i":7,"s":"letter-to-santa-station","t":"Letter to Santa Station","q":"10","l":"10 min","m":"low","a":"kids","h":true},{"i":8,"s":"trapped-in-a-jar","t":"Trapped in a Jar","q":"2","l":"2 min","m":"zero","a":"all","h":true},{"i":9,"s":"christmas-countdown-chain","t":"Christmas Countdown Chain","q":"10","l":"10 min","m":"low","a":"kids","h":false},{"i":10,"s":"sleeping-in-a-stocking","t":"Sleeping in a Stocking","q":"2","l":"2 min","m":"zero","a":"toddler","h":true},{"i":11,"s":"flour-snow-angel","t":"Flour Snow Angel","q":"5","l":"5 min","m":"medium","a":"all","h":true},{"i":12,"s":"toilet-paper-tree-makeover","t":"Toilet Paper Tree Makeover","q":"10","l":"10 min","m":"medium","a":"kids","h":true},{"i":13,"s":"marshmallow-bubble-bath","t":"Marshmallow Bubble Bath","q":"5","l":"5 min","m":"low","a":"all","h":false},{"i":14,"s":"toothpaste-mirror-message","t":"Toothpaste Mirror Message","q":"5","l":"5 min","m":"low","a":"kids","h":true},{"i":15,"s":"silly-banana-bunch","t":"Silly Banana Bunch","q":"5","l":"5 min","m":"zero","a":"toddler","h":true},{"i":16,"s":"sink-fishing-trip","t":"Sink Fishing Trip","q":"5","l":"5 min","m":"low","a":"all","h":false},{"i":17,"s":"sticky-note-surprise-wall","t":"Sticky Note Surprise Wall","q":"10","l":"10 min","m":"zero","a":"kids","h":false},{"i":18,"s":"elf-zipline-adventure","t":"Elf Zipline Adventure","q":"10","l":"10 min","m":"zero","a":"kids","h":false},{"i":19,"s":"sweet-spaghetti-breakfast","t":"Sweet Spaghetti Breakfast","q":"10","l":"10 min","m":"medium","a":"kids","h":false},{"i":20,"s":"candy-cane-sled","t":"Candy Cane Sled","q":"10","l":"10 min","m":"low","a":"all","h":false},{"i":21,"s":"hot-cocoa-stand-helper","t":"Hot Cocoa Stand Helper","q":"10","l":"10 min","m":"low","a":"all","h":false},{"i":22,"s":"cookie-baking-disaster","t":"Cookie Baking Disaster","q":"10","l":"10 min","m":"medium","a":"all","h":true},{"i":23,"s":"milk-and-cookies-taste-test","t":"Milk and Cookies Taste Test","q":"5","l":"5 min","m":"low","a":"kids","h":false},{"i":24,"s":"gingerbread-house-inspector","t":"Gingerbread House Inspector","q":"5","l":"5 min","m":"zero","a":"all","h":false},{"i":25,"s":"kindness-mission-card","t":"Kindness Mission Card","q":"5","l":"5 min","m":"zero","a":"all","h":true},{"i":26,"s":"candy-cane-scavenger-hunt","t":"Candy Cane Scavenger Hunt","q":"10","l":"10 min","m":"zero","a":"kids","h":false},{"i":27,"s":"build-a-snowman-challenge","t":"Build-a-Snowman Challenge","q":"5","l":"5 min","m":"low","a":"all","h":false},{"i":28,"s":"nice-list-certificate","t":"Nice List Certificate","q":"5","l":"5 min","m":"zero","a":"all","h":false},{"i":29,"s":"would-you-rather-card","t":"Would You Rather Card","q":"2","l":"2 min","m":"zero","a":"kids","h":false},{"i":30,"s":"farewell-letter-and-photo","t":"Farewell Letter and Photo","q":"10","l":"10 min","m":"zero","a":"all","h":false},{"i":31,"s":"im-back-arrival-banner","t":"I'm Back! Arrival Banner","q":"10","l":"10 min","m":"zero","a":"all","h":true},{"i":32,"s":"north-pole-arrival-breakfast","t":"North Pole Arrival Breakfast","q":"10","l":"10 min","m":"low","a":"all","h":false},{"i":33,"s":"special-delivery-arrival-box","t":"Special Delivery Arrival Box","q":"5","l":"5 min","m":"zero","a":"all","h":false},{"i":34,"s":"arrival-hide-and-seek-clue-trail","t":"Arrival Hide-and-Seek Clue Trail","q":"10","l":"10 min","m":"zero","a":"kids","h":false},{"i":35,"s":"snowy-footprints-arrival","t":"Snowy Footprints Arrival","q":"5","l":"5 min","m":"low","a":"all","h":true},{"i":36,"s":"toddler-peekaboo-blanket-fort","t":"Toddler Peekaboo Blanket Fort","q":"5","l":"5 min","m":"zero","a":"toddler","h":true},{"i":37,"s":"pom-pom-color-sorting-game","t":"Pom-Pom Color Sorting Game","q":"5","l":"5 min","m":"zero","a":"toddler","h":false},{"i":38,"s":"breakfast-cereal-garland","t":"Breakfast Cereal Garland","q":"5","l":"5 min","m":"zero","a":"toddler","h":true},{"i":39,"s":"my-first-sticker-scene","t":"My First Sticker Scene","q":"5","l":"5 min","m":"zero","a":"toddler","h":false},{"i":40,"s":"toy-car-wash-station","t":"Toy Car Wash Station","q":"10","l":"10 min","m":"low","a":"toddler","h":true},{"i":41,"s":"plush-friends-campout","t":"Plush Friends Campout","q":"5","l":"5 min","m":"zero","a":"toddler","h":true},{"i":42,"s":"fruit-face-breakfast-plate","t":"Fruit Face Breakfast Plate","q":"5","l":"5 min","m":"zero","a":"toddler","h":false},{"i":43,"s":"elf-workshop-build-station","t":"Elf Workshop Build Station","q":"15+","l":"20 min","m":"low","a":"kids","h":false},{"i":44,"s":"paper-snowflake-window-invasion","t":"Paper Snowflake Window Invasion","q":"15+","l":"20 min","m":"low","a":"kids","h":true},{"i":45,"s":"mini-elf-door-and-welcome-mat","t":"Mini Elf Door and Welcome Mat","q":"15+","l":"25 min","m":"low","a":"kids","h":false},{"i":46,"s":"cardboard-sleigh-build","t":"Cardboard Sleigh Build","q":"15+","l":"20 min","m":"low","a":"all","h":false},{"i":47,"s":"gingerbread-village-street","t":"Gingerbread Village Street","q":"15+","l":"20 min","m":"medium","a":"kids","h":false},{"i":48,"s":"elf-photo-booth-props","t":"Elf Photo Booth Props","q":"10","l":"10 min","m":"zero","a":"all","h":false},{"i":49,"s":"elf-story-mad-libs-card","t":"Elf Story Mad Libs Card","q":"5","l":"5 min","m":"zero","a":"kids","h":false},{"i":50,"s":"elf-workout-challenge-cards","t":"Elf Workout Challenge Cards","q":"5","l":"5 min","m":"zero","a":"all","h":false},{"i":51,"s":"guess-how-many-jar","t":"Guess How Many Jar","q":"10","l":"10 min","m":"zero","a":"all","h":false},{"i":52,"s":"draw-my-outfit-contest","t":"Draw My Outfit Contest","q":"10","l":"10 min","m":"zero","a":"kids","h":false},{"i":53,"s":"flour-snowball-fight","t":"Flour Snowball Fight","q":"10","l":"10 min","m":"high","a":"kids","h":true},{"i":54,"s":"bubble-bath-foam-mountain","t":"Bubble Bath Foam Mountain","q":"10","l":"10 min","m":"high","a":"all","h":false},{"i":55,"s":"wrapping-paper-mayhem","t":"Wrapping Paper Mayhem","q":"15+","l":"15+ min","m":"high","a":"kids","h":true},{"i":56,"s":"elf-in-the-fridge-surprise","t":"Elf in the Fridge Surprise","q":"5","l":"5 min","m":"zero","a":"all","h":true},{"i":57,"s":"fridge-magnet-message","t":"Fridge Magnet Message","q":"5","l":"5 min","m":"zero","a":"kids","h":false},{"i":58,"s":"closet-fashion-show-elf","t":"Closet Fashion Show Elf","q":"10","l":"10 min","m":"zero","a":"all","h":true},{"i":59,"s":"memory-jar-last-week-goodbye","t":"Memory Jar - Last Week Goodbye","q":"10","l":"10 min","m":"zero","a":"all","h":true},{"i":60,"s":"goodbye-breakfast-and-hug-coupon","t":"Goodbye Breakfast and Hug Coupon","q":"10","l":"10 min","m":"low","a":"all","h":false}];
+const ALT = /*ALT_DATA*/{"movie-night-popcorn-patrol":"Illustration of a small elf sitting on a sofa holding a TV remote bigger than its arm, next to a bowl of popcorn with three pieces fallen on the floor","storytime-reading-corner":"Illustration of a small elf sitting on a pillow with an open book on its lap, and two stuffed bears sitting with their backs to the viewer","shoe-shoe-train":"Illustration of three shoes lined up like train cars, with a small elf riding in the first shoe and a stuffed bear in each of the others","toothbrush-delivery-elf":"Illustration of a small elf sitting on a bathroom counter, holding up a new toothbrush tied with a red bow like a trophy","tangled-in-christmas-lights":"Illustration of a small elf sitting on the floor tangled in a string of glowing lights, with a small battery box beside it","hiding-in-the-christmas-tree":"Illustration of a Christmas tree with a small elf hiding among the branches halfway up, only its head and one hand showing","letter-to-santa-station":"Illustration of a table set up for letter writing with blank paper, colored pencils and a small red mailbox, and a small elf holding a little envelope","trapped-in-a-jar":"Illustration of a small elf sitting inside a large open glass jar with its hands up against the glass, the lid lying beside it and a blank card in front","christmas-countdown-chain":"Illustration of a small elf holding up one end of a red and green paper chain that trails across the floor, with loose paper strips and a marker nearby","sleeping-in-a-stocking":"Illustration of a red Christmas stocking hanging from a wall peg with a small elf tucked inside, eyes closed, only its head out and cotton for a pillow","flour-snow-angel":"Illustration of a shallow tray of flour with a snow-angel shape pressed into it, and a small elf sitting proudly beside the tray","toilet-paper-tree-makeover":"Illustration of a Christmas tree wrapped in loose bands of toilet paper, with a small elf sitting beside it holding the roll","marshmallow-bubble-bath":"Illustration of a small elf relaxing in a bowl filled with mini marshmallows like bath foam, only its head and boots showing, with a gold rubber duck and a blank card beside the bowl","toothpaste-mirror-message":"Illustration of a small elf sitting on a bathroom counter holding an open tube of toothpaste, in front of a blank mirror with a dab of toothpaste in the corner","silly-banana-bunch":"Illustration of a bunch of bananas in a fruit bowl, each banana with a different face drawn on it, and a small elf sitting beside the bowl holding a pen","sink-fishing-trip":"Illustration of a small elf sitting on a counter fishing with a little stick-and-string rod over a blue bowl of fish-shaped crackers, with two caught crackers on a plate","sticky-note-surprise-wall":"Illustration of colored sticky notes arranged in the shape of a Christmas tree on a door, a few of them blank, with a small elf sitting below holding a marker","elf-zipline-adventure":"Illustration of a small elf riding a string zipline across the living room, hanging from a candy cane hooked over the string between a bookshelf and a sofa","sweet-spaghetti-breakfast":"Illustration of a small plate of spaghetti topped with syrup, sprinkles and a marshmallow, and a small elf sitting beside it holding a fork taller than itself","candy-cane-sled":"Illustration of a small elf sitting on a little sled made of candy canes and craft sticks, on cotton snow, with two tiny presents stacked behind it","hot-cocoa-stand-helper":"Illustration of a small elf standing behind a big mug like a cocoa stand, with a blank sign on a post and a little pot of mini marshmallows","cookie-baking-disaster":"Illustration of a small elf sitting on a kitchen counter holding a star cookie cutter, with a rolling pin, a patch of flour, little flour footprints and a bitten cookie","milk-and-cookies-taste-test":"Illustration of three different cookies in a row, each with a small cup of milk, and a small elf holding a pencil over a blank score sheet with empty stars","gingerbread-house-inspector":"Illustration of a large gingerbread house with a small elf standing beside it, holding a blank clipboard and a magnifying glass","kindness-mission-card":"Illustration of a small elf peeking over the top of a large blank envelope, with a small blank card beside it","candy-cane-scavenger-hunt":"Illustration of a candy cane half hidden behind a cushion, and a small elf standing nearby holding up a blank card","build-a-snowman-challenge":"Illustration of a finished marshmallow snowman on a table next to a small elf pointing at three loose marshmallows, toothpicks and sprinkles","nice-list-certificate":"Illustration of a blank certificate with a gold border lying on a bed, a gold ribbon rosette beside it and a small elf asleep on one corner","would-you-rather-card":"Illustration of a small elf sitting at a breakfast table holding up a large blank card, with a mug and a plate beside it","farewell-letter-and-photo":"Illustration of a small elf sitting under a Christmas tree at night between an open blank letter and a small picture frame showing a plain silhouette","im-back-arrival-banner":"Illustration of a blank paper banner hung across a wall with a little bell at each end, and a small elf standing underneath holding a marker","north-pole-arrival-breakfast":"Illustration of a stack of mini pancakes topped with a strawberry on a small plate, with a small elf behind it holding a blank sign and a little cup beside it","special-delivery-arrival-box":"Illustration of an open kraft-paper box with a small elf inside on cotton, only its head showing, with a string bow and a blank tag beside the box","arrival-hide-and-seek-clue-trail":"Illustration of three blank cards laid in a curving trail across the floor leading to a Christmas tree, with a small elf half hidden behind the tree and a little bell on the floor beside it","snowy-footprints-arrival":"Illustration of a doormat by a door left ajar, with a trail of five little white footprints curving across the floor to a small elf sitting at the end","toddler-peekaboo-blanket-fort":"Illustration of a blanket fort with a small elf peeking out through the opening, and two large stuffed bears sitting in front as the audience","pom-pom-color-sorting-game":"Illustration of a tray with three colored cups, large pom-poms already sorted into two of them, and a small elf holding a pom-pom next to the third cup","breakfast-cereal-garland":"Illustration of a small elf sitting on a kitchen table wearing a garland of cereal rings as a necklace that is far too big, with a small bowl beside it","my-first-sticker-scene":"Illustration of a large poster with a simple tree outline and three stickers on it, and a small elf standing on a little stool holding a star, not reaching the top","toy-car-wash-station":"Illustration of a basin of soapy water on a towel with a toy car being washed, a second toy car waiting in line, and a small elf beside the basin holding a little brush","plush-friends-campout":"Illustration of a row of three little sleeping bags on the floor with a stuffed bear, a small elf and another stuffed bear tucked in, only their heads showing, and a flashlight switched off beside them","fruit-face-breakfast-plate":"Illustration of a large plate with a pancake face made with banana-slice hair, strawberry cheeks and halved-blueberry eyes, and a small elf sitting by the plate holding a strawberry","elf-workshop-build-station":"Illustration of a tiny workshop on a table with a stack of wooden blocks, a toy hammer, a blank sign and a half-built toy car with a small elf sitting on top of it","paper-snowflake-window-invasion":"Illustration of a window at night covered in paper snowflakes hanging on strings, with a small elf sitting on the windowsill holding one huge snowflake","mini-elf-door-and-welcome-mat":"Illustration of a tiny red arched door with a gold bell for a knob at the bottom of a wall, with a striped little mat in front and a small elf sitting on the mat","cardboard-sleigh-build":"Illustration of a small elf sitting in a red cardboard-box sleigh with candy-cane runners and cotton on the seat, holding string reins","gingerbread-village-street":"Illustration of four small gingerbread houses in two rows on a white board, a path of sprinkles down the middle, and a small elf standing in the street holding a clipboard","elf-photo-booth-props":"Illustration of a small elf standing inside a gold cardboard frame holding a paper mustache on a stick in front of its face, with a pot of paper props beside it","elf-story-mad-libs-card":"Illustration of a large card on a table with five blank lines to fill in, a pencil resting on the first line, a small elf holding the pencil and an envelope beside it","elf-workout-challenge-cards":"Illustration of a small elf toppled over on a little exercise mat with its arms stretched out, three blank cards fanned on the floor in front and a cushion beside it","guess-how-many-jar":"Illustration of a closed clear jar full of marshmallows with a small elf sitting on the lid holding a blank slip of paper, and three more slips and a pencil beside the jar","draw-my-outfit-contest":"Illustration of a sheet of paper with an elf outline to color in, one boot colored red and the other green, colored pencils fanned beside it and a small elf holding a pencil","flour-snowball-fight":"Illustration of a high-rimmed tray of flour with a small elf peeking over a cotton-ball fort on one side, two stuffed bears on the other side and cotton-ball snowballs lying between them","bubble-bath-foam-mountain":"Illustration of a small tub overflowing with a round mountain of white foam, a small elf sitting on top, a gold rubber duck resting on the side and a towel on the floor","wrapping-paper-mayhem":"Illustration of a living room where a cushion, a book and a TV remote have been gift-wrapped with bows, and a small elf sits on the wrapped remote holding the end of a roll of wrapping paper","elf-in-the-fridge-surprise":"Illustration of the inside of a fridge with a small elf sitting on a clean little plate wearing an extra paper scarf, between closed containers and bottles, with a blank card in front","fridge-magnet-message":"Illustration of a fridge door with a row of colored magnet tiles and an empty space at the end, and a small elf below holding the missing tile, with a blank card beside it","closet-fashion-show-elf":"Illustration of a small elf standing on a paper runway on the floor, with three tiny outfits hanging on a little clothesline behind it","memory-jar-last-week-goodbye":"Illustration of a nearly empty clear jar with two small cards inside, a fan of blank cards beside it and a small elf holding up one blank card","goodbye-breakfast-and-hug-coupon":"Illustration of a breakfast place setting with a heart-shaped cookie on a little plate and a blank coupon propped against a mug, and a small elf holding a little letter"};
+(function () {
+  const KEY = 'tonight-preview-v1';
+  const LABEL = { five: '5 minutes', nomess: 'No mess', home: 'Only stuff I have' };
+  const MESS = { zero: 'Zero mess', low: 'Low mess', medium: 'Medium mess', high: 'High mess' };
+  const AGE = { all: 'All ages', toddler: 'Toddler (2-4)', kids: 'Kids (5-9)' };
+  const TEST = { five: (i) => i.q === '2' || i.q === '5', nomess: (i) => i.m === 'zero', home: (i) => i.h };
+  const DROP_ORDER = ['home', 'nomess', 'five']; // what to let go of first when fewer than 3 ideas match
+  const buttons = [...document.querySelectorAll('.crit')];
+  const statusEl = document.getElementById('tonight-status');
+  const listEl = document.getElementById('tonight-results');
+  const allLink = document.getElementById('tonight-all');
+
+  const nightId = () => new Date(Date.now() - 4 * 3600 * 1000).toLocaleDateString('en-CA'); // a "night" ends at 4am
+  function load() {
+    let s = null;
+    try { s = JSON.parse(localStorage.getItem(KEY)); } catch (e) { /* storage blocked: still works, just without memory */ }
+    if (!s || typeof s !== 'object') s = { night: nightId(), seen: [], last: [] };
+    if (s.night !== nightId()) s = { night: nightId(), seen: [], last: s.seen || [] };
+    return s;
+  }
+  function save(s) { try { localStorage.setItem(KEY, JSON.stringify(s)); } catch (e) { /* ignore */ } }
+
+  const active = () => buttons.filter((b) => b.getAttribute('aria-pressed') === 'true').map((b) => b.dataset.crit);
+  const matching = (crits) => IDEAS.filter((i) => crits.every((c) => TEST[c](i)));
+
+  function pool(crits) {
+    let used = crits.slice();
+    const dropped = [];
+    let found = matching(used);
+    for (const c of DROP_ORDER) {
+      if (found.length >= 3) break;
+      if (!used.includes(c)) continue;
+      used = used.filter((x) => x !== c); dropped.push(c); found = matching(used);
+    }
+    return { found, used, dropped, exact: matching(crits).length };
+  }
+
+  function pick(found, state, current) {
+    const fresh = (banned) => found.filter((i) => !banned.includes(i.i));
+    let c = fresh([...state.last, ...state.seen]);          // 1. not shown last night, not shown yet tonight
+    if (c.length < 3) c = fresh([...state.last, ...current]); // 2. the whole group has been seen tonight: start over
+    if (c.length < 3) c = fresh(current);                    // 3. small group: allow last night's, but not the 3 on screen
+    if (c.length < 3) c = found.slice();                     // 4. tiny group: never an empty result
+    for (let k = c.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [c[k], c[j]] = [c[j], c[k]]; }
+    return c.slice(0, 3);
+  }
+
+  function render(three, info, crits) {
+    listEl.innerHTML = three.map((i) =>
+      '<li><article class="card card--row"><img class="card__img" src="../../public/illustrations/' + i.s + '/square.svg" width="1080" height="1080" alt="' + (ALT[i.s] || '') + '">' +
+      '<div class="card__body"><h2 class="card__title"><a href="#ideas/' + i.s + '">' + i.t + '</a></h2>' +
+      '<ul class="meta" role="list"><li>' + i.l + '</li><li>' + MESS[i.m] + '</li><li>' + AGE[i.a] + '</li></ul></div></article></li>').join('');
+    listEl.classList.remove('is-dealt'); void listEl.offsetWidth; listEl.classList.add('is-dealt');
+    const n = info.found.length;
+    statusEl.classList.toggle('tonight__status--fallback', info.dropped.length > 0);
+    if (info.dropped.length) {
+      const kept = info.used.length ? info.used.map((c) => LABEL[c].toLowerCase()).join(', ') + ' ideas' : 'ideas from all 60';
+      statusEl.innerHTML = '<strong>No exact match tonight</strong> — here are ' + kept + '. We left out “' + info.dropped.map((c) => LABEL[c]).join('” and “') + '” to find you 3.';
+    } else if (crits.length === 3) {
+      statusEl.innerHTML = '<strong>' + n + ' ideas</strong> match all three. Here are 3 for tonight.';
+    } else if (crits.length === 0) {
+      statusEl.innerHTML = '<strong>All ' + n + ' ideas</strong> are in the hat. Here are 3 for tonight.';
+    } else {
+      statusEl.innerHTML = '<strong>' + n + ' ideas</strong> match ' + crits.map((c) => '“' + LABEL[c] + '”').join(' + ') + '. Here are 3 for tonight.';
+    }
+    allLink.textContent = crits.length === 0 || info.dropped.length ? 'See all ' + n + ' ideas' : 'See all ' + n + ' matches';
+  }
+
+  let current = [];
+  function draw() {
+    const crits = active();
+    const info = pool(crits);
+    const state = load();
+    const three = pick(info.found, state, current);
+    current = three.map((i) => i.i);
+    state.seen = [...new Set([...state.seen, ...current])];
+    if (info.found.every((i) => state.seen.includes(i.i))) state.seen = current.slice(); // went through the whole group
+    save(state);
+    render(three, info, crits);
+  }
+
+  buttons.forEach((b) => b.addEventListener('click', () => {
+    b.setAttribute('aria-pressed', b.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+    draw();
+  }));
+  document.getElementById('tonight-again').addEventListener('click', draw);
+})();
+</script>
+</body>
+</html>

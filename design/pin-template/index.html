@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pin template — variants and rules</title>
+<link rel="stylesheet" href="../../src/styles/tokens.css">
+<style>
+  body { margin: 0; padding: var(--space-4) var(--gutter) var(--space-7); background: var(--bg-page); color: var(--text); font-family: var(--font-body); font-size: var(--text-base); line-height: var(--leading-body); }
+  h1, h2 { font-family: var(--font-display); line-height: var(--leading-tight); margin: var(--space-6) 0 var(--space-3); }
+  h1 { font-size: var(--text-2xl); margin-top: 0; }
+  h2 { font-size: var(--text-xl); }
+  p, li { max-width: 72ch; }
+  code { background: var(--bg-sunken); padding: 0.1em 0.35em; border-radius: var(--radius-sm); font-size: 0.92em; }
+  .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-4); }
+  figure { margin: 0; }
+  .frame { position: relative; width: 250px; height: 375px; overflow: hidden; border-radius: var(--radius-md); box-shadow: var(--shadow-lift); background: var(--bg-sunken); }
+  .frame iframe { width: 1000px; height: 1500px; border: 0; transform: scale(0.25); transform-origin: 0 0; }
+  figcaption { margin-top: var(--space-2); font-weight: var(--weight-bold); }
+  figcaption small { display: block; font-weight: var(--weight-regular); color: var(--text-muted); }
+  table { border-collapse: collapse; width: 100%; max-width: 60rem; }
+  th, td { text-align: left; padding: var(--space-2) var(--space-3); border-bottom: 2px solid var(--border); vertical-align: top; }
+  th { font-size: var(--text-sm); }
+</style>
+</head>
+<body>
+<h1>Pin template — 3 variants, 1000 × 1500</h1>
+<p>For Marketing (Phase 4). One pin per idea, deep-linked to its idea page. The illustration is the idea’s <code>vertical</code> file; the title is an HTML text layer on top. Illustrations shown here are placeholders — final pins are exported only when the final art exists.</p>
+
+<h2>Variants</h2>
+<div class="row">
+  <figure><div class="frame"><iframe src="pin.html?slug=marshmallow-bubble-bath&variant=a" title="Variant A preview" loading="lazy"></iframe></div><figcaption>A — Clean band<small>Text straight on the wall colour. Light rooms.</small></figcaption></figure>
+  <figure><div class="frame"><iframe src="pin.html?slug=hiding-in-the-christmas-tree&variant=a" title="Variant A on a night-blue room" loading="lazy"></iframe></div><figcaption>A — on night blue<small>Living room / tree ideas switch to cream text.</small></figcaption></figure>
+  <figure><div class="frame"><iframe src="pin.html?slug=trapped-in-a-jar&variant=b" title="Variant B preview" loading="lazy"></iframe></div><figcaption>B — Ribbon<small>Red header. Strongest in a busy feed.</small></figcaption></figure>
+  <figure><div class="frame"><iframe src="pin.html?slug=arrival-hide-and-seek-clue-trail&variant=c" title="Variant C preview with the longest title" loading="lazy"></iframe></div><figcaption>C — Note card<small>Paper card taped on top. Shown with the longest title.</small></figcaption></figure>
+</div>
+
+<h2>How to make a pin</h2>
+<ol>
+  <li>Open <code>pin.html?slug=&lt;slug&gt;&amp;variant=a</code> (or <code>b</code>, <code>c</code>). The title, room and facts come from <code>pin-data.js</code>, which is generated from <code>src/data/ideas.json</code> — never retype a title.</li>
+  <li>Optional: <code>&amp;title=…</code> for an approved alternative title, <code>&amp;kicker=…</code> for another kicker, <code>&amp;kicker=none</code> to hide it.</li>
+  <li>Export at exactly 1000 × 1500 px (browser window or screenshot tool set to that size). Save as PNG.</li>
+  <li>The pin links to <code>/ideas/&lt;slug&gt;/</code>. The pin description is text on Pinterest, not in the image.</li>
+</ol>
+
+<h2>Rules</h2>
+<table>
+  <tr><th>Title</th><td>Maximum 40 characters and 3 lines. Up to 16 characters = largest size, 17–24 = medium, 25–32 = small, 33–40 = smallest. The template picks the size from the length. All 60 idea titles fit (longest: 32 characters). Sentence stays as written in the data: no ALL CAPS, no emoji.</td></tr>
+  <tr><th>Kicker</th><td>Maximum 22 characters, one line, facts only (time and mess from the data). No prices, no “#1”, no counts, no “as seen on”.</td></tr>
+  <tr><th>Text layer</th><td>Title, kicker and site name are HTML text. Never put words, letters or numbers inside the illustration file.</td></tr>
+  <tr><th>Safe areas</th><td>60 px outer margin. Title band: y 60–480. Illustration focal area: y 560–1440 — no text over it.</td></tr>
+  <tr><th>Site mark</th><td>Small, once, top of the band: mascot face + site name (“Daily Elf Magic” is a placeholder). Never a third-party logo or brand name.</td></tr>
+  <tr><th>Colour pairs</th><td>A on light rooms: night-blue text on the wall, red kicker with snow text (6.41:1). A on night blue: cream text (12.25:1), gold kicker with night text (5.87:1). B: snow on red (6.41:1), gold kicker with night text. C: night on snow (12.88:1), red kicker text (6.41:1). Never gold text on cream or on red.</td></tr>
+  <tr><th>Fonts</th><td>Fredoka Bold for the title, Nunito Bold for kicker and mark. This file makes no network request: install both fonts on the machine that exports the pins, otherwise the fallback (a rounded system font) is used.</td></tr>
+  <tr><th>Variant choice</th><td>A is the default. Use B when the wall colour is pale and the pin needs more punch. Use C for goodbye, arrival and note-driven ideas. Keep one variant per board row so the grid looks planned.</td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,223 @@
+/*
+ * DESIGN TOKENS — Daily Elf Magic (site name is a placeholder)
+ * Owner: Visual/UX Designer. Handoff: docs/handoffs/02b-design-system.md
+ *
+ * Custom properties only. No selectors other than :root, no @import, no font URL.
+ * Fonts are self-hosted by next/font (src/app/fonts.ts) and reach this file as
+ * --font-face-display / --font-face-body.
+ *
+ * COLOUR RULE (locked): only the 6 base colours below, plus tints/shades of
+ * them. A derived tone is ONE base colour mixed toward cream/white (tint) or
+ * toward night blue/black (shade). No new hue. Every derived tone lists its
+ * recipe (plain sRGB mix, per channel). Derived tones are PENDING owner
+ * approval at Gate 2.
+ *
+ * scripts/generate-placeholders.mjs reads the --color-* values from this file,
+ * and scripts/check-placeholders.mjs rejects any SVG colour that is not here.
+ * Change a hex here, re-run the generator, and every placeholder follows.
+ */
+
+:root {
+  /* ---------------------------------------------------------------
+   * 1. BASE PALETTE — the 6 locked colours
+   * ------------------------------------------------------------- */
+  --color-red: #B42318;   /* elf red: hat, tunic, boots, primary actions */
+  --color-pine: #14532D;  /* pine green: scarf, trousers, links, success */
+  --color-cream: #FDF6E3; /* page background, paper */
+  --color-gold: #D9A441;  /* bell, lights, highlights (never text on cream) */
+  --color-night: #22304A; /* night blue: text, night panels, living-room walls */
+  --color-wood: #8A5A3B;  /* wood brown: hair, counters, tables */
+
+  /* ---------------------------------------------------------------
+   * 2. DERIVED TONES — tints and shades of the 6 (pending approval)
+   * ------------------------------------------------------------- */
+  /* red */
+  --color-red-700: #902625;  /* 75% red + 25% night blue  — pressed/hover red, hat fold, boot soles */
+  --color-red-300: #E3AC9C;  /* 35% red + 65% cream       — rosy cheeks */
+  --color-red-200: #EECCBA;  /* 20% red + 80% cream       — bedroom floor/bed */
+  --color-red-100: #F6E3D1;  /*  9% red + 91% cream       — "rosy cream" bedroom wall, safety callout fill */
+
+  /* pine green */
+  --color-pine-800: #0E3A20; /* 70% pine + 30% black      — tree shading, pressed green */
+  --color-pine-400: #7D9C7F; /* 55% pine + 45% cream      — whole-house floor, soft green props */
+  --color-pine-100: #DADEC8; /* 15% pine + 85% cream      — entryway wall, selected-chip fill */
+
+  /* gold */
+  --color-gold-700: #A37B31; /* 75% gold + 25% black      — bell slit, cookie edges, gold outlines */
+  --color-gold-300: #EBCD92; /* 50% gold + 50% cream      — soft lights, cookies, pancakes */
+  --color-gold-100: #F6E6C3; /* 20% gold + 80% cream      — table wall, note card fill */
+
+  /* night blue */
+  --color-night-900: #0F1621; /* 45% night + 55% black    — the elf's round "black" eyes */
+  --color-night-800: #1A2438; /* 75% night + 25% black    — living-room floor, footer */
+  --color-night-600: #434E61; /* 85% night + 15% cream    — borders and flecks on night blue */
+  --color-night-500: #646B78; /* 70% night + 30% cream    — secondary text (AA on cream/snow only) */
+  --color-night-300: #9CA2AE; /* 45% night + 55% white    — glass, metal, water lines, disabled */
+  --color-night-200: #C8CBD2; /* 25% night + 75% white    — "light blue" bathroom wall */
+  --color-night-100: #E9EAED; /* 10% night + 90% white    — bathroom counter, fridge interior */
+
+  /* wood brown */
+  --color-wood-800: #613F29;  /* 70% wood + 30% black     — counter front, table edge */
+  --color-wood-400: #C4A88F;  /* 50% wood + 50% cream     — kraft paper, cardboard, soft outlines */
+  --color-wood-200: #DFCDB7;  /* 26% wood + 74% cream     — the elf's skin */
+  --color-wood-100: #F2E6D2;  /* 10% wood + 90% cream     — hairlines, paper grain, card borders */
+
+  /* cream */
+  --color-snow: #FEFCF7;      /* 30% cream + 70% white    — paper, cards, marshmallows, flour, cotton */
+
+  /* ---------------------------------------------------------------
+   * 3. SEMANTIC ROLES — components use these, never the raw palette
+   *    Contrast (WCAG 2.1) is noted for every text pair; all are AA.
+   * ------------------------------------------------------------- */
+  /* surfaces */
+  --bg-page: var(--color-cream);
+  --bg-surface: var(--color-snow);          /* cards, inputs */
+  --bg-sunken: var(--color-wood-100);       /* fact bar, quiet panels */
+  --bg-note: var(--color-gold-100);         /* elf note card */
+  --bg-night: var(--color-night);           /* Tonight Mode panel, pin ribbon */
+  --bg-night-deep: var(--color-night-800);  /* footer */
+  --bg-safety: var(--color-red-100);        /* safety callout */
+  --bg-selected: var(--color-pine-100);     /* selected chip, checked row */
+
+  /* text */
+  --text: var(--color-night);               /* 12.25:1 on cream, 12.88:1 on snow, 10.71:1 on wood-100/gold-100 */
+  --text-muted: var(--color-night-500);     /* 4.97:1 on cream, 5.23:1 on snow — do NOT use on sunken/note fills */
+  --text-on-night: var(--color-cream);      /* 12.25:1 on night, 14.38:1 on night-800 */
+  --text-on-night-muted: var(--color-night-200); /* 8.13:1 on night */
+  --text-on-accent: var(--color-snow);      /* 6.41:1 on red, 8.23:1 on red-700 */
+  --text-safety: var(--color-night);        /* 10.59:1 on red-100 */
+  --text-safety-label: var(--color-red-700);/* 6.76:1 on red-100 */
+
+  /* accents */
+  --accent: var(--color-red);               /* primary button fill; as text 6.09:1 on cream */
+  --accent-hover: var(--color-red-700);
+  --accent-2: var(--color-pine);            /* secondary button, checked state; 8.45:1 on cream */
+  --accent-2-hover: var(--color-pine-800);
+  --highlight: var(--color-gold);           /* decoration + fills only. Text on gold = night (5.87:1) */
+  --highlight-on-night: var(--color-gold);  /* gold text/icons on night: 5.87:1 */
+  --link: var(--color-pine);                /* 8.45:1 on cream, 8.89:1 on snow, 7.39:1 on gold-100 */
+  --link-hover: var(--color-red-700);       /* 7.82:1 on cream */
+
+  /* borders */
+  --border: var(--color-wood-100);          /* hairline on cream/snow (decorative) */
+  --border-strong: var(--color-wood-400);   /* card edge that needs to read (decorative) */
+  --border-control: var(--color-night-500); /* inputs, unselected chips: 4.97:1 on cream (UI needs 3:1) */
+  --border-on-night: var(--color-night-600);          /* decorative hairline on night */
+  --border-control-on-night: var(--color-night-300); /* unpressed buttons on night: 5.15:1 */
+
+  /* focus — night ring on light surfaces, gold ring on night panels */
+  --focus-ring: var(--color-night);         /* 12.25:1 against cream */
+  --focus-ring-on-night: var(--color-gold); /* 5.87:1 against night */
+  --focus-width: 3px;
+  --focus-offset: 3px;
+
+  /* ---------------------------------------------------------------
+   * 4. TYPOGRAPHY
+   *    Display: Fredoka (SIL OFL 1.1) — rounded, playful, big on pins.
+   *    Body:    Nunito  (SIL OFL 1.1) — rounded, very readable at 16-18px.
+   *    Both ship through next/font (self-hosted). `ui-rounded` keeps the
+   *    rounded feel on Apple devices before/without the web font.
+   * ------------------------------------------------------------- */
+  --font-display: var(--font-face-display, 'Fredoka'), ui-rounded, 'Arial Rounded MT Bold',
+    'Hiragino Maru Gothic ProN', 'Trebuchet MS', system-ui, sans-serif;
+  --font-body: var(--font-face-body, 'Nunito'), ui-rounded, 'Avenir Next', 'Segoe UI', system-ui,
+    -apple-system, sans-serif;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* scale — mobile first, fluid between 360px and 1200px viewports */
+  --text-xs: 0.8125rem;                               /* 13px — legal lines, never below this */
+  --text-sm: 0.9375rem;                               /* 15px — chips, captions */
+  --text-base: 1.0625rem;                             /* 17px — body */
+  --text-md: 1.1875rem;                               /* 19px — lead, card titles */
+  --text-lg: clamp(1.3125rem, 1.2rem + 0.5vw, 1.5rem);    /* 21-24px — h3 */
+  --text-xl: clamp(1.5625rem, 1.35rem + 1vw, 2rem);       /* 25-32px — h2 */
+  --text-2xl: clamp(1.9375rem, 1.55rem + 1.9vw, 2.75rem); /* 31-44px — h1 */
+  --text-3xl: clamp(2.25rem, 1.7rem + 2.8vw, 3.5rem);     /* 36-56px — home hero */
+
+  --leading-tight: 1.12;  /* display headings */
+  --leading-snug: 1.3;    /* card titles, buttons */
+  --leading-body: 1.55;   /* paragraphs, steps */
+  --tracking-display: -0.01em;
+  --tracking-label: 0.06em; /* small uppercase labels */
+  --measure: 62ch;          /* max line length for running text */
+
+  /* ---------------------------------------------------------------
+   * 5. SPACING (4px base), LAYOUT
+   * ------------------------------------------------------------- */
+  --space-1: 0.25rem;  /* 4 */
+  --space-2: 0.5rem;   /* 8 */
+  --space-3: 0.75rem;  /* 12 */
+  --space-4: 1rem;     /* 16 */
+  --space-5: 1.5rem;   /* 24 */
+  --space-6: 2rem;     /* 32 */
+  --space-7: 3rem;     /* 48 */
+  --space-8: 4rem;     /* 64 */
+
+  --gutter: clamp(1rem, 0.6rem + 2vw, 2rem);            /* page side padding */
+  --section-gap: clamp(2.5rem, 1.8rem + 3vw, 4.5rem);   /* between page sections */
+  --content-max: 72rem;   /* 1152px page container */
+  --reading-max: 44rem;   /* 704px idea-page text column */
+  --touch-min: 2.75rem;   /* 44px — minimum touch target, both axes */
+  --touch-big: 4.5rem;    /* 72px — Tonight Mode buttons */
+
+  /* ---------------------------------------------------------------
+   * 6. RADII
+   * ------------------------------------------------------------- */
+  --radius-sm: 0.5rem;    /* 8  — inputs, small tags */
+  --radius-md: 0.875rem;  /* 14 — cards, callouts */
+  --radius-lg: 1.375rem;  /* 22 — panels, illustration frames */
+  --radius-pill: 999px;   /* chips, buttons */
+
+  /* ---------------------------------------------------------------
+   * 7. SHADOWS — flat "paper cut-out" look: solid offset, no blur.
+   *    Only palette tones, so a shadow never introduces a new colour.
+   * ------------------------------------------------------------- */
+  --shadow-paper: 0 2px 0 var(--color-wood-100);        /* resting card on cream */
+  --shadow-lift: 0 5px 0 var(--color-wood-400);         /* hovered card */
+  --shadow-button: 0 4px 0 var(--color-red-700);        /* primary button "depth" */
+  --shadow-button-2: 0 4px 0 var(--color-pine-800);     /* secondary button "depth" */
+  --shadow-on-night: 0 4px 0 var(--color-night-800);    /* cards sitting on the night panel */
+  --shadow-pressed: 0 1px 0 var(--color-night-800);
+
+  /* ---------------------------------------------------------------
+   * 8. MOTION — short and springy; everything collapses to instant
+   *    under prefers-reduced-motion (see the media query below).
+   * ------------------------------------------------------------- */
+  --duration-instant: 80ms;  /* press feedback */
+  --duration-fast: 140ms;    /* hover, focus, chip toggle */
+  --duration-base: 220ms;    /* cards dealing in, checklist tick */
+  --duration-slow: 420ms;    /* Tonight Mode "deal 3 cards", elf peek */
+  --stagger: 70ms;           /* delay between the 3 Tonight cards */
+  --ease-out: cubic-bezier(0.22, 0.8, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.6, 0, 0.3, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.45, 0.64, 1); /* small overshoot: bell jingle, card landing */
+  --lift: -3px;              /* hover translateY for cards */
+  --press: 3px;              /* active translateY for buttons */
+  --wiggle: 6deg;            /* bell / hat-tip rotation */
+
+  /* ---------------------------------------------------------------
+   * 9. LAYERS
+   * ------------------------------------------------------------- */
+  --z-base: 0;
+  --z-raised: 1;    /* Pin button over the illustration */
+  --z-sticky: 10;   /* sticky header */
+  --z-overlay: 20;  /* filter sheet */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-instant: 0ms;
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-slow: 0ms;
+    --stagger: 0ms;
+    --ease-bounce: linear;
+    --lift: 0px;
+    --press: 0px;
+    --wiggle: 0deg;
+  }
+}

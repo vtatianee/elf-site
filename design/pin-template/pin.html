@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1000">
+<title>Pin template — 1000 x 1500</title>
+<link rel="stylesheet" href="../../src/styles/tokens.css">
+<link rel="stylesheet" href="pin.css">
+</head>
+<body>
+<!--
+  ONE PIN = ONE IDEA.  Open:  pin.html?slug=<slug>&variant=a|b|c
+  Optional:  &title=Custom%20title   &kicker=Custom%20kicker   &kicker=none
+  Export: set the browser window (or the screenshot tool) to exactly 1000 x 1500 and capture.
+  The title is an HTML text layer. It is never part of the illustration file.
+  Without JavaScript this file shows idea 13, variant A.
+-->
+<main class="pin" id="pin" data-variant="a" data-wall="light" data-len="m">
+  <img class="pin__art" id="art" src="../../public/illustrations/marshmallow-bubble-bath/vertical.svg" width="1000" height="1500" alt="">
+  <div class="pin__band">
+    <p class="pin__mark"><img src="../mascot/elf-head.svg" alt="" width="300" height="260"><span>Daily Elf Magic</span></p>
+    <p class="pin__kicker" id="kicker">5 min · Low mess</p>
+    <h1 class="pin__title" id="title">Marshmallow Bubble Bath</h1>
+  </div>
+</main>
+<script src="pin-data.js"></script>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var data = window.PIN_DATA || {};
+  var slug = q.get('slug') || 'marshmallow-bubble-bath';
+  var idea = data[slug];
+  if (!idea) { document.getElementById('title').textContent = 'Unknown slug: ' + slug; return; }
+  var MESS = { zero: 'Zero mess', low: 'Low mess', medium: 'Medium mess', high: 'High mess' };
+  var pin = document.getElementById('pin');
+  var title = q.get('title') || idea.title;
+  var kicker = q.get('kicker') || idea.time + ' · ' + MESS[idea.mess];
+  var variant = (q.get('variant') || 'a').toLowerCase();
+  pin.dataset.variant = ['a', 'b', 'c'].indexOf(variant) === -1 ? 'a' : variant;
+  pin.dataset.wall = idea.room === 'living-room-tree' ? 'dark' : 'light';
+  pin.dataset.len = title.length <= 16 ? 's' : title.length <= 24 ? 'm' : title.length <= 32 ? 'l' : 'xl';
+  document.getElementById('art').src = '../../public/illustrations/' + slug + '/vertical.svg';
+  document.getElementById('title').textContent = title;
+  var k = document.getElementById('kicker');
+  if (kicker === 'none') k.remove(); else k.textContent = kicker;
+  document.title = 'Pin — ' + title + ' (' + pin.dataset.variant.toUpperCase() + ')';
+})();
+</script>
+</body>
+</html>
