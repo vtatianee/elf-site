@@ -5,11 +5,8 @@ import { siteConfig } from '@/config/site'
 import { fontBody, fontDisplay } from './fonts'
 
 // STYLES — order matters: design tokens first, then the reset.
-// The Designer owns src/styles/tokens.css. Once that file exists, add this
-// line directly ABOVE the globals.css import:
-//
-//   import '@/styles/tokens.css'
-//
+// The Designer owns src/styles/tokens.css.
+import '@/styles/tokens.css'
 import '@/styles/globals.css'
 
 /**
