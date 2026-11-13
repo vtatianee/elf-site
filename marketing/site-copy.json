@@ -1,0 +1,661 @@
+{
+  "_meta": {
+    "status": "DRAFT — awaiting André’s approval (Gate 4)",
+    "note": "New site texts assigned to Marketing by the PM (handoff 01: C6b, D5, D6; 02b open point 5d). Every text is a DRAFT. After Gate 4 the Developer wires the approved ones into the site; Marketing edits nothing under src/."
+  },
+  "elfNotes": {
+    "6": {
+      "slug": "hiding-in-the-christmas-tree",
+      "kind": "card",
+      "text": "You found me! Tomorrow I’m picking a trickier branch.",
+      "status": "DRAFT",
+      "flag": "The source card says NO card for this idea (the fun is the search). Proposal: keep night 1 card-free as the PDF says, and use this note only on night 2 with the quick variation. André decides whether the page shows it at all."
+    },
+    "7": {
+      "slug": "letter-to-santa-station",
+      "kind": "card",
+      "text": "Santa’s mailbox is open! Write your letter today and I’ll fly it to the North Pole tonight.",
+      "status": "DRAFT",
+      "flag": null
+    },
+    "16": {
+      "slug": "sink-fishing-trip",
+      "kind": "card",
+      "text": "Gone fishing! The fish here are crunchy. Want a turn?",
+      "status": "DRAFT",
+      "flag": null
+    },
+    "17": {
+      "slug": "sticky-note-surprise-wall",
+      "kind": "card",
+      "text": "I covered your door in nice things. Every word is true!",
+      "status": "DRAFT",
+      "flag": null
+    },
+    "20": {
+      "slug": "candy-cane-sled",
+      "kind": "card",
+      "text": "New sled, test run tonight. Top speed: very sweet.",
+      "status": "DRAFT",
+      "flag": null
+    },
+    "23": {
+      "slug": "milk-and-cookies-taste-test",
+      "kind": "card",
+      "text": "Practicing for Santa’s big night. Rate them too — do we agree?",
+      "status": "DRAFT",
+      "flag": null
+    },
+    "28": {
+      "slug": "nice-list-certificate",
+      "kind": "certificate",
+      "text": "Official news from the North Pole: you made the Nice List!",
+      "status": "DRAFT",
+      "flag": "The certificate itself is the message (no card in the source). Proposal: print this line at the top of the certificate instead of a separate card; the page block would read “Elf note — on the certificate”."
+    },
+    "30": {
+      "slug": "farewell-letter-and-photo",
+      "kind": "letter",
+      "text": "Thank you for a wonderful December. Only Santa can touch me tonight — see you next year!",
+      "status": "DRAFT",
+      "flag": "Short version for the page block; the full farewell letter is in printables.farewellLetter."
+    },
+    "_rule": "D5 — the ideas whose elfNote is null in ideas.json (verified: 6, 7, 16, 17, 20, 23, 28, 30). Short, in the elf’s voice, matching only what the scene has."
+  },
+  "printables": {
+    "wouldYouRather": {
+      "ideaId": 29,
+      "slug": "would-you-rather-card",
+      "status": "DRAFT",
+      "rule": "24 questions = one printable set (source card step 3). Question 1 is verbatim from the source; 2–24 are new drafts. One card per day, December 1–24.",
+      "questions": [
+        {
+          "n": 1,
+          "text": "Would you rather ride a reindeer or drive the sleigh?",
+          "source": "ideas.json (verbatim)"
+        },
+        {
+          "n": 2,
+          "text": "Would you rather build a snowman or have a snowball fight?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 3,
+          "text": "Would you rather have a nose that glows like a reindeer’s or ears that jingle like bells?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 4,
+          "text": "Would you rather wrap presents with Santa or decorate cookies with the elves?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 5,
+          "text": "Would you rather live in a gingerbread house or in an igloo?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 6,
+          "text": "Would you rather be as tiny as an elf for a day or as tall as the Christmas tree?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 7,
+          "text": "Would you rather have hot cocoa with marshmallows or with whipped cream?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 8,
+          "text": "Would you rather find a mountain of snow outside your door or a mountain of presents under the tree?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 9,
+          "text": "Would you rather sing a Christmas song in front of everyone or dance to one?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 10,
+          "text": "Would you rather have a pet reindeer or a pet penguin?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 11,
+          "text": "Would you rather wear pajamas covered in candy canes or a sweater covered in tinsel?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 12,
+          "text": "Would you rather spend a day in Santa’s workshop or a night riding in the sleigh?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 13,
+          "text": "Would you rather have a snowball that never melts or a cookie that never runs out?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 14,
+          "text": "Would you rather be the star on top of the tree or a present underneath it?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 15,
+          "text": "Would you rather go ice-skating with a polar bear or sledding with a penguin?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 16,
+          "text": "Would you rather have Christmas lights in your hair or jingle bells on your shoes?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 17,
+          "text": "Would you rather eat breakfast at the North Pole or dinner at the South Pole?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 18,
+          "text": "Would you rather make the toys in the workshop or test them all?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 19,
+          "text": "Would you rather talk to reindeer or understand what snowmen say?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 20,
+          "text": "Would you rather open one present every day or all of them on Christmas morning?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 21,
+          "text": "Would you rather have a snow day every Monday or a cocoa party every Friday?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 22,
+          "text": "Would you rather be the elf for a day or have an elf as your friend all year?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 23,
+          "text": "Would you rather decorate the tree with candy or with paper snowflakes?",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 24,
+          "text": "Would you rather have pointy elf ears for a week or a jingling hat for a week?",
+          "source": "new (Marketing draft)"
+        }
+      ]
+    },
+    "farewellLetter": {
+      "ideaId": 30,
+      "slug": "farewell-letter-and-photo",
+      "status": "DRAFT",
+      "rule": "Source card step 1 and 3: it says thank you, mentions 2 real moments of the child’s year, promises to come back, and explains that only Santa can touch the elf at the farewell. Blanks are filled in by the parent.",
+      "blanks": [
+        "Child’s name",
+        "Real moment 1",
+        "Real moment 2"
+      ],
+      "text": [
+        "Dear ____________,",
+        "Tonight is my last night with you this year, and I want to say thank you. Thank you for the giggles, for the good mornings and for looking for me every single day.",
+        "I will always remember when you ________________________________, and the day you ________________________________. Both are going straight into my North Pole memory book.",
+        "Tonight Santa comes to take me home. Here is a little secret: at the farewell, only Santa can touch me. That is how the magic gets me safely back to the North Pole. So tonight, just a big wave from your bed!",
+        "Keep the little frame somewhere you can see it. Every time you look at it, I will be thinking of you too.",
+        "I promise to come back next December. Be kind, keep laughing, and save me a cozy spot by the tree.",
+        "Love,",
+        "Your elf"
+      ]
+    },
+    "storyCard": {
+      "ideaId": 49,
+      "slug": "elf-story-fill-in-the-blanks-card",
+      "status": "DRAFT",
+      "rule": "Keeps the source opening line and its 5 blanks in the same order (a noun, a place, a food, an animal, a verb). No blanks added.",
+      "blanks": [
+        "A noun",
+        "A place",
+        "A food",
+        "An animal",
+        "A verb"
+      ],
+      "text": "Last night, the elf rode a [1. a noun] to the [2. a place] ... When it got there, it was so hungry that it ate a whole [3. a food] in one bite. Then a sleepy [4. an animal] came over and asked to join the adventure. So the two of them decided to [5. a verb] all the way home before the sun came up. Shh — don’t tell Santa!",
+      "signOff": "Love, your elf"
+    },
+    "kindnessMissions": {
+      "ideaId": 25,
+      "slug": "kindness-mission-card",
+      "status": "DRAFT",
+      "rule": "12 missions, one per card, inside the “TOP SECRET MISSION” envelope. 1 is verbatim from the card; 2–4 come from the card’s own rotation (step 3); 5–12 are new drafts. Nothing needs scissors, heat, cooking or going out alone.",
+      "envelopeLabel": "TOP SECRET MISSION",
+      "missions": [
+        {
+          "n": 1,
+          "text": "Today: draw a picture for someone you love.",
+          "source": "ideas.json (verbatim)"
+        },
+        {
+          "n": 2,
+          "text": "Today: help set the table.",
+          "source": "ideas.json step 3"
+        },
+        {
+          "n": 3,
+          "text": "Today: pick a toy to donate.",
+          "source": "ideas.json step 3"
+        },
+        {
+          "n": 4,
+          "text": "Today: say thank you to someone.",
+          "source": "ideas.json step 3"
+        },
+        {
+          "n": 5,
+          "text": "Today: make a card for a neighbor or a friend.",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 6,
+          "text": "Today: give three people a compliment.",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 7,
+          "text": "Today: help a grown-up tidy up — without being asked.",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 8,
+          "text": "Today: share a toy or a snack with someone.",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 9,
+          "text": "Today: read a story to a younger kid or to a stuffed animal.",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 10,
+          "text": "Today: let someone else go first.",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 11,
+          "text": "Today: make someone laugh.",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 12,
+          "text": "Today: give someone in your family a big hug and tell them why you love them.",
+          "source": "new (Marketing draft)"
+        }
+      ]
+    },
+    "clueTrail": {
+      "ideaId": 34,
+      "slug": "arrival-hide-and-seek-clue-trail",
+      "status": "DRAFT",
+      "rule": "4 clue cards in sequence from the bed to the hiding spot (source card). Clue 1 is the verbatim starting card. Clues 2–4 are new and generic: the parent writes the next place in the blank. The hiding spot must be visible for the child’s age (source step 1).",
+      "clues": [
+        {
+          "n": 1,
+          "text": "I'm back... but where? Follow the clues and find me before breakfast!",
+          "addLine": "First stop: ____________",
+          "source": "ideas.json (verbatim) + a new “First stop” line so card 1 also points to a room — flag"
+        },
+        {
+          "n": 2,
+          "text": "Not here! I tiptoed off to the ____________. Your next clue is waiting there.",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 3,
+          "text": "Getting warmer! Now hurry to the ____________ and look around.",
+          "source": "new (Marketing draft)"
+        },
+        {
+          "n": 4,
+          "text": "Last clue! I’m hiding near the ____________. Listen for the jingle bell!",
+          "source": "new (Marketing draft)"
+        }
+      ],
+      "optionalHints": {
+        "_rule": "Optional one-line hints a parent can copy under the blank instead of naming the room. Places taken from the source card (bookshelf, tree, low shelf) plus common rooms.",
+        "kitchen": "Where the cookies live and the cocoa gets made.",
+        "living room": "Where the family sits for movie night.",
+        "tree": "Where the lights twinkle all night long.",
+        "bookshelf": "Where the stories sleep side by side.",
+        "low shelf": "Look down low — lower than your knees!",
+        "front door": "Where the boots and shoes wait for morning."
+      }
+    }
+  },
+  "hooks": {
+    "_rule": "C6(b) — one line under the title (source document §4: “1 line saying the child’s reaction”). Max 90 characters. Playful, true to the idea’s own data.",
+    "movie-night-popcorn-patrol": {
+      "id": 1,
+      "text": "They wake up to find the elf already hogging the remote for movie night.",
+      "status": "DRAFT"
+    },
+    "storytime-reading-corner": {
+      "id": 2,
+      "text": "Little ones find the elf reading to their stuffies — and want to listen too.",
+      "status": "DRAFT"
+    },
+    "shoe-shoe-train": {
+      "id": 3,
+      "text": "The hallway turns into the North Pole Express — and every shoe has a passenger.",
+      "status": "DRAFT"
+    },
+    "toothbrush-delivery-elf": {
+      "id": 4,
+      "text": "A brand-new toothbrush, delivered by elf — suddenly everyone wants to brush.",
+      "status": "DRAFT"
+    },
+    "tangled-in-christmas-lights": {
+      "id": 5,
+      "text": "The elf tried to decorate. The lights won. Expect giggles at breakfast.",
+      "status": "DRAFT"
+    },
+    "hiding-in-the-christmas-tree": {
+      "id": 6,
+      "text": "Where’s the elf? Kids spend breakfast spotting a tiny face in the branches.",
+      "status": "DRAFT"
+    },
+    "letter-to-santa-station": {
+      "id": 7,
+      "text": "The elf opens a mailbox to the North Pole — and the letters start pouring in.",
+      "status": "DRAFT"
+    },
+    "trapped-in-a-jar": {
+      "id": 8,
+      "text": "Kids find the elf stuck in a jar — and beg to rescue it before breakfast.",
+      "status": "DRAFT"
+    },
+    "christmas-countdown-chain": {
+      "id": 9,
+      "text": "One link a morning: kids count down to Christmas with the elf’s paper chain.",
+      "status": "DRAFT"
+    },
+    "sleeping-in-a-stocking": {
+      "id": 10,
+      "text": "The elf overslept in the stocking — little ones will want to tiptoe and whisper.",
+      "status": "DRAFT"
+    },
+    "flour-snow-angel": {
+      "id": 11,
+      "text": "“It snowed in the kitchen!” Kids find a tiny snow angel and its proud artist.",
+      "status": "DRAFT"
+    },
+    "toilet-paper-tree-makeover": {
+      "id": 12,
+      "text": "Caught in the act: the elf “decorated” the tree, and kids will laugh before hello.",
+      "status": "DRAFT"
+    },
+    "marshmallow-bubble-bath": {
+      "id": 13,
+      "text": "The elf is having a spa day in marshmallows. Do not disturb (but do giggle).",
+      "status": "DRAFT"
+    },
+    "toothpaste-mirror-message": {
+      "id": 14,
+      "text": "A minty message on the mirror from the elf — and suddenly everyone wants to brush.",
+      "status": "DRAFT"
+    },
+    "silly-banana-bunch": {
+      "id": 15,
+      "text": "Every banana has a face this morning — toddlers will want to name them all.",
+      "status": "DRAFT"
+    },
+    "sink-fishing-trip": {
+      "id": 16,
+      "text": "Gone fishing! Kids find the elf reeling in crackers at the sink — and want a turn.",
+      "status": "DRAFT"
+    },
+    "sticky-note-surprise-wall": {
+      "id": 17,
+      "text": "A door full of sticky notes — and a few of them say what’s great about your kid.",
+      "status": "DRAFT"
+    },
+    "elf-zipline-adventure": {
+      "id": 18,
+      "text": "The elf took the express route to the cookies — kids will want to see it zip.",
+      "status": "DRAFT"
+    },
+    "sweet-spaghetti-breakfast": {
+      "id": 19,
+      "text": "Spaghetti with syrup for breakfast? Kids get to decide if the elf is a genius.",
+      "status": "DRAFT"
+    },
+    "candy-cane-sled": {
+      "id": 20,
+      "text": "The elf built a sled out of candy canes — and it’s ready for a sweet test run.",
+      "status": "DRAFT"
+    },
+    "hot-cocoa-stand-helper": {
+      "id": 21,
+      "text": "Cocoa costs one hug at the elf’s stand — expect a line of customers.",
+      "status": "DRAFT"
+    },
+    "cookie-baking-disaster": {
+      "id": 22,
+      "text": "Tiny floury footprints lead to the culprit — and a cookie with one bite missing.",
+      "status": "DRAFT"
+    },
+    "milk-and-cookies-taste-test": {
+      "id": 23,
+      "text": "The elf is practicing for Santa’s big night — and kids get to be the cookie judges.",
+      "status": "DRAFT"
+    },
+    "gingerbread-house-inspector": {
+      "id": 24,
+      "text": "Official inspection results are in: the roof is delicious. Kids will agree.",
+      "status": "DRAFT"
+    },
+    "kindness-mission-card": {
+      "id": 25,
+      "text": "A top secret mission arrives — and it’s all about being kind today.",
+      "status": "DRAFT"
+    },
+    "candy-cane-scavenger-hunt": {
+      "id": 26,
+      "text": "Five candy canes, one elf dare: can they find them all before breakfast?",
+      "status": "DRAFT"
+    },
+    "build-a-snowman-challenge": {
+      "id": 27,
+      "text": "The elf’s snowman record is 2 minutes. Your kid will want to beat it.",
+      "status": "DRAFT"
+    },
+    "nice-list-certificate": {
+      "id": 28,
+      "text": "They wake up to official proof they made the Nice List — with their name on it.",
+      "status": "DRAFT"
+    },
+    "would-you-rather-card": {
+      "id": 29,
+      "text": "Reindeer or sleigh? Breakfast turns into a big debate, started by the elf.",
+      "status": "DRAFT"
+    },
+    "farewell-letter-and-photo": {
+      "id": 30,
+      "text": "A thank-you letter and a keepsake to hold on to — a goodbye that feels warm.",
+      "status": "DRAFT"
+    },
+    "im-back-arrival-banner": {
+      "id": 31,
+      "text": "The elf is back — with a banner, a marker and a big hello for the whole family.",
+      "status": "DRAFT"
+    },
+    "north-pole-arrival-breakfast": {
+      "id": 32,
+      "text": "The elf’s first move? An extra-tiny pancake breakfast, made just for you.",
+      "status": "DRAFT"
+    },
+    "special-delivery-arrival-box": {
+      "id": 33,
+      "text": "A package from the North Pole at the front door — and someone is peeking out.",
+      "status": "DRAFT"
+    },
+    "arrival-hide-and-seek-clue-trail": {
+      "id": 34,
+      "text": "The elf is back… but where? Kids follow the clues room by room to find it.",
+      "status": "DRAFT"
+    },
+    "snowy-footprints-arrival": {
+      "id": 35,
+      "text": "Snowy little footprints from the door — the elf was too excited to wait.",
+      "status": "DRAFT"
+    },
+    "toddler-peekaboo-blanket-fort": {
+      "id": 36,
+      "text": "Peekaboo! Toddlers find the elf in a blanket fort — then hide it again together.",
+      "status": "DRAFT"
+    },
+    "pom-pom-color-sorting-game": {
+      "id": 37,
+      "text": "The elf started sorting colors and needs a helper — toddlers are on it.",
+      "status": "DRAFT"
+    },
+    "breakfast-cereal-garland": {
+      "id": 38,
+      "text": "The elf made a necklace you can eat — toddlers will want to add the next ring.",
+      "status": "DRAFT"
+    },
+    "my-first-sticker-scene": {
+      "id": 39,
+      "text": "The star is too high for the elf — toddlers get to finish the tree themselves.",
+      "status": "DRAFT"
+    },
+    "toy-car-wash-station": {
+      "id": 40,
+      "text": "The elf opened a car wash — and toddlers are first in line with their cars.",
+      "status": "DRAFT"
+    },
+    "plush-friends-campout": {
+      "id": 41,
+      "text": "A sleepover in their own room — toddlers find the elf snuggled in with the stuffies.",
+      "status": "DRAFT"
+    },
+    "fruit-face-breakfast-plate": {
+      "id": 42,
+      "text": "Breakfast is smiling back today — and the elf helped make the face.",
+      "status": "DRAFT"
+    },
+    "elf-workshop-build-station": {
+      "id": 43,
+      "text": "The elf’s workshop shift started overnight — kids will want to finish the toy.",
+      "status": "DRAFT"
+    },
+    "paper-snowflake-window-invasion": {
+      "id": 44,
+      "text": "The elf ordered snow — and the whole window got delivered overnight.",
+      "status": "DRAFT"
+    },
+    "mini-elf-door-and-welcome-mat": {
+      "id": 45,
+      "text": "The elf finally has its own front door — kids will want to knock.",
+      "status": "DRAFT"
+    },
+    "cardboard-sleigh-build": {
+      "id": 46,
+      "text": "A backup sleigh built from a box — the elf says it passed the test drive. Mostly.",
+      "status": "DRAFT"
+    },
+    "gingerbread-village-street": {
+      "id": 47,
+      "text": "There’s a new mayor in town — kids wake up to a whole gingerbread street.",
+      "status": "DRAFT"
+    },
+    "elf-photo-booth-props": {
+      "id": 48,
+      "text": "The elf opened a photo booth — and today your kid is the model.",
+      "status": "DRAFT"
+    },
+    "elf-story-fill-in-the-blanks-card": {
+      "id": 49,
+      "text": "The elf wrote a story but left out the words — kids fill in the silly ones.",
+      "status": "DRAFT"
+    },
+    "elf-workout-challenge-cards": {
+      "id": 50,
+      "text": "North Pole training starts at breakfast — the elf already did one. Sort of.",
+      "status": "DRAFT"
+    },
+    "guess-how-many-jar": {
+      "id": 51,
+      "text": "How many are in the jar? The elf’s guess is wild — kids are sure they can win.",
+      "status": "DRAFT"
+    },
+    "draw-my-outfit-contest": {
+      "id": 52,
+      "text": "The elf wants a new look — and your kid is the designer today.",
+      "status": "DRAFT"
+    },
+    "flour-snowball-fight": {
+      "id": 53,
+      "text": "Snowball fight on the counter! The teddies started it, according to the elf.",
+      "status": "DRAFT"
+    },
+    "bubble-bath-foam-mountain": {
+      "id": 54,
+      "text": "The elf asked for a little foam and got a mountain — expect big laughs.",
+      "status": "DRAFT"
+    },
+    "wrapping-paper-mayhem": {
+      "id": 55,
+      "text": "The elf wrapped the living room for Santa — even the TV remote.",
+      "status": "DRAFT"
+    },
+    "elf-in-the-fridge-surprise": {
+      "id": 56,
+      "text": "Open the fridge and surprise: the elf is in there, shivering in a scarf.",
+      "status": "DRAFT"
+    },
+    "fridge-magnet-message": {
+      "id": 57,
+      "text": "One letter is missing from the elf’s fridge message — kids get to finish it.",
+      "status": "DRAFT"
+    },
+    "closet-fashion-show-elf": {
+      "id": 58,
+      "text": "Fashion week came to the bedroom — and the elf is wearing the look.",
+      "status": "DRAFT"
+    },
+    "memory-jar-last-week-goodbye": {
+      "id": 59,
+      "text": "A jar of favorite moments — kids add one each day of the elf’s last week.",
+      "status": "DRAFT"
+    },
+    "goodbye-breakfast-and-hug-coupon": {
+      "id": 60,
+      "text": "One goodbye hug, today only — the sweetest coupon of the whole season.",
+      "status": "DRAFT"
+    }
+  },
+  "tonightFallback": {
+    "status": "DRAFT",
+    "rule": "02b open point 5d: polish the wording, still saying which criterion was dropped. Built from the criteria that are left, so it is always true.",
+    "current": "**No exact match tonight** — here are {kept} ideas. We left out {dropped} to find you 3.",
+    "currentExample": "**No exact match tonight** — here are 5 minutes, no mess ideas. We left out “Only stuff I have” to find you 3.",
+    "proposed": "**No exact match tonight.** We let go of {dropped} — here are 3 that still {keptPhrases}.",
+    "proposedAllDropped": "**No exact match tonight.** We let go of {dropped} — here are 3 from all 60 ideas.",
+    "keptPhrases": {
+      "five": "take 5 minutes or less",
+      "nomess": "make no mess",
+      "home": "use only stuff you have"
+    },
+    "joiners": "Dropped labels in curly quotes joined by “ and ”; kept phrases joined by “ and ”.",
+    "examples": [
+      "**No exact match tonight.** We let go of “Only stuff I have” — here are 3 that still take 5 minutes or less and make no mess.",
+      "**No exact match tonight.** We let go of “Only stuff I have” and “No mess” — here are 3 that still take 5 minutes or less.",
+      "**No exact match tonight.** We let go of “Only stuff I have”, “No mess” and “5 minutes” — here are 3 from all 60 ideas."
+    ],
+    "note": "With today’s data the smallest group is 12 ideas (all three criteria on), so this state never shows. It stays as a safety net if tags change."
+  }
+}

@@ -1,0 +1,1064 @@
+{
+  "_meta": {
+    "status": "DRAFT — awaiting André’s approval (Gate 4)",
+    "accountHolder": "Vanessa Tatiane Evangelista Assink creates every Idea List in HER Amazon Associates account (amazon.com; amazon.ca through OneLink). André gives technical support only.",
+    "rules": "Items are the idea’s own amazonItems search terms, never anything else. Vanessa picks the actual products inside Amazon. No prices, no product photos on the site, never a shortened or masked link. Paste the full amazon.com Idea List address into url, then into siteConfig.amazon.ideaListUrls[slug] (the Developer wires it). The affiliate tag stays empty until her account exists — no value is invented here.",
+    "disclosure": "As an Amazon Associate I earn from qualifying purchases.",
+    "perMaterialLinks": "Already built by the site from the same terms (src/lib/amazon.ts → https://www.amazon.com/s?k=<term>, plus &tag=<associateTag> once the tag exists). Nothing to add here.",
+    "noEmailLinks": "Do not put Amazon links in emails or printables; link to the idea page instead (Amazon Associates program policies restrict links in email and offline material — Vanessa should confirm in her account).",
+    "counts": {
+      "ideas": 60,
+      "withList": 55,
+      "withoutList": 5,
+      "staples": 6
+    }
+  },
+  "ideas": {
+    "movie-night-popcorn-patrol": {
+      "id": 1,
+      "slug": "movie-night-popcorn-patrol",
+      "title": "Movie Night Popcorn Patrol",
+      "list": {
+        "name": "Movie Night Popcorn Patrol – Elf Idea Kit",
+        "description": "Supplies for the “Movie Night Popcorn Patrol” elf idea (5 min, zero mess). Steps on the idea page.",
+        "items": [
+          "microwave popcorn"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "storytime-reading-corner": {
+      "id": 2,
+      "slug": "storytime-reading-corner",
+      "title": "Storytime Reading Corner",
+      "list": {
+        "name": "Storytime Reading Corner – Elf Idea Kit",
+        "description": "Supplies for the “Storytime Reading Corner” elf idea (2 min, zero mess). Steps on the idea page.",
+        "items": [
+          "mini Christmas books"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "shoe-shoe-train": {
+      "id": 3,
+      "slug": "shoe-shoe-train",
+      "title": "Shoe-Shoe Train",
+      "list": {
+        "name": "Shoe-Shoe Train – Elf Idea Kit",
+        "description": "Supplies for the “Shoe-Shoe Train” elf idea (5 min, zero mess). Steps on the idea page.",
+        "items": [
+          "jingle bells"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "toothbrush-delivery-elf": {
+      "id": 4,
+      "slug": "toothbrush-delivery-elf",
+      "title": "Toothbrush Delivery Elf",
+      "list": {
+        "name": "Toothbrush Delivery Elf – Elf Idea Kit",
+        "description": "Supplies for the “Toothbrush Delivery Elf” elf idea (2 min, zero mess). Steps on the idea page.",
+        "items": [
+          "themed kids' toothbrush"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "tangled-in-christmas-lights": {
+      "id": 5,
+      "slug": "tangled-in-christmas-lights",
+      "title": "Tangled in Christmas Lights",
+      "list": {
+        "name": "Tangled in Christmas Lights – Elf Idea Kit",
+        "description": "Supplies for the “Tangled in Christmas Lights” elf idea (5 min, zero mess). Steps on the idea page. Safety: Battery-powered LED lights only — never plugged into a wall outlet with the child nearby.",
+        "items": [
+          "battery-powered LED string lights"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "hiding-in-the-christmas-tree": {
+      "id": 6,
+      "slug": "hiding-in-the-christmas-tree",
+      "title": "Hiding in the Christmas Tree",
+      "list": {
+        "name": "Hiding in the Christmas Tree – Elf Idea Kit",
+        "description": "Supplies for the “Hiding in the Christmas Tree” elf idea (2 min, zero mess). Steps on the idea page.",
+        "items": [
+          "extra miniature hat"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "letter-to-santa-station": {
+      "id": 7,
+      "slug": "letter-to-santa-station",
+      "title": "Letter to Santa Station",
+      "list": {
+        "name": "Letter to Santa Station – Elf Idea Kit",
+        "description": "Supplies for the “Letter to Santa Station” elf idea (10 min, low mess). Steps on the idea page.",
+        "items": [
+          "letters to Santa kit"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "trapped-in-a-jar": {
+      "id": 8,
+      "slug": "trapped-in-a-jar",
+      "title": "Trapped in a Jar",
+      "list": {
+        "name": "Trapped in a Jar – Elf Idea Kit",
+        "description": "Supplies for the “Trapped in a Jar” elf idea (2 min, zero mess). Steps on the idea page.",
+        "items": [
+          "large clear jars"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "christmas-countdown-chain": {
+      "id": 9,
+      "slug": "christmas-countdown-chain",
+      "title": "Christmas Countdown Chain",
+      "list": {
+        "name": "Christmas Countdown Chain – Elf Idea Kit",
+        "description": "Supplies for the “Christmas Countdown Chain” elf idea (10 min, low mess). Steps on the idea page.",
+        "items": [
+          "colored paper"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "sleeping-in-a-stocking": {
+      "id": 10,
+      "slug": "sleeping-in-a-stocking",
+      "title": "Sleeping in a Stocking",
+      "list": {
+        "name": "Sleeping in a Stocking – Elf Idea Kit",
+        "description": "Supplies for the “Sleeping in a Stocking” elf idea (2 min, zero mess). Steps on the idea page.",
+        "items": [
+          "extra Christmas stocking"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "flour-snow-angel": {
+      "id": 11,
+      "slug": "flour-snow-angel",
+      "title": "Flour Snow Angel",
+      "list": {
+        "name": "Flour Snow Angel – Elf Idea Kit",
+        "description": "Supplies for the “Flour Snow Angel” elf idea (5 min, medium mess). Steps on the idea page.",
+        "items": [
+          "shallow tray"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "toilet-paper-tree-makeover": {
+      "id": 12,
+      "slug": "toilet-paper-tree-makeover",
+      "title": "Toilet Paper Tree Makeover",
+      "list": null,
+      "reason": "No Amazon item in the source card — the idea uses household materials only (handoff 01, D9)."
+    },
+    "marshmallow-bubble-bath": {
+      "id": 13,
+      "slug": "marshmallow-bubble-bath",
+      "title": "Marshmallow Bubble Bath",
+      "list": {
+        "name": "Marshmallow Bubble Bath – Elf Idea Kit",
+        "description": "Supplies for the “Marshmallow Bubble Bath” elf idea (5 min, low mess). Steps on the idea page.",
+        "items": [
+          "mini marshmallows"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "toothpaste-mirror-message": {
+      "id": 14,
+      "slug": "toothpaste-mirror-message",
+      "title": "Toothpaste Mirror Message",
+      "list": null,
+      "reason": "No Amazon item in the source card — the idea uses household materials only (handoff 01, D9)."
+    },
+    "silly-banana-bunch": {
+      "id": 15,
+      "slug": "silly-banana-bunch",
+      "title": "Silly Banana Bunch",
+      "list": {
+        "name": "Silly Banana Bunch – Elf Idea Kit",
+        "description": "Supplies for the “Silly Banana Bunch” elf idea (5 min, zero mess). Steps on the idea page.",
+        "items": [
+          "food-safe pen"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "sink-fishing-trip": {
+      "id": 16,
+      "slug": "sink-fishing-trip",
+      "title": "Sink Fishing Trip",
+      "list": {
+        "name": "Sink Fishing Trip – Elf Idea Kit",
+        "description": "Supplies for the “Sink Fishing Trip” elf idea (5 min, low mess). Steps on the idea page.",
+        "items": [
+          "fish-shaped crackers"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "sticky-note-surprise-wall": {
+      "id": 17,
+      "slug": "sticky-note-surprise-wall",
+      "title": "Sticky Note Surprise Wall",
+      "list": {
+        "name": "Sticky Note Surprise Wall – Elf Idea Kit",
+        "description": "Supplies for the “Sticky Note Surprise Wall” elf idea (10 min, zero mess). Steps on the idea page.",
+        "items": [
+          "colored sticky notes"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "elf-zipline-adventure": {
+      "id": 18,
+      "slug": "elf-zipline-adventure",
+      "title": "Elf Zipline Adventure",
+      "list": {
+        "name": "Elf Zipline Adventure – Elf Idea Kit",
+        "description": "Supplies for the “Elf Zipline Adventure” elf idea (10 min, zero mess). Steps on the idea page.",
+        "items": [
+          "candy canes"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "sweet-spaghetti-breakfast": {
+      "id": 19,
+      "slug": "sweet-spaghetti-breakfast",
+      "title": "Sweet Spaghetti Breakfast",
+      "list": {
+        "name": "Sweet Spaghetti Breakfast – Elf Idea Kit",
+        "description": "Supplies for the “Sweet Spaghetti Breakfast” elf idea (10 min, medium mess). Steps on the idea page.",
+        "items": [
+          "Christmas sprinkles"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "candy-cane-sled": {
+      "id": 20,
+      "slug": "candy-cane-sled",
+      "title": "Candy Cane Sled",
+      "list": {
+        "name": "Candy Cane Sled – Elf Idea Kit",
+        "description": "Supplies for the “Candy Cane Sled” elf idea (10 min, low mess). Steps on the idea page.",
+        "items": [
+          "candy canes"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "hot-cocoa-stand-helper": {
+      "id": 21,
+      "slug": "hot-cocoa-stand-helper",
+      "title": "Hot Cocoa Stand Helper",
+      "list": {
+        "name": "Hot Cocoa Stand Helper – Elf Idea Kit",
+        "description": "Supplies for the “Hot Cocoa Stand Helper” elf idea (10 min, low mess). Steps on the idea page.",
+        "items": [
+          "mini mugs"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "cookie-baking-disaster": {
+      "id": 22,
+      "slug": "cookie-baking-disaster",
+      "title": "Cookie Baking Disaster",
+      "list": {
+        "name": "Cookie Baking Disaster – Elf Idea Kit",
+        "description": "Supplies for the “Cookie Baking Disaster” elf idea (10 min, medium mess). Steps on the idea page.",
+        "items": [
+          "miniature kitchen utensils"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "milk-and-cookies-taste-test": {
+      "id": 23,
+      "slug": "milk-and-cookies-taste-test",
+      "title": "Milk and Cookies Taste Test",
+      "list": null,
+      "reason": "No Amazon item in the source card — the “rating sheet” is the site’s own free printable (handoff 01, D9)."
+    },
+    "gingerbread-house-inspector": {
+      "id": 24,
+      "slug": "gingerbread-house-inspector",
+      "title": "Gingerbread House Inspector",
+      "list": {
+        "name": "Gingerbread House Inspector – Elf Idea Kit",
+        "description": "Supplies for the “Gingerbread House Inspector” elf idea (5 min, zero mess). Steps on the idea page.",
+        "items": [
+          "gingerbread house kit"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "kindness-mission-card": {
+      "id": 25,
+      "slug": "kindness-mission-card",
+      "title": "Kindness Mission Card",
+      "list": null,
+      "reason": "No Amazon item in the source card — the “kindness mission card” is the site’s own free printable (handoff 01, D9)."
+    },
+    "candy-cane-scavenger-hunt": {
+      "id": 26,
+      "slug": "candy-cane-scavenger-hunt",
+      "title": "Candy Cane Scavenger Hunt",
+      "list": {
+        "name": "Candy Cane Scavenger Hunt – Elf Idea Kit",
+        "description": "Supplies for the “Candy Cane Scavenger Hunt” elf idea (10 min, zero mess). Steps on the idea page.",
+        "items": [
+          "candy canes (large pack)"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "build-a-snowman-challenge": {
+      "id": 27,
+      "slug": "build-a-snowman-challenge",
+      "title": "Build-a-Snowman Challenge",
+      "list": {
+        "name": "Build-a-Snowman Challenge – Elf Idea Kit",
+        "description": "Supplies for the “Build-a-Snowman Challenge” elf idea (5 min, low mess). Steps on the idea page.",
+        "items": [
+          "large marshmallows"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "nice-list-certificate": {
+      "id": 28,
+      "slug": "nice-list-certificate",
+      "title": "Nice List Certificate",
+      "list": {
+        "name": "Nice List Certificate – Elf Idea Kit",
+        "description": "Supplies for the “Nice List Certificate” elf idea (5 min, zero mess). Steps on the idea page.",
+        "items": [
+          "certificate paper"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "would-you-rather-card": {
+      "id": 29,
+      "slug": "would-you-rather-card",
+      "title": "Would You Rather Card",
+      "list": null,
+      "reason": "No Amazon item in the source card — the “would-you-rather cards” is the site’s own free printable (handoff 01, D9)."
+    },
+    "farewell-letter-and-photo": {
+      "id": 30,
+      "slug": "farewell-letter-and-photo",
+      "title": "Farewell Letter and Photo",
+      "list": {
+        "name": "Farewell Letter and Photo – Elf Idea Kit",
+        "description": "Supplies for the “Farewell Letter and Photo” elf idea (10 min, zero mess). Steps on the idea page.",
+        "items": [
+          "small picture frame"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "im-back-arrival-banner": {
+      "id": 31,
+      "slug": "im-back-arrival-banner",
+      "title": "I'm Back! Arrival Banner",
+      "list": {
+        "name": "I'm Back! Arrival Banner – Elf Idea Kit",
+        "description": "Supplies for the “I'm Back! Arrival Banner” elf idea (10 min, zero mess). Steps on the idea page.",
+        "items": [
+          "printable welcome banner",
+          "paper banner kit"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "north-pole-arrival-breakfast": {
+      "id": 32,
+      "slug": "north-pole-arrival-breakfast",
+      "title": "North Pole Arrival Breakfast",
+      "list": {
+        "name": "North Pole Arrival Breakfast – Elf Idea Kit",
+        "description": "Supplies for the “North Pole Arrival Breakfast” elf idea (10 min, low mess). Steps on the idea page.",
+        "items": [
+          "mini pancake mix",
+          "mini pancake pan"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "special-delivery-arrival-box": {
+      "id": 33,
+      "slug": "special-delivery-arrival-box",
+      "title": "Special Delivery Arrival Box",
+      "list": {
+        "name": "Special Delivery Arrival Box – Elf Idea Kit",
+        "description": "Supplies for the “Special Delivery Arrival Box” elf idea (5 min, zero mess). Steps on the idea page.",
+        "items": [
+          "kraft paper boxes",
+          "Christmas shipping labels"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "arrival-hide-and-seek-clue-trail": {
+      "id": 34,
+      "slug": "arrival-hide-and-seek-clue-trail",
+      "title": "Arrival Hide-and-Seek Clue Trail",
+      "list": {
+        "name": "Arrival Hide-and-Seek Clue Trail – Elf Idea Kit",
+        "description": "Supplies for the “Arrival Hide-and-Seek Clue Trail” elf idea (10 min, zero mess). Steps on the idea page.",
+        "items": [
+          "card stock"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "snowy-footprints-arrival": {
+      "id": 35,
+      "slug": "snowy-footprints-arrival",
+      "title": "Snowy Footprints Arrival",
+      "list": {
+        "name": "Snowy Footprints Arrival – Elf Idea Kit",
+        "description": "Supplies for the “Snowy Footprints Arrival” elf idea (5 min, low mess). Steps on the idea page.",
+        "items": [
+          "Christmas doormat"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "toddler-peekaboo-blanket-fort": {
+      "id": 36,
+      "slug": "toddler-peekaboo-blanket-fort",
+      "title": "Toddler Peekaboo Blanket Fort",
+      "list": {
+        "name": "Toddler Peekaboo Blanket Fort – Elf Idea Kit",
+        "description": "Supplies for the “Toddler Peekaboo Blanket Fort” elf idea (5 min, zero mess). Steps on the idea page.",
+        "items": [
+          "light kids' blanket",
+          "play tent"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "pom-pom-color-sorting-game": {
+      "id": 37,
+      "slug": "pom-pom-color-sorting-game",
+      "title": "Pom-Pom Color Sorting Game",
+      "list": {
+        "name": "Pom-Pom Color Sorting Game – Elf Idea Kit",
+        "description": "Supplies for the “Pom-Pom Color Sorting Game” elf idea (5 min, zero mess). Steps on the idea page. Safety: Large pom-poms only, a size that is safe for the child’s age, always with supervision. No small parts for children under 3.",
+        "items": [
+          "large felt pom-poms",
+          "sorting cups"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "breakfast-cereal-garland": {
+      "id": 38,
+      "slug": "breakfast-cereal-garland",
+      "title": "Breakfast Cereal Garland",
+      "list": {
+        "name": "Breakfast Cereal Garland – Elf Idea Kit",
+        "description": "Supplies for the “Breakfast Cereal Garland” elf idea (5 min, zero mess). Steps on the idea page. Safety: Always with supervision.",
+        "items": [
+          "large ring-shaped cereal",
+          "cotton thread"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "my-first-sticker-scene": {
+      "id": 39,
+      "slug": "my-first-sticker-scene",
+      "title": "My First Sticker Scene",
+      "list": {
+        "name": "My First Sticker Scene – Elf Idea Kit",
+        "description": "Supplies for the “My First Sticker Scene” elf idea (5 min, zero mess). Steps on the idea page.",
+        "items": [
+          "large reusable Christmas stickers"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "toy-car-wash-station": {
+      "id": 40,
+      "slug": "toy-car-wash-station",
+      "title": "Toy Car Wash Station",
+      "list": {
+        "name": "Toy Car Wash Station – Elf Idea Kit",
+        "description": "Supplies for the “Toy Car Wash Station” elf idea (10 min, low mess). Steps on the idea page. Safety: Water only with an adult present, the whole time.",
+        "items": [
+          "large toy cars",
+          "soft little brush"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "plush-friends-campout": {
+      "id": 41,
+      "slug": "plush-friends-campout",
+      "title": "Plush Friends Campout",
+      "list": {
+        "name": "Plush Friends Campout – Elf Idea Kit",
+        "description": "Supplies for the “Plush Friends Campout” elf idea (5 min, zero mess). Steps on the idea page.",
+        "items": [
+          "kids' sleeping bag",
+          "small flashlight"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "fruit-face-breakfast-plate": {
+      "id": 42,
+      "slug": "fruit-face-breakfast-plate",
+      "title": "Fruit Face Breakfast Plate",
+      "list": {
+        "name": "Fruit Face Breakfast Plate – Elf Idea Kit",
+        "description": "Supplies for the “Fruit Face Breakfast Plate” elf idea (5 min, zero mess). Steps on the idea page. Safety: Round fruit always cut in half.",
+        "items": [
+          "divided kids' plates",
+          "fruit cutters"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "elf-workshop-build-station": {
+      "id": 43,
+      "slug": "elf-workshop-build-station",
+      "title": "Elf Workshop Build Station",
+      "list": {
+        "name": "Elf Workshop Build Station – Elf Idea Kit",
+        "description": "Supplies for the “Elf Workshop Build Station” elf idea (20 min, low mess). Steps on the idea page.",
+        "items": [
+          "toy tool kit",
+          "wooden blocks"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "paper-snowflake-window-invasion": {
+      "id": 44,
+      "slug": "paper-snowflake-window-invasion",
+      "title": "Paper Snowflake Window Invasion",
+      "list": {
+        "name": "Paper Snowflake Window Invasion – Elf Idea Kit",
+        "description": "Supplies for the “Paper Snowflake Window Invasion” elf idea (20 min, low mess). Steps on the idea page. Safety: Scissors are for the adult only.",
+        "items": [
+          "white paper",
+          "blunt-tip scissors"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "mini-elf-door-and-welcome-mat": {
+      "id": 45,
+      "slug": "mini-elf-door-and-welcome-mat",
+      "title": "Mini Elf Door and Welcome Mat",
+      "list": {
+        "name": "Mini Elf Door and Welcome Mat – Elf Idea Kit",
+        "description": "Supplies for the “Mini Elf Door and Welcome Mat” elf idea (25 min, low mess). Steps on the idea page.",
+        "items": [
+          "decorative little door kit",
+          "poster paint"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "cardboard-sleigh-build": {
+      "id": 46,
+      "slug": "cardboard-sleigh-build",
+      "title": "Cardboard Sleigh Build",
+      "list": {
+        "name": "Cardboard Sleigh Build – Elf Idea Kit",
+        "description": "Supplies for the “Cardboard Sleigh Build” elf idea (20 min, low mess). Steps on the idea page.",
+        "items": [
+          "cardboard craft kit",
+          "decorative tape"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "gingerbread-village-street": {
+      "id": 47,
+      "slug": "gingerbread-village-street",
+      "title": "Gingerbread Village Street",
+      "list": {
+        "name": "Gingerbread Village Street – Elf Idea Kit",
+        "description": "Supplies for the “Gingerbread Village Street” elf idea (20 min, medium mess). Steps on the idea page.",
+        "items": [
+          "mini gingerbread house kits (multi-pack)"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "elf-photo-booth-props": {
+      "id": 48,
+      "slug": "elf-photo-booth-props",
+      "title": "Elf Photo Booth Props",
+      "list": {
+        "name": "Elf Photo Booth Props – Elf Idea Kit",
+        "description": "Supplies for the “Elf Photo Booth Props” elf idea (10 min, zero mess). Steps on the idea page.",
+        "items": [
+          "photo booth props kit"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "elf-story-fill-in-the-blanks-card": {
+      "id": 49,
+      "slug": "elf-story-fill-in-the-blanks-card",
+      "title": "Elf Story Fill-in-the-Blanks Card",
+      "list": {
+        "name": "Elf Story Fill-in-the-Blanks Card – Elf Idea Kit",
+        "description": "Supplies for the “Elf Story Fill-in-the-Blanks Card” elf idea (5 min, zero mess). Steps on the idea page.",
+        "items": [
+          "card stock"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "elf-workout-challenge-cards": {
+      "id": 50,
+      "slug": "elf-workout-challenge-cards",
+      "title": "Elf Workout Challenge Cards",
+      "list": {
+        "name": "Elf Workout Challenge Cards – Elf Idea Kit",
+        "description": "Supplies for the “Elf Workout Challenge Cards” elf idea (5 min, zero mess). Steps on the idea page.",
+        "items": [
+          "kids' exercise mat"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "guess-how-many-jar": {
+      "id": 51,
+      "slug": "guess-how-many-jar",
+      "title": "Guess How Many Jar",
+      "list": {
+        "name": "Guess How Many Jar – Elf Idea Kit",
+        "description": "Supplies for the “Guess How Many Jar” elf idea (10 min, zero mess). Steps on the idea page.",
+        "items": [
+          "clear jars with lids",
+          "gummy candies"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "draw-my-outfit-contest": {
+      "id": 52,
+      "slug": "draw-my-outfit-contest",
+      "title": "Draw My Outfit Contest",
+      "list": {
+        "name": "Draw My Outfit Contest – Elf Idea Kit",
+        "description": "Supplies for the “Draw My Outfit Contest” elf idea (10 min, zero mess). Steps on the idea page.",
+        "items": [
+          "colored pencil set",
+          "drawing paper"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "flour-snowball-fight": {
+      "id": 53,
+      "slug": "flour-snowball-fight",
+      "title": "Flour Snowball Fight",
+      "list": {
+        "name": "Flour Snowball Fight – Elf Idea Kit",
+        "description": "Supplies for the “Flour Snowball Fight” elf idea (10 min, high mess). Steps on the idea page. Safety: High mess — only inside the tray.",
+        "items": [
+          "large high-rimmed tray",
+          "cotton balls"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "bubble-bath-foam-mountain": {
+      "id": 54,
+      "slug": "bubble-bath-foam-mountain",
+      "title": "Bubble Bath Foam Mountain",
+      "list": {
+        "name": "Bubble Bath Foam Mountain – Elf Idea Kit",
+        "description": "Supplies for the “Bubble Bath Foam Mountain” elf idea (10 min, high mess). Steps on the idea page. Safety: Towel on the floor before anything else.",
+        "items": [
+          "kids' bubble bath",
+          "rubber ducks"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "wrapping-paper-mayhem": {
+      "id": 55,
+      "slug": "wrapping-paper-mayhem",
+      "title": "Wrapping Paper Mayhem",
+      "list": {
+        "name": "Wrapping Paper Mayhem – Elf Idea Kit",
+        "description": "Supplies for the “Wrapping Paper Mayhem” elf idea (15+ min, high mess). Steps on the idea page.",
+        "items": [
+          "wrapping paper roll",
+          "tape"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "elf-in-the-fridge-surprise": {
+      "id": 56,
+      "slug": "elf-in-the-fridge-surprise",
+      "title": "Elf in the Fridge Surprise",
+      "list": {
+        "name": "Elf in the Fridge Surprise – Elf Idea Kit",
+        "description": "Supplies for the “Elf in the Fridge Surprise” elf idea (5 min, zero mess). Steps on the idea page.",
+        "items": [
+          "small airtight containers",
+          "dessert plate"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "fridge-magnet-message": {
+      "id": 57,
+      "slug": "fridge-magnet-message",
+      "title": "Fridge Magnet Message",
+      "list": {
+        "name": "Fridge Magnet Message – Elf Idea Kit",
+        "description": "Supplies for the “Fridge Magnet Message” elf idea (5 min, zero mess). Steps on the idea page. Safety: Magnets are not for toddlers.",
+        "items": [
+          "letter magnets",
+          "small magnetic board"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "closet-fashion-show-elf": {
+      "id": 58,
+      "slug": "closet-fashion-show-elf",
+      "title": "Closet Fashion Show Elf",
+      "list": {
+        "name": "Closet Fashion Show Elf – Elf Idea Kit",
+        "description": "Supplies for the “Closet Fashion Show Elf” elf idea (10 min, zero mess). Steps on the idea page.",
+        "items": [
+          "doll clothes",
+          "mini hangers"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "memory-jar-last-week-goodbye": {
+      "id": 59,
+      "slug": "memory-jar-last-week-goodbye",
+      "title": "Memory Jar - Last Week Goodbye",
+      "list": {
+        "name": "Memory Jar - Last Week Goodbye – Elf Idea Kit",
+        "description": "Supplies for the “Memory Jar - Last Week Goodbye” elf idea (10 min, zero mess). Steps on the idea page.",
+        "items": [
+          "glass jar with lid",
+          "colored cards"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    },
+    "goodbye-breakfast-and-hug-coupon": {
+      "id": 60,
+      "slug": "goodbye-breakfast-and-hug-coupon",
+      "title": "Goodbye Breakfast and Hug Coupon",
+      "list": {
+        "name": "Goodbye Breakfast and Hug Coupon – Elf Idea Kit",
+        "description": "Supplies for the “Goodbye Breakfast and Hug Coupon” elf idea (10 min, low mess). Steps on the idea page.",
+        "items": [
+          "Christmas breakfast set",
+          "commemorative mug"
+        ],
+        "heldBack": [],
+        "url": ""
+      }
+    }
+  },
+  "staples": [
+    {
+      "key": "candy-canes",
+      "name": "Candy Cane Staples – Elf Ideas",
+      "items": [
+        "candy canes",
+        "candy canes (large pack)"
+      ],
+      "usedBy": [
+        {
+          "id": 18,
+          "slug": "elf-zipline-adventure",
+          "items": [
+            "candy canes"
+          ]
+        },
+        {
+          "id": 20,
+          "slug": "candy-cane-sled",
+          "items": [
+            "candy canes"
+          ]
+        },
+        {
+          "id": 26,
+          "slug": "candy-cane-scavenger-hunt",
+          "items": [
+            "candy canes (large pack)"
+          ]
+        }
+      ],
+      "matchesShopStaple": "Candy canes",
+      "note": "Idea 46 also uses 2 large decorative candy canes, but its card names other Amazon items, so it is not on this list.",
+      "url": ""
+    },
+    {
+      "key": "marshmallows",
+      "name": "Marshmallow Staples – Elf Ideas",
+      "items": [
+        "mini marshmallows",
+        "large marshmallows"
+      ],
+      "usedBy": [
+        {
+          "id": 13,
+          "slug": "marshmallow-bubble-bath",
+          "items": [
+            "mini marshmallows"
+          ]
+        },
+        {
+          "id": 27,
+          "slug": "build-a-snowman-challenge",
+          "items": [
+            "large marshmallows"
+          ]
+        }
+      ],
+      "matchesShopStaple": "Mini marshmallows",
+      "note": "Ideas 19, 21 and 51 use marshmallows too, but their cards name other Amazon items.",
+      "url": ""
+    },
+    {
+      "key": "paper-and-card-stock",
+      "name": "Paper and Card Stock – Elf Ideas",
+      "items": [
+        "colored paper",
+        "certificate paper",
+        "card stock",
+        "white paper",
+        "drawing paper",
+        "colored cards"
+      ],
+      "usedBy": [
+        {
+          "id": 9,
+          "slug": "christmas-countdown-chain",
+          "items": [
+            "colored paper"
+          ]
+        },
+        {
+          "id": 28,
+          "slug": "nice-list-certificate",
+          "items": [
+            "certificate paper"
+          ]
+        },
+        {
+          "id": 34,
+          "slug": "arrival-hide-and-seek-clue-trail",
+          "items": [
+            "card stock"
+          ]
+        },
+        {
+          "id": 44,
+          "slug": "paper-snowflake-window-invasion",
+          "items": [
+            "white paper"
+          ]
+        },
+        {
+          "id": 49,
+          "slug": "elf-story-fill-in-the-blanks-card",
+          "items": [
+            "card stock"
+          ]
+        },
+        {
+          "id": 52,
+          "slug": "draw-my-outfit-contest",
+          "items": [
+            "drawing paper"
+          ]
+        },
+        {
+          "id": 59,
+          "slug": "memory-jar-last-week-goodbye",
+          "items": [
+            "colored cards"
+          ]
+        }
+      ],
+      "matchesShopStaple": "Card stock + Colored paper",
+      "note": null,
+      "url": ""
+    },
+    {
+      "key": "clear-jars",
+      "name": "Clear Jars – Elf Ideas",
+      "items": [
+        "large clear jars",
+        "clear jars with lids",
+        "glass jar with lid"
+      ],
+      "usedBy": [
+        {
+          "id": 8,
+          "slug": "trapped-in-a-jar",
+          "items": [
+            "large clear jars"
+          ]
+        },
+        {
+          "id": 51,
+          "slug": "guess-how-many-jar",
+          "items": [
+            "clear jars with lids"
+          ]
+        },
+        {
+          "id": 59,
+          "slug": "memory-jar-last-week-goodbye",
+          "items": [
+            "glass jar with lid"
+          ]
+        }
+      ],
+      "matchesShopStaple": "Clear jars",
+      "note": null,
+      "url": ""
+    },
+    {
+      "key": "trays",
+      "name": "Trays for Messy Elf Nights",
+      "items": [
+        "shallow tray",
+        "large high-rimmed tray"
+      ],
+      "usedBy": [
+        {
+          "id": 11,
+          "slug": "flour-snow-angel",
+          "items": [
+            "shallow tray"
+          ]
+        },
+        {
+          "id": 53,
+          "slug": "flour-snowball-fight",
+          "items": [
+            "large high-rimmed tray"
+          ]
+        }
+      ],
+      "matchesShopStaple": "Shallow tray",
+      "note": null,
+      "url": ""
+    },
+    {
+      "key": "gingerbread",
+      "name": "Gingerbread Elf Ideas",
+      "items": [
+        "gingerbread house kit",
+        "mini gingerbread house kits (multi-pack)"
+      ],
+      "usedBy": [
+        {
+          "id": 24,
+          "slug": "gingerbread-house-inspector",
+          "items": [
+            "gingerbread house kit"
+          ]
+        },
+        {
+          "id": 47,
+          "slug": "gingerbread-village-street",
+          "items": [
+            "mini gingerbread house kits (multi-pack)"
+          ]
+        }
+      ],
+      "matchesShopStaple": null,
+      "note": "Not a /shop/ staple today (the shop matches materials, and only 2 ideas use gingerbread).",
+      "url": ""
+    }
+  ]
+}

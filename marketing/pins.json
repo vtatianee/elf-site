@@ -1,0 +1,1346 @@
+{
+  "_meta": {
+    "status": "DRAFT — awaiting André’s approval (Gate 4)",
+    "phase": "Phase 4 — Distribute. Nothing here is posted, scheduled or published.",
+    "date": "2026-11-12",
+    "author": "Marketing Specialist",
+    "source": "src/data/ideas.json (titles, times, mess, ages, rooms, materials, steps). Alt text from design/illustration-alt.json (placeholder scenes).",
+    "linkNote": "Deep links point to the Cloudflare Pages preview (https://elf-site.pages.dev). At Gate 5 they switch to the final domain: replace the base, keep /ideas/<slug>/.",
+    "imageNote": "D12: the pin image is exported only when the final illustration exists. With placeholders, previewPath is a preview only. Export at exactly 1000 x 1500.",
+    "textLayerRule": "textLayerTitle = the idea title, verbatim from ideas.json. The pin template reads it from pin-data.js; never retype it.",
+    "kickerRule": "Time · mess, from the data only (max 22 characters).",
+    "variantRule": "One variant per board (02b §7: keep one variant per board row). C (note card) for arrival, goodbye and the note-driven no-mess board; B (ribbon) for the funny and kids boards that need punch; A (clean band) is the default for toddlers and 5-minute.",
+    "hashtagRule": "Optional. At most 3, never a trademark. Append after the description only if André wants hashtags at all (Pinterest gives them little weight today).",
+    "boards": [
+      {
+        "name": "Elf Arrival Ideas",
+        "hub": "arrival",
+        "mirrorsHub": "/arrival/",
+        "templateVariant": "c",
+        "rule": "Arrival ideas (31–35)."
+      },
+      {
+        "name": "Elf Goodbye Ideas",
+        "hub": "goodbye",
+        "mirrorsHub": "/goodbye/",
+        "templateVariant": "c",
+        "rule": "Goodbye ideas (30, 59, 60)."
+      },
+      {
+        "name": "Funny Elf Ideas",
+        "hub": "funny",
+        "mirrorsHub": "/funny/",
+        "templateVariant": "b",
+        "rule": "The 16 funny ideas (type tag approved at Gate 2)."
+      },
+      {
+        "name": "Elf Ideas for Toddlers",
+        "hub": "toddlers",
+        "mirrorsHub": "/toddlers/",
+        "templateVariant": "a",
+        "rule": "Ideas made for toddlers (age = toddler) not already above."
+      },
+      {
+        "name": "5-Minute Elf Ideas",
+        "hub": "5-minute",
+        "mirrorsHub": "/5-minute/",
+        "templateVariant": "a",
+        "rule": "Remaining 2- and 5-minute ideas."
+      },
+      {
+        "name": "No-Mess Elf Ideas",
+        "hub": "no-mess",
+        "mirrorsHub": "/no-mess/",
+        "templateVariant": "c",
+        "rule": "Remaining zero-mess ideas (all 10 minutes, all note- or card-driven)."
+      },
+      {
+        "name": "Elf Ideas for Kids",
+        "hub": "kids",
+        "mirrorsHub": "/kids/",
+        "templateVariant": "b",
+        "rule": "Everything left: 10-minute ideas with some mess and the 15+ minute projects (all are on /kids/)."
+      },
+      {
+        "name": "Easy Elf Ideas",
+        "hub": "easy",
+        "mirrorsHub": "/easy/",
+        "templateVariant": null,
+        "rule": "Secondary board only (repins): every idea on the /easy/ hub. No pin uses it as its first board."
+      }
+    ]
+  },
+  "pins": {
+    "movie-night-popcorn-patrol": {
+      "id": 1,
+      "slug": "movie-night-popcorn-patrol",
+      "link": "https://elf-site.pages.dev/ideas/movie-night-popcorn-patrol/",
+      "textLayerTitle": "Movie Night Popcorn Patrol",
+      "kicker": "5 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=movie-night-popcorn-patrol&variant=a&kicker=5%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Movie Night Popcorn Patrol – 5-Minute Elf Idea with Popcorn",
+      "description": "The elf grabs the TV remote and a bowl of popcorn, with a few pieces “spilled” on purpose, and leaves a card: it picked the movie, you bring the blankets. A 5-minute, zero-mess setup for all ages with a remote, popcorn and one small card. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#easyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf sitting on a sofa holding a TV remote bigger than its arm, next to a bowl of popcorn with three pieces fallen on the floor",
+      "board": "5-Minute Elf Ideas",
+      "alsoSaveTo": [
+        "No-Mess Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "storytime-reading-corner": {
+      "id": 2,
+      "slug": "storytime-reading-corner",
+      "link": "https://elf-site.pages.dev/ideas/storytime-reading-corner/",
+      "textLayerTitle": "Storytime Reading Corner",
+      "kicker": "2 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=storytime-reading-corner&variant=a&kicker=2%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Storytime Reading Corner – 2-Minute Elf Idea for Toddlers",
+      "description": "Set the elf on a pillow with a children’s Christmas book open on its lap and two stuffed animals listening in a half circle. A cozy 2-minute, zero-mess scene for toddlers, and a sweet way to start storytime. Tap through for the full setup, step by step.",
+      "hashtags": [
+        "#toddlerchristmas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf sitting on a pillow with an open book on its lap, and two stuffed bears sitting with their backs to the viewer",
+      "board": "Elf Ideas for Toddlers",
+      "alsoSaveTo": [
+        "5-Minute Elf Ideas",
+        "No-Mess Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "shoe-shoe-train": {
+      "id": 3,
+      "slug": "shoe-shoe-train",
+      "link": "https://elf-site.pages.dev/ideas/shoe-shoe-train/",
+      "textLayerTitle": "Shoe-Shoe Train",
+      "kicker": "5 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=shoe-shoe-train&variant=a&kicker=5%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Shoe-Shoe Train – Cute 5-Minute Elf Idea for the Entryway",
+      "description": "Line up 3 or 4 family shoes like train cars, put the elf in the first one as the engineer and a stuffed animal in each car. A 5-minute, zero-mess scene for all ages — add jingle bells if you have them. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#easyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of three shoes lined up like train cars, with a small elf riding in the first shoe and a stuffed bear in each of the others",
+      "board": "5-Minute Elf Ideas",
+      "alsoSaveTo": [
+        "No-Mess Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "toothbrush-delivery-elf": {
+      "id": 4,
+      "slug": "toothbrush-delivery-elf",
+      "link": "https://elf-site.pages.dev/ideas/toothbrush-delivery-elf/",
+      "textLayerTitle": "Toothbrush Delivery Elf",
+      "kicker": "2 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=toothbrush-delivery-elf&variant=a&kicker=2%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Toothbrush Delivery Elf – 2-Minute Elf Idea for the Bathroom",
+      "description": "Tie a small bow on a new kids’ toothbrush and sit the elf on the sink holding it up like a trophy. A 2-minute, zero-mess idea for all ages that turns a new toothbrush into a special delivery. Get the steps and the materials list on the idea page.",
+      "hashtags": [
+        "#easyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf sitting on a bathroom counter, holding up a new toothbrush tied with a red bow like a trophy",
+      "board": "5-Minute Elf Ideas",
+      "alsoSaveTo": [
+        "No-Mess Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "tangled-in-christmas-lights": {
+      "id": 5,
+      "slug": "tangled-in-christmas-lights",
+      "link": "https://elf-site.pages.dev/ideas/tangled-in-christmas-lights/",
+      "textLayerTitle": "Tangled in Christmas Lights",
+      "kicker": "5 min · Zero mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=tangled-in-christmas-lights&variant=b&kicker=5%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Tangled in Christmas Lights – Funny 5-Minute Elf Idea",
+      "description": "Wrap a short string of battery-powered LED lights loosely around the elf, as if it fell while decorating, and leave the battery box in view as “proof.” A funny 5-minute, zero-mess scene for all ages. Battery lights only — never plugged into a wall outlet with the child nearby. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#funnyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf sitting on the floor tangled in a string of glowing lights, with a small battery box beside it",
+      "board": "Funny Elf Ideas",
+      "alsoSaveTo": [
+        "5-Minute Elf Ideas",
+        "No-Mess Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "hiding-in-the-christmas-tree": {
+      "id": 6,
+      "slug": "hiding-in-the-christmas-tree",
+      "link": "https://elf-site.pages.dev/ideas/hiding-in-the-christmas-tree/",
+      "textLayerTitle": "Hiding in the Christmas Tree",
+      "kicker": "2 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=hiding-in-the-christmas-tree&variant=a&kicker=2%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Hiding in the Christmas Tree – 2-Minute Elf Idea, No Supplies",
+      "description": "Tuck the elf among the tree branches at your child’s eye level, with only its head and one arm peeking out, and let them hunt. One of the quickest ideas: 2 minutes, zero mess, no card needed. Move it to a new branch the next night for a 2-day hunt. See the materials and the 3 steps on our site.",
+      "hashtags": [
+        "#easyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a Christmas tree with a small elf hiding among the branches halfway up, only its head and one hand showing",
+      "board": "5-Minute Elf Ideas",
+      "alsoSaveTo": [
+        "No-Mess Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "letter-to-santa-station": {
+      "id": 7,
+      "slug": "letter-to-santa-station",
+      "link": "https://elf-site.pages.dev/ideas/letter-to-santa-station/",
+      "textLayerTitle": "Letter to Santa Station",
+      "kicker": "10 min · Low mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=letter-to-santa-station&variant=b&kicker=10%20min%20%C2%B7%20Low%20mess",
+      "pinTitle": "Letter to Santa Station – 10-Minute Elf Idea for Kids",
+      "description": "Set up a letter station on the table with paper, an envelope, colored pencils, stickers and a small box as the mailbox, with the elf holding a mini envelope addressed to Santa. Your child writes their letter that day; you collect it and “mail” it at night. 10 minutes, low mess, for kids 5–9. Get the steps and the materials list on the idea page.",
+      "hashtags": [
+        "#christmaswithkids",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a table set up for letter writing with blank paper, colored pencils and a small red mailbox, and a small elf holding a little envelope",
+      "board": "Elf Ideas for Kids",
+      "alsoSaveTo": [],
+      "status": "DRAFT"
+    },
+    "trapped-in-a-jar": {
+      "id": 8,
+      "slug": "trapped-in-a-jar",
+      "link": "https://elf-site.pages.dev/ideas/trapped-in-a-jar/",
+      "textLayerTitle": "Trapped in a Jar",
+      "kicker": "2 min · Zero mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=trapped-in-a-jar&variant=b&kicker=2%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Trapped in a Jar – Funny 2-Minute Elf Idea for the Kitchen",
+      "description": "Sit the elf inside a large clear jar on the counter, lid left open, with its little hands pressed against the glass and a card outside begging to be let out. A funny 2-minute, zero-mess idea for all ages with just one jar. Tap through for the full setup, step by step.",
+      "hashtags": [
+        "#funnyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf sitting inside a large open glass jar with its hands up against the glass, the lid lying beside it and a blank card in front",
+      "board": "Funny Elf Ideas",
+      "alsoSaveTo": [
+        "5-Minute Elf Ideas",
+        "No-Mess Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "christmas-countdown-chain": {
+      "id": 9,
+      "slug": "christmas-countdown-chain",
+      "link": "https://elf-site.pages.dev/ideas/christmas-countdown-chain/",
+      "textLayerTitle": "Christmas Countdown Chain",
+      "kicker": "10 min · Low mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=christmas-countdown-chain&variant=b&kicker=10%20min%20%C2%B7%20Low%20mess",
+      "pinTitle": "Christmas Countdown Chain – Paper Chain Elf Idea for Kids",
+      "description": "Make a red and green paper chain with one link for every day left until Christmas, and sit the elf holding the first link. Each morning your child tears off a link. 10 minutes, low mess, for kids 5–9 — the glue or stapler stays with the adult. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#christmaswithkids",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf holding up one end of a red and green paper chain that trails across the floor, with loose paper strips and a marker nearby",
+      "board": "Elf Ideas for Kids",
+      "alsoSaveTo": [],
+      "status": "DRAFT"
+    },
+    "sleeping-in-a-stocking": {
+      "id": 10,
+      "slug": "sleeping-in-a-stocking",
+      "link": "https://elf-site.pages.dev/ideas/sleeping-in-a-stocking/",
+      "textLayerTitle": "Sleeping in a Stocking",
+      "kicker": "2 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=sleeping-in-a-stocking&variant=a&kicker=2%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Sleeping in a Stocking – 2-Minute Elf Idea for the Night You Forgot",
+      "description": "Tuck the elf into a hanging Christmas stocking with only its head out and a bit of cotton or a small handkerchief as a pillow. A 2-minute, zero-mess scene for toddlers — the perfect idea for the night you almost forgot. Get the steps and the materials list on the idea page.",
+      "hashtags": [
+        "#toddlerchristmas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a red Christmas stocking hanging from a wall peg with a small elf tucked inside, eyes closed, only its head out and cotton for a pillow",
+      "board": "Elf Ideas for Toddlers",
+      "alsoSaveTo": [
+        "5-Minute Elf Ideas",
+        "No-Mess Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "flour-snow-angel": {
+      "id": 11,
+      "slug": "flour-snow-angel",
+      "link": "https://elf-site.pages.dev/ideas/flour-snow-angel/",
+      "textLayerTitle": "Flour Snow Angel",
+      "kicker": "5 min · Medium mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=flour-snow-angel&variant=b&kicker=5%20min%20%C2%B7%20Medium%20mess",
+      "pinTitle": "Flour Snow Angel – Funny 5-Minute Elf Idea (Mess Stays in a Tray)",
+      "description": "Spread a cup of flour (or powdered sugar) on a large shallow tray, lay the elf down and move its arms and legs to make a snow angel, then sit it next to its work. 5 minutes, medium mess, for all ages — the tray holds the mess and makes cleanup easier. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#funnyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a shallow tray of flour with a snow-angel shape pressed into it, and a small elf sitting proudly beside the tray",
+      "board": "Funny Elf Ideas",
+      "alsoSaveTo": [
+        "5-Minute Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "toilet-paper-tree-makeover": {
+      "id": 12,
+      "slug": "toilet-paper-tree-makeover",
+      "link": "https://elf-site.pages.dev/ideas/toilet-paper-tree-makeover/",
+      "textLayerTitle": "Toilet Paper Tree Makeover",
+      "kicker": "10 min · Medium mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=toilet-paper-tree-makeover&variant=b&kicker=10%20min%20%C2%B7%20Medium%20mess",
+      "pinTitle": "Toilet Paper Tree Makeover – Funny Elf Idea with One Roll",
+      "description": "Wrap one roll of toilet paper around the Christmas tree like a disastrous garland, loose ends hanging, and put the elf at the top holding the roll, caught in the act. A funny 10-minute idea for kids 5–9 with stuff you already have. Medium mess. See the materials and the 3 steps on our site.",
+      "hashtags": [
+        "#funnyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a Christmas tree wrapped in loose bands of toilet paper, with a small elf sitting beside it holding the roll",
+      "board": "Funny Elf Ideas",
+      "alsoSaveTo": [
+        "Elf Ideas for Kids"
+      ],
+      "status": "DRAFT"
+    },
+    "marshmallow-bubble-bath": {
+      "id": 13,
+      "slug": "marshmallow-bubble-bath",
+      "link": "https://elf-site.pages.dev/ideas/marshmallow-bubble-bath/",
+      "textLayerTitle": "Marshmallow Bubble Bath",
+      "kicker": "5 min · Low mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=marshmallow-bubble-bath&variant=b&kicker=5%20min%20%C2%B7%20Low%20mess",
+      "pinTitle": "Marshmallow Bubble Bath – Funny 5-Minute Elf Idea",
+      "description": "Fill a bowl or the clean sink with mini marshmallows like bath foam and let the elf relax in the middle, only its head and feet showing. A funny 5-minute idea for all ages, low mess — add a rubber duck if you have one. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#funnyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf relaxing in a bowl filled with mini marshmallows like bath foam, only its head and boots showing, with a gold rubber duck and a blank card beside the bowl",
+      "board": "Funny Elf Ideas",
+      "alsoSaveTo": [
+        "5-Minute Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "toothpaste-mirror-message": {
+      "id": 14,
+      "slug": "toothpaste-mirror-message",
+      "link": "https://elf-site.pages.dev/ideas/toothpaste-mirror-message/",
+      "textLayerTitle": "Toothpaste Mirror Message",
+      "kicker": "5 min · Low mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=toothpaste-mirror-message&variant=b&kicker=5%20min%20%C2%B7%20Low%20mess",
+      "pinTitle": "Toothpaste Mirror Message – Funny 5-Minute Elf Idea for Kids",
+      "description": "With a finger or a cotton swab, write “BRUSH! - your elf” in a thin layer of toothpaste in the corner of the bathroom mirror, and sit the elf on the sink holding the open tube. A funny 5-minute idea for kids 5–9, low mess. Cleanup the next day: warm water and paper. Tap through for the full setup, step by step.",
+      "hashtags": [
+        "#funnyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf sitting on a bathroom counter holding an open tube of toothpaste, in front of a blank mirror with a dab of toothpaste in the corner",
+      "board": "Funny Elf Ideas",
+      "alsoSaveTo": [
+        "5-Minute Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "silly-banana-bunch": {
+      "id": 15,
+      "slug": "silly-banana-bunch",
+      "link": "https://elf-site.pages.dev/ideas/silly-banana-bunch/",
+      "textLayerTitle": "Silly Banana Bunch",
+      "kicker": "5 min · Zero mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=silly-banana-bunch&variant=b&kicker=5%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Silly Banana Bunch – Funny 5-Minute Elf Idea for Toddlers",
+      "description": "Draw a different face on each banana — sleepy, startled, laughing — and sit the elf in the fruit bowl holding the pen. A funny 5-minute, zero-mess idea for toddlers, and the bananas become the snack of the day. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#funnyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a bunch of bananas in a fruit bowl, each banana with a different face drawn on it, and a small elf sitting beside the bowl holding a pen",
+      "board": "Funny Elf Ideas",
+      "alsoSaveTo": [
+        "5-Minute Elf Ideas",
+        "No-Mess Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "sink-fishing-trip": {
+      "id": 16,
+      "slug": "sink-fishing-trip",
+      "link": "https://elf-site.pages.dev/ideas/sink-fishing-trip/",
+      "textLayerTitle": "Sink Fishing Trip",
+      "kicker": "5 min · Low mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=sink-fishing-trip&variant=b&kicker=5%20min%20%C2%B7%20Low%20mess",
+      "pinTitle": "Sink Fishing Trip – Funny 5-Minute Elf Idea with Fish Crackers",
+      "description": "Make a tiny fishing rod from a small stick or pencil, string and a paper clip, and sit the elf on the edge of the sink or a bowl, “fishing” for fish-shaped crackers in a little water or on blue paper. Put 2 or 3 already “caught” beside it. 5 minutes, low mess, for all ages. Get the steps and the materials list on the idea page.",
+      "hashtags": [
+        "#funnyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf sitting on a counter fishing with a little stick-and-string rod over a blue bowl of fish-shaped crackers, with two caught crackers on a plate",
+      "board": "Funny Elf Ideas",
+      "alsoSaveTo": [
+        "5-Minute Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "sticky-note-surprise-wall": {
+      "id": 17,
+      "slug": "sticky-note-surprise-wall",
+      "link": "https://elf-site.pages.dev/ideas/sticky-note-surprise-wall/",
+      "textLayerTitle": "Sticky Note Surprise Wall",
+      "kicker": "10 min · Zero mess",
+      "templateVariant": "c",
+      "previewPath": "design/pin-template/pin.html?slug=sticky-note-surprise-wall&variant=c&kicker=10%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Sticky Note Surprise Wall – Zero-Mess Elf Idea for Kids",
+      "description": "Stick colored sticky notes on the bedroom door in the shape of a Christmas tree or a big star, write short compliments for your child on 3 or 4 of them, and sit the elf underneath with the marker. 10 minutes, zero mess, for kids 5–9. Tap through for the full setup, step by step.",
+      "hashtags": [
+        "#easyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of colored sticky notes arranged in the shape of a Christmas tree on a door, a few of them blank, with a small elf sitting below holding a marker",
+      "board": "No-Mess Elf Ideas",
+      "alsoSaveTo": [
+        "Easy Elf Ideas",
+        "Elf Ideas for Kids"
+      ],
+      "status": "DRAFT"
+    },
+    "elf-zipline-adventure": {
+      "id": 18,
+      "slug": "elf-zipline-adventure",
+      "link": "https://elf-site.pages.dev/ideas/elf-zipline-adventure/",
+      "textLayerTitle": "Elf Zipline Adventure",
+      "kicker": "10 min · Zero mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=elf-zipline-adventure&variant=b&kicker=10%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Elf Zipline Adventure – Funny 10-Minute Elf Idea with a Candy Cane",
+      "description": "Stretch a long string or dental floss diagonally between two anchor points — a doorknob and a bookshelf — and hang the elf from a candy cane in the middle of the run. A funny 10-minute, zero-mess idea for kids 5–9. Keep the line nice and tight, out of the way of where people walk. See the materials and the 3 steps on our site.",
+      "hashtags": [
+        "#funnyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf riding a string zipline across the living room, hanging from a candy cane hooked over the string between a bookshelf and a sofa",
+      "board": "Funny Elf Ideas",
+      "alsoSaveTo": [
+        "No-Mess Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "sweet-spaghetti-breakfast": {
+      "id": 19,
+      "slug": "sweet-spaghetti-breakfast",
+      "link": "https://elf-site.pages.dev/ideas/sweet-spaghetti-breakfast/",
+      "textLayerTitle": "Sweet Spaghetti Breakfast",
+      "kicker": "10 min · Medium mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=sweet-spaghetti-breakfast&variant=b&kicker=10%20min%20%C2%B7%20Medium%20mess",
+      "pinTitle": "Sweet Spaghetti Breakfast – Funny Elf Breakfast Idea for Kids",
+      "description": "Put together a little plate of cooked spaghetti (leftovers are fine) with syrup and colored sprinkles on top, and sit the elf behind it with a fork bigger than itself. Your child decides whether to taste it. A funny 10-minute idea for kids 5–9, medium mess. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#funnyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small plate of spaghetti topped with syrup, sprinkles and a marshmallow, and a small elf sitting beside it holding a fork taller than itself",
+      "board": "Funny Elf Ideas",
+      "alsoSaveTo": [
+        "Elf Ideas for Kids"
+      ],
+      "status": "DRAFT"
+    },
+    "candy-cane-sled": {
+      "id": 20,
+      "slug": "candy-cane-sled",
+      "link": "https://elf-site.pages.dev/ideas/candy-cane-sled/",
+      "textLayerTitle": "Candy Cane Sled",
+      "kicker": "10 min · Low mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=candy-cane-sled&variant=b&kicker=10%20min%20%C2%B7%20Low%20mess",
+      "pinTitle": "Candy Cane Sled – Elf Craft Idea with 4 Candy Canes",
+      "description": "Two candy canes become the runners, a base of popsicle sticks or cardboard goes on top, and two more candy canes form the backrest. Sit the elf on the sled with mini paper presents behind it. 10 minutes, low mess, for all ages. Hot glue is for the adult only — or use tape. Tap through for the full setup, step by step.",
+      "hashtags": [
+        "#christmaswithkids",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf sitting on a little sled made of candy canes and craft sticks, on cotton snow, with two tiny presents stacked behind it",
+      "board": "Elf Ideas for Kids",
+      "alsoSaveTo": [],
+      "status": "DRAFT"
+    },
+    "hot-cocoa-stand-helper": {
+      "id": 21,
+      "slug": "hot-cocoa-stand-helper",
+      "link": "https://elf-site.pages.dev/ideas/hot-cocoa-stand-helper/",
+      "textLayerTitle": "Hot Cocoa Stand Helper",
+      "kicker": "10 min · Low mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=hot-cocoa-stand-helper&variant=b&kicker=10%20min%20%C2%B7%20Low%20mess",
+      "pinTitle": "Hot Cocoa Stand Helper – Cozy Elf Idea for the Kitchen",
+      "description": "Set up a mini cocoa stand with a small mug, hot chocolate mix and a little pot of mini marshmallows, plus a small paper sign: “ELF COCOA - 1 HUG.” In the morning, the family makes hot chocolate together. 10 minutes, low mess, for all ages. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#christmaswithkids",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf standing behind a big mug like a cocoa stand, with a blank sign on a post and a little pot of mini marshmallows",
+      "board": "Elf Ideas for Kids",
+      "alsoSaveTo": [],
+      "status": "DRAFT"
+    },
+    "cookie-baking-disaster": {
+      "id": 22,
+      "slug": "cookie-baking-disaster",
+      "link": "https://elf-site.pages.dev/ideas/cookie-baking-disaster/",
+      "textLayerTitle": "Cookie Baking Disaster",
+      "kicker": "10 min · Medium mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=cookie-baking-disaster&variant=b&kicker=10%20min%20%C2%B7%20Medium%20mess",
+      "pinTitle": "Cookie Baking Disaster – Funny Elf Idea with Flour Footprints",
+      "description": "Spread a pinch of flour on one corner of the counter with little footprints leading to the elf, who sits holding a cookie cutter next to a bitten cookie. A funny 10-minute idea for all ages using 2 ready-made cookies, so there is no baking to do. Medium mess. Get the steps and the materials list on the idea page.",
+      "hashtags": [
+        "#funnyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf sitting on a kitchen counter holding a star cookie cutter, with a rolling pin, a patch of flour, little flour footprints and a bitten cookie",
+      "board": "Funny Elf Ideas",
+      "alsoSaveTo": [],
+      "status": "DRAFT"
+    },
+    "milk-and-cookies-taste-test": {
+      "id": 23,
+      "slug": "milk-and-cookies-taste-test",
+      "link": "https://elf-site.pages.dev/ideas/milk-and-cookies-taste-test/",
+      "textLayerTitle": "Milk and Cookies Taste Test",
+      "kicker": "5 min · Low mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=milk-and-cookies-taste-test&variant=a&kicker=5%20min%20%C2%B7%20Low%20mess",
+      "pinTitle": "Milk and Cookies Taste Test – Elf Idea with a Free Printable",
+      "description": "Line up 3 kinds of cookie numbered 1 to 3 with small cups of milk, and leave the elf with a pencil over a score sheet, “rating” them to practice for the night of the 24th. At snack time, your child does the real test and compares scores. 5 minutes, low mess, for kids 5–9. Tap through for the full setup, step by step.",
+      "hashtags": [
+        "#easyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of three different cookies in a row, each with a small cup of milk, and a small elf holding a pencil over a blank score sheet with empty stars",
+      "board": "5-Minute Elf Ideas",
+      "alsoSaveTo": [
+        "Easy Elf Ideas",
+        "Elf Ideas for Kids"
+      ],
+      "status": "DRAFT"
+    },
+    "gingerbread-house-inspector": {
+      "id": 24,
+      "slug": "gingerbread-house-inspector",
+      "link": "https://elf-site.pages.dev/ideas/gingerbread-house-inspector/",
+      "textLayerTitle": "Gingerbread House Inspector",
+      "kicker": "5 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=gingerbread-house-inspector&variant=a&kicker=5%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Gingerbread House Inspector – 5-Minute Elf Idea, Zero Mess",
+      "description": "Stand the elf next to the family’s gingerbread house with an “official inspection” clipboard and a toy magnifying glass. The checklist reads: “Walls: strong. Roof: delicious. Approved!” No house? The elf can inspect any cookie. 5 minutes, zero mess, for all ages. See the materials and the 3 steps on our site.",
+      "hashtags": [
+        "#easyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a large gingerbread house with a small elf standing beside it, holding a blank clipboard and a magnifying glass",
+      "board": "5-Minute Elf Ideas",
+      "alsoSaveTo": [
+        "No-Mess Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "kindness-mission-card": {
+      "id": 25,
+      "slug": "kindness-mission-card",
+      "link": "https://elf-site.pages.dev/ideas/kindness-mission-card/",
+      "textLayerTitle": "Kindness Mission Card",
+      "kicker": "5 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=kindness-mission-card&variant=a&kicker=5%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Kindness Mission Card – Free Printable Elf Idea for All Ages",
+      "description": "The elf holds a “TOP SECRET MISSION” envelope, and inside is the mission of the day: “Today: draw a picture for someone you love.” Rotate simple missions like helping set the table or saying thank you. A 5-minute, zero-mess idea for all ages, with a free printable card. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#easyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf peeking over the top of a large blank envelope, with a small blank card beside it",
+      "board": "5-Minute Elf Ideas",
+      "alsoSaveTo": [
+        "No-Mess Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "candy-cane-scavenger-hunt": {
+      "id": 26,
+      "slug": "candy-cane-scavenger-hunt",
+      "link": "https://elf-site.pages.dev/ideas/candy-cane-scavenger-hunt/",
+      "textLayerTitle": "Candy Cane Scavenger Hunt",
+      "kicker": "10 min · Zero mess",
+      "templateVariant": "c",
+      "previewPath": "design/pin-template/pin.html?slug=candy-cane-scavenger-hunt&variant=c&kicker=10%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Candy Cane Scavenger Hunt – Zero-Mess Elf Game for Kids",
+      "description": "Hide 5 candy canes where your child can see them for their age — nothing up high or inside furniture — and leave the elf at the entrance with the challenge card. A 10-minute, zero-mess hunt for kids 5–9. Toddler version: 3 candy canes, all in the same room. Tap through for the full setup, step by step.",
+      "hashtags": [
+        "#easyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a candy cane half hidden behind a cushion, and a small elf standing nearby holding up a blank card",
+      "board": "No-Mess Elf Ideas",
+      "alsoSaveTo": [
+        "Easy Elf Ideas",
+        "Elf Ideas for Kids"
+      ],
+      "status": "DRAFT"
+    },
+    "build-a-snowman-challenge": {
+      "id": 27,
+      "slug": "build-a-snowman-challenge",
+      "link": "https://elf-site.pages.dev/ideas/build-a-snowman-challenge/",
+      "textLayerTitle": "Build-a-Snowman Challenge",
+      "kicker": "5 min · Low mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=build-a-snowman-challenge&variant=a&kicker=5%20min%20%C2%B7%20Low%20mess",
+      "pinTitle": "Build-a-Snowman Challenge – 5-Minute Marshmallow Elf Idea",
+      "description": "Build a marshmallow snowman with toothpicks and tiny sprinkles, sit the elf beside it looking proud, and leave a second kit unassembled with a dare to beat its record. Your child builds their own at breakfast, with you at the table, and eats the result. 5 minutes, low mess, for all ages. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#easyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a finished marshmallow snowman on a table next to a small elf pointing at three loose marshmallows, toothpicks and sprinkles",
+      "board": "5-Minute Elf Ideas",
+      "alsoSaveTo": [
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "nice-list-certificate": {
+      "id": 28,
+      "slug": "nice-list-certificate",
+      "link": "https://elf-site.pages.dev/ideas/nice-list-certificate/",
+      "textLayerTitle": "Nice List Certificate",
+      "kicker": "5 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=nice-list-certificate&variant=a&kicker=5%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Nice List Certificate – Free Printable 5-Minute Elf Idea",
+      "description": "Fill in the free printable certificate with your child’s name and one specific quality of theirs this year, roll it up like a diploma with a gold ribbon, and leave the elf sleeping on it on the bed or at the bedroom door. A 5-minute, zero-mess idea for all ages — the first thing they see on waking up. Get the steps and the materials list on the idea page.",
+      "hashtags": [
+        "#easyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a blank certificate with a gold border lying on a bed, a gold ribbon rosette beside it and a small elf asleep on one corner",
+      "board": "5-Minute Elf Ideas",
+      "alsoSaveTo": [
+        "No-Mess Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "would-you-rather-card": {
+      "id": 29,
+      "slug": "would-you-rather-card",
+      "link": "https://elf-site.pages.dev/ideas/would-you-rather-card/",
+      "textLayerTitle": "Would You Rather Card",
+      "kicker": "2 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=would-you-rather-card&variant=a&kicker=2%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Would You Rather Card – 2-Minute Elf Idea for Breakfast",
+      "description": "Sit the elf in your child’s seat at the breakfast table holding a card: “Would you rather ride a reindeer or drive the sleigh?” The family answers at breakfast, and the answer becomes the next day’s card. A 2-minute, zero-mess idea for kids 5–9, with a free printable card. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#easyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf sitting at a breakfast table holding up a large blank card, with a mug and a plate beside it",
+      "board": "5-Minute Elf Ideas",
+      "alsoSaveTo": [
+        "No-Mess Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "farewell-letter-and-photo": {
+      "id": 30,
+      "slug": "farewell-letter-and-photo",
+      "link": "https://elf-site.pages.dev/ideas/farewell-letter-and-photo/",
+      "textLayerTitle": "Farewell Letter and Photo",
+      "kicker": "10 min · Zero mess",
+      "templateVariant": "c",
+      "previewPath": "design/pin-template/pin.html?slug=farewell-letter-and-photo&variant=c&kicker=10%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Elf Goodbye Letter for December 24 – Farewell Letter and Keepsake Frame",
+      "description": "On the morning of the 24th, sit the elf by the tree with a farewell letter that says thank you, mentions 2 real moments from your child’s year and promises to come back. A small frame with the favorite picture of the season becomes a keepsake for the whole year. 10 minutes, zero mess, for all ages. See the materials and the 3 steps on our site.",
+      "hashtags": [
+        "#elfgoodbye",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf sitting under a Christmas tree at night between an open blank letter and a small picture frame showing a plain silhouette",
+      "board": "Elf Goodbye Ideas",
+      "alsoSaveTo": [
+        "No-Mess Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "im-back-arrival-banner": {
+      "id": 31,
+      "slug": "im-back-arrival-banner",
+      "link": "https://elf-site.pages.dev/ideas/im-back-arrival-banner/",
+      "textLayerTitle": "I'm Back! Arrival Banner",
+      "kicker": "10 min · Zero mess",
+      "templateVariant": "c",
+      "previewPath": "design/pin-template/pin.html?slug=im-back-arrival-banner&variant=c&kicker=10%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "I’m Back! Arrival Banner – Elf Arrival Idea for the First Night",
+      "description": "The night before the arrival, hang a blank paper banner on the wall or the living-room door and sit the elf underneath holding the marker, as if it just finished writing. The card says it missed you all year. A 10-minute, zero-mess arrival for all ages. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#elfarrival",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a blank paper banner hung across a wall with a little bell at each end, and a small elf standing underneath holding a marker",
+      "board": "Elf Arrival Ideas",
+      "alsoSaveTo": [
+        "No-Mess Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "north-pole-arrival-breakfast": {
+      "id": 32,
+      "slug": "north-pole-arrival-breakfast",
+      "link": "https://elf-site.pages.dev/ideas/north-pole-arrival-breakfast/",
+      "textLayerTitle": "North Pole Arrival Breakfast",
+      "kicker": "10 min · Low mess",
+      "templateVariant": "c",
+      "previewPath": "design/pin-template/pin.html?slug=north-pole-arrival-breakfast&variant=c&kicker=10%20min%20%C2%B7%20Low%20mess",
+      "pinTitle": "North Pole Arrival Breakfast – Mini Pancake Elf Arrival Idea",
+      "description": "On arrival morning, put together a little plate of mini pancakes with strawberry and whipped cream — an elf-sized portion — and sit the elf behind it with a welcome sign. Then the family makes the big version together. 10 minutes, low mess, for all ages. Tap through for the full setup, step by step.",
+      "hashtags": [
+        "#elfarrival",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a stack of mini pancakes topped with a strawberry on a small plate, with a small elf behind it holding a blank sign and a little cup beside it",
+      "board": "Elf Arrival Ideas",
+      "alsoSaveTo": [],
+      "status": "DRAFT"
+    },
+    "special-delivery-arrival-box": {
+      "id": 33,
+      "slug": "special-delivery-arrival-box",
+      "link": "https://elf-site.pages.dev/ideas/special-delivery-arrival-box/",
+      "textLayerTitle": "Special Delivery Arrival Box",
+      "kicker": "5 min · Zero mess",
+      "templateVariant": "c",
+      "previewPath": "design/pin-template/pin.html?slug=special-delivery-arrival-box&variant=c&kicker=5%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Special Delivery Arrival Box – 5-Minute Elf Arrival Idea",
+      "description": "Line a small paper box with cotton like a nest, sit the elf inside with only its head out, close the flaps halfway and tie it loosely with string. Add the tag — “Special Delivery - From: North Pole. Handle with giggles.” — and leave it at the front door. 5 minutes, zero mess, for all ages. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#elfarrival",
+        "#elfideas"
+      ],
+      "altText": "Illustration of an open kraft-paper box with a small elf inside on cotton, only its head showing, with a string bow and a blank tag beside the box",
+      "board": "Elf Arrival Ideas",
+      "alsoSaveTo": [
+        "5-Minute Elf Ideas",
+        "No-Mess Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "arrival-hide-and-seek-clue-trail": {
+      "id": 34,
+      "slug": "arrival-hide-and-seek-clue-trail",
+      "link": "https://elf-site.pages.dev/ideas/arrival-hide-and-seek-clue-trail/",
+      "textLayerTitle": "Arrival Hide-and-Seek Clue Trail",
+      "kicker": "10 min · Zero mess",
+      "templateVariant": "c",
+      "previewPath": "design/pin-template/pin.html?slug=arrival-hide-and-seek-clue-trail&variant=c&kicker=10%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Arrival Hide-and-Seek Clue Trail – Elf Arrival Game for Kids",
+      "description": "Hide the elf somewhere your child can spot it — a bookshelf, the tree, a low shelf — with a jingle bell beside it. Then leave 4 clue cards in sequence from the bed to the hiding spot, each one pointing to the next room. A 10-minute, zero-mess arrival for kids 5–9, with free printable clue cards. Get the steps and the materials list on the idea page.",
+      "hashtags": [
+        "#elfarrival",
+        "#elfideas"
+      ],
+      "altText": "Illustration of three blank cards laid in a curving trail across the floor leading to a Christmas tree, with a small elf half hidden behind the tree and a little bell on the floor beside it",
+      "board": "Elf Arrival Ideas",
+      "alsoSaveTo": [
+        "No-Mess Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "snowy-footprints-arrival": {
+      "id": 35,
+      "slug": "snowy-footprints-arrival",
+      "link": "https://elf-site.pages.dev/ideas/snowy-footprints-arrival/",
+      "textLayerTitle": "Snowy Footprints Arrival",
+      "kicker": "5 min · Low mess",
+      "templateVariant": "c",
+      "previewPath": "design/pin-template/pin.html?slug=snowy-footprints-arrival&variant=c&kicker=5%20min%20%C2%B7%20Low%20mess",
+      "pinTitle": "Snowy Footprints Arrival – 5-Minute Elf Arrival Idea",
+      "description": "Hold a paper footprint stencil on the doormat and sift a thin layer of flour or powdered sugar inside it, making 4–5 footprints from the door into the house, then sit the elf at the end with flour on its feet. 5 minutes, low mess, for all ages. Cleanup: vacuum the mat, 2 minutes. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#elfarrival",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a doormat by a door left ajar, with a trail of five little white footprints curving across the floor to a small elf sitting at the end",
+      "board": "Elf Arrival Ideas",
+      "alsoSaveTo": [
+        "5-Minute Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "toddler-peekaboo-blanket-fort": {
+      "id": 36,
+      "slug": "toddler-peekaboo-blanket-fort",
+      "link": "https://elf-site.pages.dev/ideas/toddler-peekaboo-blanket-fort/",
+      "textLayerTitle": "Toddler Peekaboo Blanket Fort",
+      "kicker": "5 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=toddler-peekaboo-blanket-fort&variant=a&kicker=5%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Toddler Peekaboo Blanket Fort – 5-Minute Elf Idea for Toddlers",
+      "description": "Make a simple little fort with a light blanket over the sofa or two low chairs, put two large stuffed animals in front, and let the elf peek out of the opening with one little hand. Read the card aloud: “Peekaboo! I see you!” 5 minutes, zero mess, for toddlers. Keep it simple and safe: nothing heavy in the structure. See the materials and the 3 steps on our site.",
+      "hashtags": [
+        "#toddlerchristmas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a blanket fort with a small elf peeking out through the opening, and two large stuffed bears sitting in front as the audience",
+      "board": "Elf Ideas for Toddlers",
+      "alsoSaveTo": [
+        "5-Minute Elf Ideas",
+        "No-Mess Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "pom-pom-color-sorting-game": {
+      "id": 37,
+      "slug": "pom-pom-color-sorting-game",
+      "link": "https://elf-site.pages.dev/ideas/pom-pom-color-sorting-game/",
+      "textLayerTitle": "Pom-Pom Color Sorting Game",
+      "kicker": "5 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=pom-pom-color-sorting-game&variant=a&kicker=5%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Pom-Pom Color Sorting Game – 5-Minute Elf Activity for Toddlers",
+      "description": "On a tray, leave half the large pom-poms already sorted by color into 3 small cups, and show the elf mid-game, holding a pom-pom over the right cup. Your toddler finishes the rest. 5 minutes, zero mess. Large pom-poms only, always with supervision — no small parts for children under 3. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#toddlerchristmas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a tray with three colored cups, large pom-poms already sorted into two of them, and a small elf holding a pom-pom next to the third cup",
+      "board": "Elf Ideas for Toddlers",
+      "alsoSaveTo": [
+        "5-Minute Elf Ideas",
+        "No-Mess Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "breakfast-cereal-garland": {
+      "id": 38,
+      "slug": "breakfast-cereal-garland",
+      "link": "https://elf-site.pages.dev/ideas/breakfast-cereal-garland/",
+      "textLayerTitle": "Breakfast Cereal Garland",
+      "kicker": "5 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=breakfast-cereal-garland&variant=a&kicker=5%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Breakfast Cereal Garland – Edible Elf Idea for Toddlers",
+      "description": "Start a short garland with 6–8 large cereal rings on cotton thread and wrap it around the elf like a necklace, with a bowl of cereal beside it so your toddler can continue at breakfast — and eat the result. 5 minutes, zero mess. Always with supervision. Tap through for the full setup, step by step.",
+      "hashtags": [
+        "#toddlerchristmas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf sitting on a kitchen table wearing a garland of cereal rings as a necklace that is far too big, with a small bowl beside it",
+      "board": "Elf Ideas for Toddlers",
+      "alsoSaveTo": [
+        "5-Minute Elf Ideas",
+        "No-Mess Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "my-first-sticker-scene": {
+      "id": 39,
+      "slug": "my-first-sticker-scene",
+      "link": "https://elf-site.pages.dev/ideas/my-first-sticker-scene/",
+      "textLayerTitle": "My First Sticker Scene",
+      "kicker": "5 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=my-first-sticker-scene&variant=a&kicker=5%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "My First Sticker Scene – 5-Minute Elf Activity for Toddlers",
+      "description": "Draw just the outline of a big tree on poster board, add 2–3 large Christmas stickers as an example, and sit the elf beside it holding a star sticker it can’t reach. Your toddler completes the scene that day. 5 minutes, zero mess. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#toddlerchristmas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a large poster with a simple tree outline and three stickers on it, and a small elf standing on a little stool holding a star, not reaching the top",
+      "board": "Elf Ideas for Toddlers",
+      "alsoSaveTo": [
+        "5-Minute Elf Ideas",
+        "No-Mess Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "toy-car-wash-station": {
+      "id": 40,
+      "slug": "toy-car-wash-station",
+      "link": "https://elf-site.pages.dev/ideas/toy-car-wash-station/",
+      "textLayerTitle": "Toy Car Wash Station",
+      "kicker": "10 min · Low mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=toy-car-wash-station&variant=a&kicker=10%20min%20%C2%B7%20Low%20mess",
+      "pinTitle": "Toy Car Wash Station – Elf Water Play Idea for Toddlers",
+      "description": "On a towel, set a basin with two fingers of water, one toy car inside and another waiting in line, and put the elf on the edge holding a soft little brush as the attendant. 10 minutes, low mess, for toddlers. Water only with an adult present, the whole time. Get the steps and the materials list on the idea page.",
+      "hashtags": [
+        "#toddlerchristmas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a basin of soapy water on a towel with a toy car being washed, a second toy car waiting in line, and a small elf beside the basin holding a little brush",
+      "board": "Elf Ideas for Toddlers",
+      "alsoSaveTo": [],
+      "status": "DRAFT"
+    },
+    "plush-friends-campout": {
+      "id": 41,
+      "slug": "plush-friends-campout",
+      "link": "https://elf-site.pages.dev/ideas/plush-friends-campout/",
+      "textLayerTitle": "Plush Friends Campout",
+      "kicker": "5 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=plush-friends-campout&variant=a&kicker=5%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Plush Friends Campout – Calm Bedtime Elf Idea for Toddlers",
+      "description": "Wrap 2–3 stuffed animals in small cloths like sleeping bags, in a row on the bedroom floor, with the elf in the middle wrapped up too and a small flashlight, switched off, beside them. A calm 5-minute, zero-mess scene for toddlers, designed not to stir things up before bedtime. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#toddlerchristmas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a row of three little sleeping bags on the floor with a stuffed bear, a small elf and another stuffed bear tucked in, only their heads showing, and a flashlight switched off beside them",
+      "board": "Elf Ideas for Toddlers",
+      "alsoSaveTo": [
+        "5-Minute Elf Ideas",
+        "No-Mess Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "fruit-face-breakfast-plate": {
+      "id": 42,
+      "slug": "fruit-face-breakfast-plate",
+      "link": "https://elf-site.pages.dev/ideas/fruit-face-breakfast-plate/",
+      "textLayerTitle": "Fruit Face Breakfast Plate",
+      "kicker": "5 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=fruit-face-breakfast-plate&variant=a&kicker=5%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Fruit Face Breakfast Plate – 5-Minute Elf Breakfast for Toddlers",
+      "description": "Make a face on a large plate — a small pancake for the face, banana slices for hair, strawberries for cheeks — and sit the elf beside it holding a strawberry, as co-author. 5 minutes, zero mess, for toddlers. Round fruit always cut in half; large blueberries cut in half too. See the materials and the 3 steps on our site.",
+      "hashtags": [
+        "#toddlerchristmas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a large plate with a pancake face made with banana-slice hair, strawberry cheeks and halved-blueberry eyes, and a small elf sitting by the plate holding a strawberry",
+      "board": "Elf Ideas for Toddlers",
+      "alsoSaveTo": [
+        "5-Minute Elf Ideas",
+        "No-Mess Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "elf-workshop-build-station": {
+      "id": 43,
+      "slug": "elf-workshop-build-station",
+      "link": "https://elf-site.pages.dev/ideas/elf-workshop-build-station/",
+      "textLayerTitle": "Elf Workshop Build Station",
+      "kicker": "20 min · Low mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=elf-workshop-build-station&variant=b&kicker=20%20min%20%C2%B7%20Low%20mess",
+      "pinTitle": "Elf Workshop Build Station – 20-Minute Elf Project for Kids",
+      "description": "Set up a workbench on the table: blocks as a shelf, little toy tools in a row and a half-built toy in the center, with the elf in a paper hard hat holding the little wrench. A 15–20 minute project, no rush, for kids 5–9. Low mess. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#christmaswithkids",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a tiny workshop on a table with a stack of wooden blocks, a toy hammer, a blank sign and a half-built toy car with a small elf sitting on top of it",
+      "board": "Elf Ideas for Kids",
+      "alsoSaveTo": [],
+      "status": "DRAFT"
+    },
+    "paper-snowflake-window-invasion": {
+      "id": 44,
+      "slug": "paper-snowflake-window-invasion",
+      "link": "https://elf-site.pages.dev/ideas/paper-snowflake-window-invasion/",
+      "textLayerTitle": "Paper Snowflake Window Invasion",
+      "kicker": "20 min · Low mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=paper-snowflake-window-invasion&variant=b&kicker=20%20min%20%C2%B7%20Low%20mess",
+      "pinTitle": "Paper Snowflake Window Invasion – 20-Minute Elf Project",
+      "description": "An adult folds and cuts out 8–12 paper snowflakes of different sizes and hangs them on the window or on a string across the living room, from largest to smallest. The elf sits on the windowsill holding a snowflake bigger than itself. About 20 minutes, low mess, for kids 5–9. Scissors are for the adult only. Tap through for the full setup, step by step.",
+      "hashtags": [
+        "#christmaswithkids",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a window at night covered in paper snowflakes hanging on strings, with a small elf sitting on the windowsill holding one huge snowflake",
+      "board": "Elf Ideas for Kids",
+      "alsoSaveTo": [],
+      "status": "DRAFT"
+    },
+    "mini-elf-door-and-welcome-mat": {
+      "id": 45,
+      "slug": "mini-elf-door-and-welcome-mat",
+      "link": "https://elf-site.pages.dev/ideas/mini-elf-door-and-welcome-mat/",
+      "textLayerTitle": "Mini Elf Door and Welcome Mat",
+      "kicker": "25 min · Low mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=mini-elf-door-and-welcome-mat&variant=b&kicker=25%20min%20%C2%B7%20Low%20mess",
+      "pinTitle": "Mini Elf Door and Welcome Mat – 25-Minute Elf Craft Project",
+      "description": "Cut out and assemble a little door (about 6 in / 15 cm) from cardboard or thin wood with a jingle-bell doorknob, attach it to the baseboard at the entrance or in the bedroom, and set a little paper mat in front with the elf on it. The longest project on the list: about 25 minutes including drying time. For kids 5–9, low mess. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#christmaswithkids",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a tiny red arched door with a gold bell for a knob at the bottom of a wall, with a striped little mat in front and a small elf sitting on the mat",
+      "board": "Elf Ideas for Kids",
+      "alsoSaveTo": [],
+      "status": "DRAFT"
+    },
+    "cardboard-sleigh-build": {
+      "id": 46,
+      "slug": "cardboard-sleigh-build",
+      "link": "https://elf-site.pages.dev/ideas/cardboard-sleigh-build/",
+      "textLayerTitle": "Cardboard Sleigh Build",
+      "kicker": "20 min · Low mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=cardboard-sleigh-build&variant=b&kicker=20%20min%20%C2%B7%20Low%20mess",
+      "pinTitle": "Cardboard Sleigh Build – 20-Minute Elf Project with a Box",
+      "description": "Cover a medium cardboard box in red paper and build the curved front with another piece of cardboard, then add two large decorative candy canes as runners and cotton as the seat. The elf sits in the sleigh holding string reins. About 20 minutes, low mess, for all ages — your child decorates it the next day. Get the steps and the materials list on the idea page.",
+      "hashtags": [
+        "#christmaswithkids",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf sitting in a red cardboard-box sleigh with candy-cane runners and cotton on the seat, holding string reins",
+      "board": "Elf Ideas for Kids",
+      "alsoSaveTo": [],
+      "status": "DRAFT"
+    },
+    "gingerbread-village-street": {
+      "id": 47,
+      "slug": "gingerbread-village-street",
+      "link": "https://elf-site.pages.dev/ideas/gingerbread-village-street/",
+      "textLayerTitle": "Gingerbread Village Street",
+      "kicker": "20 min · Medium mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=gingerbread-village-street&variant=b&kicker=20%20min%20%C2%B7%20Medium%20mess",
+      "pinTitle": "Gingerbread Village Street – 20-Minute Elf Project for Kids",
+      "description": "Build a little street on a cardboard base covered in white: 3–4 mini gingerbread houses on both sides and a sprinkle path down the middle, with the elf in the street holding a little clipboard as the new mayor. 20 minutes (the icing needs to set), medium mess, for kids 5–9. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#christmaswithkids",
+        "#elfideas"
+      ],
+      "altText": "Illustration of four small gingerbread houses in two rows on a white board, a path of sprinkles down the middle, and a small elf standing in the street holding a clipboard",
+      "board": "Elf Ideas for Kids",
+      "alsoSaveTo": [],
+      "status": "DRAFT"
+    },
+    "elf-photo-booth-props": {
+      "id": 48,
+      "slug": "elf-photo-booth-props",
+      "link": "https://elf-site.pages.dev/ideas/elf-photo-booth-props/",
+      "textLayerTitle": "Elf Photo Booth Props",
+      "kicker": "10 min · Zero mess",
+      "templateVariant": "c",
+      "previewPath": "design/pin-template/pin.html?slug=elf-photo-booth-props&variant=c&kicker=10%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Elf Photo Booth Props – Zero-Mess Elf Idea for the Whole Family",
+      "description": "Set up a corner of the living room with a cardboard frame leaning against the wall and paper props on sticks — mustache, hat, antlers — in a little pot. The elf poses inside the frame wearing the mustache, and the family uses the same setup in the morning. 10 minutes, zero mess, for all ages. See the materials and the 3 steps on our site.",
+      "hashtags": [
+        "#easyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf standing inside a gold cardboard frame holding a paper mustache on a stick in front of its face, with a pot of paper props beside it",
+      "board": "No-Mess Elf Ideas",
+      "alsoSaveTo": [
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "elf-story-fill-in-the-blanks-card": {
+      "id": 49,
+      "slug": "elf-story-fill-in-the-blanks-card",
+      "link": "https://elf-site.pages.dev/ideas/elf-story-fill-in-the-blanks-card/",
+      "textLayerTitle": "Elf Story Fill-in-the-Blanks Card",
+      "kicker": "5 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=elf-story-fill-in-the-blanks-card&variant=a&kicker=5%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Elf Story Fill-in-the-Blanks Card – Free Printable for Kids",
+      "description": "Leave a story card on the breakfast table with the elf holding a pencil over the first blank. The story starts — “Last night, the elf rode a ___ to the ___ …” — and asks for a noun, a place, a food, an animal and a verb. A 5-minute, zero-mess idea for kids 5–9, with a free printable card. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#easyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a large card on a table with five blank lines to fill in, a pencil resting on the first line, a small elf holding the pencil and an envelope beside it",
+      "board": "5-Minute Elf Ideas",
+      "alsoSaveTo": [
+        "No-Mess Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "elf-workout-challenge-cards": {
+      "id": 50,
+      "slug": "elf-workout-challenge-cards",
+      "link": "https://elf-site.pages.dev/ideas/elf-workout-challenge-cards/",
+      "textLayerTitle": "Elf Workout Challenge Cards",
+      "kicker": "5 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=elf-workout-challenge-cards&variant=a&kicker=5%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Elf Workout Challenge Cards – 5-Minute Active Elf Idea",
+      "description": "The elf strikes an impossible yoga pose on a little mat with 3 challenge cards fanned out in front: jump 10 times, spin 3 times, balance on one foot. Each is a 30-second challenge for the family to do together at breakfast. 5 minutes, zero mess, for all ages. Tap through for the full setup, step by step.",
+      "hashtags": [
+        "#easyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf toppled over on a little exercise mat with its arms stretched out, three blank cards fanned on the floor in front and a cushion beside it",
+      "board": "5-Minute Elf Ideas",
+      "alsoSaveTo": [
+        "No-Mess Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "guess-how-many-jar": {
+      "id": 51,
+      "slug": "guess-how-many-jar",
+      "link": "https://elf-site.pages.dev/ideas/guess-how-many-jar/",
+      "textLayerTitle": "Guess How Many Jar",
+      "kicker": "10 min · Zero mess",
+      "templateVariant": "c",
+      "previewPath": "design/pin-template/pin.html?slug=guess-how-many-jar&variant=c&kicker=10%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Guess How Many Jar – Elf Guessing Game for the Whole Family",
+      "description": "Count candies or marshmallows into a clear jar, write the number on a folded piece of paper and close the lid tight — sealed all day. The elf sits on the lid with an absurd guess. Everyone guesses, and the winner picks tonight’s Christmas song. 10 minutes, zero mess, for all ages. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#easyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a closed clear jar full of marshmallows with a small elf sitting on the lid holding a blank slip of paper, and three more slips and a pencil beside the jar",
+      "board": "No-Mess Elf Ideas",
+      "alsoSaveTo": [
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "draw-my-outfit-contest": {
+      "id": 52,
+      "slug": "draw-my-outfit-contest",
+      "link": "https://elf-site.pages.dev/ideas/draw-my-outfit-contest/",
+      "textLayerTitle": "Draw My Outfit Contest",
+      "kicker": "10 min · Zero mess",
+      "templateVariant": "c",
+      "previewPath": "design/pin-template/pin.html?slug=draw-my-outfit-contest&variant=c&kicker=10%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Draw My Outfit Contest – Elf Coloring Idea for Kids",
+      "description": "Leave the elf outline on the table with one part already colored — one foot of each color, on purpose — and sit the elf on the sheet holding the red pencil. Your child designs the elf a new outfit, and the winning drawing goes on the fridge that same night. 10 minutes, zero mess, for kids 5–9. Get the steps and the materials list on the idea page.",
+      "hashtags": [
+        "#easyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a sheet of paper with an elf outline to color in, one boot colored red and the other green, colored pencils fanned beside it and a small elf holding a pencil",
+      "board": "No-Mess Elf Ideas",
+      "alsoSaveTo": [
+        "Easy Elf Ideas",
+        "Elf Ideas for Kids"
+      ],
+      "status": "DRAFT"
+    },
+    "flour-snowball-fight": {
+      "id": 53,
+      "slug": "flour-snowball-fight",
+      "link": "https://elf-site.pages.dev/ideas/flour-snowball-fight/",
+      "textLayerTitle": "Flour Snowball Fight",
+      "kicker": "10 min · High mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=flour-snowball-fight&variant=b&kicker=10%20min%20%C2%B7%20High%20mess",
+      "pinTitle": "Flour Snowball Fight – Funny High-Mess Elf Idea (In a Tray)",
+      "description": "Set up a battlefield on a large high-rimmed tray: a flour trench, two stuffed animals on one side and the elf on the other behind a cotton-ball fort, with flour on its little arms. A funny 10-minute idea for kids 5–9. High mess, only inside the tray — it goes straight to the sink for a 5-minute cleanup. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#funnyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a high-rimmed tray of flour with a small elf peeking over a cotton-ball fort on one side, two stuffed bears on the other side and cotton-ball snowballs lying between them",
+      "board": "Funny Elf Ideas",
+      "alsoSaveTo": [
+        "Elf Ideas for Kids"
+      ],
+      "status": "DRAFT"
+    },
+    "bubble-bath-foam-mountain": {
+      "id": 54,
+      "slug": "bubble-bath-foam-mountain",
+      "link": "https://elf-site.pages.dev/ideas/bubble-bath-foam-mountain/",
+      "textLayerTitle": "Bubble Bath Foam Mountain",
+      "kicker": "10 min · High mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=bubble-bath-foam-mountain&variant=b&kicker=10%20min%20%C2%B7%20High%20mess",
+      "pinTitle": "Bubble Bath Foam Mountain – Funny Elf Idea for the Bathroom",
+      "description": "Put a towel on the floor first, then fill the sink with real bubble bath foam until it forms a mountain. The elf sits at the top in a paper shower cap, with a rubber duck sliding down beside it. A funny 10-minute idea for all ages. High, wet mess — drain and rinse the same morning. See the materials and the 3 steps on our site.",
+      "hashtags": [
+        "#funnyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small tub overflowing with a round mountain of white foam, a small elf sitting on top, a gold rubber duck resting on the side and a towel on the floor",
+      "board": "Funny Elf Ideas",
+      "alsoSaveTo": [],
+      "status": "DRAFT"
+    },
+    "wrapping-paper-mayhem": {
+      "id": 55,
+      "slug": "wrapping-paper-mayhem",
+      "link": "https://elf-site.pages.dev/ideas/wrapping-paper-mayhem/",
+      "textLayerTitle": "Wrapping Paper Mayhem",
+      "kicker": "15+ min · High mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=wrapping-paper-mayhem&variant=b&kicker=15%2B%20min%20%C2%B7%20High%20mess",
+      "pinTitle": "Wrapping Paper Mayhem – Funny Elf Idea: Everything Gets Wrapped",
+      "description": "Gift-wrap 3–4 living-room objects — a cushion, the remote, an empty vase, a book — as perfect presents, bow and all, and sit the elf on the wrapped remote holding the end of the paper and the tape. The most time-consuming idea on the list (15+ minutes), for kids 5–9. High mess once the unwrapping starts. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#funnyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a living room where a cushion, a book and a TV remote have been gift-wrapped with bows, and a small elf sits on the wrapped remote holding the end of a roll of wrapping paper",
+      "board": "Funny Elf Ideas",
+      "alsoSaveTo": [
+        "Elf Ideas for Kids"
+      ],
+      "status": "DRAFT"
+    },
+    "elf-in-the-fridge-surprise": {
+      "id": 56,
+      "slug": "elf-in-the-fridge-surprise",
+      "link": "https://elf-site.pages.dev/ideas/elf-in-the-fridge-surprise/",
+      "textLayerTitle": "Elf in the Fridge Surprise",
+      "kicker": "5 min · Zero mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=elf-in-the-fridge-surprise&variant=b&kicker=5%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Elf in the Fridge Surprise – Funny 5-Minute Elf Idea",
+      "description": "Sit the elf on a clean, dry little plate — never directly on food, away from open food — wrapped in a paper or ribbon scarf and shivering on a shelf at your child’s eye level, with a card outside the door. A funny 5-minute, zero-mess idea for all ages. Remove it the same morning. Tap through for the full setup, step by step.",
+      "hashtags": [
+        "#funnyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of the inside of a fridge with a small elf sitting on a clean little plate wearing an extra paper scarf, between closed containers and bottles, with a blank card in front",
+      "board": "Funny Elf Ideas",
+      "alsoSaveTo": [
+        "5-Minute Elf Ideas",
+        "No-Mess Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "fridge-magnet-message": {
+      "id": 57,
+      "slug": "fridge-magnet-message",
+      "link": "https://elf-site.pages.dev/ideas/fridge-magnet-message/",
+      "textLayerTitle": "Fridge Magnet Message",
+      "kicker": "5 min · Zero mess",
+      "templateVariant": "a",
+      "previewPath": "design/pin-template/pin.html?slug=fridge-magnet-message&variant=a&kicker=5%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Fridge Magnet Message – 5-Minute Elf Idea for Kids",
+      "description": "Spell a short phrase with letter magnets at your child’s height — 3 to 5 words, a compliment or the countdown of days — and put the elf at the bottom of the door holding the last letter, out of place. Your child finishes the message. 5 minutes, zero mess, for kids 5–9; magnets are not for toddlers. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#easyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a fridge door with a row of colored magnet tiles and an empty space at the end, and a small elf below holding the missing tile, with a blank card beside it",
+      "board": "5-Minute Elf Ideas",
+      "alsoSaveTo": [
+        "No-Mess Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "closet-fashion-show-elf": {
+      "id": 58,
+      "slug": "closet-fashion-show-elf",
+      "link": "https://elf-site.pages.dev/ideas/closet-fashion-show-elf/",
+      "textLayerTitle": "Closet Fashion Show Elf",
+      "kicker": "10 min · Zero mess",
+      "templateVariant": "b",
+      "previewPath": "design/pin-template/pin.html?slug=closet-fashion-show-elf&variant=b&kicker=10%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Closet Fashion Show Elf – Funny Zero-Mess Elf Idea",
+      "description": "Make a runway on the bedroom floor with an open book or a strip of paper, hang 3–4 doll or stuffed-animal outfits on a string clothesline behind it, and stand the elf in the middle in the most over-the-top piece. Change the look the next night for a 2-day series. 10 minutes, zero mess, for all ages. Get the steps and the materials list on the idea page.",
+      "hashtags": [
+        "#funnyelfideas",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a small elf standing on a paper runway on the floor, with three tiny outfits hanging on a little clothesline behind it",
+      "board": "Funny Elf Ideas",
+      "alsoSaveTo": [
+        "No-Mess Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "memory-jar-last-week-goodbye": {
+      "id": 59,
+      "slug": "memory-jar-last-week-goodbye",
+      "link": "https://elf-site.pages.dev/ideas/memory-jar-last-week-goodbye/",
+      "textLayerTitle": "Memory Jar - Last Week Goodbye",
+      "kicker": "10 min · Zero mess",
+      "templateVariant": "c",
+      "previewPath": "design/pin-template/pin.html?slug=memory-jar-last-week-goodbye&variant=c&kicker=10%20min%20%C2%B7%20Zero%20mess",
+      "pinTitle": "Memory Jar – Last Week Elf Goodbye Idea for the Family",
+      "description": "From the 18th on, put an empty clear jar in the living room with 7 small blank cards beside it and the elf holding the first one, already with a memory of its own. Each day the family writes a memory for the jar, and the elf brings a new card each night. 10 minutes, zero mess, for all ages. Tap through for the steps and the note to leave with the elf.",
+      "hashtags": [
+        "#elfgoodbye",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a nearly empty clear jar with two small cards inside, a fan of blank cards beside it and a small elf holding up one blank card",
+      "board": "Elf Goodbye Ideas",
+      "alsoSaveTo": [
+        "No-Mess Elf Ideas",
+        "Easy Elf Ideas"
+      ],
+      "status": "DRAFT"
+    },
+    "goodbye-breakfast-and-hug-coupon": {
+      "id": 60,
+      "slug": "goodbye-breakfast-and-hug-coupon",
+      "link": "https://elf-site.pages.dev/ideas/goodbye-breakfast-and-hug-coupon/",
+      "textLayerTitle": "Goodbye Breakfast and Hug Coupon",
+      "kicker": "10 min · Low mess",
+      "templateVariant": "c",
+      "previewPath": "design/pin-template/pin.html?slug=goodbye-breakfast-and-hug-coupon&variant=c&kicker=10%20min%20%C2%B7%20Low%20mess",
+      "pinTitle": "Goodbye Breakfast and Hug Coupon – Elf Goodbye Idea with a Printable",
+      "description": "On the morning of the 24th or 25th, set the elf’s place at the breakfast table — a little plate, a heart-shaped cookie and a hug coupon in the mug — with the elf holding a short see-you-soon letter. The coupon is good for one goodbye hug. 10 minutes, low mess, for all ages, with a free printable coupon. See the materials and the 3 steps on our site.",
+      "hashtags": [
+        "#elfgoodbye",
+        "#elfideas"
+      ],
+      "altText": "Illustration of a breakfast place setting with a heart-shaped cookie on a little plate and a blank coupon propped against a mug, and a small elf holding a little letter",
+      "board": "Elf Goodbye Ideas",
+      "alsoSaveTo": [],
+      "status": "DRAFT"
+    }
+  }
+}

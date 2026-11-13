@@ -1,0 +1,1153 @@
+{
+  "_meta": {
+    "status": "DRAFT — awaiting André’s approval (Gate 4)",
+    "format": "Vertical 9:16 (1080 x 1920) for TikTok, Reels and Shorts, 15–20 seconds. Built from the idea’s vertical illustration (1000 x 1500) — no filming of a real setup (source document §5: slow zoom over the illustration, narration of the joke, the steps in 3 text cuts).",
+    "cutsRule": "Exactly 3 on-screen text cuts, about 4–5 seconds each, taken only from the idea’s own materials and steps. On-screen text is an overlay; it is never drawn into the illustration.",
+    "safetyRule": "When safetyOnScreen is not null, that exact text stays on screen (small lower band) for the whole video, or at least through every cut it relates to.",
+    "endCard": "Last 2 seconds: site mark + “Full steps at the link in bio” (no shortened links; the bio link is the plain site address).",
+    "voiceoverRule": "One line, said or used as the caption. No prices, no ranking claims, never “photo”.",
+    "imageNote": "D12: final videos are rendered only from final illustrations. Placeholders are for timing tests only."
+  },
+  "videos": {
+    "movie-night-popcorn-patrol": {
+      "id": 1,
+      "slug": "movie-night-popcorn-patrol",
+      "title": "Movie Night Popcorn Patrol",
+      "link": "https://elf-site.pages.dev/ideas/movie-night-popcorn-patrol/",
+      "cuts": [
+        "Elf + TV remote on the sofa",
+        "Bowl of popcorn, a few pieces “spilled”",
+        "Card: “I picked the movie tonight.”"
+      ],
+      "voiceover": "Somebody picked tonight’s movie without asking… and you’re on blanket duty.",
+      "shots": [
+        "Slow zoom from the full scene to the elf holding the remote.",
+        "Pan down to the popcorn bowl and the fallen pieces.",
+        "Settle on the card area; hold 2 s for the note text layer."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "storytime-reading-corner": {
+      "id": 2,
+      "slug": "storytime-reading-corner",
+      "title": "Storytime Reading Corner",
+      "link": "https://elf-site.pages.dev/ideas/storytime-reading-corner/",
+      "cuts": [
+        "A pillow = the reading corner",
+        "Elf + open book, stuffies in a half circle",
+        "Card: “Storytime at the North Pole…”"
+      ],
+      "voiceover": "Storytime at the North Pole has a very small reader… and a very fluffy audience.",
+      "shots": [
+        "Start wide on the pillow corner, slow push-in.",
+        "Glide across the stuffed animals in their half circle.",
+        "Hold on the elf and the open book."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "shoe-shoe-train": {
+      "id": 3,
+      "slug": "shoe-shoe-train",
+      "title": "Shoe-Shoe Train",
+      "link": "https://elf-site.pages.dev/ideas/shoe-shoe-train/",
+      "cuts": [
+        "Line up 3–4 shoes like train cars",
+        "Elf drives the first shoe, a stuffie in each car",
+        "Card: “All aboard the North Pole Express!”"
+      ],
+      "voiceover": "All aboard! Next stop… breakfast.",
+      "shots": [
+        "Track along the shoes from the last car to the first.",
+        "Zoom in on the elf in the engineer shoe.",
+        "Pull back to the whole train; jingle sound optional."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "toothbrush-delivery-elf": {
+      "id": 4,
+      "slug": "toothbrush-delivery-elf",
+      "title": "Toothbrush Delivery Elf",
+      "link": "https://elf-site.pages.dev/ideas/toothbrush-delivery-elf/",
+      "cuts": [
+        "Tie a bow on a new toothbrush",
+        "Elf on the sink, brush up like a trophy",
+        "Card: “Santa checks smiles too.”"
+      ],
+      "voiceover": "Santa checks smiles too. New brush, day one!",
+      "shots": [
+        "Zoom in from the sink to the elf.",
+        "Tilt up to the toothbrush and its bow.",
+        "Hold on the card area for the note."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "tangled-in-christmas-lights": {
+      "id": 5,
+      "slug": "tangled-in-christmas-lights",
+      "title": "Tangled in Christmas Lights",
+      "link": "https://elf-site.pages.dev/ideas/tangled-in-christmas-lights/",
+      "cuts": [
+        "Wrap battery LED lights loosely around the elf",
+        "Leave the battery box in view as “proof”",
+        "Card: “Decorating is harder than it looks. Help?”"
+      ],
+      "voiceover": "Decorating is harder than it looks… somebody help this elf.",
+      "shots": [
+        "Open on the glow of the lights, slow zoom out to reveal the tangled elf.",
+        "Pan to the battery box.",
+        "Hold on the elf with the card text layer."
+      ],
+      "safetyOnScreen": "Battery-powered LED lights only - never plugged into a wall outlet with the child nearby.",
+      "status": "DRAFT"
+    },
+    "hiding-in-the-christmas-tree": {
+      "id": 6,
+      "slug": "hiding-in-the-christmas-tree",
+      "title": "Hiding in the Christmas Tree",
+      "link": "https://elf-site.pages.dev/ideas/hiding-in-the-christmas-tree/",
+      "cuts": [
+        "Hide the elf in the tree at eye level",
+        "Only the head and one arm peek out",
+        "Next night: new branch, 2-day hunt"
+      ],
+      "voiceover": "Can you spot the elf? Look closer… closer…",
+      "shots": [
+        "Start wide on the tree, elf hard to see.",
+        "Slow zoom toward the elf’s head and arm.",
+        "Cut back wide; optional second branch for day 2."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "letter-to-santa-station": {
+      "id": 7,
+      "slug": "letter-to-santa-station",
+      "title": "Letter to Santa Station",
+      "link": "https://elf-site.pages.dev/ideas/letter-to-santa-station/",
+      "cuts": [
+        "Paper, pencils, stickers + a box “mailbox”",
+        "Elf holds a mini envelope “To: Santa”",
+        "Kids write today — you “mail” it tonight"
+      ],
+      "voiceover": "The North Pole mailbox is open. Who’s writing to Santa today?",
+      "shots": [
+        "Wide on the table station.",
+        "Zoom on the elf and the mini envelope.",
+        "Hold on the box mailbox."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "trapped-in-a-jar": {
+      "id": 8,
+      "slug": "trapped-in-a-jar",
+      "title": "Trapped in a Jar",
+      "link": "https://elf-site.pages.dev/ideas/trapped-in-a-jar/",
+      "cuts": [
+        "Elf inside a big clear jar (lid open)",
+        "Little hands pressed on the glass",
+        "Card: “I climbed in for a cookie. I regret nothing.”"
+      ],
+      "voiceover": "He climbed in for a cookie. He regrets nothing. Please let him out.",
+      "shots": [
+        "Push in slowly on the jar.",
+        "Close-up on the hands against the glass.",
+        "Pull back to the card outside the jar."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "christmas-countdown-chain": {
+      "id": 9,
+      "slug": "christmas-countdown-chain",
+      "title": "Christmas Countdown Chain",
+      "link": "https://elf-site.pages.dev/ideas/christmas-countdown-chain/",
+      "cuts": [
+        "Red + green paper strips → a chain",
+        "One link per day left until Christmas",
+        "Card: “Tear off one link every morning.”"
+      ],
+      "voiceover": "Tear off one link every morning. When the chain is gone… he is coming!",
+      "shots": [
+        "Follow the chain across the floor toward the elf.",
+        "Zoom on the elf holding the first link.",
+        "Hold on the chain with the card text layer."
+      ],
+      "safetyOnScreen": "Glue or stapler: adult use only.",
+      "status": "DRAFT"
+    },
+    "sleeping-in-a-stocking": {
+      "id": 10,
+      "slug": "sleeping-in-a-stocking",
+      "title": "Sleeping in a Stocking",
+      "link": "https://elf-site.pages.dev/ideas/sleeping-in-a-stocking/",
+      "cuts": [
+        "Tuck the elf into a stocking",
+        "Cotton on the edge = pillow",
+        "Card: “Zzz... five more minutes.”"
+      ],
+      "voiceover": "Shhh… five more minutes.",
+      "shots": [
+        "Slow, gentle zoom toward the stocking.",
+        "Close on the sleeping face and the cotton pillow.",
+        "Hold; soft fade to the card text."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "flour-snow-angel": {
+      "id": 11,
+      "slug": "flour-snow-angel",
+      "title": "Flour Snow Angel",
+      "link": "https://elf-site.pages.dev/ideas/flour-snow-angel/",
+      "cuts": [
+        "Flour on a shallow tray (it holds the mess)",
+        "Elf makes a snow angel, then sits beside it",
+        "Card: “It snowed in your kitchen last night.”"
+      ],
+      "voiceover": "It snowed in your kitchen last night. The elf checked.",
+      "shots": [
+        "Top-down zoom on the tray and the angel shape.",
+        "Pan to the proud elf.",
+        "Hold on the card."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "toilet-paper-tree-makeover": {
+      "id": 12,
+      "slug": "toilet-paper-tree-makeover",
+      "title": "Toilet Paper Tree Makeover",
+      "link": "https://elf-site.pages.dev/ideas/toilet-paper-tree-makeover/",
+      "cuts": [
+        "Wrap toilet paper around the tree",
+        "Elf at the top, holding the roll",
+        "Card: “I helped decorate. You are welcome.”"
+      ],
+      "voiceover": "I helped decorate. You are welcome.",
+      "shots": [
+        "Start at the bottom of the tree, tilt up along the paper.",
+        "Land on the elf at the top with the roll.",
+        "Pull back wide for the full makeover."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "marshmallow-bubble-bath": {
+      "id": 13,
+      "slug": "marshmallow-bubble-bath",
+      "title": "Marshmallow Bubble Bath",
+      "link": "https://elf-site.pages.dev/ideas/marshmallow-bubble-bath/",
+      "cuts": [
+        "Fill a bowl with mini marshmallows",
+        "Elf reclines: only head and feet out",
+        "Card: “North Pole spa day. Do not disturb.”"
+      ],
+      "voiceover": "North Pole spa day. Do not disturb.",
+      "shots": [
+        "Slow zoom over the marshmallow “foam”.",
+        "Close on the elf’s head and boots.",
+        "Drift to the duck and the card."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "toothpaste-mirror-message": {
+      "id": 14,
+      "slug": "toothpaste-mirror-message",
+      "title": "Toothpaste Mirror Message",
+      "link": "https://elf-site.pages.dev/ideas/toothpaste-mirror-message/",
+      "cuts": [
+        "Write a tiny message in toothpaste",
+        "Mirror corner: “BRUSH! - your elf”",
+        "Elf on the sink with the open tube"
+      ],
+      "voiceover": "The elf left you a message… and it smells minty.",
+      "shots": [
+        "Zoom on the mirror corner (message added as a text layer).",
+        "Tilt down to the elf with the tube.",
+        "Hold with the cleanup line on screen."
+      ],
+      "safetyOnScreen": "Cleanup the next day: warm water and paper.",
+      "status": "DRAFT"
+    },
+    "silly-banana-bunch": {
+      "id": 15,
+      "slug": "silly-banana-bunch",
+      "title": "Silly Banana Bunch",
+      "link": "https://elf-site.pages.dev/ideas/silly-banana-bunch/",
+      "cuts": [
+        "Draw a face on each banana",
+        "Sleepy, startled, laughing",
+        "Card: “The bananas were boring. I fixed them.”"
+      ],
+      "voiceover": "The bananas were boring. So the elf fixed them.",
+      "shots": [
+        "Zoom across each banana face.",
+        "Pan to the elf holding the pen.",
+        "Hold wide on the bowl."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "sink-fishing-trip": {
+      "id": 16,
+      "slug": "sink-fishing-trip",
+      "title": "Sink Fishing Trip",
+      "link": "https://elf-site.pages.dev/ideas/sink-fishing-trip/",
+      "cuts": [
+        "Rod: stick + string + paper clip",
+        "Elf “fishing” at the sink",
+        "Fish crackers in the “water”, 2–3 caught"
+      ],
+      "voiceover": "Gone fishing. The fish here are crunchy.",
+      "shots": [
+        "Wide on the sink or bowl scene.",
+        "Zoom on the rod and the paper-clip hook.",
+        "Pan to the “caught” crackers beside the elf."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "sticky-note-surprise-wall": {
+      "id": 17,
+      "slug": "sticky-note-surprise-wall",
+      "title": "Sticky Note Surprise Wall",
+      "link": "https://elf-site.pages.dev/ideas/sticky-note-surprise-wall/",
+      "cuts": [
+        "Sticky notes → a tree (or star) on the door",
+        "Write 3–4 compliments on the notes",
+        "Elf sits underneath, marker in hand"
+      ],
+      "voiceover": "The elf made you a tree… out of nice things.",
+      "shots": [
+        "Zoom out from one note to the full tree.",
+        "Hover over the notes for compliment text layers.",
+        "Tilt down to the elf with the marker."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "elf-zipline-adventure": {
+      "id": 18,
+      "slug": "elf-zipline-adventure",
+      "title": "Elf Zipline Adventure",
+      "link": "https://elf-site.pages.dev/ideas/elf-zipline-adventure/",
+      "cuts": [
+        "String from doorknob to bookshelf",
+        "Hang the elf from a candy cane",
+        "Card: “Fastest way to the cookies. Science.”"
+      ],
+      "voiceover": "Fastest way to the cookies? Science.",
+      "shots": [
+        "Follow the line from one anchor to the other.",
+        "Zoom on the elf hanging from the candy cane.",
+        "Gentle pan along the line, as if zipping, then hold."
+      ],
+      "safetyOnScreen": "Stretch the line nice and tight, out of the way of where people walk.",
+      "status": "DRAFT"
+    },
+    "sweet-spaghetti-breakfast": {
+      "id": 19,
+      "slug": "sweet-spaghetti-breakfast",
+      "title": "Sweet Spaghetti Breakfast",
+      "link": "https://elf-site.pages.dev/ideas/sweet-spaghetti-breakfast/",
+      "cuts": [
+        "Little plate of spaghetti (leftovers work)",
+        "Syrup + sprinkles on top",
+        "Card: “Breakfast at the North Pole is different.”"
+      ],
+      "voiceover": "Breakfast at the North Pole is… different. Try it?",
+      "shots": [
+        "Zoom on the plate.",
+        "Tilt up the giant fork to the elf.",
+        "Hold on the card."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "candy-cane-sled": {
+      "id": 20,
+      "slug": "candy-cane-sled",
+      "title": "Candy Cane Sled",
+      "link": "https://elf-site.pages.dev/ideas/candy-cane-sled/",
+      "cuts": [
+        "2 candy canes = runners, base on top",
+        "2 more = the backrest",
+        "Elf + mini paper presents on board"
+      ],
+      "voiceover": "New sled, test run tonight. Top speed: very sweet.",
+      "shots": [
+        "Side-view zoom along the runners.",
+        "Tilt up to the backrest and the elf.",
+        "Pan to the mini presents."
+      ],
+      "safetyOnScreen": "Hot glue: adult only.",
+      "status": "DRAFT"
+    },
+    "hot-cocoa-stand-helper": {
+      "id": 21,
+      "slug": "hot-cocoa-stand-helper",
+      "title": "Hot Cocoa Stand Helper",
+      "link": "https://elf-site.pages.dev/ideas/hot-cocoa-stand-helper/",
+      "cuts": [
+        "Small mug + cocoa mix + mini marshmallows",
+        "Sign: “ELF COCOA - 1 HUG”",
+        "Morning: make the cocoa together"
+      ],
+      "voiceover": "Elf cocoa — paid in hugs only.",
+      "shots": [
+        "Zoom on the mug and the marshmallow pot.",
+        "Pan to the sign (text layer).",
+        "Hold on the elf behind the mug."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "cookie-baking-disaster": {
+      "id": 22,
+      "slug": "cookie-baking-disaster",
+      "title": "Cookie Baking Disaster",
+      "link": "https://elf-site.pages.dev/ideas/cookie-baking-disaster/",
+      "cuts": [
+        "A pinch of flour on one corner",
+        "Tiny footprints lead to the elf",
+        "Card: “Quality control. The cookies passed.”"
+      ],
+      "voiceover": "Quality control. The cookies passed.",
+      "shots": [
+        "Follow the footprints across the counter.",
+        "Arrive at the elf with the cutter.",
+        "Close on the bitten cookie, then the card."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "milk-and-cookies-taste-test": {
+      "id": 23,
+      "slug": "milk-and-cookies-taste-test",
+      "title": "Milk and Cookies Taste Test",
+      "link": "https://elf-site.pages.dev/ideas/milk-and-cookies-taste-test/",
+      "cuts": [
+        "3 cookies in a row, numbered 1–3",
+        "Elf rates them on a star score sheet",
+        "Snack time: kids rate them too"
+      ],
+      "voiceover": "Practicing for Santa’s big night. Who rates them higher — you or the elf?",
+      "shots": [
+        "Track along the three cookies and milk cups.",
+        "Zoom on the score sheet stars.",
+        "Hold on the elf with the pencil."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "gingerbread-house-inspector": {
+      "id": 24,
+      "slug": "gingerbread-house-inspector",
+      "title": "Gingerbread House Inspector",
+      "link": "https://elf-site.pages.dev/ideas/gingerbread-house-inspector/",
+      "cuts": [
+        "Elf + clipboard by the gingerbread house",
+        "Checklist: “Walls: strong. Roof: delicious.”",
+        "No house? Inspect a cookie instead"
+      ],
+      "voiceover": "Inspection complete. Walls: strong. Roof: delicious. Approved!",
+      "shots": [
+        "Zoom across the gingerbread roof.",
+        "Close on the magnifying glass and the clipboard.",
+        "Hold with the checklist text layer."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "kindness-mission-card": {
+      "id": 25,
+      "slug": "kindness-mission-card",
+      "title": "Kindness Mission Card",
+      "link": "https://elf-site.pages.dev/ideas/kindness-mission-card/",
+      "cuts": [
+        "Elf holds a “TOP SECRET MISSION” envelope",
+        "Inside: one kind mission for today",
+        "Rotate: set the table, donate a toy, say thanks"
+      ],
+      "voiceover": "Your mission, should you choose to accept it… be kind.",
+      "shots": [
+        "Push in on the envelope.",
+        "Cut to the card with the mission text layer.",
+        "Hold on the elf peeking over the envelope."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "candy-cane-scavenger-hunt": {
+      "id": 26,
+      "slug": "candy-cane-scavenger-hunt",
+      "title": "Candy Cane Scavenger Hunt",
+      "link": "https://elf-site.pages.dev/ideas/candy-cane-scavenger-hunt/",
+      "cuts": [
+        "Hide 5 candy canes in plain sight",
+        "Elf at the entrance with the challenge",
+        "Card: “Can you find them all before breakfast?”"
+      ],
+      "voiceover": "I hid 5 candy canes. Can you find them all before breakfast?",
+      "shots": [
+        "Quick zoom to a candy cane peeking from behind a cushion.",
+        "Cut to the elf holding the card.",
+        "Optional 1–5 counter as a text layer."
+      ],
+      "safetyOnScreen": "Hide them in places visible for the child's age - nothing up high or inside furniture.",
+      "status": "DRAFT"
+    },
+    "build-a-snowman-challenge": {
+      "id": 27,
+      "slug": "build-a-snowman-challenge",
+      "title": "Build-a-Snowman Challenge",
+      "link": "https://elf-site.pages.dev/ideas/build-a-snowman-challenge/",
+      "cuts": [
+        "Marshmallow snowman, elf beside it",
+        "Second kit left ready to build",
+        "Card: “My record is 2 minutes. Beat it!”"
+      ],
+      "voiceover": "My record is two minutes. Beat it!",
+      "shots": [
+        "Zoom on the finished snowman.",
+        "Pan to the loose marshmallows and toothpicks.",
+        "Optional 2:00 timer graphic, then hold."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "nice-list-certificate": {
+      "id": 28,
+      "slug": "nice-list-certificate",
+      "title": "Nice List Certificate",
+      "link": "https://elf-site.pages.dev/ideas/nice-list-certificate/",
+      "cuts": [
+        "Write their name + one real quality",
+        "Roll it like a diploma, tie the gold ribbon",
+        "Elf naps on it by the bed"
+      ],
+      "voiceover": "Official news from the North Pole: you made the Nice List.",
+      "shots": [
+        "Zoom on the certificate’s gold border.",
+        "Close on the ribbon.",
+        "Hold on the sleeping elf."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "would-you-rather-card": {
+      "id": 29,
+      "slug": "would-you-rather-card",
+      "title": "Would You Rather Card",
+      "link": "https://elf-site.pages.dev/ideas/would-you-rather-card/",
+      "cuts": [
+        "Elf in your kid’s seat with a card",
+        "“Ride a reindeer or drive the sleigh?”",
+        "Answer at breakfast — new card tomorrow"
+      ],
+      "voiceover": "Would you rather ride a reindeer… or drive the sleigh?",
+      "shots": [
+        "Zoom on the elf in the seat.",
+        "Close on the card (question as a text layer).",
+        "Hold wide on the table."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "farewell-letter-and-photo": {
+      "id": 30,
+      "slug": "farewell-letter-and-photo",
+      "title": "Farewell Letter and Photo",
+      "link": "https://elf-site.pages.dev/ideas/farewell-letter-and-photo/",
+      "cuts": [
+        "Elf by the tree with a farewell letter",
+        "Thanks + 2 real moments + “I’ll be back”",
+        "A framed favorite stays all year"
+      ],
+      "voiceover": "Thank you for a wonderful December. See you next year.",
+      "shots": [
+        "Slow push-in on the tree at night.",
+        "Close on the letter (text layer).",
+        "Pan to the frame with the silhouette."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "im-back-arrival-banner": {
+      "id": 31,
+      "slug": "im-back-arrival-banner",
+      "title": "I'm Back! Arrival Banner",
+      "link": "https://elf-site.pages.dev/ideas/im-back-arrival-banner/",
+      "cuts": [
+        "Hang a paper banner the night before",
+        "Elf underneath, marker in hand",
+        "Card: “I’m back! I missed you all year.”"
+      ],
+      "voiceover": "I’m back! Let the December fun begin!",
+      "shots": [
+        "Wide reveal of the banner (name as an optional text layer).",
+        "Zoom on the elf and the marker.",
+        "Hold on the card."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "north-pole-arrival-breakfast": {
+      "id": 32,
+      "slug": "north-pole-arrival-breakfast",
+      "title": "North Pole Arrival Breakfast",
+      "link": "https://elf-site.pages.dev/ideas/north-pole-arrival-breakfast/",
+      "cuts": [
+        "Mini pancakes + strawberry + whipped cream",
+        "Elf behind the plate with a welcome sign",
+        "Card: “Breakfast is on me today.”"
+      ],
+      "voiceover": "Breakfast is on me today. North Pole recipe — extra tiny!",
+      "shots": [
+        "Zoom on the pancake stack.",
+        "Tilt up to the elf and the sign.",
+        "Hold on the card."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "special-delivery-arrival-box": {
+      "id": 33,
+      "slug": "special-delivery-arrival-box",
+      "title": "Special Delivery Arrival Box",
+      "link": "https://elf-site.pages.dev/ideas/special-delivery-arrival-box/",
+      "cuts": [
+        "Cotton nest in a small box",
+        "Elf inside, flaps half closed, loose string",
+        "Tag: “Handle with giggles.” Leave it at the door"
+      ],
+      "voiceover": "Special delivery from the North Pole. Handle with giggles.",
+      "shots": [
+        "Zoom on the box at the door.",
+        "Close on the elf’s head peeking out.",
+        "Hold on the tag."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "arrival-hide-and-seek-clue-trail": {
+      "id": 34,
+      "slug": "arrival-hide-and-seek-clue-trail",
+      "title": "Arrival Hide-and-Seek Clue Trail",
+      "link": "https://elf-site.pages.dev/ideas/arrival-hide-and-seek-clue-trail/",
+      "cuts": [
+        "Hide the elf + a jingle bell",
+        "4 clue cards from bed to hiding spot",
+        "Card: “I’m back... but where?”"
+      ],
+      "voiceover": "I’m back… but where? Follow the clues!",
+      "shots": [
+        "Follow the card trail across the floor.",
+        "Zoom toward the tree.",
+        "Reveal the elf half hidden, bell beside it."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "snowy-footprints-arrival": {
+      "id": 35,
+      "slug": "snowy-footprints-arrival",
+      "title": "Snowy Footprints Arrival",
+      "link": "https://elf-site.pages.dev/ideas/snowy-footprints-arrival/",
+      "cuts": [
+        "Stencil + a spoonful of flour on the mat",
+        "4–5 footprints into the house",
+        "Elf at the end, flour on its boots"
+      ],
+      "voiceover": "Snow on my boots! Sorry about the footprints.",
+      "shots": [
+        "Start at the door, follow the footprints.",
+        "Arrive at the elf.",
+        "Hold; add “Cleanup: vacuum the mat, 2 minutes” as small text."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "toddler-peekaboo-blanket-fort": {
+      "id": 36,
+      "slug": "toddler-peekaboo-blanket-fort",
+      "title": "Toddler Peekaboo Blanket Fort",
+      "link": "https://elf-site.pages.dev/ideas/toddler-peekaboo-blanket-fort/",
+      "cuts": [
+        "Light blanket over the sofa = fort",
+        "Elf peeks out, stuffies in front",
+        "Card: “Peekaboo! I see you!”"
+      ],
+      "voiceover": "Peekaboo! I see you!",
+      "shots": [
+        "Wide on the fort.",
+        "Zoom on the elf’s peeking hand.",
+        "Hold on the stuffed animals."
+      ],
+      "safetyOnScreen": "Simple, safe fort - nothing heavy in the structure.",
+      "status": "DRAFT"
+    },
+    "pom-pom-color-sorting-game": {
+      "id": 37,
+      "slug": "pom-pom-color-sorting-game",
+      "title": "Pom-Pom Color Sorting Game",
+      "link": "https://elf-site.pages.dev/ideas/pom-pom-color-sorting-game/",
+      "cuts": [
+        "Large pom-poms + 3 colored cups on a tray",
+        "Half already sorted, elf mid-game",
+        "Card: “Can you finish the rest?”"
+      ],
+      "voiceover": "I sorted mine by color. Can you finish the rest?",
+      "shots": [
+        "Top-down on the tray.",
+        "Zoom on the elf’s pom-pom over the cup.",
+        "Hold; the safety line stays on screen the whole video."
+      ],
+      "safetyOnScreen": "Large pom-poms only, a size that is safe for the child's age, always with supervision. No small parts for children under 3.",
+      "status": "DRAFT"
+    },
+    "breakfast-cereal-garland": {
+      "id": 38,
+      "slug": "breakfast-cereal-garland",
+      "title": "Breakfast Cereal Garland",
+      "link": "https://elf-site.pages.dev/ideas/breakfast-cereal-garland/",
+      "cuts": [
+        "6–8 cereal rings on a thread",
+        "Wrap it on the elf like a necklace",
+        "Bowl beside it: keep threading at breakfast"
+      ],
+      "voiceover": "I made you a necklace for breakfast. You can eat it!",
+      "shots": [
+        "Zoom on the oversized necklace.",
+        "Pan to the cereal bowl.",
+        "Hold; the supervision line stays on screen."
+      ],
+      "safetyOnScreen": "Always with supervision.",
+      "status": "DRAFT"
+    },
+    "my-first-sticker-scene": {
+      "id": 39,
+      "slug": "my-first-sticker-scene",
+      "title": "My First Sticker Scene",
+      "link": "https://elf-site.pages.dev/ideas/my-first-sticker-scene/",
+      "cuts": [
+        "Draw a big tree outline",
+        "Add 2–3 large stickers as a start",
+        "Elf holds the star: “Can you help me?”"
+      ],
+      "voiceover": "The star is too high. Can you help me?",
+      "shots": [
+        "Zoom on the tree outline.",
+        "Tilt up to the empty top.",
+        "Back to the elf holding the star."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "toy-car-wash-station": {
+      "id": 40,
+      "slug": "toy-car-wash-station",
+      "title": "Toy Car Wash Station",
+      "link": "https://elf-site.pages.dev/ideas/toy-car-wash-station/",
+      "cuts": [
+        "Towel down, basin with a little water",
+        "One car in, one waiting in line",
+        "Elf attendant with a soft brush"
+      ],
+      "voiceover": "Car wash open! Dirty toy cars welcome.",
+      "shots": [
+        "Wide on the towel and the basin.",
+        "Zoom on the car in the water.",
+        "Hold on the elf with the brush; safety line on screen the whole video."
+      ],
+      "safetyOnScreen": "Water only with an adult present, the whole time.",
+      "status": "DRAFT"
+    },
+    "plush-friends-campout": {
+      "id": 41,
+      "slug": "plush-friends-campout",
+      "title": "Plush Friends Campout",
+      "link": "https://elf-site.pages.dev/ideas/plush-friends-campout/",
+      "cuts": [
+        "Wrap stuffies in cloths like sleeping bags",
+        "Elf in the middle, only its head out",
+        "Card: “Sleepover! We camped in your room.”"
+      ],
+      "voiceover": "Sleepover! We camped in your room.",
+      "shots": [
+        "Slow pan along the row of sleeping bags.",
+        "Rest on the elf.",
+        "Gentle hold on the flashlight; calm music."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "fruit-face-breakfast-plate": {
+      "id": 42,
+      "slug": "fruit-face-breakfast-plate",
+      "title": "Fruit Face Breakfast Plate",
+      "link": "https://elf-site.pages.dev/ideas/fruit-face-breakfast-plate/",
+      "cuts": [
+        "Pancake face on a large plate",
+        "Banana hair, strawberry cheeks",
+        "Elf co-author holds a strawberry"
+      ],
+      "voiceover": "Breakfast was boring. I gave it a face!",
+      "shots": [
+        "Top-down zoom on the plate face.",
+        "Pan to the elf.",
+        "Hold; the safety line stays on screen through all 3 cuts."
+      ],
+      "safetyOnScreen": "Round fruit always cut in half. Large blueberries cut in half (toddler safety).",
+      "status": "DRAFT"
+    },
+    "elf-workshop-build-station": {
+      "id": 43,
+      "slug": "elf-workshop-build-station",
+      "title": "Elf Workshop Build Station",
+      "link": "https://elf-site.pages.dev/ideas/elf-workshop-build-station/",
+      "cuts": [
+        "Blocks as a shelf, toy tools in a row",
+        "Half-built toy in the center",
+        "Elf in a paper hard hat, wrench in hand"
+      ],
+      "voiceover": "Workshop shift started. This toy will be ready by Christmas… probably.",
+      "shots": [
+        "Wide on the workbench.",
+        "Zoom on the half-built toy.",
+        "Hold on the elf (hard hat only if drawn as a separate prop)."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "paper-snowflake-window-invasion": {
+      "id": 44,
+      "slug": "paper-snowflake-window-invasion",
+      "title": "Paper Snowflake Window Invasion",
+      "link": "https://elf-site.pages.dev/ideas/paper-snowflake-window-invasion/",
+      "cuts": [
+        "Adult step: fold + cut 8–12 snowflakes",
+        "Hang them from largest to smallest",
+        "Elf on the sill with a giant snowflake"
+      ],
+      "voiceover": "I ordered snow. This was the delivery.",
+      "shots": [
+        "Slow zoom across the snowflakes on the window.",
+        "Settle on the elf with the huge snowflake.",
+        "Hold; safety line on screen from cut 1 (never show scissors)."
+      ],
+      "safetyOnScreen": "Scissors are for the adult only.",
+      "status": "DRAFT"
+    },
+    "mini-elf-door-and-welcome-mat": {
+      "id": 45,
+      "slug": "mini-elf-door-and-welcome-mat",
+      "title": "Mini Elf Door and Welcome Mat",
+      "link": "https://elf-site.pages.dev/ideas/mini-elf-door-and-welcome-mat/",
+      "cuts": [
+        "A 6-in door with a jingle-bell knob",
+        "Attach it to the baseboard, mat in front",
+        "Card: “I finally got my own door. Please knock.”"
+      ],
+      "voiceover": "I finally got my own door. Please knock.",
+      "shots": [
+        "Zoom down the wall to the little door.",
+        "Close on the bell doorknob.",
+        "Pull back to the elf on the mat."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "cardboard-sleigh-build": {
+      "id": 46,
+      "slug": "cardboard-sleigh-build",
+      "title": "Cardboard Sleigh Build",
+      "link": "https://elf-site.pages.dev/ideas/cardboard-sleigh-build/",
+      "cuts": [
+        "Wrap a box in red paper",
+        "Candy-cane runners, cotton seat",
+        "Elf takes the reins for a test drive"
+      ],
+      "voiceover": "Test-driving the backup sleigh. It passed. Mostly.",
+      "shots": [
+        "Side zoom along the runners.",
+        "Tilt to the elf and the reins.",
+        "Hold on the card."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "gingerbread-village-street": {
+      "id": 47,
+      "slug": "gingerbread-village-street",
+      "title": "Gingerbread Village Street",
+      "link": "https://elf-site.pages.dev/ideas/gingerbread-village-street/",
+      "cuts": [
+        "Mini gingerbread houses on a white base",
+        "Sprinkle path down the middle",
+        "Elf mayor with a clipboard"
+      ],
+      "voiceover": "Welcome to Gingerbread Lane. I am the mayor now.",
+      "shots": [
+        "Fly along the sprinkle path.",
+        "Pan across the houses.",
+        "Hold on the mayor."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "elf-photo-booth-props": {
+      "id": 48,
+      "slug": "elf-photo-booth-props",
+      "title": "Elf Photo Booth Props",
+      "link": "https://elf-site.pages.dev/ideas/elf-photo-booth-props/",
+      "cuts": [
+        "Cardboard frame against the wall",
+        "Paper props on sticks in a pot",
+        "Elf poses with the mustache — your turn!"
+      ],
+      "voiceover": "The booth is open! Your turn.",
+      "shots": [
+        "Zoom into the frame.",
+        "Close on the mustache.",
+        "Pan to the pot of props."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "elf-story-fill-in-the-blanks-card": {
+      "id": 49,
+      "slug": "elf-story-fill-in-the-blanks-card",
+      "title": "Elf Story Fill-in-the-Blanks Card",
+      "link": "https://elf-site.pages.dev/ideas/elf-story-fill-in-the-blanks-card/",
+      "cuts": [
+        "Story card on the breakfast table",
+        "“Last night, the elf rode a ___ to the ___…”",
+        "Fill the 5 blanks at breakfast"
+      ],
+      "voiceover": "Last night, the elf rode a… what? You decide.",
+      "shots": [
+        "Zoom on the card’s blank lines.",
+        "Close on the pencil over the first blank.",
+        "Hold on the elf and the envelope."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "elf-workout-challenge-cards": {
+      "id": 50,
+      "slug": "elf-workout-challenge-cards",
+      "title": "Elf Workout Challenge Cards",
+      "link": "https://elf-site.pages.dev/ideas/elf-workout-challenge-cards/",
+      "cuts": [
+        "Elf in an impossible yoga pose",
+        "3 cards: jump 10, spin 3, balance on one foot",
+        "30 seconds each — the whole family"
+      ],
+      "voiceover": "North Pole training! Can you do all three before breakfast?",
+      "shots": [
+        "Zoom on the toppled elf on the mat.",
+        "Flip through the three cards.",
+        "Hold on the cushion."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "guess-how-many-jar": {
+      "id": 51,
+      "slug": "guess-how-many-jar",
+      "title": "Guess How Many Jar",
+      "link": "https://elf-site.pages.dev/ideas/guess-how-many-jar/",
+      "cuts": [
+        "Count candies into a jar, write the number",
+        "Lid on tight, sealed all day",
+        "Closest guess picks tonight’s song"
+      ],
+      "voiceover": "Guess how many! Winner picks tonight’s Christmas song.",
+      "shots": [
+        "Zoom on the full jar.",
+        "Up to the elf with its slip.",
+        "Pan to the guess slips and the pencil."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "draw-my-outfit-contest": {
+      "id": 52,
+      "slug": "draw-my-outfit-contest",
+      "title": "Draw My Outfit Contest",
+      "link": "https://elf-site.pages.dev/ideas/draw-my-outfit-contest/",
+      "cuts": [
+        "Elf outline sheet, one foot of each color",
+        "Elf holds the red pencil",
+        "Design a new outfit — it goes on the fridge"
+      ],
+      "voiceover": "Design my new outfit! The winner goes on the fridge tonight.",
+      "shots": [
+        "Zoom on the outline sheet.",
+        "Close on the mismatched boots.",
+        "Hold on the elf with the pencil."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "flour-snowball-fight": {
+      "id": 53,
+      "slug": "flour-snowball-fight",
+      "title": "Flour Snowball Fight",
+      "link": "https://elf-site.pages.dev/ideas/flour-snowball-fight/",
+      "cuts": [
+        "High-rimmed tray: a flour trench",
+        "Teddies vs. elf behind a cotton-ball fort",
+        "Card: “Snowball fight! The teddies started it.”"
+      ],
+      "voiceover": "Snowball fight! The teddies started it.",
+      "shots": [
+        "Wide on the tray battlefield.",
+        "Zoom on the cotton fort and the elf.",
+        "Pan to the teddies; the safety lines stay on screen."
+      ],
+      "safetyOnScreen": "WARNING: high mess, only inside the tray. Tray goes straight to the sink - a 5-minute cleanup.",
+      "status": "DRAFT"
+    },
+    "bubble-bath-foam-mountain": {
+      "id": 54,
+      "slug": "bubble-bath-foam-mountain",
+      "title": "Bubble Bath Foam Mountain",
+      "link": "https://elf-site.pages.dev/ideas/bubble-bath-foam-mountain/",
+      "cuts": [
+        "Towel on the floor first",
+        "Fill the sink with a foam mountain",
+        "Elf on top, duck sliding down"
+      ],
+      "voiceover": "I asked for a little foam. A LITTLE.",
+      "shots": [
+        "Tilt up the foam mountain.",
+        "Arrive at the elf at the top.",
+        "Follow the duck sliding down; the safety lines stay on screen."
+      ],
+      "safetyOnScreen": "WARNING: high and wet mess - towel on the floor before anything else. Drain and rinse the same morning.",
+      "status": "DRAFT"
+    },
+    "wrapping-paper-mayhem": {
+      "id": 55,
+      "slug": "wrapping-paper-mayhem",
+      "title": "Wrapping Paper Mayhem",
+      "link": "https://elf-site.pages.dev/ideas/wrapping-paper-mayhem/",
+      "cuts": [
+        "Wrap 3–4 living-room objects like gifts",
+        "Bows on everything",
+        "Elf on the wrapped remote, tape in hand"
+      ],
+      "voiceover": "I wrapped everything for Santa. You’re welcome. Unwrap carefully.",
+      "shots": [
+        "Wide reveal of the wrapped living room.",
+        "Zoom on the wrapped remote and the elf.",
+        "Hold on the paper end and the tape."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "elf-in-the-fridge-surprise": {
+      "id": 56,
+      "slug": "elf-in-the-fridge-surprise",
+      "title": "Elf in the Fridge Surprise",
+      "link": "https://elf-site.pages.dev/ideas/elf-in-the-fridge-surprise/",
+      "cuts": [
+        "Clean, dry plate — never on food",
+        "Elf in a little scarf, at eye level",
+        "Card on the door: “It’s SO cold in the North Pole.”"
+      ],
+      "voiceover": "It’s SO cold in the North Pole. I came to compare.",
+      "shots": [
+        "“Door opens” reveal (light wipe) into the fridge.",
+        "Zoom on the elf on its plate.",
+        "Hold; the hygiene line stays on screen."
+      ],
+      "safetyOnScreen": "Hygiene first: elf on a clean, dry little plate, never directly on food, away from open food. Remove it the same morning.",
+      "status": "DRAFT"
+    },
+    "fridge-magnet-message": {
+      "id": 57,
+      "slug": "fridge-magnet-message",
+      "title": "Fridge Magnet Message",
+      "link": "https://elf-site.pages.dev/ideas/fridge-magnet-message/",
+      "cuts": [
+        "3–5 word message in letter magnets",
+        "Elf holds the missing last letter",
+        "Card: “Can you finish my message?”"
+      ],
+      "voiceover": "One letter is missing on purpose. Can you finish my message?",
+      "shots": [
+        "Zoom along the magnet row (letters as a text layer).",
+        "Tilt down to the elf with the tile.",
+        "Hold; the safety line stays on screen."
+      ],
+      "safetyOnScreen": "For Kids - magnets are not for toddlers.",
+      "status": "DRAFT"
+    },
+    "closet-fashion-show-elf": {
+      "id": 58,
+      "slug": "closet-fashion-show-elf",
+      "title": "Closet Fashion Show Elf",
+      "link": "https://elf-site.pages.dev/ideas/closet-fashion-show-elf/",
+      "cuts": [
+        "Runway: an open book or a paper strip",
+        "Tiny outfits on a string clothesline",
+        "Elf in the most over-the-top piece"
+      ],
+      "voiceover": "Fashion week, North Pole edition. This is the look.",
+      "shots": [
+        "Runway zoom toward the elf.",
+        "Pan along the clothesline.",
+        "Strike-a-pose hold with a soft flash effect."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "memory-jar-last-week-goodbye": {
+      "id": 59,
+      "slug": "memory-jar-last-week-goodbye",
+      "title": "Memory Jar - Last Week Goodbye",
+      "link": "https://elf-site.pages.dev/ideas/memory-jar-last-week-goodbye/",
+      "cuts": [
+        "Clear jar + 7 blank cards (from the 18th)",
+        "Elf holds the first memory",
+        "One memory a day — the jar returns next year"
+      ],
+      "voiceover": "Before I go, let’s save our favorite moments.",
+      "shots": [
+        "Zoom on the jar.",
+        "Close on the elf’s card.",
+        "Fan of blank cards; gentle music."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    },
+    "goodbye-breakfast-and-hug-coupon": {
+      "id": 60,
+      "slug": "goodbye-breakfast-and-hug-coupon",
+      "title": "Goodbye Breakfast and Hug Coupon",
+      "link": "https://elf-site.pages.dev/ideas/goodbye-breakfast-and-hug-coupon/",
+      "cuts": [
+        "Set the elf’s place for breakfast",
+        "Heart cookie + hug coupon in the mug",
+        "Coupon: “One goodbye hug - good for today only.”"
+      ],
+      "voiceover": "One goodbye hug. Good for today only. See you next Christmas!",
+      "shots": [
+        "Wide on the place setting.",
+        "Zoom on the coupon in the mug.",
+        "Hold on the elf with the letter; warm fade-out."
+      ],
+      "safetyOnScreen": null,
+      "status": "DRAFT"
+    }
+  }
+}

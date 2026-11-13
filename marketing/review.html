@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gate 4 review — marketing drafts</title>
+<style>
+  :root {
+    --red: #B42318; --pine: #14532D; --cream: #FDF6E3; --gold: #D9A441; --night: #22304A; --wood: #8A5A3B;
+    --paper: #FEFCF7; --line: #E6D9BF; --muted: #5B6476;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--cream); color: var(--night); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header.top { background: var(--night); color: var(--cream); padding: 20px 24px; }
+  header.top h1 { margin: 0 0 6px; font-size: 22px; }
+  header.top p { margin: 4px 0; max-width: 900px; }
+  header.top code { background: rgba(255,255,255,.12); padding: 1px 6px; border-radius: 4px; }
+  .badge { display: inline-block; background: var(--gold); color: var(--night); font-weight: 700; font-size: 12px; padding: 2px 10px; border-radius: 99px; letter-spacing: .03em; }
+  nav.toc { position: sticky; top: 0; z-index: 5; background: var(--paper); border-bottom: 1px solid var(--line); padding: 10px 24px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
+  nav.toc a { color: var(--red); font-weight: 600; text-decoration: none; }
+  nav.toc select, nav.toc input { font: inherit; padding: 4px 8px; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+  main { padding: 16px 24px 80px; max-width: 1280px; margin: 0 auto; }
+  h2.sec { margin: 36px 0 12px; font-size: 20px; border-bottom: 3px solid var(--gold); display: inline-block; }
+  .stats { display: flex; flex-wrap: wrap; gap: 10px; }
+  .stat { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; min-width: 140px; }
+  .stat b { display: block; font-size: 22px; }
+  table { border-collapse: collapse; width: 100%; background: var(--paper); }
+  th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
+  th { background: #F5EBD3; }
+  .ideas { display: grid; gap: 16px; }
+  .card { display: grid; grid-template-columns: 262px 1fr; gap: 18px; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 14px; }
+  .pinbox { width: 260px; height: 390px; overflow: hidden; border-radius: 8px; border: 1px solid var(--line); background: var(--night); position: relative; }
+  .pinbox iframe { width: 1000px; height: 1500px; border: 0; transform: scale(.26); transform-origin: 0 0; position: absolute; left: 0; top: 0; pointer-events: none; }
+  .pinmeta { font-size: 12px; color: var(--muted); margin-top: 6px; }
+  .pinmeta a { color: var(--red); }
+  .card h3 { margin: 0 0 2px; font-size: 18px; }
+  .facts { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+  .hook { font-style: italic; color: var(--pine); font-size: 16px; margin: 4px 0 10px; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .box { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; background: #fff; }
+  .box h4 { margin: 0 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--red); }
+  .box p, .box ol, .box ul { margin: 4px 0; }
+  .box ol, .box ul { padding-left: 20px; }
+  .len { color: var(--muted); font-size: 12px; }
+  .safety { background: #FBE9E5; border: 1px solid #E3AC9C; border-radius: 6px; padding: 4px 8px; font-size: 13px; margin-top: 6px; }
+  .tag { display: inline-block; font-size: 12px; background: #EEF3EF; color: var(--pine); border-radius: 99px; padding: 1px 8px; margin: 2px 4px 2px 0; }
+  .muted { color: var(--muted); }
+  .md { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 4px 20px 16px; }
+  .md blockquote { border-left: 4px solid var(--gold); margin: 8px 0; padding: 4px 12px; background: #fff; }
+  .md code { background: #F5EBD3; padding: 0 4px; border-radius: 4px; }
+  .err { background: #FBE9E5; border: 2px solid var(--red); padding: 12px; border-radius: 10px; }
+  @media (max-width: 820px) { .card { grid-template-columns: 1fr; } .grid2 { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <span class="badge">DRAFT — GATE 4</span>
+  <h1>Marketing drafts — review page</h1>
+  <p><strong>How to open:</strong> from the repo root run <code>python3 -m http.server 8000</code>, then open <code>http://localhost:8000/marketing/review.html</code>. Opening the file directly (file://) will not load the JSON files or the pin previews.</p>
+  <p>Everything here is a draft. Nothing is posted, scheduled or published. Pin images use the placeholder illustrations: final pins are exported only when the final illustration exists (D12).</p>
+</header>
+<nav class="toc">
+  <a href="#summary">Summary</a><a href="#boards">Boards</a><a href="#ideas">60 ideas</a><a href="#notes">Elf notes</a><a href="#printables">Printables</a><a href="#tonight">Tonight Mode</a><a href="#staples">Staple lists</a><a href="#email">Email</a><a href="#review">Copy review</a>
+  <span style="margin-left:auto"></span>
+  <label>Board <select id="fBoard"><option value="">All</option></select></label>
+  <label>Search <input id="fText" type="search" placeholder="title, word…"></label>
+</nav>
+<main id="app"><p>Loading…</p></main>
+
+<script>
+(async function () {
+  const app = document.getElementById('app')
+  const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]))
+  async function get(path, type) {
+    const r = await fetch(path)
+    if (!r.ok) throw new Error(path + ' → HTTP ' + r.status)
+    return type === 'text' ? r.text() : r.json()
+  }
+  let pins, videos, lists, copy, ideasData, emailMd, reviewMd
+  try {
+    ;[pins, videos, lists, copy, ideasData, emailMd, reviewMd] = await Promise.all([
+      get('pins.json'), get('videos.json'), get('idea-lists.json'), get('site-copy.json'),
+      get('../src/data/ideas.json'), get('email.md', 'text'), get('copy-review.md', 'text'),
+    ])
+  } catch (e) {
+    app.innerHTML = '<div class="err"><strong>Could not load the files.</strong> ' + esc(e.message) +
+      '<br>Serve the repo root with <code>python3 -m http.server 8000</code> and open <code>http://localhost:8000/marketing/review.html</code>.</div>'
+    return
+  }
+
+  // --- tiny markdown renderer (headings, tables, lists, quotes, bold/italic/code, paragraphs) ---
+  function inline(s) {
+    return esc(s).replace(/`([^`]+)`/g, '<code>$1</code>').replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/(^|[^*])\*([^*]+)\*/g, '$1<em>$2</em>')
+  }
+  function md(text) {
+    const lines = text.split('\n'); let out = ''; let i = 0
+    while (i < lines.length) {
+      const l = lines[i]
+      if (/^\s*$/.test(l)) { i++; continue }
+      if (/^---+\s*$/.test(l)) { out += '<hr>'; i++; continue }
+      let m
+      if ((m = l.match(/^(#{1,4})\s+(.*)/))) { const n = Math.min(m[1].length + 1, 5); out += `<h${n}>${inline(m[2])}</h${n}>`; i++; continue }
+      if (/^\|/.test(l)) {
+        const rows = []; while (i < lines.length && /^\|/.test(lines[i])) rows.push(lines[i++])
+        const cells = (r) => r.replace(/^\||\|\s*$/g, '').split(/(?<!\\)\|/).map((c) => c.trim())
+        out += '<table><tr>' + cells(rows[0]).map((c) => `<th>${inline(c)}</th>`).join('') + '</tr>'
+        rows.slice(2).forEach((r) => { out += '<tr>' + cells(r).map((c) => `<td>${inline(c)}</td>`).join('') + '</tr>' })
+        out += '</table>'; continue
+      }
+      if (/^>/.test(l)) {
+        const q = []; while (i < lines.length && /^>/.test(lines[i])) q.push(lines[i++].replace(/^>\s?/, ''))
+        out += '<blockquote>' + md(q.join('\n')) + '</blockquote>'; continue
+      }
+      if (/^\s*([-*]|\d+\.)\s+/.test(l)) {
+        const ordered = /^\s*\d+\./.test(l); const items = []
+        while (i < lines.length && /^\s*([-*]|\d+\.)\s+/.test(lines[i])) items.push(lines[i++].replace(/^\s*([-*]|\d+\.)\s+/, ''))
+        out += (ordered ? '<ol>' : '<ul>') + items.map((x) => `<li>${inline(x)}</li>`).join('') + (ordered ? '</ol>' : '</ul>'); continue
+      }
+      const p = []; while (i < lines.length && lines[i].trim() && !/^(#|\||>|\s*([-*]|\d+\.)\s)/.test(lines[i])) p.push(lines[i++])
+      out += `<p>${inline(p.join(' '))}</p>`
+    }
+    return out
+  }
+
+  const ideaById = Object.fromEntries(ideasData.ideas.map((i) => [i.id, i]))
+  const MESS = ideasData.meta.labels.mess, AGE = ideasData.meta.labels.age
+  const P = Object.values(pins.pins)
+  const boards = pins._meta.boards
+  const hooks = copy.hooks
+
+  let html = ''
+  // Summary
+  const withList = Object.values(lists.ideas).filter((x) => x.list).length
+  html += `<h2 class="sec" id="summary">Summary</h2><div class="stats">
+    <div class="stat"><b>${P.length}</b>pins</div>
+    <div class="stat"><b>${Object.keys(videos.videos).length}</b>video scripts</div>
+    <div class="stat"><b>${withList}</b>Idea Lists (+${lists.staples.length} staple lists)</div>
+    <div class="stat"><b>${Object.keys(hooks).filter((k) => k[0] !== '_').length}</b>hook lines</div>
+    <div class="stat"><b>${Object.keys(copy.elfNotes).filter((k) => k[0] !== '_').length}</b>new elf notes</div></div>
+    <p class="muted">${esc(pins._meta.linkNote)}</p>`
+
+  // Boards
+  html += `<h2 class="sec" id="boards">Board plan</h2><table><tr><th>Board</th><th>Mirrors hub</th><th>Variant</th><th>First board for</th><th>Rule</th></tr>` +
+    boards.map((b) => `<tr><td><strong>${esc(b.name)}</strong></td><td>${esc(b.mirrorsHub)}</td><td>${esc((b.templateVariant || '—').toUpperCase())}</td><td>${P.filter((p) => p.board === b.name).length} pins</td><td>${esc(b.rule)}</td></tr>`).join('') + '</table>'
+
+  // Ideas
+  html += `<h2 class="sec" id="ideas">The 60 ideas — pin, hook, video, Idea List</h2><div class="ideas" id="ideaList">`
+  for (const p of P) {
+    const i = ideaById[p.id], v = videos.videos[p.slug], l = lists.ideas[p.slug], h = hooks[p.slug]
+    const src = '../' + p.previewPath
+    html += `<article class="card" data-board="${esc(p.board)}" data-text="${esc((p.textLayerTitle + ' ' + p.pinTitle + ' ' + p.description).toLowerCase())}">
+      <div><div class="pinbox"><iframe loading="lazy" src="${esc(src)}" title="Pin preview ${esc(p.textLayerTitle)}" tabindex="-1"></iframe></div>
+        <div class="pinmeta">Variant ${p.templateVariant.toUpperCase()} · kicker “${esc(p.kicker)}” · <a href="${esc(src)}" target="_blank">open 1000×1500</a></div></div>
+      <div>
+        <h3>${p.id}. ${esc(p.textLayerTitle)}</h3>
+        <div class="facts">${esc(i.time.label)} · ${esc(MESS[i.mess])} · ${esc(AGE[i.age])} · ${esc(i.roomLabel)} · <a href="${esc(p.link)}" target="_blank">${esc(p.link)}</a></div>
+        <p class="hook">“${esc(h.text)}” <span class="len">(${h.text.length}/90 · hook under title)</span></p>
+        <div class="grid2">
+          <div class="box"><h4>Pin</h4>
+            <p><strong>${esc(p.pinTitle)}</strong> <span class="len">${p.pinTitle.length}/100</span></p>
+            <p>${esc(p.description)} <span class="len">${p.description.length}/500</span></p>
+            <p>${p.hashtags.map((t) => `<span class="tag">${esc(t)}</span>`).join('')}</p>
+            <p><strong>Board:</strong> ${esc(p.board)}${p.alsoSaveTo.length ? ' <span class="muted">· also: ' + esc(p.alsoSaveTo.join(', ')) + '</span>' : ''}</p>
+            <p class="muted"><strong>Alt:</strong> ${esc(p.altText)}</p></div>
+          <div class="box"><h4>Short video (3 cuts)</h4>
+            <ol>${v.cuts.map((c) => `<li>${esc(c)}</li>`).join('')}</ol>
+            <p><strong>Voiceover / caption:</strong> ${esc(v.voiceover)}</p>
+            <p class="muted"><strong>Shots:</strong> ${v.shots.map(esc).join(' → ')}</p>
+            ${v.safetyOnScreen ? `<div class="safety"><strong>On screen (safety):</strong> ${esc(v.safetyOnScreen)}</div>` : ''}</div>
+          <div class="box"><h4>Amazon Idea List</h4>
+            ${l.list ? `<p><strong>${esc(l.list.name)}</strong></p><ul>${l.list.items.map((x) => `<li>${esc(x)}</li>`).join('')}</ul><p class="muted">${esc(l.list.description)}</p>${l.list.heldBack.length ? `<div class="safety"><strong>Held back:</strong> ${l.list.heldBack.map((x) => esc(x.item + ' — ' + x.why)).join('<br>')}</div>` : ''}<p class="muted">url: (empty — Vanessa creates the list)</p>` : `<p class="muted">No list. ${esc(l.reason)}</p>`}</div>
+          <div class="box"><h4>Elf note on the page</h4>
+            ${i.elfNote ? `<p>“${esc(i.elfNote.text)}” <span class="muted">(${esc(i.elfNote.kind)}, from the card)</span></p>` : copy.elfNotes[i.id] ? `<p><span class="badge">NEW DRAFT</span> “${esc(copy.elfNotes[i.id].text)}”</p>${copy.elfNotes[i.id].flag ? `<p class="muted">${esc(copy.elfNotes[i.id].flag)}</p>` : ''}` : '<p class="muted">—</p>'}
+            ${i.safety.length ? `<div class="safety"><strong>Safety (page):</strong> ${i.safety.map(esc).join(' ')}</div>` : ''}</div>
+        </div>
+      </div></article>`
+  }
+  html += '</div>'
+
+  // Elf notes
+  const notes = Object.entries(copy.elfNotes).filter(([k]) => k[0] !== '_')
+  html += `<h2 class="sec" id="notes">New elf notes (D5)</h2><p class="muted">${esc(copy.elfNotes._rule)}</p><table><tr><th>#</th><th>Idea</th><th>Kind</th><th>Draft</th><th>Flag</th></tr>` +
+    notes.map(([id, n]) => `<tr><td>${id}</td><td>${esc(ideaById[id].title)}</td><td>${esc(n.kind)}</td><td>“${esc(n.text)}”</td><td>${esc(n.flag || '')}</td></tr>`).join('') + '</table>'
+
+  // Printables
+  const pr = copy.printables
+  html += `<h2 class="sec" id="printables">Printable texts (D6)</h2>
+    <div class="grid2">
+      <div class="box"><h4>29 · Would you rather — 24 questions</h4><ol>${pr.wouldYouRather.questions.map((q) => `<li>${esc(q.text)}${q.n === 1 ? ' <span class="muted">(source)</span>' : ''}</li>`).join('')}</ol></div>
+      <div class="box"><h4>30 · Farewell letter template</h4>${pr.farewellLetter.text.map((t) => `<p>${esc(t)}</p>`).join('')}</div>
+      <div class="box"><h4>49 · Fill-in-the-blanks story</h4><p>${esc(pr.storyCard.text)}</p><p>${esc(pr.storyCard.signOff)}</p><p class="muted">Blanks: ${esc(pr.storyCard.blanks.join(' · '))}</p></div>
+      <div class="box"><h4>25 · Kindness missions (12)</h4><ol>${pr.kindnessMissions.missions.map((m) => `<li>${esc(m.text)} <span class="muted">(${esc(m.source)})</span></li>`).join('')}</ol></div>
+      <div class="box"><h4>34 · Clue trail</h4><ol>${pr.clueTrail.clues.map((c) => `<li>${esc(c.text)}${c.addLine ? '<br><em>' + esc(c.addLine) + '</em>' : ''}</li>`).join('')}</ol>
+        <p class="muted">Optional hints:</p><ul>${Object.entries(pr.clueTrail.optionalHints).filter(([k]) => k[0] !== '_').map(([k, t]) => `<li><strong>${esc(k)}:</strong> ${esc(t)}</li>`).join('')}</ul></div>
+    </div>`
+
+  // Tonight
+  const tf = copy.tonightFallback
+  html += `<h2 class="sec" id="tonight">Tonight Mode fallback (02b point 5d)</h2><div class="box">
+    <p><strong>Now:</strong> ${inline(tf.currentExample)}</p>
+    <p><strong>Proposed:</strong></p><ul>${tf.examples.map((e) => `<li>${inline(e)}</li>`).join('')}</ul>
+    <p class="muted">${esc(tf.note)}</p></div>`
+
+  // Staples
+  html += `<h2 class="sec" id="staples">Shared “staple” Idea Lists</h2><p class="muted">${esc(lists._meta.accountHolder)}</p><table><tr><th>List</th><th>Items</th><th>Used by</th><th>Shop staple</th><th>Note</th></tr>` +
+    lists.staples.map((s) => `<tr><td><strong>${esc(s.name)}</strong></td><td>${s.items.map(esc).join('<br>')}</td><td>${s.usedBy.map((u) => u.id + ' ' + esc(ideaById[u.id].title)).join('<br>')}</td><td>${esc(s.matchesShopStaple || '—')}</td><td>${esc(s.note || '')}</td></tr>`).join('') + '</table>'
+
+  html += `<h2 class="sec" id="email">Email copy</h2><div class="md">${md(emailMd)}</div>`
+  html += `<h2 class="sec" id="review">Copy review</h2><div class="md">${md(reviewMd)}</div>`
+  app.innerHTML = html
+
+  // Filters
+  const sel = document.getElementById('fBoard')
+  boards.filter((b) => P.some((p) => p.board === b.name)).forEach((b) => { const o = document.createElement('option'); o.value = b.name; o.textContent = b.name; sel.appendChild(o) })
+  const txt = document.getElementById('fText')
+  function filter() {
+    const b = sel.value, t = txt.value.trim().toLowerCase()
+    document.querySelectorAll('#ideaList .card').forEach((c) => {
+      c.hidden = (b && c.dataset.board !== b) || (t && !c.dataset.text.includes(t))
+    })
+  }
+  sel.addEventListener('change', filter); txt.addEventListener('input', filter)
+})()
+</script>
+</body>
+</html>
