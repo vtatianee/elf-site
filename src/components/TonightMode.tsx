@@ -33,6 +33,18 @@ const CRITS: { id: Crit; label: string; icon: IconName }[] = [
   { id: 'home', label: 'Only stuff I have', icon: 'home' },
 ]
 const LABEL: Record<Crit, string> = { five: '5 minutes', nomess: 'No mess', home: 'Only stuff I have' }
+/** How a criterion that was kept reads in the fallback sentence ("here are 3 that still …"). */
+const KEPT_PHRASE: Record<Crit, string> = {
+  five: 'take 5 minutes or less',
+  nomess: 'make no mess',
+  home: 'use only stuff you have',
+}
+
+/** "a", "a and b", "a, b and c". */
+function joinAnd(items: string[]): string {
+  if (items.length <= 1) return items.join('')
+  return `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`
+}
 const TEST: Record<Crit, (i: TonightIdea) => boolean> = {
   five: (i) => i.time === '2' || i.time === '5',
   nomess: (i) => i.mess === 'zero',
@@ -156,10 +168,12 @@ export function TonightMode({ ideas }: { ideas: TonightIdea[] }) {
 
   let status: ReactNode
   if (fallback) {
-    const kept = pool.used.length ? `${pool.used.map((c) => LABEL[c].toLowerCase()).join(', ')} ideas` : 'ideas from all 60'
+    // Wording approved at Gate 4 (marketing/site-copy.json → tonightFallback): always names what was dropped.
+    const dropped = joinAnd(pool.dropped.map((c) => `“${LABEL[c]}”`))
+    const rest = pool.used.length ? `that still ${joinAnd(pool.used.map((c) => KEPT_PHRASE[c]))}` : 'from all 60 ideas'
     status = (
       <>
-        <strong>No exact match tonight</strong> — here are {kept}. We left out {pool.dropped.map((c) => `“${LABEL[c]}”`).join(' and ')} to find you 3.
+        <strong>No exact match tonight.</strong> We let go of {dropped} — here are 3 {rest}.
       </>
     )
   } else if (crits.length === 3) {

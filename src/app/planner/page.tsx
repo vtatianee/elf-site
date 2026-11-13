@@ -38,7 +38,7 @@ export default function PlannerPage() {
         <h1>Your December elf plan</h1>
         <p className="page-head__lead">
           One idea for every night from December 1 to 24, already planned: quick ideas on weekdays, bigger projects on
-          weekends, something to play along every few days, and just one messy night. Swap any day you like — the
+          weekends, something to play along with every few days, and just one messy night. Swap any day you like — the
           shopping list follows.
         </p>
         <p className="section__sub">Your plan is saved in this browser only. Nothing is sent anywhere.</p>

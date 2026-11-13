@@ -19,7 +19,7 @@ export default function ContactPage() {
       <header className="page-head">
         <h1>Contact</h1>
         <p className="page-head__lead">
-          Found a mistake in an idea, have a question, or want to say hello? Send an email.
+          Found a mistake in an idea, have a question, or just want to say hello? Send us an email.
         </p>
       </header>
       <div className="prose section">

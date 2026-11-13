@@ -5,7 +5,7 @@
  *   title + fact bar (first on phones), vertical illustration + Pin button +
  *   illustration disclosure, materials checklist, Amazon links + kit button +
  *   disclosure, 3-5 steps, safety (always shown when the card has it),
- *   elf note (only when the card has text), quick variation (ideas 6 and 26),
+ *   elf note (card text, or the note approved at Gate 4), quick variation (ideas 6 and 26),
  *   3 related ideas, 2 hub links (+ a room link), email capture, HowTo schema.
  *
  * Never rendered: editorNotes / illustrationBrief (not part of `Idea`).
@@ -64,6 +64,17 @@ const ROOM_PHRASE: Record<Room, string> = {
   'whole-house': 'whole-house',
 }
 
+/** Rooms whose link reads better as "More ideas for the ___" (Gate 4 copy review). */
+const ROOM_FOR: Partial<Record<Room, string>> = {
+  table: 'the table',
+  'whole-house': 'the whole house',
+}
+
+function elfNoteLabel(kind: string, when: string | undefined): string {
+  const base = kind === 'card' ? 'Elf note' : `Elf note — on the ${kind}`
+  return when ? `${base} (${when})` : base
+}
+
 /** Elf-note kinds that are a small paper item the parent writes by hand. */
 const PAPER_KINDS = new Set(['card', 'sign', 'tag', 'coupon', 'mission card', 'question card'])
 
@@ -97,6 +108,7 @@ export default async function IdeaPage({ params }: PageProps) {
         <header className="idea__head">
           {idea.occasion && <p className="eyebrow">{idea.occasion}</p>}
           <h1>{idea.title}</h1>
+          <p className="idea__hook">{idea.hook}</p>
           <dl className="facts">
             <div className="fact">
               <Icon name="clock" />
@@ -171,8 +183,8 @@ export default async function IdeaPage({ params }: PageProps) {
                 <div>
                   <h3 className="callout__label">Printable</h3>
                   <p>
-                    This idea uses a {idea.printable}.{' '}
-                    <Link href={`${routes.printables}#${idea.slug}`}>Print it free from the Printables page</Link>.
+                    This idea has a free printable: {idea.printable}.{' '}
+                    <Link href={`${routes.printables}#${idea.slug}`}>Print it from the Printables page</Link>.
                   </p>
                 </div>
               </div>
@@ -238,11 +250,11 @@ export default async function IdeaPage({ params }: PageProps) {
               <div className="note">
                 <img className="note__elf" src="/mascot/elf-peek.svg" alt="" width={300} height={250} />
                 <h2 className="note__label" id="note-title">
-                  {idea.elfNote.kind === 'card' ? 'Elf note' : `Elf note — on the ${idea.elfNote.kind}`}
+                  {elfNoteLabel(idea.elfNote.kind, idea.elfNote.when)}
                 </h2>
                 <blockquote>{idea.elfNote.text}</blockquote>
                 {PAPER_KINDS.has(idea.elfNote.kind) && (
-                  <p className="note__hint">Copy it onto a small {idea.elfNote.kind} and leave it next to the scene.</p>
+                  <p className="note__hint">Write it on a small {idea.elfNote.kind} and leave it with the elf.</p>
                 )}
               </div>
             </section>
@@ -289,7 +301,7 @@ export default async function IdeaPage({ params }: PageProps) {
               ))}
               <li>
                 <Link className="hub" href={routes.ideasWith({ room: idea.room })}>
-                  More {ROOM_PHRASE[idea.room]} ideas
+                  {ROOM_FOR[idea.room] ? `More ideas for ${ROOM_FOR[idea.room]}` : `More ${ROOM_PHRASE[idea.room]} ideas`}
                   <Icon name="arrow" />
                 </Link>
               </li>

@@ -20,6 +20,7 @@
  * ideas they need as props — use `toIdeaSummary()` to keep that payload small.
  */
 import rawData from '@/data/ideas.json'
+import approvedCopy from '@/data/approved-copy.json'
 
 // ---------------------------------------------------------------------------
 // Types — mirror src/data/ideas.json exactly
@@ -79,8 +80,13 @@ export type IdeaTime = {
 export type ElfNote = {
   /** What carries the text in the scene: "card", "sign", "coupon", ... */
   kind: string
-  /** Verbatim English text from the source document. Never edit. */
+  /**
+   * The note text. From the source document (verbatim) or, when the source
+   * had none, the Marketing text approved at Gate 4 (`approved-copy.json`).
+   */
   text: string
+  /** Only for a note that is not for the first night, e.g. "night 2, with the variation". */
+  when?: string
 }
 
 /** One idea exactly as stored in the JSON file, internal fields included. */
@@ -127,8 +133,14 @@ type RawIdea = {
   editorNotes: string[]
 }
 
-/** An idea as the site may use it: everything except the internal fields. */
-export type Idea = Omit<RawIdea, 'illustrationBrief' | 'editorNotes'>
+/**
+ * An idea as the site may use it: everything except the internal fields,
+ * plus the copy approved at Gate 4 (src/data/approved-copy.json):
+ * - `hook`: the one line under the title;
+ * - `elfNote`: filled from the approved notes when the source had none;
+ * - `safety`: the card's own warnings first, then any approved extra line.
+ */
+export type Idea = Omit<RawIdea, 'illustrationBrief' | 'editorNotes'> & { hook: string }
 
 /**
  * The small subset needed to draw a card or run a filter in the browser.
@@ -221,10 +233,30 @@ function validate(file: IdeasFile): IdeasFile {
 
 const file = validate(rawData as unknown as IdeasFile)
 
+type ApprovedCopy = {
+  elfNotes: Record<string, ElfNote>
+  hooks: Record<string, string>
+  extraSafety: Record<string, string[]>
+}
+const approved = approvedCopy as unknown as ApprovedCopy
+
 function toPublic(raw: RawIdea): Idea {
   // Drop the internal fields here, once, so no caller can leak them.
   const { illustrationBrief: _brief, editorNotes: _notes, ...idea } = raw
-  return idea
+  const hook = approved.hooks[idea.slug]
+  if (!hook) fail(`idea #${idea.id} (${idea.slug}): no approved hook in approved-copy.json`)
+  const extraNote = approved.elfNotes[idea.slug]
+  if (extraNote && idea.elfNote) fail(`idea #${idea.id} (${idea.slug}): approved note would replace the card's own note`)
+  return {
+    ...idea,
+    hook,
+    elfNote: idea.elfNote ?? extraNote ?? null,
+    safety: [...idea.safety, ...(approved.extraSafety[idea.slug] ?? [])],
+  }
+}
+
+for (const slug of [...Object.keys(approved.elfNotes), ...Object.keys(approved.extraSafety)]) {
+  if (!file.ideas.some((idea) => idea.slug === slug)) fail(`approved-copy.json names an unknown idea "${slug}"`)
 }
 
 const ideas: readonly Idea[] = file.ideas.map(toPublic).sort((a, b) => a.id - b.id)

@@ -1,0 +1,12 @@
+{
+  "slug": "goodbye-breakfast-and-hug-coupon",
+  "title": "See you soon!",
+  "body": [
+    "Good morning! Today I set a place for myself at your table, because a goodbye breakfast is the coziest kind of goodbye. The heart cookie is for you.",
+    "You know the rule: elves don’t get touched, and when it’s time for me to go, only Santa can touch me. But today there is one special exception. Look in the mug: that coupon is good for one goodbye hug, today only.",
+    "Use it whenever you’re ready. I’ll carry that hug all the way to the North Pole and back again next Christmas."
+  ],
+  "signoff": "Love, your elf",
+  "status": "APPROVED-PENDING-PM-REVIEW",
+  "notes": "Short see-you-soon letter for idea 60 (point 13 of the Gate 4 handoff), approved in principle by André at Gate 4. 91 words in the body. It uses only the materials and steps in ideas.json: the elf’s place at the set breakfast table, the heart-shaped cookie, the hug coupon in the mug. It does not repeat the coupon text, which stays exactly as the card has it. It matches the idea 30 farewell letter, where only Santa can touch the elf at the farewell: here the coupon hug is the one exception, today only, as idea 60 step 3 says. Timing: the letter never says the elf leaves tonight, so it works on the 23rd (where the planner puts idea 60) or on the morning of the 24th. Recommendation for the PM: don’t schedule idea 60 on the 25th after idea 30, because by then idea 30’s letter has already said goodbye with no touching. Wording is en-US, in the elf’s voice, with no trademark and no new materials or steps. The page block label would be “Elf note — on the letter”, if the Developer shows it."
+}

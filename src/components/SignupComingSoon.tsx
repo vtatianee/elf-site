@@ -26,7 +26,7 @@ export function SignupComingSoon() {
           Coming soon
         </span>
         <h2 id={titleId}>1 idea a day in December</h2>
-        <p className="signup__lead">One elf idea in your inbox every morning, December 1 to 24.</p>
+        <p className="signup__lead">One elf idea in your inbox every day, December 1 to 24 — in time for tonight.</p>
         <form className="signup__form" aria-describedby={statusId} noValidate>
           <label htmlFor={fieldId}>Email address</label>
           <input
@@ -42,7 +42,7 @@ export function SignupComingSoon() {
         </form>
         <p className="signup__status" id={statusId}>
           <Icon name="info" />
-          <span>Sign-ups aren’t open yet. This form is switched off: nothing you type is saved or sent.</span>
+          <span>Sign-ups open soon. This form is switched off for now: nothing you type is saved or sent.</span>
         </p>
       </div>
     </section>

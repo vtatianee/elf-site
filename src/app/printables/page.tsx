@@ -4,18 +4,18 @@
  * Gate 1 decisions:
  * - Free to print in the MVP (no email gate: there is no email provider).
  *   The email form sits next to it in its "coming soon" state.
- * - Build with the text the source document has. Missing texts (the other
- *   23 "would you rather" questions, the farewell letter, the full story of
- *   idea 49) are drafted by Marketing in Phase 4 — until then those sheets
- *   say so honestly instead of inventing words.
  * - The paid pack is a placeholder: no checkout, no price.
  *
- * Every sentence printed on a sheet comes from src/data/ideas.json.
+ * Every sentence printed on a sheet comes from src/data/ideas.json (the
+ * source card) or from the Marketing texts approved at Gate 4
+ * (src/data/approved-copy.json, via @/lib/approved-copy). The only sheet still
+ * pending is the coloring outline of idea 52 (needs the final elf art).
  */
 import Link from 'next/link'
-import type { ReactNode } from 'react'
+import { Fragment, type ReactNode } from 'react'
 import { Icon } from '@/components/Icon'
 import { PrintButton } from '@/components/PrintButton'
+import { printableTexts as texts } from '@/lib/approved-copy'
 import { SignupComingSoon } from '@/components/SignupComingSoon'
 import { getIdeaBySlug, type Idea } from '@/lib/ideas'
 import { routes } from '@/lib/routes'
@@ -45,6 +45,39 @@ function Lines({ count, label }: { count: number; label?: string }) {
   )
 }
 
+/** A row of small cards to cut apart (missions, questions, clues). */
+function Cards({ items }: { items: ReactNode[] }) {
+  return (
+    <ul className="sheet__cards" role="list">
+      {items.map((item, k) => (
+        <li className="sheet__card" key={k}>
+          {item}
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+/** Renders "[1. a noun]" blanks as a line with the hint under it. */
+function StoryText({ text }: { text: string }) {
+  const parts = text.split(/\[(\d+)\. ([^\]]+)\]/)
+  const out: ReactNode[] = []
+  for (let k = 0; k < parts.length; k += 3) {
+    out.push(parts[k])
+    if (parts[k + 1]) {
+      out.push(
+        <span className="sheet__blank" key={k}>
+          <span className="sheet__blank-line" />
+          <span className="sheet__blank-hint">
+            {parts[k + 1]}. {parts[k + 2]}
+          </span>
+        </span>,
+      )
+    }
+  }
+  return <p className="sheet__story">{out}</p>
+}
+
 function Stars() {
   return (
     <span aria-label="5 stars to color in" role="img">
@@ -69,12 +102,23 @@ function sheets(): Sheet[] {
   const workout = idea('elf-workout-challenge-cards')
   const coupon = idea('goodbye-breakfast-and-hug-coupon')
 
+  // The first mission, question and clue are the card's own words: stop the build if they drift apart.
+  const verbatim: [string | undefined, string | undefined][] = [
+    [missions.elfNote?.text, texts.kindnessMissions.missions[0]],
+    [wyr.elfNote?.text, texts.wouldYouRather[0]],
+    [clues.elfNote?.text, texts.clueTrail[0]?.text],
+  ]
+  for (const [card, sheet] of verbatim) {
+    if (card !== sheet) throw new Error(`[printables] "${sheet}" should match the card text "${card}"`)
+  }
+
   return [
     {
       slug: 'milk-and-cookies-taste-test',
       paper: (
         <>
           <h3>Milk and Cookies Taste Test</h3>
+          <p className="sheet__hint">{texts.tasteTestInstruction}</p>
           {[1, 2, 3].map((n) => (
             <p className="sheet__text" key={n}>
               Cookie {n}: <Stars />
@@ -87,8 +131,12 @@ function sheets(): Sheet[] {
       slug: 'kindness-mission-card',
       paper: (
         <>
-          <h3>TOP SECRET MISSION</h3>
-          <p className="sheet__text">{missions.elfNote?.text}</p>
+          <h3>{texts.kindnessMissions.envelopeLabel}</h3>
+          <Cards items={texts.kindnessMissions.missions.map((m) => (
+            <p className="sheet__text" key={m}>
+              {m}
+            </p>
+          ))} />
         </>
       ),
     },
@@ -97,8 +145,9 @@ function sheets(): Sheet[] {
       paper: (
         <>
           <h3>Nice List</h3>
-          <Lines count={1} label="Name" />
-          <Lines count={2} label="This year you showed" />
+          <p className="sheet__text">{texts.niceListTopLine}</p>
+          <Lines count={1} label="This certifies that" />
+          <Lines count={2} label="This year you showed:" />
         </>
       ),
     },
@@ -107,28 +156,40 @@ function sheets(): Sheet[] {
       paper: (
         <>
           <h3>Would you rather?</h3>
-          <p className="sheet__text">{wyr.elfNote?.text}</p>
+          <Cards
+            items={texts.wouldYouRather.map((q, k) => (
+              <p className="sheet__text" key={q}>
+                <span className="sheet__num">Dec {k + 1}</span> {q}
+              </p>
+            ))}
+          />
         </>
       ),
-      pending: 'This is the first card of a 24-question set; the other 23 are being written and will be added here.',
     },
     {
       slug: 'farewell-letter-and-photo',
-      paper: null,
-      pending: 'The farewell letter template is being written and will be added here.',
+      paper: (
+        <div className="sheet__letter">
+          {texts.farewellLetter.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
+      ),
     },
     {
       slug: 'arrival-hide-and-seek-clue-trail',
       paper: (
         <>
-          <h3>Clue 1</h3>
-          <p className="sheet__text">{clues.elfNote?.text}</p>
-          {[2, 3, 4].map((n) => (
-            <div key={n}>
-              <p className="sheet__text">Clue {n}</p>
-              <div className="sheet__line" />
-            </div>
-          ))}
+          <h3>The clue trail</h3>
+          <Cards
+            items={texts.clueTrail.map((clue, k) => (
+              <Fragment key={clue.text}>
+                <p className="sheet__num">Clue {k + 1}</p>
+                <p className="sheet__text">{clue.text}</p>
+                {clue.addLine && <p className="sheet__text">{clue.addLine}</p>}
+              </Fragment>
+            ))}
+          />
         </>
       ),
     },
@@ -137,13 +198,10 @@ function sheets(): Sheet[] {
       paper: (
         <>
           <h3>{story.title}</h3>
-          <p className="sheet__text">Last night, the elf rode a ______ to the ______ …</p>
-          {['A noun', 'A place', 'A food', 'An animal', 'A verb'].map((blank) => (
-            <Lines key={blank} count={1} label={blank} />
-          ))}
+          <StoryText text={texts.storyCard.text} />
+          <p className="sheet__text">{texts.storyCard.signOff}</p>
         </>
       ),
-      pending: 'The full story is being written; for now this sheet has the opening line and the 5 blanks.',
     },
     {
       slug: 'elf-workout-challenge-cards',
@@ -170,6 +228,13 @@ function sheets(): Sheet[] {
         <>
           <h3>Hug coupon</h3>
           <p className="sheet__text">{coupon.elfNote?.text}</p>
+          <div className="sheet__letter sheet__letter--short">
+            <h3>{texts.seeYouSoonLetter.title}</h3>
+            {texts.seeYouSoonLetter.body.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+            <p>{texts.seeYouSoonLetter.signoff}</p>
+          </div>
         </>
       ),
     },

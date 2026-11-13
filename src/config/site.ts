@@ -69,7 +69,7 @@ export const siteConfig = {
    * replace it.
    */
   description:
-    'A new elf idea every night - in under 5 minutes, with stuff you already have.',
+    'A new elf idea every night — in under 5 minutes, with stuff you already have.',
 
   /** Language and region of the site. Do not change. */
   locale: 'en-US',

@@ -1,11 +1,13 @@
 /**
- * EDITORIAL PICKS — "Parent favorites" on the home page.
+ * EDITORIAL PICKS — "Editor’s picks" on the home page.
  *
- * Approved at Gate 1: an editorial selection with an honest label. No counts,
- * no rankings, no "most saved" claims anywhere on the site.
+ * Gate 1 approved an editorial selection with an honest label. Gate 4
+ * (2026-11-12) renamed it from "Parent favorites" to "Editor’s picks" —
+ * nothing measures what parents prefer — and swapped idea 11 (medium mess)
+ * for idea 8 (2 min, zero mess), so all four are quick wins.
+ * No counts, no rankings, no "most saved" claims anywhere on the site.
  *
- * Card numbers (ids from src/data/ideas.json). The current 4 are the ones in
- * the Gate 2 design preview; Marketing / the PM may change them in Phase 4.
- * To change: replace the numbers, keep 4.
+ * Card numbers (ids from src/data/ideas.json). To change: replace the
+ * numbers, keep 4.
  */
-export const PARENT_FAVORITES: readonly number[] = [13, 6, 11, 26]
+export const EDITOR_PICKS: readonly number[] = [13, 6, 8, 26]

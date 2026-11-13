@@ -1,6 +1,6 @@
 /*
  * HOME — search + quick filters, Tonight Mode, idea of the day,
- * "Parent favorites" (editorial), hubs, email capture.
+ * "Editor’s picks" (editorial), hubs, email capture.
  * Layout follows design/preview/home.html (approved at Gate 2).
  */
 import Link from 'next/link'
@@ -10,7 +10,7 @@ import { IdeaOfTheDay, type FeatureIdea } from '@/components/IdeaOfTheDay'
 import { SignupComingSoon } from '@/components/SignupComingSoon'
 import { TonightMode, type TonightIdea } from '@/components/TonightMode'
 import { siteConfig } from '@/config/site'
-import { PARENT_FAVORITES } from '@/data/editorial'
+import { EDITOR_PICKS } from '@/data/editorial'
 import { ideaIllustration, shortMessLabel, toCardData } from '@/lib/cards'
 import { pickForDay } from '@/lib/daily'
 import { HUB_INFO } from '@/lib/hubs'
@@ -63,7 +63,7 @@ export default function HomePage() {
   })
   const buildDayIdea = pickForDay(featureIdeas, new Date())
 
-  const favorites = PARENT_FAVORITES.map((id) => cards.find((card) => card.id === id)).filter(
+  const favorites = EDITOR_PICKS.map((id) => cards.find((card) => card.id === id)).filter(
     (card): card is (typeof cards)[number] => card !== undefined,
   )
 
@@ -119,8 +119,8 @@ export default function HomePage() {
       {/* 4. PARENT FAVORITES — editorial, no counts, no rankings */}
       <section className="section" aria-labelledby="fav-title">
         <div className="section__head">
-          <h2 id="fav-title">Parent favorites</h2>
-          <p className="section__sub">Hand-picked by the editor.</p>
+          <h2 id="fav-title">Editor’s picks</h2>
+          <p className="section__sub">Four easy ones to start with.</p>
         </div>
         <ul className="cards cards--4" role="list">
           {favorites.map((card) => (

@@ -1,0 +1,214 @@
+{
+  "meta": {
+    "source": "marketing/site-copy.json and marketing/idea-60-letter.json (Phase 4, Marketing)",
+    "approval": "APPROVED by the owner at Gate 4 (2026-11-12, \"Aprovo tudo\"). New copy written for the site — NOT from the source PDF. ideas.json stays the verbatim PDF record.",
+    "extraSafetyNote": "Safety lines added at Gate 4 (handoff 04 §5 point 13). Shown after the card's own warnings."
+  },
+  "elfNotes": {
+    "hiding-in-the-christmas-tree": {
+      "kind": "card",
+      "text": "You found me! Tomorrow I’m picking a trickier branch.",
+      "when": "night 2, with the variation"
+    },
+    "letter-to-santa-station": {
+      "kind": "card",
+      "text": "Santa’s mailbox is open! Write your letter today and I’ll fly it to the North Pole tonight."
+    },
+    "sink-fishing-trip": {
+      "kind": "card",
+      "text": "Gone fishing! The fish here are crunchy. Want a turn?"
+    },
+    "sticky-note-surprise-wall": {
+      "kind": "card",
+      "text": "I covered your door in nice things. Every word is true!"
+    },
+    "candy-cane-sled": {
+      "kind": "card",
+      "text": "New sled, test run tonight. Top speed: very sweet."
+    },
+    "milk-and-cookies-taste-test": {
+      "kind": "card",
+      "text": "Practicing for Santa’s big night. Rate them too — do we agree?"
+    },
+    "nice-list-certificate": {
+      "kind": "certificate",
+      "text": "Official news from the North Pole: you made the Nice List!"
+    },
+    "farewell-letter-and-photo": {
+      "kind": "letter",
+      "text": "Thank you for a wonderful December. Only Santa can touch me tonight — see you next year!"
+    }
+  },
+  "hooks": {
+    "movie-night-popcorn-patrol": "They wake up to find the elf already hogging the remote for movie night.",
+    "storytime-reading-corner": "Little ones find the elf reading to their stuffies — and want to listen too.",
+    "shoe-shoe-train": "The hallway turns into the North Pole Express — and every shoe has a passenger.",
+    "toothbrush-delivery-elf": "A brand-new toothbrush, delivered by elf — suddenly everyone wants to brush.",
+    "tangled-in-christmas-lights": "The elf tried to decorate. The lights won. Expect giggles at breakfast.",
+    "hiding-in-the-christmas-tree": "Where’s the elf? Kids spend breakfast spotting a tiny face in the branches.",
+    "letter-to-santa-station": "The elf opens a mailbox to the North Pole — and the letters start pouring in.",
+    "trapped-in-a-jar": "Kids find the elf stuck in a jar — and beg to rescue it before breakfast.",
+    "christmas-countdown-chain": "One link a morning: kids count down to Christmas with the elf’s paper chain.",
+    "sleeping-in-a-stocking": "The elf overslept in the stocking — little ones will want to tiptoe and whisper.",
+    "flour-snow-angel": "“It snowed in the kitchen!” Kids find a tiny snow angel and its proud artist.",
+    "toilet-paper-tree-makeover": "Caught in the act: the elf “decorated” the tree, and kids will laugh before hello.",
+    "marshmallow-bubble-bath": "The elf is having a spa day in marshmallows. Do not disturb (but do giggle).",
+    "toothpaste-mirror-message": "A minty message on the mirror from the elf — and suddenly everyone wants to brush.",
+    "silly-banana-bunch": "Every banana has a face this morning — toddlers will want to name them all.",
+    "sink-fishing-trip": "Gone fishing! Kids find the elf reeling in crackers at the sink — and want a turn.",
+    "sticky-note-surprise-wall": "A door full of sticky notes — and a few of them say what’s great about your kid.",
+    "elf-zipline-adventure": "The elf took the express route to the cookies — kids will want to see it zip.",
+    "sweet-spaghetti-breakfast": "Spaghetti with syrup for breakfast? Kids get to decide if the elf is a genius.",
+    "candy-cane-sled": "The elf built a sled out of candy canes — and it’s ready for a sweet test run.",
+    "hot-cocoa-stand-helper": "Cocoa costs one hug at the elf’s stand — expect a line of customers.",
+    "cookie-baking-disaster": "Tiny floury footprints lead to the culprit — and a cookie with one bite missing.",
+    "milk-and-cookies-taste-test": "The elf is practicing for Santa’s big night — and kids get to be the cookie judges.",
+    "gingerbread-house-inspector": "Official inspection results are in: the roof is delicious. Kids will agree.",
+    "kindness-mission-card": "A top secret mission arrives — and it’s all about being kind today.",
+    "candy-cane-scavenger-hunt": "Five candy canes, one elf dare: can they find them all before breakfast?",
+    "build-a-snowman-challenge": "The elf’s snowman record is 2 minutes. Your kid will want to beat it.",
+    "nice-list-certificate": "They wake up to official proof they made the Nice List — with their name on it.",
+    "would-you-rather-card": "Reindeer or sleigh? Breakfast turns into a big debate, started by the elf.",
+    "farewell-letter-and-photo": "A thank-you letter and a keepsake to hold on to — a goodbye that feels warm.",
+    "im-back-arrival-banner": "The elf is back — with a banner, a marker and a big hello for the whole family.",
+    "north-pole-arrival-breakfast": "The elf’s first move? An extra-tiny pancake breakfast, made just for you.",
+    "special-delivery-arrival-box": "A package from the North Pole at the front door — and someone is peeking out.",
+    "arrival-hide-and-seek-clue-trail": "The elf is back… but where? Kids follow the clues room by room to find it.",
+    "snowy-footprints-arrival": "Snowy little footprints from the door — the elf was too excited to wait.",
+    "toddler-peekaboo-blanket-fort": "Peekaboo! Toddlers find the elf in a blanket fort — then hide it again together.",
+    "pom-pom-color-sorting-game": "The elf started sorting colors and needs a helper — toddlers are on it.",
+    "breakfast-cereal-garland": "The elf made a necklace you can eat — toddlers will want to add the next ring.",
+    "my-first-sticker-scene": "The star is too high for the elf — toddlers get to finish the tree themselves.",
+    "toy-car-wash-station": "The elf opened a car wash — and toddlers are first in line with their cars.",
+    "plush-friends-campout": "A sleepover in their own room — toddlers find the elf snuggled in with the stuffies.",
+    "fruit-face-breakfast-plate": "Breakfast is smiling back today — and the elf helped make the face.",
+    "elf-workshop-build-station": "The elf’s workshop shift started overnight — kids will want to finish the toy.",
+    "paper-snowflake-window-invasion": "The elf ordered snow — and the whole window got delivered overnight.",
+    "mini-elf-door-and-welcome-mat": "The elf finally has its own front door — kids will want to knock.",
+    "cardboard-sleigh-build": "A backup sleigh built from a box — the elf says it passed the test drive. Mostly.",
+    "gingerbread-village-street": "There’s a new mayor in town — kids wake up to a whole gingerbread street.",
+    "elf-photo-booth-props": "The elf opened a photo booth — and today your kid is the model.",
+    "elf-story-fill-in-the-blanks-card": "The elf wrote a story but left out the words — kids fill in the silly ones.",
+    "elf-workout-challenge-cards": "North Pole training starts at breakfast — the elf already did one. Sort of.",
+    "guess-how-many-jar": "How many are in the jar? The elf’s guess is wild — kids are sure they can win.",
+    "draw-my-outfit-contest": "The elf wants a new look — and your kid is the designer today.",
+    "flour-snowball-fight": "Snowball fight on the counter! The teddies started it, according to the elf.",
+    "bubble-bath-foam-mountain": "The elf asked for a little foam and got a mountain — expect big laughs.",
+    "wrapping-paper-mayhem": "The elf wrapped the living room for Santa — even the TV remote.",
+    "elf-in-the-fridge-surprise": "Open the fridge and surprise: the elf is in there, shivering in a scarf.",
+    "fridge-magnet-message": "One letter is missing from the elf’s fridge message — kids get to finish it.",
+    "closet-fashion-show-elf": "Fashion week came to the bedroom — and the elf is wearing the look.",
+    "memory-jar-last-week-goodbye": "A jar of favorite moments — kids add one each day of the elf’s last week.",
+    "goodbye-breakfast-and-hug-coupon": "One goodbye hug, today only — the sweetest coupon of the whole season."
+  },
+  "extraSafety": {
+    "hot-cocoa-stand-helper": [
+      "Hot drinks: a grown-up makes and pours the hot chocolate."
+    ],
+    "build-a-snowman-challenge": [
+      "A grown-up handles the toothpicks and takes them all out before anyone eats the snowman.",
+      "For toddlers, cut the marshmallows into small pieces."
+    ]
+  },
+  "printables": {
+    "wouldYouRather": [
+      "Would you rather ride a reindeer or drive the sleigh?",
+      "Would you rather build a snowman or have a snowball fight?",
+      "Would you rather have a nose that glows like a reindeer’s or ears that jingle like bells?",
+      "Would you rather wrap presents with Santa or decorate cookies with the elves?",
+      "Would you rather live in a gingerbread house or in an igloo?",
+      "Would you rather be as tiny as an elf for a day or as tall as the Christmas tree?",
+      "Would you rather have hot cocoa with marshmallows or with whipped cream?",
+      "Would you rather find a mountain of snow outside your door or a mountain of presents under the tree?",
+      "Would you rather sing a Christmas song in front of everyone or dance to one?",
+      "Would you rather have a pet reindeer or a pet penguin?",
+      "Would you rather wear pajamas covered in candy canes or a sweater covered in tinsel?",
+      "Would you rather spend a day in Santa’s workshop or a night riding in the sleigh?",
+      "Would you rather have a snowball that never melts or a cookie that never runs out?",
+      "Would you rather be the star on top of the tree or a present underneath it?",
+      "Would you rather go ice-skating with a polar bear or sledding with a penguin?",
+      "Would you rather have Christmas lights in your hair or jingle bells on your shoes?",
+      "Would you rather eat breakfast at the North Pole or dinner at the South Pole?",
+      "Would you rather make the toys in the workshop or test them all?",
+      "Would you rather talk to reindeer or understand what snowmen say?",
+      "Would you rather open one present every day or all of them on Christmas morning?",
+      "Would you rather have a snow day every Monday or a cocoa party every Friday?",
+      "Would you rather be the elf for a day or have an elf as your friend all year?",
+      "Would you rather decorate the tree with candy or with paper snowflakes?",
+      "Would you rather have pointy elf ears for a week or a jingling hat for a week?"
+    ],
+    "farewellLetter": [
+      "Dear ____________,",
+      "Tonight is my last night with you this year, and I want to say thank you. Thank you for the giggles, for the good mornings and for looking for me every single day.",
+      "I will always remember when you ________________________________, and the day you ________________________________. Both are going straight into my North Pole memory book.",
+      "Tonight Santa comes to take me home. Here is a little secret: at the farewell, only Santa can touch me. That is how the magic gets me safely back to the North Pole. So tonight, just a big wave from your bed!",
+      "Keep the little frame somewhere you can see it. Every time you look at it, I will be thinking of you too.",
+      "I promise to come back next December. Be kind, keep laughing, and save me a cozy spot by the tree.",
+      "Love,",
+      "Your elf"
+    ],
+    "storyCard": {
+      "text": "Last night, the elf rode a [1. a noun] to the [2. a place] ... When it got there, it was so hungry that it ate a whole [3. a food] in one bite. Then a sleepy [4. an animal] came over and asked to join the adventure. So the two of them decided to [5. a verb] all the way home before the sun came up. Shh — don’t tell Santa!",
+      "signOff": "Love, your elf",
+      "blanks": [
+        "A noun",
+        "A place",
+        "A food",
+        "An animal",
+        "A verb"
+      ]
+    },
+    "kindnessMissions": {
+      "envelopeLabel": "TOP SECRET MISSION",
+      "missions": [
+        "Today: draw a picture for someone you love.",
+        "Today: help set the table.",
+        "Today: pick a toy to donate.",
+        "Today: say thank you to someone.",
+        "Today: make a card for a neighbor or a friend.",
+        "Today: give three people a compliment.",
+        "Today: help a grown-up tidy up — without being asked.",
+        "Today: share a toy or a snack with someone.",
+        "Today: read a story to a younger kid or to a stuffed animal.",
+        "Today: let someone else go first.",
+        "Today: make someone laugh.",
+        "Today: give someone in your family a big hug and tell them why you love them."
+      ]
+    },
+    "clueTrail": [
+      {
+        "text": "I'm back... but where? Follow the clues and find me before breakfast!",
+        "addLine": "First stop: ____________"
+      },
+      {
+        "text": "Not here! I tiptoed off to the ____________. Your next clue is waiting there."
+      },
+      {
+        "text": "Getting warmer! Now hurry to the ____________ and look around."
+      },
+      {
+        "text": "Last clue! I’m hiding near the ____________. Listen for the jingle bell!"
+      }
+    ],
+    "niceListTopLine": "Official news from the North Pole: you made the Nice List!",
+    "tasteTestInstruction": "Color in the stars for each cookie.",
+    "seeYouSoonLetter": {
+      "title": "See you soon!",
+      "body": [
+        "Good morning! Today I set a place for myself at your table, because a goodbye breakfast is the coziest kind of goodbye. The heart cookie is for you.",
+        "You know the rule: elves don’t get touched, and when it’s time for me to go, only Santa can touch me. But today there is one special exception. Look in the mug: that coupon is good for one goodbye hug, today only.",
+        "Use it whenever you’re ready. I’ll carry that hug all the way to the North Pole and back again next Christmas."
+      ],
+      "signoff": "Love, your elf"
+    }
+  },
+  "tonightFallback": {
+    "withKept": "**No exact match tonight.** We let go of {dropped} — here are 3 that still {keptPhrases}.",
+    "allDropped": "**No exact match tonight.** We let go of {dropped} — here are 3 from all 60 ideas.",
+    "keptPhrases": {
+      "five": "take 5 minutes or less",
+      "nomess": "make no mess",
+      "home": "use only stuff you have"
+    }
+  }
+}

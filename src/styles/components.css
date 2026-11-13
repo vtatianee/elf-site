@@ -223,6 +223,7 @@
 .idea { display: grid; gap: var(--space-5); }
 .idea__main { display: grid; gap: var(--space-6); min-width: 0; max-width: var(--reading-max); }
 .idea__head { display: grid; gap: var(--space-3); }
+.idea__hook { font-size: var(--text-md); color: var(--text-muted); max-width: var(--measure); }
 
 /* main illustration + Pin button + disclosure */
 .art { max-width: 26rem; margin-inline: auto; width: 100%; }
@@ -341,6 +342,17 @@
 .sheet__paper h3 { font-size: var(--text-xl); text-align: center; }
 .sheet__line { border-bottom: 2px solid var(--border-control); min-height: 2rem; }
 .sheet__text { font-family: var(--font-display); font-size: var(--text-md); text-align: center; }
+.sheet__hint { text-align: center; color: var(--text-muted); }
+.sheet__cards { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); }
+.sheet__card { display: grid; gap: var(--space-2); align-content: center; padding: var(--space-3); border: 2px dashed var(--border-control); border-radius: var(--radius-sm); break-inside: avoid; }
+.sheet__card .sheet__text { font-size: var(--text-base); }
+.sheet__num { font-weight: var(--weight-bold); color: var(--text-muted); font-size: var(--text-sm); text-align: center; }
+.sheet__letter { display: grid; gap: var(--space-3); max-width: var(--measure); margin-inline: auto; font-size: var(--text-md); }
+.sheet__letter--short { margin-top: var(--space-4); padding-top: var(--space-4); border-top: 2px dashed var(--border-control); }
+.sheet__story { font-size: var(--text-md); line-height: 2.6; max-width: var(--measure); margin-inline: auto; }
+.sheet__blank { display: inline-flex; flex-direction: column; align-items: center; vertical-align: top; margin-inline: var(--space-1); line-height: 1.2; }
+.sheet__blank-line { display: block; width: 7rem; border-bottom: 2px solid var(--border-control); min-height: 1.6rem; }
+.sheet__blank-hint { font-size: var(--text-xs); color: var(--text-muted); }
 .staples { display: grid; gap: var(--space-3); grid-template-columns: minmax(0, 1fr); }
 .staple { display: grid; gap: var(--space-2); padding: var(--space-4); background: var(--bg-surface); border-radius: var(--radius-md); box-shadow: inset 0 0 0 2px var(--border); }
 .staple h3 { font-size: var(--text-md); }

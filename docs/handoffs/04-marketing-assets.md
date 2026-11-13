@@ -5,7 +5,7 @@
 - **Autor:** Especialista em Marketing
 - **Lido antes de começar:** `PROMPT-CLAUDE-CODE-SITE-ELF.md` (papel 5, MONETIZATION, NON-NEGOTIABLE RULES, SEO/Pinterest), `01-pm-scope.md` (C6, D5, D6, D12, §8), `02b-design-system.md` (§7 template de pin, §8 Tonight Mode, ponto 5d), `03-dev-build.md` (§7), `03b-deploy-preview.md`, `src/data/ideas.json`, `docs/source/ideas-pdf-text.txt` (§4 e §5 do PDF: frase de efeito, Pinterest, vídeo curto, e-mail), `design/pin-template/`, `design/character-bible.md`, `design/illustration-alt.json` e os arquivos de texto do Desenvolvedor listados no §7 do 03.
 - **Não toquei em:** nada dentro de `src/`, `public/`, `design/` ou `scripts/`. Nenhum commit, nenhum push. Nada foi postado, agendado ou publicado em lugar nenhum.
-- **Status:** **PRONTO PARA O PORTÃO 4.** Todo texto novo está marcado como **DRAFT** e aguarda a aprovação do André.
+- **Status:** **APROVADO NO PORTÃO 4 (12/11/2026, "Aprovo tudo")**, com as recomendações da §5. Os textos marcados DRAFT nos arquivos deste pacote valem como aprovados; o Desenvolvedor os liga no site. Pendente: endereço postal da Vanessa (ponto 10).
 
 ---
 
