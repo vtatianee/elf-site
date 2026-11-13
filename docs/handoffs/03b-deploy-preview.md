@@ -45,6 +45,6 @@
 
 | # | Ponto | Proposta | Decide |
 |---|---|---|---|
-| 1 | **O preview é público e indexável.** `elf-site.pages.dev` não tem `noindex` (por decisão de arquitetura) e o canonical aponta para ele mesmo. O Google pode indexá-lo antes do lançamento, com textos ainda em revisão e folhas "em preparação". Quando o domínio final entrar (Portão 5), basta trocar `NEXT_PUBLIC_SITE_URL`: os canônicos passam para o domínio e o Google migra. | Manter como está: nada aponta para esse endereço, e o conteúdo é o mesmo que vai ao ar. Alternativa: ligar "Cloudflare Access" no projeto para fechar o preview com login até o lançamento. | **André** |
-| 2 | **Ficha 44 — termo da Amazon** (ponto 1 do `03-dev-build.md`). Continua aberto. | Trocar para "blunt-tip scissors" | **André** |
-| 3 | **Portão 3.** | Aprovar o preview e liberar a Fase 4 (Marketing). | **André** |
+| 1 | **O preview é público e indexável.** `elf-site.pages.dev` não tem `noindex` (por decisão de arquitetura) e o canonical aponta para ele mesmo. O Google pode indexá-lo antes do lançamento, com textos ainda em revisão e folhas "em preparação". Quando o domínio final entrar (Portão 5), basta trocar `NEXT_PUBLIC_SITE_URL`: os canônicos passam para o domínio e o Google migra. | Manter como está: nada aponta para esse endereço, e o conteúdo é o mesmo que vai ao ar. Alternativa: ligar "Cloudflare Access" no projeto para fechar o preview com login até o lançamento. | **André** — **decidido em 12/11/2026: manter público** |
+| 2 | **Ficha 44 — termo da Amazon** (ponto 1 do `03-dev-build.md`). Continua aberto. | Trocar para "blunt-tip scissors" | **André** — **aprovado em 12/11/2026; feito** |
+| 3 | **Portão 3.** | Aprovar o preview e liberar a Fase 4 (Marketing). | **André** — **aprovado em 12/11/2026** |
