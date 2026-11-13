@@ -118,7 +118,7 @@ Componente único `SignupComingSoon`: campo e botão desabilitados, "Sign-ups ar
 | 4 | **HowTo schema:** entregue como o prompt pede. Informativo: o Google deixou de mostrar o resultado enriquecido de HowTo; o schema não atrapalha e outros leitores ainda o usam. | Manter | — |
 | 5 | **Preview de deploy (Portão 3)** depende de: (a) conta do GitHub (`vtatianee`?) e e-mail dos commits (trocar o pessoal pelo noreply antes do push?); (b) André conectar o repositório ao Cloudflare Pages (passo a passo no 02a §7). | Responder (a); depois eu faço o push e o André conecta | **André** — **resolvido em 12/11/2026:** preview em https://elf-site.pages.dev, conferido no `03b-deploy-preview.md` |
 | 6 | **Folha de colorir (52)** precisa do contorno do elfo | Designer, junto com o 1º lote de arte final | Designer |
-| 7 | **Planner:** as fichas 59 e 60 ficam nos dias 22 e 23; a 30 no 24 (a ficha 60 fala "manhã do dia 24 ou 25") | Manter | PM |
+| 7 | **Planner:** as fichas 59 e 60 ficam nos dias 22 e 23; a 30 no 24 (a ficha 60 fala "manhã do dia 24 ou 25") | Manter | PM — **revisto em 13/11/2026 (QA-04):** a 59 vai para o dia 18, como diz a ficha; ver `05b-dev-qa-fixes.md` |
 
 ---
 

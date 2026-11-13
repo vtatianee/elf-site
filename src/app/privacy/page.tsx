@@ -21,7 +21,7 @@ export const metadata = buildMetadata({
 })
 
 /** Date of the last change to this text. Update it whenever the text changes. */
-const LAST_UPDATED = 'November 11, 2026'
+const LAST_UPDATED = 'November 13, 2026'
 
 export default function PrivacyPage() {
   const analyticsOn = Boolean(siteConfig.analytics.cloudflareWebAnalyticsToken?.trim())
@@ -60,8 +60,8 @@ export default function PrivacyPage() {
           </li>
         </ul>
         <p>
-          You can delete this data at any time by clearing this site’s data in your browser settings. The materials
-          checklist on idea pages is not saved at all.
+          You can delete this data at any time by clearing this site’s data in your browser settings. The ticks you make
+          on checklists (materials on idea pages, the planner’s shopping list) are not saved at all.
         </p>
 
         <h2>Email sign-up</h2>

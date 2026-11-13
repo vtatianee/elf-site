@@ -115,13 +115,33 @@ function shuffle<T>(list: T[]): T[] {
   return copy
 }
 
-function pickThree(found: TonightIdea[], memory: Memory, onScreen: number[]): TonightIdea[] {
-  const without = (banned: number[]) => found.filter((i) => !banned.includes(i.id))
-  let candidates = without([...memory.last, ...memory.seen]) // 1. new tonight and not shown last night
-  if (candidates.length < 3) candidates = without([...memory.last, ...onScreen]) // 2. group seen: start over
-  if (candidates.length < 3) candidates = without(onScreen) // 3. small group: allow last night's
-  if (candidates.length < 3) candidates = [...found] // 4. tiny group: never empty
-  return shuffle(candidates).slice(0, 3)
+/**
+ * Picks 3 ideas, filling from these groups in order (shuffled inside each):
+ * 1. not shown tonight and not shown last night;
+ * 2. last night's, not shown yet tonight (only once group 1 runs out —
+ *    "no repeat of last night while there are 3 new ones");
+ * 3. anything not on screen right now (the group is used up: a new cycle);
+ * 4. what is on screen (tiny group: never empty).
+ * `newCycle` is true when group 3 or 4 was needed.
+ */
+function pickThree(found: TonightIdea[], memory: Memory, onScreen: number[]): { picked: TonightIdea[]; newCycle: boolean } {
+  const shownTonight = new Set([...memory.seen, ...onScreen])
+  const lastNight = new Set(memory.last)
+  const screen = new Set(onScreen)
+  const groups = [
+    found.filter((i) => !shownTonight.has(i.id) && !lastNight.has(i.id)),
+    found.filter((i) => !shownTonight.has(i.id) && lastNight.has(i.id)),
+    found.filter((i) => shownTonight.has(i.id) && !screen.has(i.id)),
+    found.filter((i) => screen.has(i.id)),
+  ]
+  const picked: TonightIdea[] = []
+  let newCycle = false
+  groups.forEach((group, index) => {
+    if (picked.length >= 3 || group.length === 0) return
+    if (index >= 2) newCycle = true
+    picked.push(...shuffle(group).slice(0, 3 - picked.length))
+  })
+  return { picked, newCycle }
 }
 
 /** Initial 3 for the static HTML: the first matches in card order (replaced on load). */
@@ -139,11 +159,10 @@ export function TonightMode({ ideas }: { ideas: TonightIdea[] }) {
   function draw(nextCrits: Crit[], animate: boolean) {
     const nextPool = buildPool(ideas, nextCrits)
     const memory = loadMemory()
-    const picked = pickThree(nextPool.found, memory, onScreen.current)
+    const { picked, newCycle } = pickThree(nextPool.found, memory, onScreen.current)
     onScreen.current = picked.map((i) => i.id)
-    let seen = [...new Set([...memory.seen, ...onScreen.current])]
-    // Went through the whole group tonight: start a new cycle.
-    if (nextPool.found.every((i) => seen.includes(i.id))) seen = [...onScreen.current]
+    // Went through the whole group tonight: the new cycle starts with these 3.
+    const seen = newCycle ? [...onScreen.current] : [...new Set([...memory.seen, ...onScreen.current])]
     saveMemory({ ...memory, seen })
     setCrits(nextCrits)
     setPool(nextPool)

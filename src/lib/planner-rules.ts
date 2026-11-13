@@ -1,12 +1,13 @@
 /**
  * December planner rules (source document, handoff 01 §2.5):
  *   - 15+ minute projects on weekends; 2-5 minute ideas on weekdays
- *   - an interactive idea every 2-3 days
+ *   - an interactive idea every 2-3 days (never 3 days in a row without one)
  *   - high mess at most once in the season, always on a Friday or Saturday
  *   - no scene repeated
  * Plus the obvious calendar anchors from the cards: an arrival idea on
- * December 1, goodbye ideas in the last days, and the farewell letter idea
- * (its card says "Night of December 24") on the 24th.
+ * December 1, the farewell letter idea (its card says "Night of December 24")
+ * on the 24th, idea 59 on the 18th (its card says "from the 18th on"), and the
+ * other goodbye ideas in the last days.
  *
  * Pure functions, no server-only imports: used by the browser planner.
  */
@@ -19,6 +20,8 @@ export type PlanIdea = {
   mess: 'zero' | 'low' | 'medium' | 'high'
   typeTags: string[]
   occasion: string | null
+  /** December day the card itself says it starts on (idea 59: the 18th), or null. */
+  startDay: number | null
   materials: string[]
   amazonItems: string[]
 }
@@ -76,7 +79,10 @@ export function buildPlan(ideas: PlanIdea[], year: number, seed: number): number
   place(0, shuffled(ideas.filter((i) => has(i, 'arrival')), rand)[0])
   const dec24 = ideas.find((i) => i.occasion?.includes('December 24'))
   place(PLAN_DAYS - 1, dec24)
-  // Highest card number closest to the 24th: idea 60 is set the night before the 24th's morning.
+  // A card that names its own start day goes there (idea 59: "from the 18th on").
+  for (const idea of ideas) if (idea.startDay && free(idea)) place(idea.startDay - 1, idea)
+  // Other goodbyes right before the 24th, highest card number closest to it:
+  // idea 60 is set the night before the 24th's morning.
   const goodbyes = ideas.filter((i) => has(i, 'goodbye') && free(i)).sort((a, b) => b.id - a.id)
   goodbyes.forEach((idea, k) => place(PLAN_DAYS - 2 - k, idea))
 
@@ -87,19 +93,44 @@ export function buildPlan(ideas: PlanIdea[], year: number, seed: number): number
   )
   if (highMess && friSat.length > 0) place(friSat[Math.floor(friSat.length / 2)] as number, highMess)
 
-  // 3. Weekends: the 15+ minute projects (never a high-mess one: that slot is used).
+  // 3. Interactive (before the projects, so a weekend can take a 10-minute one): never more than 2 days in a row without one (so at least one in
+  //    every 3 days). Days already taken by an anchor, a project or the high-mess
+  //    night count when their idea is interactive; when the 3rd day is taken, the
+  //    interactive goes on the nearest free day before it. Weekdays only get a
+  //    2-5 minute interactive; 10-minute ones are kept for weekends.
+  const interactiveOk = (i: PlanIdea) =>
+    has(i, 'interactive') && !has(i, 'arrival') && !has(i, 'goodbye') && i.time !== '15+' && i.mess !== 'high'
+  const quickInteractive = shuffled(ideas.filter((i) => interactiveOk(i) && (i.time === '2' || i.time === '5')), rand)
+  const tenInteractive = shuffled(ideas.filter((i) => interactiveOk(i) && i.time === '10'), rand)
+  const isInteractiveDay = (d: number) => {
+    const id = plan[d]
+    return id !== null && id !== undefined && has(ideas.find((i) => i.id === id) as PlanIdea, 'interactive')
+  }
+  const placeInteractive = (d: number) =>
+    isWeekend(d)
+      ? place(d, tenInteractive.find(free)) || place(d, quickInteractive.find(free))
+      : place(d, quickInteractive.find(free))
+  let lastInteractive = -1
+  for (let i = 0; i < PLAN_DAYS; i++) {
+    if (isInteractiveDay(i)) {
+      lastInteractive = i
+      continue
+    }
+    if (i - lastInteractive < 3) continue
+    // Day i is the last one allowed: use it, or the nearest free day before it.
+    for (let d = i; d > lastInteractive; d--) {
+      if (plan[d] === null && placeInteractive(d)) {
+        lastInteractive = d
+        break
+      }
+    }
+    if (i - lastInteractive >= 3) lastInteractive = i // no free day or no idea left: move on
+  }
+
+  // 4. Weekends left free: the 15+ minute projects (never a high-mess one: that slot is used).
   const projects = shuffled(ideas.filter((i) => i.time === '15+' && i.mess !== 'high' && free(i)), rand)
   for (let i = 0; i < PLAN_DAYS; i++) {
     if (isWeekend(i) && plan[i] === null) place(i, projects.find(free))
-  }
-
-  // 4. Interactive every 3rd day (weekday slots), quick ones first.
-  const interactive = shuffled(
-    ideas.filter((i) => has(i, 'interactive') && !has(i, 'arrival') && !has(i, 'goodbye') && i.time !== '15+' && i.mess !== 'high'),
-    rand,
-  )
-  for (let i = 2; i < PLAN_DAYS; i += 3) {
-    if (plan[i] === null) place(i, interactive.find(free))
   }
 
   // 5. Everything else: weekdays get 2-5 minute ideas; weekends 10-minute ones.

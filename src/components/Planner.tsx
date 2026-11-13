@@ -59,7 +59,6 @@ type Props = {
 export function Planner({ ideas, amazonUrls, amazonRel, disclosure, initialYear }: Props) {
   const [year, setYear] = useState(initialYear)
   const [plan, setPlan] = useState<number[]>(() => buildPlan(ideas, initialYear, 1))
-  const [seed, setSeed] = useState(1)
 
   useEffect(() => {
     const y = planYear(new Date())
@@ -79,9 +78,8 @@ export function Planner({ ideas, amazonUrls, amazonRel, disclosure, initialYear 
   }
 
   function newPlan() {
-    const next = seed + 1
-    setSeed(next)
-    update(buildPlan(ideas, year, next * 7919))
+    // A fresh random seed each tap, so the first new plan after a reload is new too.
+    update(buildPlan(ideas, year, 2 + Math.floor(Math.random() * 2 ** 30)))
   }
 
   function swap(dayIndex: number, id: number) {
@@ -146,12 +144,15 @@ export function Planner({ ideas, amazonUrls, amazonRel, disclosure, initialYear 
         <h2 id="shopping-title">Your shopping list</h2>
         <p className="section__sub">
           Everything the {PLAN_DAYS} ideas above need, in one list. Most of it is already in your home — tick off what you
-          have.
+          have. Ticks are not saved.
         </p>
         <ul className="shopping">
           {list.map((item) => (
             <li key={item.name}>
-              <span>{item.name}</span>
+              <label className="check__label">
+                <input type="checkbox" />
+                <span>{item.name}</span>
+              </label>
               <small>Dec {item.days.join(', ')}</small>
             </li>
           ))}

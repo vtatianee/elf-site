@@ -68,7 +68,8 @@ function readAddress(groups: FilterGroup[]): { selection: Selection; query: stri
   for (const group of groups) {
     const allowed = group.options.map((o) => o.value)
     const raw = params.get(group.dimension)
-    selection[group.dimension] = raw ? raw.split(',').filter((v) => allowed.includes(v)) : []
+    // A typed "15+" arrives as "15 " (an unencoded + is a space in a query string).
+    selection[group.dimension] = raw ? raw.split(',').map((v) => v.replace(/ /g, '+')).filter((v) => allowed.includes(v)) : []
   }
   return { selection, query: (params.get('q') ?? '').trim().slice(0, 80) }
 }
@@ -193,7 +194,7 @@ export function IdeasExplorer({ cards, groups }: { cards: CardData[]; groups: Fi
           </ul>
         ) : (
           <div className="empty">
-            <img src="/mascot/elf-sleep.svg" alt="" width={420} height={180} />
+            <img src="/mascot/elf-sleep.svg" alt="" width={420} height={180} loading="lazy" />
             <p>No idea matches all of these filters.</p>
             <button className="btn" type="button" onClick={clearAll}>
               Clear filters

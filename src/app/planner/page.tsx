@@ -25,6 +25,8 @@ export default function PlannerPage() {
     mess: idea.mess,
     typeTags: idea.typeTags,
     occasion: idea.occasion,
+    // A card that says when it starts, e.g. idea 59: "In the last week (from the 18th on)".
+    startDay: Number(idea.steps.join(' ').match(/from the (\d{1,2})(?:st|nd|rd|th) on/)?.[1] ?? 0) || null,
     materials: idea.materials,
     amazonItems: idea.amazonItems,
   }))
