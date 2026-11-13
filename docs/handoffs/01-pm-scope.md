@@ -286,7 +286,7 @@ O PM não dá parecer jurídico. Caso de borda vai para o advogado do André.
 |---|---|---|---|
 | 1 — Escopo + plano | 10/11/2026 | **APROVADO, com condições** | Condições registradas em `02-pm-data-and-tags.md`, seção 1. Correção posterior: são 8 fichas sem elf note (a 28 também), não 7. |
 | 2 — Arquitetura + visual | 11/11/2026 | **APROVADO** ("Approve Gate 2") | Aprovadas as 6 recomendações do PM: paleta com 22 tons derivados; Tonight Mode com botões liga/desliga, abrindo com os 3 critérios ligados e 3 ideias; ordem mobile da página de ideia (título e fatos antes da ilustração); etiquetas de Tipo (16 funny) e Material; ficha 49 renomeada para "Elf Story Fill-in-the-Blanks Card" (slug `elf-story-fill-in-the-blanks-card`); a frase "Copy it onto a small card…" vai para revisão do Marketing na Fase 4. Conta GitHub e e-mail dos commits ainda sem resposta: push segurado. **12/11/2026:** André confirmou ("Yes, push it"): repositório público `vtatianee/elf-site` criado; e-mail de todos os commits reescrito para o noreply do GitHub (`284499397+vtatianee@users.noreply.github.com`) antes do primeiro push; push do `main` feito. |
-| 3 — Preview de deploy | — | — | |
+| 3 — Preview de deploy | 12/11/2026 | **APROVADO** ("Aprovo o Portão 3") | Preview em https://elf-site.pages.dev (Cloudflare Pages), conferido no `03b-deploy-preview.md`. Fase 4 liberada. Continuam abertos: preview público e indexável (recomendação: manter) e o termo da Amazon da ficha 44. |
 | 4 — Pins + copy | — | — | |
 | 5 — Lançamento | — | — | |
 
